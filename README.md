@@ -1,2 +1,2 @@
 # destination-finder
-Authors: Arianna,
+Authors: Arianna, Kevin, Andrei
