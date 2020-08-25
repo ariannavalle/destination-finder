@@ -1,3 +1,2 @@
 # destination-finder
-
-authors: Kevin Hernandez
+Authors: Arianna, Kevin, Andrei
