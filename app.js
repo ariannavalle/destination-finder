@@ -18,6 +18,7 @@ const bindUserToViewLocals = require('./configs/user-locals.config');
 // Routers
 const indexRouter = require('./routes/index.routes');
 const authRouter = require('./routes/auth.routes');
+const filterRouter = require('./routes/filter.routes');
 
 const app = express();
 require('./configs/session.config')(app);
@@ -42,6 +43,7 @@ const debug = require('debug')(`${app_name}:${path.basename(__filename).split('.
 // Routes middleware
 app.use('/', indexRouter);
 app.use('/', authRouter);
+app.use('/', filterRouter);
 
 // Catch missing routes and forward to error handler
 app.use((req, res, next) => next(createError(404)));
