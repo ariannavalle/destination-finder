@@ -5,6 +5,7 @@ const router = new Router();
 const bcryptjs = require('bcryptjs');
 const mongoose = require('mongoose');
 const passport = require('passport');
+const fileUploader = require('../configs/cloudinary.config');
 
 const saltRounds = 10;
 const User = require('../models/user.model');
@@ -95,8 +96,37 @@ router.post('/logout', (req, res) => {
   res.redirect('/');
 });
 
+// GET user profile page
 router.get('/profile', ensureAuthentication, (req, res) => {
   res.render('users/user-profile');
+});
+
+// GET user update page
+router.get('/profile/settings', ensureAuthentication, (req, res) => {
+  res.render('users/user-profile-settings');
+});
+
+// POST updated user info
+router.post('/profile/update', fileUploader.single('image'), (req, res) => {
+  const { username, email } = req.body;
+  const { _id } = req.user;
+
+  console.log(req.file);
+
+  const newUserInfo ={
+    username,
+    email,
+    image: req.file.path
+  };
+
+  User
+    .findByIdAndUpdate(_id, newUserInfo, { new: true })
+    .then(updatedUser => {
+      console.log({updatedUser});
+      res.redirect('/profile');
+    })
+    .catch(err => console.log(err));
+
 });
 
 module.exports = router;
