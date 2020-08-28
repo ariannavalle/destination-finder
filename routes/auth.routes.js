@@ -4,10 +4,13 @@ const { Router } = require('express');
 const router = new Router();
 const bcryptjs = require('bcryptjs');
 const mongoose = require('mongoose');
+const passport = require('passport');
 
 const saltRounds = 10;
 const User = require('../models/User.model');
-const routeGuard = require('../configs/route-guard.config');
+
+// route protection through passport's req.isAuthenticated() method
+const ensureAuthentication = require('../configs/route-guard.config');
 
 ////////////////////////////////////////////////////////////////////////
 ///////////////////////////// SIGNUP //////////////////////////////////
@@ -18,8 +21,10 @@ router.get('/signup', (req, res) => res.render('auth/signup-form.hbs'));
 
 // .post() route ==> to process form data
 router.post('/signup', (req, res, next) => {
+  //deconstruct req.body
   const { username, email, password } = req.body;
 
+  // Check if username, password, and email are not empty
   if (!username || !email || !password) {
     res.render('auth/signup-form.hbs', {
       errorMessage: 'All fields are mandatory. Please provide your username, email and password.'
@@ -50,7 +55,7 @@ router.post('/signup', (req, res, next) => {
     })
     .then(userFromDB => {
       console.log('Newly created user is: ', userFromDB);
-      res.redirect('/');
+      res.redirect('/login');
     })
     .catch(error => {
       if (error instanceof mongoose.Error.ValidationError) {
@@ -71,51 +76,27 @@ router.post('/signup', (req, res, next) => {
 
 // .get() route ==> to display the login form to users
 router.get('/login', (req, res) => {
-  res.render('auth/login-form.hbs');
+  res.render('auth/login-form.hbs', { "errorMessage": req.flash("error") });
 });
 
 // .post() login route ==> to process form data
-router.post('/login', (req, res, next) => {
-  const { email, password } = req.body;
-
-  if (email === '' || password === '') {
-    res.render('auth/login-form.hbs', {
-      errorMessage: 'Please enter both, email and password to login.'
-    });
-    return;
-  }
-
-  User.findOne({ email })
-    .then(user => {
-      if (!user) {
-        res.render('auth/login-form.hbs', {
-          errorMessage: 'Email is not registered. Try with other email.'
-        });
-        return;
-      } else if (bcryptjs.compareSync(password, user.passwordHash)) {
-          req.session.loggedInUser = user;
-          console.log(req.session.loggedInUser);
-          res.redirect('/profile');
-      } else {
-        res.render('auth/login-form.hbs', {
-          errorMessage: 'Incorrect password.'
-        });
-      }
-    })
-    .catch(error => next(error));
-});
+router.post("/login", passport.authenticate("local", {
+  successRedirect: "/profile",
+  failureRedirect: "/login",
+  failureFlash: true
+}));
 
 ////////////////////////////////////////////////////////////////////////
 ///////////////////////////// LOGOUT ////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////
 
 router.post('/logout', (req, res) => {
-  req.session.destroy();
+  req.logout();
   res.redirect('/');
 });
 
-router.get('/profile', routeGuard, (req, res) => {
-  res.render('users/user-profile');
+router.get('/profile', ensureAuthentication, (req, res) => {
+  res.render('users/user-profile', { user: req.user });
 });
 
 module.exports = router;

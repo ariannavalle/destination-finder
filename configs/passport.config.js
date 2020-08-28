@@ -1,4 +1,4 @@
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 
@@ -15,20 +15,20 @@ passport.deserializeUser((id, cb) => {
 });
 
 passport.use(new LocalStrategy({
-        usernameField: 'email', // change authen
+        usernameField: 'email', // changed authentication to email
         passwordField: 'password' // by default
     },
     (email, password, done) => {
         
         User.findOne({email})
             .then(user => {
-                if (!user || !bcrypt.compareSync(password, user.passwordhash)) {
+                if (!user || !bcrypt.compareSync(password, user.passwordHash)) {
                     return done(null, false, {
-                        message: "Incorrect username and/or password"
+                        message: "Incorrect email and/or password"
                     });
                 }
 
-                console.log({user});
+                console.log({foundUser: user});
                 done(null, user);
             })
             .catch(err => done(err));
