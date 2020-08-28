@@ -5,9 +5,10 @@ const router = new Router();
 const bcryptjs = require('bcryptjs');
 const mongoose = require('mongoose');
 const passport = require('passport');
+const fileUploader = require('../configs/cloudinary.config');
 
 const saltRounds = 10;
-const User = require('../models/User.model');
+const User = require('../models/user.model');
 
 // route protection through passport's req.isAuthenticated() method
 const ensureAuthentication = require('../configs/route-guard.config');
@@ -90,13 +91,50 @@ router.post("/login", passport.authenticate("local", {
 ///////////////////////////// LOGOUT ////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////
 
+// POST logout and end passport session
 router.post('/logout', (req, res) => {
   req.logout();
   res.redirect('/');
 });
 
+////////////////////////////////////////////////////////////////////////
+////////////////////////// user routes //////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+
+// GET user profile page
 router.get('/profile', ensureAuthentication, (req, res) => {
-  res.render('users/user-profile', { user: req.user });
+  res.render('users/user-profile');
+});
+
+// GET user update page
+router.get('/profile/settings', ensureAuthentication, (req, res) => {
+  res.render('users/user-profile-settings');
+});
+
+// POST updated user info
+router.post('/profile/update', fileUploader.single('image'), (req, res) => {
+  const { username, email, image } = req.body;
+  const { _id } = req.user;
+
+  console.log(req.file);
+
+  // if (req.file) image = req.file.path;
+  // else image = req.body.existingImage;
+
+  const newUserInfo ={
+    username,
+    email,
+    image
+  };
+
+  User
+    .findByIdAndUpdate(_id, newUserInfo, { new: true })
+    .then(updatedUser => {
+      console.log({updatedUser});
+      res.redirect('/profile');
+    })
+    .catch(err => console.log(err));
+
 });
 
 module.exports = router;

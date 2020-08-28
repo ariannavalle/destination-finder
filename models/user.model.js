@@ -22,6 +22,10 @@ const userSchema = new Schema(
     passwordHash: {
       type: String,
       required: [true, 'Password is required.']
+    },
+    image: {
+      type: String,
+      default: 'https://res.cloudinary.com/dllcgl1lt/image/upload/v1598633854/cgtwwd1kertfsr0xcvmy.jpg'
     }
   },
   {
