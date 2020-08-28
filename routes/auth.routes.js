@@ -55,7 +55,7 @@ router.post('/signup', (req, res, next) => {
     })
     .then(userFromDB => {
       console.log('Newly created user is: ', userFromDB);
-      res.redirect('/');
+      res.redirect('/login');
     })
     .catch(error => {
       if (error instanceof mongoose.Error.ValidationError) {
@@ -86,37 +86,6 @@ router.post("/login", passport.authenticate("local", {
   failureFlash: true
 }));
 
-
-// router.post('/login', (req, res, next) => {
-//   const { email, password } = req.body;
-
-//   if (email === '' || password === '') {
-//     res.render('auth/login-form.hbs', {
-//       errorMessage: 'Please enter both, email and password to login.'
-//     });
-//     return;
-//   }
-
-//   User.findOne({ email })
-//     .then(user => {
-//       if (!user) {
-//         res.render('auth/login-form.hbs', {
-//           errorMessage: 'Email is not registered. Try with other email.'
-//         });
-//         return;
-//       } else if (bcryptjs.compareSync(password, user.passwordHash)) {
-//           req.session.loggedInUser = user;
-//           console.log(req.session.loggedInUser);
-//           res.redirect('/profile');
-//       } else {
-//         res.render('auth/login-form.hbs', {
-//           errorMessage: 'Incorrect password.'
-//         });
-//       }
-//     })
-//     .catch(error => next(error));
-// });
-
 ////////////////////////////////////////////////////////////////////////
 ///////////////////////////// LOGOUT ////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////
@@ -127,7 +96,7 @@ router.post('/logout', (req, res) => {
 });
 
 router.get('/profile', ensureAuthentication, (req, res) => {
-  res.render('users/user-profile');
+  res.render('users/user-profile', { user: req.user });
 });
 
 module.exports = router;

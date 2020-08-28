@@ -4,19 +4,12 @@ const express = require('express');
 const createError = require('http-errors');
 const logger = require('morgan');
 const favicon = require('serve-favicon');
-
 const cookieParser = require('cookie-parser');
-const hbs = require('hbs');
-const mongoose = require('mongoose');
-
 const passport = require("passport");
 const flash = require('connect-flash');
 
 // Set up the database
 require('./configs/db.config');
-
-// bind user to view - locals
-// const bindUserToViewLocals = require('./configs/user-locals.config');
 
 // Routers
 const indexRouter = require('./routes/index.routes');
@@ -24,9 +17,6 @@ const authRouter = require('./routes/auth.routes');
 const filterRouter = require('./routes/filter.routes');
 
 const app = express();
-
-// sessions setup
-require('./configs/session.config')(app);
 
 // Express View engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -39,7 +29,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
-// app.use(bindUserToViewLocals);
+// sessions setup
+require('./configs/session.config')(app);
 
 const app_name = require('./package.json').name;
 const debug = require('debug')(`${app_name}:${path.basename(__filename).split('.')[0]}`);
