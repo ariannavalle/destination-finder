@@ -25,7 +25,7 @@ const userSchema = new Schema(
     },
     image: {
       type: String,
-      default: 'https://www.hardwarecrossfit.com/wp-content/uploads/2016/09/profile-placeholder.png'
+      default: 'https://res.cloudinary.com/dllcgl1lt/image/upload/v1598633854/cgtwwd1kertfsr0xcvmy.jpg'
     }
   },
   {

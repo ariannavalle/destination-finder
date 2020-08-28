@@ -91,10 +91,15 @@ router.post("/login", passport.authenticate("local", {
 ///////////////////////////// LOGOUT ////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////
 
+// POST logout and end passport session
 router.post('/logout', (req, res) => {
   req.logout();
   res.redirect('/');
 });
+
+////////////////////////////////////////////////////////////////////////
+////////////////////////// user routes //////////////////////////////////
+////////////////////////////////////////////////////////////////////////
 
 // GET user profile page
 router.get('/profile', ensureAuthentication, (req, res) => {
@@ -108,15 +113,18 @@ router.get('/profile/settings', ensureAuthentication, (req, res) => {
 
 // POST updated user info
 router.post('/profile/update', fileUploader.single('image'), (req, res) => {
-  const { username, email } = req.body;
+  const { username, email, image } = req.body;
   const { _id } = req.user;
 
   console.log(req.file);
 
+  // if (req.file) image = req.file.path;
+  // else image = req.body.existingImage;
+
   const newUserInfo ={
     username,
     email,
-    image: req.file.path
+    image
   };
 
   User
