@@ -1,4 +1,5 @@
-module.exports = (req, res, next) => {
-  if (req.session.loggedInUser) next();
-  else res.redirect('/auth/login');
+const ensureAuthentication = (req, res, next) => {
+  req.isAuthenticated() ? next() : res.redirect('/login');
 };
+
+module.exports = ensureAuthentication;
