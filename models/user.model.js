@@ -22,6 +22,10 @@ const userSchema = new Schema(
     passwordHash: {
       type: String,
       required: [true, 'Password is required.']
+    },
+    image: {
+      type: String,
+      default: 'https://www.hardwarecrossfit.com/wp-content/uploads/2016/09/profile-placeholder.png'
     }
   },
   {

@@ -11,6 +11,9 @@ const flash = require('connect-flash');
 // Set up the database
 require('./configs/db.config');
 
+// bind req.user to view - locals
+const bindUserToViewLocals = require('./configs/user-locals.config');
+
 // Routers
 const indexRouter = require('./routes/index.routes');
 const authRouter = require('./routes/auth.routes');
@@ -40,6 +43,9 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
 require("./configs/passport.config");
+
+// set local.user to req.user
+app.use(bindUserToViewLocals);
 
 // Routes middleware
 app.use('/', indexRouter);

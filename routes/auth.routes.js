@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const passport = require('passport');
 
 const saltRounds = 10;
-const User = require('../models/User.model');
+const User = require('../models/user.model');
 
 // route protection through passport's req.isAuthenticated() method
 const ensureAuthentication = require('../configs/route-guard.config');
@@ -96,7 +96,7 @@ router.post('/logout', (req, res) => {
 });
 
 router.get('/profile', ensureAuthentication, (req, res) => {
-  res.render('users/user-profile', { user: req.user });
+  res.render('users/user-profile');
 });
 
 module.exports = router;
