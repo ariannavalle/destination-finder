@@ -1,1 +1,28 @@
-<h1>{{title}}</h1>
+<form action="/find-destination" method="post">
+    <label for="continentInput">Continent: <input id="continentInput" name="continent" type="text"></label>
+    <br>
+    <label for="citySizeInput">City Size: <input id="citySizeInput" name="citySize" type="number"></label>
+    <br>
+		<label for="budgetInput">Budget: <input id="budgetInput" name="budget" type="number"></label>
+    <br>
+		
+		<b>Categories</b><br>
+		<input type="checkbox" id="architecture" name="categories" value="architecture">
+		<label for="architecture">Architecture</label>
+		<input type="checkbox" id="nightclubs" name="categories" value="nightclubs">
+		<label for="nightclubs">Night Life</label>
+		<input type="checkbox" id="art_galleries" name="categories" value="art_galleries">
+		<label for="art_galleries">Art</label>
+		<input type="checkbox" id="beaches" name="categories" value="beaches">
+		<label for="beaches">Beaches</label><br>
+		<input type="checkbox" id="hot_springs" name="categories" value="hot_springs">
+		<label for="hot_springs">Hot Springs</label>
+		<input type="checkbox" id="foods" name="categories" value="foods">
+		<label for="foods">Food</label>
+		<input type="checkbox" id="shops" name="categories" value="shops">
+		<label for="shops">Shopping</label>
+		<input type="checkbox" id="national_parks" name="categories" value="national_parks">
+		<label for="national_parks">National Parks</label>
+    <br>
+    <button>Search</button>
+</form>
