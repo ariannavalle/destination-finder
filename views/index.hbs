@@ -1,28 +1,61 @@
 <form action="/find-destination" method="post">
-    <label for="continentInput">Continent: <input id="continentInput" name="continent" type="text"></label>
-    <br>
-    <label for="citySizeInput">City Size: <input id="citySizeInput" name="citySize" type="number"></label>
-    <br>
-		<label for="budgetInput">Budget: <input id="budgetInput" name="budget" type="number"></label>
-    <br>
-		
-		<b>Categories</b><br>
-		<input type="checkbox" id="architecture" name="categories" value="architecture">
-		<label for="architecture">Architecture</label>
-		<input type="checkbox" id="nightclubs" name="categories" value="nightclubs">
-		<label for="nightclubs">Night Life</label>
-		<input type="checkbox" id="art_galleries" name="categories" value="art_galleries">
-		<label for="art_galleries">Art</label>
-		<input type="checkbox" id="beaches" name="categories" value="beaches">
-		<label for="beaches">Beaches</label><br>
-		<input type="checkbox" id="hot_springs" name="categories" value="hot_springs">
-		<label for="hot_springs">Hot Springs</label>
-		<input type="checkbox" id="foods" name="categories" value="foods">
-		<label for="foods">Food</label>
-		<input type="checkbox" id="shops" name="categories" value="shops">
-		<label for="shops">Shopping</label>
-		<input type="checkbox" id="national_parks" name="categories" value="national_parks">
-		<label for="national_parks">National Parks</label>
-    <br>
-    <button>Search</button>
+
+	<h3>Continent</h3>
+	<input type="checkbox" id="all" name="coordinates" value="lon_min=-180&lon_max=180&lat_min=-85&lat_max=85">
+	<label for="all">All</label>
+
+	<input type="checkbox" id="africa" name="coordinates" value="lon_min=&lon_max=&lat_min=&lat_max=">
+	<label for="africa">Africa</label>
+
+	<input type="checkbox" id="asia" name="coordinates" value="lon_min=&lon_max=&lat_min=&lat_max=">
+	<label for="asia">Asia</label>
+
+	<input type="checkbox" id="australia" name="coordinates" value="lon_min=&lon_max=&lat_min=&lat_max=">
+	<label for="australia">Australia</label>
+
+	<input type="checkbox" id="europe" name="coordinates" value="lon_min=&lon_max=&lat_min=&lat_max=">
+	<label for="europe">Europe</label>
+
+	<input type="checkbox" id="north_america" name="coordinates" value="lon_min=&lon_max=&lat_min=&lat_max=">
+	<label for="north_america">North America</label>
+
+	<input type="checkbox" id="south_america" name="coordinates" value="lon_min=-75.495300&lon_max=-35.944519&lat_min=-52.081616&lat_max=10.048642">
+	<label for="south_america">South America</label><br>
+
+
+	<h3>City Size</h3>
+	<label for="citySizeInput"><input id="citySizeInput" name="citySize" type="number"></label><br>
+
+
+	<h3>Budget</h3>
+	<label for="budgetInput"><input id="budgetInput" name="budget" type="number"></label><br>
+
+
+	<h3>Categories</h3>
+	<input type="checkbox" id="architecture" name="categories" value="architecture">
+	<label for="architecture">Architecture</label>
+
+	<input type="checkbox" id="nightclubs" name="categories" value="nightclubs">
+	<label for="nightclubs">Night Life</label>
+
+	<input type="checkbox" id="art_galleries" name="categories" value="art_galleries">
+	<label for="art_galleries">Art</label>
+
+	<input type="checkbox" id="beaches" name="categories" value="beaches">
+	<label for="beaches">Beaches</label><br>
+
+	<input type="checkbox" id="hot_springs" name="categories" value="hot_springs">
+	<label for="hot_springs">Hot Springs</label>
+
+	<input type="checkbox" id="foods" name="categories" value="foods">
+	<label for="foods">Food</label>
+
+	<input type="checkbox" id="shops" name="categories" value="shops">
+	<label for="shops">Shopping</label>
+
+	<input type="checkbox" id="national_parks" name="categories" value="national_parks">
+	<label for="national_parks">National Parks</label>
+	<br>
+
+	<button>Search</button>
 </form>
