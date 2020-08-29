@@ -26,6 +26,9 @@ const userSchema = new Schema(
     image: {
       type: String,
       default: 'https://res.cloudinary.com/dllcgl1lt/image/upload/v1598633854/cgtwwd1kertfsr0xcvmy.jpg'
+    },
+    favorites: {
+      type: [ { type: String } ]
     }
   },
   {

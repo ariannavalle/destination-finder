@@ -112,14 +112,17 @@ router.get('/profile/settings', ensureAuthentication, (req, res) => {
 });
 
 // POST updated user info
-router.post('/profile/update', fileUploader.single('image'), (req, res) => {
-  const { username, email, image } = req.body;
+router.post('/profile/update', fileUploader.single('image'), (req, res, next) => {
+  const { username, email } = req.body;
   const { _id } = req.user;
+  let image = "";
 
-  console.log(req.file);
-
-  // if (req.file) image = req.file.path;
-  // else image = req.body.existingImage;
+  // console.log(`req.file: ${req.file}`);
+  // console.log(req.body);
+  
+  // if the image field is blank, the current image url is used
+  if (req.file) image = req.file.path;
+  else image = req.user.image;
 
   const newUserInfo ={
     username,
@@ -133,7 +136,15 @@ router.post('/profile/update', fileUploader.single('image'), (req, res) => {
       console.log({updatedUser});
       res.redirect('/profile');
     })
-    .catch(err => console.log(err));
+    .catch(error => {
+      if (error.code === 11000) {
+        res.status(500).render('users/user-profile-settings', {
+          errorMessage: 'Username and email need to be unique. Either username or email is already used.'
+        });
+      } else {
+        next(error);
+      }
+    });
 
 });
 

@@ -17,4 +17,8 @@
     
 
     <button type="submit">Update Profile</button>
+
+    {{#if errorMessage}}
+      <p class="error">{{errorMessage}}</p>
+    {{/if}}
 </form>
