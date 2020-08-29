@@ -15,12 +15,12 @@ passport.deserializeUser((id, cb) => {
 });
 
 passport.use(new LocalStrategy({
-        usernameField: 'email', // changed authentication to email
+        usernameField: 'username', // changed authentication to email
         passwordField: 'password' // by default
     },
-    (email, password, done) => {
+    (username, password, done) => {
         
-        User.findOne({email})
+        User.findOne({username})
             .then(user => {
                 if (!user || !bcrypt.compareSync(password, user.passwordHash)) {
                     return done(null, false, {

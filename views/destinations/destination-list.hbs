@@ -4,6 +4,9 @@
     <h3>Categories</h3> {{categories}}
     <h3>Coordinates</h3> {{coordinates}}
     <h3>Rating</h3> {{rating}}
+    <form action="/{{ user.username }}/fav/{{ coordinates }}" method="post">
+      <button>Add to Fav</button>
+    </form>
   </div>
   <hr>
 {{/each}}

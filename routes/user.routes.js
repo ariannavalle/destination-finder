@@ -8,6 +8,7 @@ const fileUploader = require('../configs/cloudinary.config');
 const ensureAuthentication = require('../configs/route-guard.config');
 
 const User = require('../models/user.model');
+const { findById } = require('../models/user.model');
 
 ////////////////////////////////////////////////////////////////////////
 ////////////////////////// user routes /////////////////////////////////
@@ -58,6 +59,18 @@ router.post('/:username/update', fileUploader.single('image'), (req, res, next) 
       }
     });
 
+});
+
+// POST add place to fav list
+router.post('/:username/fav/:coordinates', (req, res) => {
+  const { username, coordinates } = req.params;
+
+  User
+    .find({username})
+    .then(userFromDB => {
+      console.log("addFav", userFromDB);
+    })
+    .catch(err => console.log(err));
 });
 
 module.exports = router;
