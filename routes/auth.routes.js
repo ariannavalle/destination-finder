@@ -5,17 +5,13 @@ const router = new Router();
 const bcryptjs = require('bcryptjs');
 const mongoose = require('mongoose');
 const passport = require('passport');
-const fileUploader = require('../configs/cloudinary.config');
 
 const saltRounds = 10;
 const User = require('../models/user.model');
 
-// route protection through passport's req.isAuthenticated() method
-const ensureAuthentication = require('../configs/route-guard.config');
-
-////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////
 ///////////////////////////// SIGNUP //////////////////////////////////
-////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////
 
 // .get() route ==> to display the signup form to users
 router.get('/signup', (req, res) => res.render('auth/signup-form.hbs'));
@@ -71,9 +67,9 @@ router.post('/signup', (req, res, next) => {
     }); // close .catch()
 }); // close router.post()
 
-////////////////////////////////////////////////////////////////////////
-///////////////////////////// LOGIN ////////////////////////////////////
-////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////
+///////////////////////////// LOGIN ///////////////////////////////////
+///////////////////////////////////////////////////////////////////////
 
 // .get() route ==> to display the login form to users
 router.get('/login', (req, res) => {
@@ -81,60 +77,23 @@ router.get('/login', (req, res) => {
 });
 
 // .post() login route ==> to process form data
-router.post("/login", passport.authenticate("local", {
-  successRedirect: "/profile",
-  failureRedirect: "/login",
-  failureFlash: true
-}));
+router.post("/login", 
+  passport.authenticate("local", {
+    failureRedirect: "/login",
+    failureFlash: true
+  }), 
+  (req, res) => {
+  res.redirect(`/${req.user.username}`);
+});
 
-////////////////////////////////////////////////////////////////////////
-///////////////////////////// LOGOUT ////////////////////////////////////
-////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////
+///////////////////////////// LOGOUT //////////////////////////////////
+///////////////////////////////////////////////////////////////////////
 
-// POST logout and end passport session
-router.post('/logout', (req, res) => {
+// GET logout and end passport session
+router.get('/logout', (req, res) => {
   req.logout();
   res.redirect('/');
-});
-
-////////////////////////////////////////////////////////////////////////
-////////////////////////// user routes //////////////////////////////////
-////////////////////////////////////////////////////////////////////////
-
-// GET user profile page
-router.get('/profile', ensureAuthentication, (req, res) => {
-  res.render('users/user-profile');
-});
-
-// GET user update page
-router.get('/profile/settings', ensureAuthentication, (req, res) => {
-  res.render('users/user-profile-settings');
-});
-
-// POST updated user info
-router.post('/profile/update', fileUploader.single('image'), (req, res) => {
-  const { username, email, image } = req.body;
-  const { _id } = req.user;
-
-  console.log(req.file);
-
-  // if (req.file) image = req.file.path;
-  // else image = req.body.existingImage;
-
-  const newUserInfo ={
-    username,
-    email,
-    image
-  };
-
-  User
-    .findByIdAndUpdate(_id, newUserInfo, { new: true })
-    .then(updatedUser => {
-      console.log({updatedUser});
-      res.redirect('/profile');
-    })
-    .catch(err => console.log(err));
-
 });
 
 module.exports = router;
