@@ -12,11 +12,7 @@
 
   <body>
     <nav>
-      <ul>
-        <li id="to-left">
-          <p><a href="/"> Home</a></p>
-        </li>
-        <li id="to-right">
+          <a href="/"> Home</a><span> | </span>
           {{#if user}}
             <a href="/{{ user.username }}">Profile</a> <span> | </span>
             <a href="/logout">Logout</a> <span> | </span>
@@ -24,8 +20,6 @@
             <a href="/signup">Signup</a> <span> | </span>
             <a href="/login">Login</a> <span> | </span>
           {{/if}}
-        </li>
-      </ul>
     </nav>
 
     {{{body}}}
