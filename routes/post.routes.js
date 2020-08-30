@@ -33,22 +33,24 @@ router.get('/create', ensureAuthentication, (req, res) => {
 
 router.post('/create', fileUploader.single('image'), (req, res) => {
   const { title, content, location } = req.body;
-  // let newPost = {};
-  let image = "";
-console.log(`req.file: ${req.file}`);
-  if (req.file) {
-    
-    image = req.file.path;
-  }
+  let newPost = {};
 
-  const newPost = {
-    title,
-    content,
-    location,
-    image,
-    user: req.user._id
-  };
-  
+  if (req.file) {
+    newPost = {
+      title,
+      content,
+      location,
+      image: req.file.path,
+      user: req.user._id
+    };
+  } else {
+    newPost = {
+      title,
+      content,
+      location,
+      user: req.user._id
+    };
+  }  
 
   Post
     .create(newPost)
