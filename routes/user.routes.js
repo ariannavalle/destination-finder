@@ -60,4 +60,16 @@ router.post('/:username/update', fileUploader.single('image'), (req, res, next) 
 
 });
 
+// POST add place to fav list
+router.post('/:username/fav/:coordinates', (req, res) => {
+  const { username, coordinates } = req.params;
+
+  User
+    .find({username})
+    .then(userFromDB => {
+      console.log("addFav", userFromDB);
+    })
+    .catch(err => console.log(err));
+});
+
 module.exports = router;

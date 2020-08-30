@@ -10,3 +10,27 @@ body {
   flex-direction: column;
   height: 100vh;
 }
+
+/* Blog posts */
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 2rem 19%;
+}
+
+.blog-post {
+  width: 200px;
+  height: 300px;
+  margin: 3rem;
+  position: relative;
+}
+
+.blog-post-info {
+  position: absolute;
+  top: 200px;
+}
+
+.blog-post-image img {
+  width: 200px;
+}

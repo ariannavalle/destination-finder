@@ -41,12 +41,12 @@ router.post('/find-destination', (req, res, next) => {
       // console.log(response.data.features[0].properties.name);
 
       const placeObj = [];
-      const cities = []
+      const cities = [];
       response.data.features.forEach((place) => {
         //get coordinates of the locations returned and aggregates them by city
         const prom = axios
-          .get(`https://api.opencagedata.com/geocode/v1/json?q=${place.geometry.coordinates[1]},${place.geometry.coordinates[0]}&key=${openCageAPIKey}&pretty=1&limit=1`)
-        cities.push(prom)
+          .get(`https://api.opencagedata.com/geocode/v1/json?q=${place.geometry.coordinates[1]},${place.geometry.coordinates[0]}&key=${openCageAPIKey}&pretty=1&limit=1`);
+        cities.push(prom);
       });
 
       Promise.all(cities).then(citiesAPIResponse => {
@@ -54,10 +54,13 @@ router.post('/find-destination', (req, res, next) => {
           // console.log(i, data.data.results[0].components.city)
 
           placeObj.push({
-            coordinates: response.data.features[i].geometry.coordinates, rating: response.data.features[i].properties.rate,
-            name: response.data.features[i].properties.name, categories: response.data.features[i].properties.kinds, city: data.data.results[0].components.city
+            coordinates: response.data.features[i].geometry.coordinates, 
+            rating: response.data.features[i].properties.rate,
+            name: response.data.features[i].properties.name, 
+            categories: response.data.features[i].properties.kinds, 
+            city: data.data.results[0].components.city
           });
-        })
+        });
         // console.log(placeObj)
         // console.log(getAvgRating(placeObj));
 
