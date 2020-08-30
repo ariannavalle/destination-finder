@@ -1,0 +1,19 @@
+
+<div class="main">
+  {{#each posts}}
+    <h4>{{ this.title }}</h4>
+    <div class="blog-post">
+      <div class="blog-post-image">
+        <img src="{{ this.image }}" alt="user profile image">
+      </div>
+
+      <div class="blog-post-author">
+        <p>{{ this.createdAt }} {{ this.user.username }}</p>
+      </div>
+
+      <div class="blog-post-title">
+        <p>{{ this.content }}</p>
+      </div>
+    </div>
+  {{/each}}
+</div>

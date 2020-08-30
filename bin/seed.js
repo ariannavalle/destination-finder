@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const User = require('../models/user.model');
+const Post = require('../models/post.model');
 
 const users = [
   {
@@ -14,11 +15,22 @@ const users = [
   }
 ];
 
+const posts = [
+  {
+    title: "Blog Test",
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, pariatur aut. Similique, velit commodi. Aspernatur inventore debitis officia excepturi autem. Porro vel omnis doloribus consectetur in, dolorum sapiente id neque!",
+    image: "https://res.cloudinary.com/dllcgl1lt/image/upload/v1598739087/iwmikpcenzvysm2qnsni.jpg",
+    location: ["Seattle"],
+    user: "5f4a7106f5c57a1e05ef9fbc" // user: tester1
+  }
+];
+
 // start the database
 require("../configs/db.config");
 
 // clear the users collection
 User.collection.drop();
+Post.collection.drop();
 
 // seed the database with users
 User

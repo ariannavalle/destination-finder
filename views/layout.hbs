@@ -14,9 +14,11 @@
     <nav>
           <a href="/"> Home</a><span> | </span>
           {{#if user}}
+            <a href="/blog">Blog</a> <span> | </span>
             <a href="/{{ user.username }}">Profile</a> <span> | </span>
             <a href="/logout">Logout</a> <span> | </span>
           {{else}}
+            <a href="/blog">Blog</a> <span> | </span>
             <a href="/signup">Signup</a> <span> | </span>
             <a href="/login">Login</a> <span> | </span>
           {{/if}}

@@ -19,6 +19,7 @@ const indexRouter = require('./routes/index.routes');
 const authRouter = require('./routes/auth.routes');
 const filterRouter = require('./routes/filter.routes');
 const userRouter = require('./routes/user.routes');
+const blogRouter = require('./routes/post.routes');
 
 const app = express();
 
@@ -50,6 +51,7 @@ app.use(bindUserToViewLocals);
 
 // Routes middleware
 app.use('/', indexRouter);
+app.use('/blog', blogRouter);
 app.use('/', authRouter);
 app.use('/', filterRouter);
 app.use('/', userRouter);

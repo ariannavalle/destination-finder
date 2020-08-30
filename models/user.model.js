@@ -29,6 +29,9 @@ const userSchema = new Schema(
     },
     favorites: {
       type: [ { type: String } ]
+    },
+    posts: {
+      type: [{ type: Schema.Types.ObjectId, ref: "Post" }]
     }
   },
   {

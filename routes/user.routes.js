@@ -8,7 +8,6 @@ const fileUploader = require('../configs/cloudinary.config');
 const ensureAuthentication = require('../configs/route-guard.config');
 
 const User = require('../models/user.model');
-const { findById } = require('../models/user.model');
 
 ////////////////////////////////////////////////////////////////////////
 ////////////////////////// user routes /////////////////////////////////
