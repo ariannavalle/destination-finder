@@ -5,7 +5,15 @@
     <button><a href="/{{ user.username }}/settings">Profile settings</a></button>
     <button><a href="/blog/create">Make a Post</a></button>
     <br>
-    <div>
+    <div class="profile-image">
         <img src="{{ user.image }}" alt="Profile image">
     </div>
+</div>
+
+<div>
+    <ul>
+        {{#each loggedInUser.posts}}
+            <li><a href="/blog/edit/{{ this._id }}">{{ this.title }}</a></li>
+        {{/each}}
+    </ul>
 </div>

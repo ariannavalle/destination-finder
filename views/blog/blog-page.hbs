@@ -10,14 +10,10 @@
       <div class="blog-post-info">
         <h4>{{ this.title }}</h4>
         <div class="blog-post-author">
-          <p>{{ this.createdAt }} {{ this.user.username }}</p>
+          <p>{{ this.createdAt }} | {{ this.user.username }}</p>
         </div>
       </div>
-
-      {{!-- <div class="blog-post-title">
-        <p>{{ this.content }}</p>
-      </div> --}}
+      
     </div>
-    <hr>
   {{/each}}
 </div>

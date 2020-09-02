@@ -24,7 +24,11 @@ const postSchema = new Schema(
     location: { 
       type: [{ type: String }],
       trim: true
-     }
+    },
+    owner: {
+      type: Boolean,
+      default: false
+    }
   },
   {
     timestamps: true

@@ -15,7 +15,16 @@ const User = require('../models/user.model');
 
 // GET user profile page
 router.get('/:username', ensureAuthentication, (req, res) => {
-  res.render('users/user-profile');
+
+  User
+    .findById(req.user._id)
+    .populate('posts')
+    .then(loggedInUser => {
+      console.log('user.posts', loggedInUser.posts[0].title);
+      res.render('users/user-profile', {loggedInUser});
+    })
+    .catch(err => console.log(err));
+  
 });
 
 // GET user update page
