@@ -18,7 +18,15 @@ router.get('/', (req, res) => {
     .populate('user')
     .then(postsFromDB => {
 
-      console.log({postsFromDB});
+      postsFromDB.forEach(post => {
+        // console.log(post.user);
+        if (req.user) {
+          if (post.user._id === req.user._id) post.owner = true;
+        }
+        console.log({post});
+      });
+
+      console.log(postsFromDB[0]);
       res.render('blog/blog-page.hbs', {posts: postsFromDB});
 
     })
@@ -31,8 +39,15 @@ router.get('/create', ensureAuthentication, (req, res) => {
   res.render('blog/blog-post-create.hbs');
 });
 
+// POST create new post
 router.post('/create', fileUploader.single('image'), (req, res) => {
   const { title, content, location } = req.body;
+  let loggedInUser = "";
+
+  if (req.user) {
+    loggedInUser = req.user._id;
+  }
+  
   let newPost = {};
 
   if (req.file) {
@@ -55,15 +70,41 @@ router.post('/create', fileUploader.single('image'), (req, res) => {
   Post
     .create(newPost)
     .then(newPostDoc => {
-      console.log({newPostDoc});
-      res.redirect('/blog');
+      
+      User
+        .findById(loggedInUser)
+        .then(user => {
+          user.posts.push(newPostDoc._id);
+          user
+            .save()
+            .then(() => {
+
+              console.log({newPostDoc});
+              console.log({user});
+              res.redirect('/blog');
+
+            })
+            .catch(err => console.log(err));
+        })
+        .catch(err => console.log(err));
     })
     .catch(err => console.log(err));
-
 });
 
 // update a post, route protected
 // -USBAT updated any part of their post when logged in
+router.get('/edit/:blogPostId', ensureAuthentication, (req, res) => {
+  const { blogPostId } = req.params;
+
+  Post
+    .findById(blogPostId)
+    .then(postFromDB => {
+      console.log(`post to edit: ${postFromDB}`);
+      res.render('blog/blog-edit-page.hbs', {post : postFromDB});
+    })
+    .catch(err => console.log(err));
+
+});
 
 // delete a post, route protected
 // -USBAT delete thier post when logged in
