@@ -106,7 +106,38 @@ router.get('/edit/:blogPostId', ensureAuthentication, (req, res) => {
 
 });
 
+router.post('/edit/:blogPostId', fileUploader.single('image'), (req, res) => {
+  const { title, content } = req.body;
+  const blogPostId = req.params.blogPostId;
+  let updatedPost = {};
+
+  if (req.file) {
+    updatedPost = {
+      title,
+      content,
+      image: req.file.path
+    };
+  } else {
+    updatedPost = {
+      title,
+      content,
+      image: req.user.image
+    };
+  }
+
+  Post
+    .findByIdAndUpdate(blogPostId, updatedPost, {new: true})
+    .then(postFromDB => {
+      console.log({postFromDB});
+    })
+    .catch(err => console.log(err));
+
+});
+
 // delete a post, route protected
 // -USBAT delete thier post when logged in
+router.post('/delete', ensureAuthentication, (req, res) => {
+  
+});
 
 module.exports = router;
