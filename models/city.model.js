@@ -29,6 +29,10 @@ const citySchema = new Schema(
     },
     id: {
       type: String
+    },
+    loc: {
+      type: { type: String }
+      , coordinates: []
     }
   },
   {
@@ -36,6 +40,7 @@ const citySchema = new Schema(
   }
 );
 
+citySchema.index({ loc: '2dsphere' });
 const City = model('City', citySchema);
 
 module.exports = City;
