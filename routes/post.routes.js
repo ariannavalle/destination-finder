@@ -18,14 +18,6 @@ router.get('/', (req, res) => {
     .populate('user')
     .then(postsFromDB => {
 
-      postsFromDB.forEach(post => {
-        // console.log(post.user);
-        if (req.user) {
-          if (post.user._id === req.user._id) post.owner = true;
-        }
-        console.log({post});
-      });
-
       console.log(postsFromDB[0]);
       res.render('blog/blog-page.hbs', {posts: postsFromDB});
 
@@ -129,6 +121,7 @@ router.post('/edit/:blogPostId', fileUploader.single('image'), (req, res) => {
     .findByIdAndUpdate(blogPostId, updatedPost, {new: true})
     .then(postFromDB => {
       console.log({postFromDB});
+      res.redirect('/blog');
     })
     .catch(err => console.log(err));
 
@@ -136,7 +129,25 @@ router.post('/edit/:blogPostId', fileUploader.single('image'), (req, res) => {
 
 // delete a post, route protected
 // -USBAT delete thier post when logged in
-router.post('/delete', ensureAuthentication, (req, res) => {
+router.post('/delete/:postId', ensureAuthentication, (req, res) => {
+  const postId = req.params.postId;
+
+  User
+    .findByIdAndUpdate(req.user._id, {$pull: {posts: {$in: [postId]}}}, {new: true})
+    .then(userFromDB => {
+
+      Post
+        .findByIdAndDelete(postId)
+        .then(() => {
+
+          console.log(`post was deleted from ${userFromDB}`);
+          res.redirect('back');
+
+        })
+        .catch(err => console.log(err)); 
+    })
+    .catch(err => console.log(err));
+
   
 });
 
