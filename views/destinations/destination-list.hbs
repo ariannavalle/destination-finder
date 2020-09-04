@@ -1,6 +1,12 @@
 {{#each places}}
-  <div><h2>{{this.name}}</h2></div>
-  <div><h4>Rating: {{this.rate}}</h4></div>
+<div class="col-sm-6 col-md-3 thumbnail">
+  <div>
+    <h2>{{this.name}}, {{this.country_name}}</h2>
+  </div>
+  <div>
+    <h4>Rating: {{this.rate}}</h4>
+  </div>
   <img src={{this.img}}>
   <hr>
+</div>
 {{/each}}

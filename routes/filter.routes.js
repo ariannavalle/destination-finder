@@ -17,6 +17,7 @@ router.get('/', (req, res) => res.render('index'));
 
 router.post('/find-destination', (req, res, next) => {
 
+  //duckduckgo search for image
   async function searchImage(searchQuery) {
     const results = await ddg.image_search({
       query: searchQuery,
@@ -26,9 +27,11 @@ router.post('/find-destination', (req, res, next) => {
     if (results.length > 0) {
       return results[0].image;
     }
-    return ''
+    //if the search query does not return anything, default to this image
+    return 'https://www.primeplusmed.com/wp-content/uploads/2019/05/Travel-medicine.png'
   }
 
+  //this function takes care of calculating the average rating for each city
   async function getCityInfo(citiesArray) {
     const result = await citiesArray.reduce(async (obj, elem) => {
       if (!elem.city) return obj
@@ -41,6 +44,7 @@ router.post('/find-destination', (req, res, next) => {
         const pic = await searchImage(elem.city);
         obj[elem.city] = {
           name: elem.city,
+          country_name: elem.country,
           count: 1,
           total_rating: elem.rating,
           rate: elem.rating,
@@ -55,52 +59,50 @@ router.post('/find-destination', (req, res, next) => {
   //calling this api returns different locations based on the coordinates and categories provided
   axios
     //@todo remove "&limit=" before deploying
-    .get(`https://api.opentripmap.com/0.1/en/places/bbox?${req.body.coordinates}&kinds=${req.body.categories}&apikey=${opentripAPIKey}&limit=3`)
+    .get(`https://api.opentripmap.com/0.1/en/places/bbox?${req.body.coordinates}&kinds=${req.body.categories}&apikey=${opentripAPIKey}&limit=10`)
     .then(response => {
       console.log("coordinates from opentripmap", response.data.features[0].geometry.coordinates);
       const placeObj = [];
       const cities = [];
 
       response.data.features.forEach((place) => {
-        const prom = 
-        City.find(
-          {
-            loc: {
-              $near: {
-                $geometry: {
-                  type: "Point",
-                  // coordinates : [ <longitude>, <latitude> ]    
-                  coordinates: [place.geometry.coordinates[0], place.geometry.coordinates[1]]
-                },
-                // if we set a max distance, we might not get any results
-                // $maxDistance: 900000
+        const prom =
+
+          //$nearSphere — MongoDB geospatial query operator that returns geospatial objects in proximity to a point on a sphere
+          City.find(
+            {
+              loc: {
+                $near: {
+                  $geometry: {
+                    type: "Point",
+                    // coordinates : [ <longitude>, <latitude> ]    
+                    coordinates: [place.geometry.coordinates[0], place.geometry.coordinates[1]]
+                  },
+                  // if we set a max distance, we might not get any results
+                  // $maxDistance: 900000
+                }
               }
             }
-          }
-        )
-            cities.push(prom);
+          )
+        cities.push(prom);
       });
 
-      // console.log(cities)
       Promise.all(cities).then(async citiesAPIResponse => {
         citiesAPIResponse.forEach((data, i) => {
-          // console.log(i, data.data.results[0].components.city)
-
           placeObj.push({
             coordinates: response.data.features[i].geometry.coordinates,
             rating: response.data.features[i].properties.rate,
             name: response.data.features[i].properties.name,
             categories: response.data.features[i].properties.kinds,
-            // city: data.data.results[0].components.city
-            cities: cities[i]
+            city: data[i].city,
+            country: data[i].country
           });
         });
 
-
-
-        console.log(placeObj)
+        console.log("placeObj: ", placeObj)
         const places = await getCityInfo(placeObj)
-        // console.log('82',places);
+        console.log("places: ", places);
+
         res.render('destinations/destination-list', { places });
       })
         .catch(err => console.log(`Error finding the location's city: ${err}`));
