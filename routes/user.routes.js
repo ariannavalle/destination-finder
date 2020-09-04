@@ -8,6 +8,7 @@ const fileUploader = require('../configs/cloudinary.config');
 const ensureAuthentication = require('../configs/route-guard.config');
 
 const User = require('../models/user.model');
+const Post = require('../models/post.model');
 
 ////////////////////////////////////////////////////////////////////////
 ////////////////////////// user routes /////////////////////////////////
@@ -20,8 +21,14 @@ router.get('/:username', ensureAuthentication, (req, res) => {
     .findById(req.user._id)
     .populate('posts')
     .then(loggedInUser => {
-      console.log('user.posts', loggedInUser.posts[0].title);
-      res.render('users/user-profile', {loggedInUser});
+
+      if (loggedInUser.posts.length === 0) {
+        res.render('users/user-profile');
+      } else {
+        console.log('user.posts', loggedInUser.posts[0].title);
+        res.render('users/user-profile', {loggedInUser});
+      }
+      
     })
     .catch(err => console.log(err));
   
@@ -77,6 +84,19 @@ router.post('/:username/fav/:coordinates', (req, res) => {
     .find({username})
     .then(userFromDB => {
       console.log("addFav", userFromDB);
+      res.redirect(`/${req.user._id}`);
+    })
+    .catch(err => console.log(err));
+});
+
+router.get('/:username/delete', ensureAuthentication, (req, res) => {
+
+  User
+    .findByIdAndDelete(req.user._id)
+    .then(() => {
+      console.log('user was deleted');
+      req.logout();
+      res.redirect('/');
     })
     .catch(err => console.log(err));
 });

@@ -11,9 +11,16 @@
 </div>
 
 <div>
+    <button><a href="/{{ user._id }}/delete">Delete profile</a></button>
+</div>
+
+<div>
     <ul>
         {{#each loggedInUser.posts}}
             <li><a href="/blog/edit/{{ this._id }}">{{ this.title }}</a></li>
+            <form action="/blog/delete/{{ this._id }}" method="post">
+                <button>Delete post</button>
+            </form>
         {{/each}}
     </ul>
 </div>
