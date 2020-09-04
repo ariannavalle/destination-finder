@@ -45,7 +45,8 @@ const cities = [
     "admin_name": "Tōkyō",
     "capital": "primary",
     "population": "35676000",
-    "id": "1392685764"
+    "id": "1392685764",
+    "loc": { type: "Point", coordinates:  [ 139.7514,35.685] }
   },
   {
     "city": "New York",
@@ -57,7 +58,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "New York",
     "population": "19354922",
-    "id": "1840034016"
+    "id": "1840034016",
+    "loc": { type: "Point", coordinates:  [ -73.9249,40.6943] }
   },
   {
     "city": "Mexico City",
@@ -70,7 +72,8 @@ const cities = [
     "admin_name": "Ciudad de México",
     "capital": "primary",
     "population": "19028000",
-    "id": "1484247881"
+    "id": "1484247881",
+    "loc": { type: "Point", coordinates:  [ -99.131,19.4424] }
   },
   {
     "city": "Mumbai",
@@ -83,7 +86,8 @@ const cities = [
     "admin_name": "Mahārāshtra",
     "capital": "admin",
     "population": "18978000",
-    "id": "1356226629"
+    "id": "1356226629",
+    "loc": { type: "Point", coordinates:  [ 72.857,19.017] }
   },
   {
     "city": "São Paulo",
@@ -96,7 +100,8 @@ const cities = [
     "admin_name": "São Paulo",
     "capital": "admin",
     "population": "18845000",
-    "id": "1076532519"
+    "id": "1076532519",
+    "loc": { type: "Point", coordinates:  [ -46.625,-23.5587] }
   },
   {
     "city": "Delhi",
@@ -109,7 +114,8 @@ const cities = [
     "admin_name": "Delhi",
     "capital": "admin",
     "population": "15926000",
-    "id": "1356872604"
+    "id": "1356872604",
+    "loc": { type: "Point", coordinates:  [ 77.23,28.67] }
   },
   {
     "city": "Shanghai",
@@ -122,7 +128,8 @@ const cities = [
     "admin_name": "Shanghai",
     "capital": "admin",
     "population": "14987000",
-    "id": "1156073548"
+    "id": "1156073548",
+    "loc": { type: "Point", coordinates:  [ 121.4365,31.2165] }
   },
   {
     "city": "Kolkata",
@@ -135,7 +142,8 @@ const cities = [
     "admin_name": "West Bengal",
     "capital": "admin",
     "population": "14787000",
-    "id": "1356060520"
+    "id": "1356060520",
+    "loc": { type: "Point", coordinates:  [ 88.3247,22.495] }
   },
   {
     "city": "Los Angeles",
@@ -147,7 +155,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "California",
     "population": "12815475",
-    "id": "1840020491"
+    "id": "1840020491",
+    "loc": { type: "Point", coordinates:  [ -118.4068,34.1139] }
   },
   {
     "city": "Dhaka",
@@ -160,7 +169,8 @@ const cities = [
     "admin_name": "Dhaka",
     "capital": "primary",
     "population": "12797394",
-    "id": "1050529279"
+    "id": "1050529279",
+    "loc": { type: "Point", coordinates:  [ 90.4086,23.7231] }
   },
   {
     "city": "Buenos Aires",
@@ -173,7 +183,8 @@ const cities = [
     "admin_name": "Buenos Aires, Ciudad Autónoma de",
     "capital": "primary",
     "population": "12795000",
-    "id": "1032717330"
+    "id": "1032717330",
+    "loc": { type: "Point", coordinates:  [ -58.3975,-34.6025] }
   },
   {
     "city": "Karachi",
@@ -186,7 +197,8 @@ const cities = [
     "admin_name": "Sindh",
     "capital": "admin",
     "population": "12130000",
-    "id": "1586129469"
+    "id": "1586129469",
+    "loc": { type: "Point", coordinates:  [ 66.99,24.87] }
   },
   {
     "city": "Cairo",
@@ -199,7 +211,8 @@ const cities = [
     "admin_name": "Al Qāhirah",
     "capital": "primary",
     "population": "11893000",
-    "id": "1818253931"
+    "id": "1818253931",
+    "loc": { type: "Point", coordinates:  [ 31.25,30.05] }
   },
   {
     "city": "Rio de Janeiro",
@@ -212,7 +225,8 @@ const cities = [
     "admin_name": "Rio de Janeiro",
     "capital": "admin",
     "population": "11748000",
-    "id": "1076887657"
+    "id": "1076887657",
+    "loc": { type: "Point", coordinates:  [ -43.225,-22.925] }
   },
   {
     "city": "Ōsaka",
@@ -225,7 +239,8 @@ const cities = [
     "admin_name": "Ōsaka",
     "capital": "admin",
     "population": "11294000",
-    "id": "1392419823"
+    "id": "1392419823",
+    "loc": { type: "Point", coordinates:  [ 135.4601,34.75] }
   },
   {
     "city": "Beijing",
@@ -238,7 +253,8 @@ const cities = [
     "admin_name": "Beijing",
     "capital": "primary",
     "population": "11106000",
-    "id": "1156228865"
+    "id": "1156228865",
+    "loc": { type: "Point", coordinates:  [ 116.3883,39.9289] }
   },
   {
     "city": "Manila",
@@ -251,7 +267,8 @@ const cities = [
     "admin_name": "Manila",
     "capital": "primary",
     "population": "11100000",
-    "id": "1608618140"
+    "id": "1608618140",
+    "loc": { type: "Point", coordinates:  [ 120.9822,14.6042] }
   },
   {
     "city": "Moscow",
@@ -264,7 +281,8 @@ const cities = [
     "admin_name": "Moskva",
     "capital": "primary",
     "population": "10452000",
-    "id": "1643318494"
+    "id": "1643318494",
+    "loc": { type: "Point", coordinates:  [ 37.6155,55.7522] }
   },
   {
     "city": "Istanbul",
@@ -277,7 +295,8 @@ const cities = [
     "admin_name": "İstanbul",
     "capital": "admin",
     "population": "10061000",
-    "id": "1792756324"
+    "id": "1792756324",
+    "loc": { type: "Point", coordinates:  [ 29.01,41.105] }
   },
   {
     "city": "Paris",
@@ -290,7 +309,8 @@ const cities = [
     "admin_name": "Île-de-France",
     "capital": "primary",
     "population": "9904000",
-    "id": "1250015082"
+    "id": "1250015082",
+    "loc": { type: "Point", coordinates:  [ 2.3333,48.8667] }
   },
   {
     "city": "Seoul",
@@ -303,7 +323,8 @@ const cities = [
     "admin_name": "Seoul",
     "capital": "primary",
     "population": "9796000",
-    "id": "1410836482"
+    "id": "1410836482",
+    "loc": { type: "Point", coordinates:  [ 126.9997,37.5663] }
   },
   {
     "city": "Lagos",
@@ -316,7 +337,8 @@ const cities = [
     "admin_name": "Lagos",
     "capital": "minor",
     "population": "9466000",
-    "id": "1566593751"
+    "id": "1566593751",
+    "loc": { type: "Point", coordinates:  [ 3.3915,6.4433] }
   },
   {
     "city": "Jakarta",
@@ -329,7 +351,8 @@ const cities = [
     "admin_name": "Jakarta",
     "capital": "primary",
     "population": "9125000",
-    "id": "1360771077"
+    "id": "1360771077",
+    "loc": { type: "Point", coordinates:  [ 106.8294,-6.1744] }
   },
   {
     "city": "Guangzhou",
@@ -342,7 +365,8 @@ const cities = [
     "admin_name": "Guangdong",
     "capital": "admin",
     "population": "8829000",
-    "id": "1156237133"
+    "id": "1156237133",
+    "loc": { type: "Point", coordinates:  [ 113.325,23.145] }
   },
   {
     "city": "Chicago",
@@ -354,7 +378,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Illinois",
     "population": "8675982",
-    "id": "1840000494"
+    "id": "1840000494",
+    "loc": { type: "Point", coordinates:  [ -87.6862,41.8373] }
   },
   {
     "city": "London",
@@ -367,7 +392,8 @@ const cities = [
     "admin_name": "London, City of",
     "capital": "primary",
     "population": "8567000",
-    "id": "1826645935"
+    "id": "1826645935",
+    "loc": { type: "Point", coordinates:  [ -0.1167,51.5] }
   },
   {
     "city": "Lima",
@@ -380,7 +406,8 @@ const cities = [
     "admin_name": "Lima",
     "capital": "primary",
     "population": "8012000",
-    "id": "1604728603"
+    "id": "1604728603",
+    "loc": { type: "Point", coordinates:  [ -77.0501,-12.048] }
   },
   {
     "city": "Tehran",
@@ -393,7 +420,8 @@ const cities = [
     "admin_name": "Tehrān",
     "capital": "primary",
     "population": "7873000",
-    "id": "1364305026"
+    "id": "1364305026",
+    "loc": { type: "Point", coordinates:  [ 51.4243,35.6719] }
   },
   {
     "city": "Kinshasa",
@@ -406,7 +434,8 @@ const cities = [
     "admin_name": "Kinshasa",
     "capital": "primary",
     "population": "7843000",
-    "id": "1180000363"
+    "id": "1180000363",
+    "loc": { type: "Point", coordinates:  [ 15.315,-4.3297] }
   },
   {
     "city": "Bogotá",
@@ -419,7 +448,8 @@ const cities = [
     "admin_name": "Bogotá",
     "capital": "primary",
     "population": "7772000",
-    "id": "1170483426"
+    "id": "1170483426",
+    "loc": { type: "Point", coordinates:  [ -74.0833,4.5964] }
   },
   {
     "city": "Shenzhen",
@@ -432,7 +462,8 @@ const cities = [
     "admin_name": "Guangdong",
     "capital": "minor",
     "population": "7581000",
-    "id": "1156158707"
+    "id": "1156158707",
+    "loc": { type: "Point", coordinates:  [ 114.1221,22.5524] }
   },
   {
     "city": "Wuhan",
@@ -445,7 +476,8 @@ const cities = [
     "admin_name": "Hubei",
     "capital": "admin",
     "population": "7243000",
-    "id": "1156117184"
+    "id": "1156117184",
+    "loc": { type: "Point", coordinates:  [ 114.27,30.58] }
   },
   {
     "city": "Hong Kong",
@@ -456,7 +488,8 @@ const cities = [
     "iso2": "HK",
     "iso3": "HKG",
     "population": "7206000",
-    "id": "1344982653"
+    "id": "1344982653",
+    "loc": { type: "Point", coordinates:  [ 114.185,22.305] }
   },
   {
     "city": "Tianjin",
@@ -469,7 +502,8 @@ const cities = [
     "admin_name": "Tianjin",
     "capital": "admin",
     "population": "7180000",
-    "id": "1156174046"
+    "id": "1156174046",
+    "loc": { type: "Point", coordinates:  [ 117.2,39.13] }
   },
   {
     "city": "Chennai",
@@ -482,7 +516,8 @@ const cities = [
     "admin_name": "Tamil Nādu ",
     "capital": "admin",
     "population": "7163000",
-    "id": "1356374944"
+    "id": "1356374944",
+    "loc": { type: "Point", coordinates:  [ 80.28,13.09] }
   },
   {
     "city": "Taipei",
@@ -495,7 +530,8 @@ const cities = [
     "admin_name": "Taipei",
     "capital": "primary",
     "population": "6900273",
-    "id": "1158881289"
+    "id": "1158881289",
+    "loc": { type: "Point", coordinates:  [ 121.5683,25.0358] }
   },
   {
     "city": "Bengalūru",
@@ -508,7 +544,8 @@ const cities = [
     "admin_name": "Karnātaka",
     "capital": "admin",
     "population": "6787000",
-    "id": "1356410365"
+    "id": "1356410365",
+    "loc": { type: "Point", coordinates:  [ 77.56,12.97] }
   },
   {
     "city": "Bangkok",
@@ -521,7 +558,8 @@ const cities = [
     "admin_name": "Krung Thep Maha Nakhon",
     "capital": "primary",
     "population": "6704000",
-    "id": "1764068610"
+    "id": "1764068610",
+    "loc": { type: "Point", coordinates:  [ 100.5166,13.75] }
   },
   {
     "city": "Lahore",
@@ -534,7 +572,8 @@ const cities = [
     "admin_name": "Punjab",
     "capital": "admin",
     "population": "6577000",
-    "id": "1586801463"
+    "id": "1586801463",
+    "loc": { type: "Point", coordinates:  [ 74.35,31.56] }
   },
   {
     "city": "Chongqing",
@@ -547,7 +586,8 @@ const cities = [
     "admin_name": "Chongqing",
     "capital": "admin",
     "population": "6461000",
-    "id": "1156936556"
+    "id": "1156936556",
+    "loc": { type: "Point", coordinates:  [ 106.595,29.565] }
   },
   {
     "city": "Miami",
@@ -559,7 +599,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Florida",
     "population": "6381966",
-    "id": "1840015149"
+    "id": "1840015149",
+    "loc": { type: "Point", coordinates:  [ -80.2102,25.7839] }
   },
   {
     "city": "Hyderabad",
@@ -572,7 +613,8 @@ const cities = [
     "admin_name": "Telangana",
     "capital": "admin",
     "population": "6376000",
-    "id": "1356871768"
+    "id": "1356871768",
+    "loc": { type: "Point", coordinates:  [ 78.48,17.4] }
   },
   {
     "city": "Dallas",
@@ -584,7 +626,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Texas",
     "population": "5733259",
-    "id": "1840019440"
+    "id": "1840019440",
+    "loc": { type: "Point", coordinates:  [ -96.7662,32.7936] }
   },
   {
     "city": "Santiago",
@@ -597,7 +640,8 @@ const cities = [
     "admin_name": "Región Metropolitana",
     "capital": "primary",
     "population": "5720000",
-    "id": "1152554349"
+    "id": "1152554349",
+    "loc": { type: "Point", coordinates:  [ -70.667,-33.45] }
   },
   {
     "city": "Philadelphia",
@@ -609,7 +653,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Pennsylvania",
     "population": "5637884",
-    "id": "1840000673"
+    "id": "1840000673",
+    "loc": { type: "Point", coordinates:  [ -75.1339,40.0077] }
   },
   {
     "city": "Belo Horizonte",
@@ -622,7 +667,8 @@ const cities = [
     "admin_name": "Minas Gerais",
     "capital": "admin",
     "population": "5575000",
-    "id": "1076967355"
+    "id": "1076967355",
+    "loc": { type: "Point", coordinates:  [ -43.915,-19.915] }
   },
   {
     "city": "Madrid",
@@ -635,7 +681,8 @@ const cities = [
     "admin_name": "Madrid",
     "capital": "primary",
     "population": "5567000",
-    "id": "1724616994"
+    "id": "1724616994",
+    "loc": { type: "Point", coordinates:  [ -3.6834,40.4] }
   },
   {
     "city": "Houston",
@@ -647,7 +694,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Texas",
     "population": "5446468",
-    "id": "1840020925"
+    "id": "1840020925",
+    "loc": { type: "Point", coordinates:  [ -95.3905,29.7869] }
   },
   {
     "city": "Ahmadābād",
@@ -660,7 +708,8 @@ const cities = [
     "admin_name": "Gujarāt",
     "capital": "minor",
     "population": "5375000",
-    "id": "1356304381"
+    "id": "1356304381",
+    "loc": { type: "Point", coordinates:  [ 72.58,23.0301] }
   },
   {
     "city": "Ho Chi Minh City",
@@ -673,7 +722,8 @@ const cities = [
     "admin_name": "Hồ Chí Minh",
     "capital": "admin",
     "population": "5314000",
-    "id": "1704774326"
+    "id": "1704774326",
+    "loc": { type: "Point", coordinates:  [ 106.695,10.78] }
   },
   {
     "city": "Washington",
@@ -686,7 +736,8 @@ const cities = [
     "admin_name": "District of Columbia",
     "capital": "primary",
     "population": "5289420",
-    "id": "1840006060"
+    "id": "1840006060",
+    "loc": { type: "Point", coordinates:  [ -77.0163,38.9047] }
   },
   {
     "city": "Atlanta",
@@ -699,7 +750,8 @@ const cities = [
     "admin_name": "Georgia",
     "capital": "admin",
     "population": "5228750",
-    "id": "1840013660"
+    "id": "1840013660",
+    "loc": { type: "Point", coordinates:  [ -84.4225,33.7627] }
   },
   {
     "city": "Toronto",
@@ -712,7 +764,8 @@ const cities = [
     "admin_name": "Ontario",
     "capital": "admin",
     "population": "5213000",
-    "id": "1124279679"
+    "id": "1124279679",
+    "loc": { type: "Point", coordinates:  [ -79.42,43.7] }
   },
   {
     "city": "Singapore",
@@ -724,7 +777,8 @@ const cities = [
     "iso3": "SGP",
     "capital": "primary",
     "population": "5183700",
-    "id": "1702341327"
+    "id": "1702341327",
+    "loc": { type: "Point", coordinates:  [ 103.8558,1.293] }
   },
   {
     "city": "Luanda",
@@ -737,7 +791,8 @@ const cities = [
     "admin_name": "Luanda",
     "capital": "primary",
     "population": "5172900",
-    "id": "1024949724"
+    "id": "1024949724",
+    "loc": { type: "Point", coordinates:  [ 13.2344,-8.8383] }
   },
   {
     "city": "Baghdad",
@@ -750,7 +805,8 @@ const cities = [
     "admin_name": "Baghdād",
     "capital": "primary",
     "population": "5054000",
-    "id": "1368596238"
+    "id": "1368596238",
+    "loc": { type: "Point", coordinates:  [ 44.3939,33.3386] }
   },
   {
     "city": "Barcelona",
@@ -763,7 +819,8 @@ const cities = [
     "admin_name": "Catalonia",
     "capital": "admin",
     "population": "4920000",
-    "id": "1724594040"
+    "id": "1724594040",
+    "loc": { type: "Point", coordinates:  [ 2.1834,41.3833] }
   },
   {
     "city": "Hāora",
@@ -775,7 +832,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "West Bengal",
     "population": "4841638",
-    "id": "1356986516"
+    "id": "1356986516",
+    "loc": { type: "Point", coordinates:  [ 88.3299,22.5804] }
   },
   {
     "city": "Shenyang",
@@ -788,7 +846,8 @@ const cities = [
     "admin_name": "Liaoning",
     "capital": "admin",
     "population": "4787000",
-    "id": "1156309382"
+    "id": "1156309382",
+    "loc": { type: "Point", coordinates:  [ 123.45,41.805] }
   },
   {
     "city": "Khartoum",
@@ -801,7 +860,8 @@ const cities = [
     "admin_name": "Khartoum",
     "capital": "primary",
     "population": "4754000",
-    "id": "1729268475"
+    "id": "1729268475",
+    "loc": { type: "Point", coordinates:  [ 32.5342,15.5881] }
   },
   {
     "city": "Pune",
@@ -813,7 +873,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Mahārāshtra",
     "population": "4672000",
-    "id": "1356081074"
+    "id": "1356081074",
+    "loc": { type: "Point", coordinates:  [ 73.85,18.53] }
   },
   {
     "city": "Boston",
@@ -826,7 +887,8 @@ const cities = [
     "admin_name": "Massachusetts",
     "capital": "admin",
     "population": "4637537",
-    "id": "1840000455"
+    "id": "1840000455",
+    "loc": { type: "Point", coordinates:  [ -71.0846,42.3188] }
   },
   {
     "city": "Sydney",
@@ -839,7 +901,8 @@ const cities = [
     "admin_name": "New South Wales",
     "capital": "admin",
     "population": "4630000",
-    "id": "1036074917"
+    "id": "1036074917",
+    "loc": { type: "Point", coordinates:  [ 151.1852,-33.92] }
   },
   {
     "city": "Saint Petersburg",
@@ -852,7 +915,8 @@ const cities = [
     "admin_name": "Sankt-Peterburg",
     "capital": "admin",
     "population": "4553000",
-    "id": "1643616350"
+    "id": "1643616350",
+    "loc": { type: "Point", coordinates:  [ 30.316,59.939] }
   },
   {
     "city": "Chittagong",
@@ -865,7 +929,8 @@ const cities = [
     "admin_name": "Chittagong",
     "capital": "admin",
     "population": "4529000",
-    "id": "1050830722"
+    "id": "1050830722",
+    "loc": { type: "Point", coordinates:  [ 91.8,22.33] }
   },
   {
     "city": "Dongguan",
@@ -878,7 +943,8 @@ const cities = [
     "admin_name": "Guangdong",
     "capital": "minor",
     "population": "4528000",
-    "id": "1156478242"
+    "id": "1156478242",
+    "loc": { type: "Point", coordinates:  [ 113.7447,23.0489] }
   },
   {
     "city": "Riyadh",
@@ -891,7 +957,8 @@ const cities = [
     "admin_name": "Ar Riyāḑ",
     "capital": "primary",
     "population": "4465000",
-    "id": "1682999334"
+    "id": "1682999334",
+    "loc": { type: "Point", coordinates:  [ 46.7727,24.6408] }
   },
   {
     "city": "Hanoi",
@@ -904,7 +971,8 @@ const cities = [
     "admin_name": "Hà Nội",
     "capital": "primary",
     "population": "4378000",
-    "id": "1704413791"
+    "id": "1704413791",
+    "loc": { type: "Point", coordinates:  [ 105.85,21.0333] }
   },
   {
     "city": "Guadalajara",
@@ -917,7 +985,8 @@ const cities = [
     "admin_name": "Jalisco",
     "capital": "admin",
     "population": "4198000",
-    "id": "1484950208"
+    "id": "1484950208",
+    "loc": { type: "Point", coordinates:  [ -103.33,20.67] }
   },
   {
     "city": "Melbourne",
@@ -930,7 +999,8 @@ const cities = [
     "admin_name": "Victoria",
     "capital": "admin",
     "population": "4170000",
-    "id": "1036533631"
+    "id": "1036533631",
+    "loc": { type: "Point", coordinates:  [ 144.975,-37.82] }
   },
   {
     "city": "Alexandria",
@@ -943,7 +1013,8 @@ const cities = [
     "admin_name": "Al Iskandarīyah",
     "capital": "admin",
     "population": "4165000",
-    "id": "1818695837"
+    "id": "1818695837",
+    "loc": { type: "Point", coordinates:  [ 29.95,31.2] }
   },
   {
     "city": "Chengdu",
@@ -956,7 +1027,8 @@ const cities = [
     "admin_name": "Sichuan",
     "capital": "admin",
     "population": "4123000",
-    "id": "1156421555"
+    "id": "1156421555",
+    "loc": { type: "Point", coordinates:  [ 104.07,30.67] }
   },
   {
     "city": "Rangoon",
@@ -969,7 +1041,8 @@ const cities = [
     "admin_name": "Yangon",
     "capital": "primary",
     "population": "4088000",
-    "id": "1104616656"
+    "id": "1104616656",
+    "loc": { type: "Point", coordinates:  [ 96.1667,16.7834] }
   },
   {
     "city": "Phoenix",
@@ -982,7 +1055,8 @@ const cities = [
     "admin_name": "Arizona",
     "capital": "admin",
     "population": "4081849",
-    "id": "1840020568"
+    "id": "1840020568",
+    "loc": { type: "Point", coordinates:  [ -112.0891,33.5722] }
   },
   {
     "city": "Xi’an",
@@ -995,7 +1069,8 @@ const cities = [
     "admin_name": "Shaanxi",
     "capital": "admin",
     "population": "4009000",
-    "id": "1156244079"
+    "id": "1156244079",
+    "loc": { type: "Point", coordinates:  [ 108.895,34.275] }
   },
   {
     "city": "Porto Alegre",
@@ -1008,7 +1083,8 @@ const cities = [
     "admin_name": "Rio Grande do Sul",
     "capital": "admin",
     "population": "3917000",
-    "id": "1076658221"
+    "id": "1076658221",
+    "loc": { type: "Point", coordinates:  [ -51.2,-30.05] }
   },
   {
     "city": "Sūrat",
@@ -1020,7 +1096,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Gujarāt",
     "population": "3842000",
-    "id": "1356758738"
+    "id": "1356758738",
+    "loc": { type: "Point", coordinates:  [ 72.84,21.2] }
   },
   {
     "city": "Hechi",
@@ -1032,7 +1109,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Guangxi",
     "population": "3830000",
-    "id": "1156868701"
+    "id": "1156868701",
+    "loc": { type: "Point", coordinates:  [ 109.6091,23.0965] }
   },
   {
     "city": "Abidjan",
@@ -1045,7 +1123,8 @@ const cities = [
     "admin_name": "Abidjan",
     "capital": "primary",
     "population": "3802000",
-    "id": "1384207980"
+    "id": "1384207980",
+    "loc": { type: "Point", coordinates:  [ -4.04,5.32] }
   },
   {
     "city": "Brasília",
@@ -1058,7 +1137,8 @@ const cities = [
     "admin_name": "Distrito Federal",
     "capital": "primary",
     "population": "3716996",
-    "id": "1076144436"
+    "id": "1076144436",
+    "loc": { type: "Point", coordinates:  [ -47.9161,-15.7833] }
   },
   {
     "city": "Ankara",
@@ -1071,7 +1151,8 @@ const cities = [
     "admin_name": "Ankara",
     "capital": "primary",
     "population": "3716000",
-    "id": "1792572891"
+    "id": "1792572891",
+    "loc": { type: "Point", coordinates:  [ 32.8644,39.9272] }
   },
   {
     "city": "Monterrey",
@@ -1084,7 +1165,8 @@ const cities = [
     "admin_name": "Nuevo León",
     "capital": "admin",
     "population": "3712000",
-    "id": "1484559591"
+    "id": "1484559591",
+    "loc": { type: "Point", coordinates:  [ -100.33,25.67] }
   },
   {
     "city": "Yokohama",
@@ -1097,7 +1179,8 @@ const cities = [
     "admin_name": "Kanagawa",
     "capital": "admin",
     "population": "3697894",
-    "id": "1392118339"
+    "id": "1392118339",
+    "loc": { type: "Point", coordinates:  [ 139.58,35.32] }
   },
   {
     "city": "Nanjing",
@@ -1110,7 +1193,8 @@ const cities = [
     "admin_name": "Jiangsu",
     "capital": "admin",
     "population": "3679000",
-    "id": "1156644065"
+    "id": "1156644065",
+    "loc": { type: "Point", coordinates:  [ 118.78,32.05] }
   },
   {
     "city": "Montréal",
@@ -1122,7 +1206,8 @@ const cities = [
     "iso3": "CAN",
     "admin_name": "Québec",
     "population": "3678000",
-    "id": "1124586170"
+    "id": "1124586170",
+    "loc": { type: "Point", coordinates:  [ -73.5833,45.5] }
   },
   {
     "city": "Guiyang",
@@ -1135,7 +1220,8 @@ const cities = [
     "admin_name": "Guizhou",
     "capital": "admin",
     "population": "3662000",
-    "id": "1156932620"
+    "id": "1156932620",
+    "loc": { type: "Point", coordinates:  [ 106.72,26.58] }
   },
   {
     "city": "Recife",
@@ -1148,7 +1234,8 @@ const cities = [
     "admin_name": "Pernambuco",
     "capital": "admin",
     "population": "3651000",
-    "id": "1076137337"
+    "id": "1076137337",
+    "loc": { type: "Point", coordinates:  [ -34.9156,-8.0756] }
   },
   {
     "city": "Seattle",
@@ -1160,7 +1247,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Washington",
     "population": "3643765",
-    "id": "1840021117"
+    "id": "1840021117",
+    "loc": { type: "Point", coordinates:  [ -122.3244,47.6211] }
   },
   {
     "city": "Harbin",
@@ -1173,7 +1261,8 @@ const cities = [
     "admin_name": "Heilongjiang",
     "capital": "admin",
     "population": "3621000",
-    "id": "1156241528"
+    "id": "1156241528",
+    "loc": { type: "Point", coordinates:  [ 126.65,45.75] }
   },
   {
     "city": "San Francisco",
@@ -1185,7 +1274,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "California",
     "population": "3603761",
-    "id": "1840021543"
+    "id": "1840021543",
+    "loc": { type: "Point", coordinates:  [ -122.443,37.7562] }
   },
   {
     "city": "Fortaleza",
@@ -1198,7 +1288,8 @@ const cities = [
     "admin_name": "Ceará",
     "capital": "admin",
     "population": "3602319",
-    "id": "1076567885"
+    "id": "1076567885",
+    "loc": { type: "Point", coordinates:  [ -38.58,-3.75] }
   },
   {
     "city": "Zhangzhou",
@@ -1211,7 +1302,8 @@ const cities = [
     "admin_name": "Fujian",
     "capital": "minor",
     "population": "3531147",
-    "id": "1156241637"
+    "id": "1156241637",
+    "loc": { type: "Point", coordinates:  [ 117.67,24.5204] }
   },
   {
     "city": "Detroit",
@@ -1223,7 +1315,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Michigan",
     "population": "3522206",
-    "id": "1840003971"
+    "id": "1840003971",
+    "loc": { type: "Point", coordinates:  [ -83.1024,42.3834] }
   },
   {
     "city": "Salvador",
@@ -1236,7 +1329,8 @@ const cities = [
     "admin_name": "Bahia",
     "capital": "admin",
     "population": "3484000",
-    "id": "1076923789"
+    "id": "1076923789",
+    "loc": { type: "Point", coordinates:  [ -38.48,-12.97] }
   },
   {
     "city": "Busan",
@@ -1249,7 +1343,8 @@ const cities = [
     "admin_name": "Busan",
     "capital": "admin",
     "population": "3480000",
-    "id": "1410601465"
+    "id": "1410601465",
+    "loc": { type: "Point", coordinates:  [ 129.01,35.0951] }
   },
   {
     "city": "Johannesburg",
@@ -1262,7 +1357,8 @@ const cities = [
     "admin_name": "Gauteng",
     "capital": "admin",
     "population": "3435000",
-    "id": "1710550792"
+    "id": "1710550792",
+    "loc": { type: "Point", coordinates:  [ 28.03,-26.17] }
   },
   {
     "city": "Berlin",
@@ -1275,7 +1371,8 @@ const cities = [
     "admin_name": "Berlin",
     "capital": "primary",
     "population": "3406000",
-    "id": "1276451290"
+    "id": "1276451290",
+    "loc": { type: "Point", coordinates:  [ 13.4015,52.5218] }
   },
   {
     "city": "Algiers",
@@ -1288,7 +1385,8 @@ const cities = [
     "admin_name": "Alger",
     "capital": "primary",
     "population": "3354000",
-    "id": "1012973369"
+    "id": "1012973369",
+    "loc": { type: "Point", coordinates:  [ 3.0506,36.7631] }
   },
   {
     "city": "Rome",
@@ -1301,7 +1399,8 @@ const cities = [
     "admin_name": "Lazio",
     "capital": "primary",
     "population": "3339000",
-    "id": "1380382862"
+    "id": "1380382862",
+    "loc": { type: "Point", coordinates:  [ 12.4833,41.896] }
   },
   {
     "city": "Pyongyang",
@@ -1314,7 +1413,8 @@ const cities = [
     "admin_name": "P’yŏngyang",
     "capital": "primary",
     "population": "3300000",
-    "id": "1408738594"
+    "id": "1408738594",
+    "loc": { type: "Point", coordinates:  [ 125.7547,39.0194] }
   },
   {
     "city": "Medellín",
@@ -1327,7 +1427,8 @@ const cities = [
     "admin_name": "Antioquia",
     "capital": "admin",
     "population": "3297000",
-    "id": "1170680389"
+    "id": "1170680389",
+    "loc": { type: "Point", coordinates:  [ -75.575,6.275] }
   },
   {
     "city": "Kabul",
@@ -1340,7 +1441,8 @@ const cities = [
     "admin_name": "Kābul",
     "capital": "primary",
     "population": "3277000",
-    "id": "1004993580"
+    "id": "1004993580",
+    "loc": { type: "Point", coordinates:  [ 69.1833,34.5167] }
   },
   {
     "city": "Athens",
@@ -1353,7 +1455,8 @@ const cities = [
     "admin_name": "Attikí",
     "capital": "primary",
     "population": "3242000",
-    "id": "1300715560"
+    "id": "1300715560",
+    "loc": { type: "Point", coordinates:  [ 23.7333,37.9833] }
   },
   {
     "city": "Nagoya",
@@ -1366,7 +1469,8 @@ const cities = [
     "admin_name": "Aichi",
     "capital": "admin",
     "population": "3230000",
-    "id": "1392407472"
+    "id": "1392407472",
+    "loc": { type: "Point", coordinates:  [ 136.915,35.155] }
   },
   {
     "city": "Cape Town",
@@ -1379,7 +1483,8 @@ const cities = [
     "admin_name": "Western Cape",
     "capital": "primary",
     "population": "3215000",
-    "id": "1710680650"
+    "id": "1710680650",
+    "loc": { type: "Point", coordinates:  [ 18.435,-33.92] }
   },
   {
     "city": "San Diego",
@@ -1391,7 +1496,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "California",
     "population": "3210314",
-    "id": "1840021990"
+    "id": "1840021990",
+    "loc": { type: "Point", coordinates:  [ -117.1225,32.8312] }
   },
   {
     "city": "Changchun",
@@ -1404,7 +1510,8 @@ const cities = [
     "admin_name": "Jilin",
     "capital": "admin",
     "population": "3183000",
-    "id": "1156078103"
+    "id": "1156078103",
+    "loc": { type: "Point", coordinates:  [ 125.34,43.865] }
   },
   {
     "city": "Casablanca",
@@ -1417,7 +1524,8 @@ const cities = [
     "admin_name": "Casablanca-Settat",
     "capital": "admin",
     "population": "3181000",
-    "id": "1504175315"
+    "id": "1504175315",
+    "loc": { type: "Point", coordinates:  [ -7.6164,33.6] }
   },
   {
     "city": "Dalian",
@@ -1429,7 +1537,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Liaoning",
     "population": "3167000",
-    "id": "1156175472"
+    "id": "1156175472",
+    "loc": { type: "Point", coordinates:  [ 121.6298,38.9228] }
   },
   {
     "city": "Cawnpore",
@@ -1441,7 +1550,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Uttar Pradesh",
     "population": "3162000",
-    "id": "1356575238"
+    "id": "1356575238",
+    "loc": { type: "Point", coordinates:  [ 80.32,26.46] }
   },
   {
     "city": "Kano",
@@ -1454,7 +1564,8 @@ const cities = [
     "admin_name": "Kano",
     "capital": "admin",
     "population": "3140000",
-    "id": "1566422868"
+    "id": "1566422868",
+    "loc": { type: "Point", coordinates:  [ 8.52,12] }
   },
   {
     "city": "Tel Aviv-Yafo",
@@ -1467,7 +1578,8 @@ const cities = [
     "admin_name": "Tel Aviv",
     "capital": "admin",
     "population": "3112000",
-    "id": "1376401542"
+    "id": "1376401542",
+    "loc": { type: "Point", coordinates:  [ 34.77,32.08] }
   },
   {
     "city": "Addis Ababa",
@@ -1480,7 +1592,8 @@ const cities = [
     "admin_name": "Ādīs Ābeba",
     "capital": "primary",
     "population": "3100000",
-    "id": "1231824991"
+    "id": "1231824991",
+    "loc": { type: "Point", coordinates:  [ 38.7,9.0333] }
   },
   {
     "city": "Curitiba",
@@ -1493,7 +1606,8 @@ const cities = [
     "admin_name": "Paraná",
     "capital": "admin",
     "population": "3084000",
-    "id": "1076701712"
+    "id": "1076701712",
+    "loc": { type: "Point", coordinates:  [ -49.32,-25.42] }
   },
   {
     "city": "Zibo",
@@ -1505,7 +1619,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Shandong",
     "population": "3061000",
-    "id": "1156381094"
+    "id": "1156381094",
+    "loc": { type: "Point", coordinates:  [ 118.05,36.8] }
   },
   {
     "city": "Jeddah",
@@ -1517,7 +1632,8 @@ const cities = [
     "iso3": "SAU",
     "admin_name": "Makkah al Mukarramah",
     "population": "3012000",
-    "id": "1682926944"
+    "id": "1682926944",
+    "loc": { type: "Point", coordinates:  [ 39.2192,21.5169] }
   },
   {
     "city": "Nairobi",
@@ -1530,7 +1646,8 @@ const cities = [
     "admin_name": "Nairobi City",
     "capital": "primary",
     "population": "3010000",
-    "id": "1404000661"
+    "id": "1404000661",
+    "loc": { type: "Point", coordinates:  [ 36.8167,-1.2833] }
   },
   {
     "city": "Hangzhou",
@@ -1543,7 +1660,8 @@ const cities = [
     "admin_name": "Zhejiang",
     "capital": "admin",
     "population": "3007000",
-    "id": "1156275243"
+    "id": "1156275243",
+    "loc": { type: "Point", coordinates:  [ 120.17,30.25] }
   },
   {
     "city": "Benoni",
@@ -1555,7 +1673,8 @@ const cities = [
     "iso3": "ZAF",
     "admin_name": "Gauteng",
     "population": "2986000",
-    "id": "1710880986"
+    "id": "1710880986",
+    "loc": { type: "Point", coordinates:  [ 28.3299,-26.1496] }
   },
   {
     "city": "Caracas",
@@ -1568,7 +1687,8 @@ const cities = [
     "admin_name": "Distrito Capital",
     "capital": "primary",
     "population": "2985000",
-    "id": "1862748204"
+    "id": "1862748204",
+    "loc": { type: "Point", coordinates:  [ -66.917,10.501] }
   },
   {
     "city": "Milan",
@@ -1581,7 +1701,8 @@ const cities = [
     "admin_name": "Lombardy",
     "capital": "admin",
     "population": "2945000",
-    "id": "1380724377"
+    "id": "1380724377",
+    "loc": { type: "Point", coordinates:  [ 9.205,45.47] }
   },
   {
     "city": "Stuttgart",
@@ -1594,7 +1715,8 @@ const cities = [
     "admin_name": "Baden-Württemberg",
     "capital": "admin",
     "population": "2944700",
-    "id": "1276171358"
+    "id": "1276171358",
+    "loc": { type: "Point", coordinates:  [ 9.2,48.78] }
   },
   {
     "city": "Kunming",
@@ -1607,7 +1729,8 @@ const cities = [
     "admin_name": "Yunnan",
     "capital": "admin",
     "population": "2931000",
-    "id": "1156477539"
+    "id": "1156477539",
+    "loc": { type: "Point", coordinates:  [ 102.68,25.07] }
   },
   {
     "city": "Dar es Salaam",
@@ -1620,7 +1743,8 @@ const cities = [
     "admin_name": "Dar es Salaam",
     "capital": "primary",
     "population": "2930000",
-    "id": "1834843853"
+    "id": "1834843853",
+    "loc": { type: "Point", coordinates:  [ 39.2683,-6.8] }
   },
   {
     "city": "Minneapolis",
@@ -1632,7 +1756,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Minnesota",
     "population": "2926757",
-    "id": "1840007830"
+    "id": "1840007830",
+    "loc": { type: "Point", coordinates:  [ -93.2678,44.9635] }
   },
   {
     "city": "Jaipur",
@@ -1645,7 +1770,8 @@ const cities = [
     "admin_name": "Rājasthān",
     "capital": "admin",
     "population": "2917000",
-    "id": "1356293537"
+    "id": "1356293537",
+    "loc": { type: "Point", coordinates:  [ 75.81,26.9211] }
   },
   {
     "city": "Taiyuan",
@@ -1658,7 +1784,8 @@ const cities = [
     "admin_name": "Shanxi",
     "capital": "admin",
     "population": "2913000",
-    "id": "1156632014"
+    "id": "1156632014",
+    "loc": { type: "Point", coordinates:  [ 112.5451,37.875] }
   },
   {
     "city": "Frankfurt",
@@ -1671,7 +1798,8 @@ const cities = [
     "admin_name": "Hesse",
     "capital": "minor",
     "population": "2895000",
-    "id": "1276054552"
+    "id": "1276054552",
+    "loc": { type: "Point", coordinates:  [ 8.675,50.1] }
   },
   {
     "city": "Qingdao",
@@ -1684,7 +1812,8 @@ const cities = [
     "admin_name": "Shandong",
     "capital": "minor",
     "population": "2866000",
-    "id": "1156112588"
+    "id": "1156112588",
+    "loc": { type: "Point", coordinates:  [ 120.33,36.09] }
   },
   {
     "city": "Surabaya",
@@ -1697,7 +1826,8 @@ const cities = [
     "admin_name": "Jawa Timur",
     "capital": "admin",
     "population": "2845000",
-    "id": "1360484663"
+    "id": "1360484663",
+    "loc": { type: "Point", coordinates:  [ 112.7508,-7.2492] }
   },
   {
     "city": "Lisbon",
@@ -1710,7 +1840,8 @@ const cities = [
     "admin_name": "Lisboa",
     "capital": "primary",
     "population": "2812000",
-    "id": "1620619017"
+    "id": "1620619017",
+    "loc": { type: "Point", coordinates:  [ -9.1449,38.7227] }
   },
   {
     "city": "Tampa",
@@ -1722,7 +1853,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Florida",
     "population": "2804240",
-    "id": "1840015982"
+    "id": "1840015982",
+    "loc": { type: "Point", coordinates:  [ -82.4451,27.9942] }
   },
   {
     "city": "Jinan",
@@ -1735,7 +1867,8 @@ const cities = [
     "admin_name": "Shandong",
     "capital": "admin",
     "population": "2798000",
-    "id": "1156972469"
+    "id": "1156972469",
+    "loc": { type: "Point", coordinates:  [ 116.995,36.675] }
   },
   {
     "city": "Fukuoka",
@@ -1748,7 +1881,8 @@ const cities = [
     "admin_name": "Fukuoka",
     "capital": "admin",
     "population": "2792000",
-    "id": "1392576294"
+    "id": "1392576294",
+    "loc": { type: "Point", coordinates:  [ 130.41,33.595] }
   },
   {
     "city": "Campinas",
@@ -1760,7 +1894,8 @@ const cities = [
     "iso3": "BRA",
     "admin_name": "São Paulo",
     "population": "2791000",
-    "id": "1076145766"
+    "id": "1076145766",
+    "loc": { type: "Point", coordinates:  [ -47.1,-22.9] }
   },
   {
     "city": "Denver",
@@ -1773,7 +1908,8 @@ const cities = [
     "admin_name": "Colorado",
     "capital": "admin",
     "population": "2787266",
-    "id": "1840018789"
+    "id": "1840018789",
+    "loc": { type: "Point", coordinates:  [ -104.8759,39.7621] }
   },
   {
     "city": "Kaohsiung",
@@ -1786,7 +1922,8 @@ const cities = [
     "admin_name": "Kaohsiung",
     "capital": "admin",
     "population": "2769072",
-    "id": "1158331334"
+    "id": "1158331334",
+    "loc": { type: "Point", coordinates:  [ 120.2666,22.6333] }
   },
   {
     "city": "Quezon City",
@@ -1799,7 +1936,8 @@ const cities = [
     "admin_name": "Quezon",
     "capital": "admin",
     "population": "2761720",
-    "id": "1608974097"
+    "id": "1608974097",
+    "loc": { type: "Point", coordinates:  [ 121.03,14.6504] }
   },
   {
     "city": "Katowice",
@@ -1812,7 +1950,8 @@ const cities = [
     "admin_name": "Śląskie",
     "capital": "admin",
     "population": "2746000",
-    "id": "1616798495"
+    "id": "1616798495",
+    "loc": { type: "Point", coordinates:  [ 19.02,50.2604] }
   },
   {
     "city": "Aleppo",
@@ -1825,7 +1964,8 @@ const cities = [
     "admin_name": "Ḩalab",
     "capital": "admin",
     "population": "2738000",
-    "id": "1760366651"
+    "id": "1760366651",
+    "loc": { type: "Point", coordinates:  [ 37.17,36.23] }
   },
   {
     "city": "Durban",
@@ -1837,7 +1977,8 @@ const cities = [
     "iso3": "ZAF",
     "admin_name": "KwaZulu-Natal",
     "population": "2729000",
-    "id": "1710149138"
+    "id": "1710149138",
+    "loc": { type: "Point", coordinates:  [ 30.98,-29.865] }
   },
   {
     "city": "Kyiv",
@@ -1850,7 +1991,8 @@ const cities = [
     "admin_name": "Kyyiv, Misto",
     "capital": "primary",
     "population": "2709000",
-    "id": "1804382913"
+    "id": "1804382913",
+    "loc": { type: "Point", coordinates:  [ 30.5166,50.4334] }
   },
   {
     "city": "Lucknow",
@@ -1863,7 +2005,8 @@ const cities = [
     "admin_name": "Uttar Pradesh",
     "capital": "admin",
     "population": "2695000",
-    "id": "1356891790"
+    "id": "1356891790",
+    "loc": { type: "Point", coordinates:  [ 80.915,26.855] }
   },
   {
     "city": "Giza",
@@ -1876,7 +2019,8 @@ const cities = [
     "admin_name": "Al Jīzah",
     "capital": "admin",
     "population": "2681863",
-    "id": "1818925479"
+    "id": "1818925479",
+    "loc": { type: "Point", coordinates:  [ 31.19,30.01] }
   },
   {
     "city": "Zhengzhou",
@@ -1889,7 +2033,8 @@ const cities = [
     "admin_name": "Henan",
     "capital": "admin",
     "population": "2636000",
-    "id": "1156183137"
+    "id": "1156183137",
+    "loc": { type: "Point", coordinates:  [ 113.6651,34.755] }
   },
   {
     "city": "Taichung",
@@ -1902,7 +2047,8 @@ const cities = [
     "admin_name": "Taichung",
     "capital": "admin",
     "population": "2629323",
-    "id": "1158689622"
+    "id": "1158689622",
+    "loc": { type: "Point", coordinates:  [ 120.6817,24.1521] }
   },
   {
     "city": "Brooklyn",
@@ -1914,7 +2060,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "New York",
     "population": "2629150",
-    "id": "1840034030"
+    "id": "1840034030",
+    "loc": { type: "Point", coordinates:  [ -73.9496,40.6501] }
   },
   {
     "city": "Ibadan",
@@ -1927,7 +2074,8 @@ const cities = [
     "admin_name": "Oyo",
     "capital": "admin",
     "population": "2628000",
-    "id": "1566366407"
+    "id": "1566366407",
+    "loc": { type: "Point", coordinates:  [ 3.93,7.38] }
   },
   {
     "city": "Faisalabad",
@@ -1940,7 +2088,8 @@ const cities = [
     "admin_name": "Punjab",
     "capital": "minor",
     "population": "2617000",
-    "id": "1586323916"
+    "id": "1586323916",
+    "loc": { type: "Point", coordinates:  [ 73.11,31.41] }
   },
   {
     "city": "Fuzhou",
@@ -1953,7 +2102,8 @@ const cities = [
     "admin_name": "Fujian",
     "capital": "admin",
     "population": "2606000",
-    "id": "1156188037"
+    "id": "1156188037",
+    "loc": { type: "Point", coordinates:  [ 119.3,26.08] }
   },
   {
     "city": "Changsha",
@@ -1966,7 +2116,8 @@ const cities = [
     "admin_name": "Hunan",
     "capital": "admin",
     "population": "2604000",
-    "id": "1156961497"
+    "id": "1156961497",
+    "loc": { type: "Point", coordinates:  [ 112.97,28.2] }
   },
   {
     "city": "Dakar",
@@ -1979,7 +2130,8 @@ const cities = [
     "admin_name": "Dakar",
     "capital": "primary",
     "population": "2604000",
-    "id": "1686604760"
+    "id": "1686604760",
+    "loc": { type: "Point", coordinates:  [ -17.4731,14.7158] }
   },
   {
     "city": "İzmir",
@@ -1992,7 +2144,8 @@ const cities = [
     "admin_name": "İzmir",
     "capital": "admin",
     "population": "2587000",
-    "id": "1792725579"
+    "id": "1792725579",
+    "loc": { type: "Point", coordinates:  [ 27.1518,38.4361] }
   },
   {
     "city": "Xiangtan",
@@ -2004,7 +2157,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Hunan",
     "population": "2586948",
-    "id": "1156195684"
+    "id": "1156195684",
+    "loc": { type: "Point", coordinates:  [ 112.9,27.8504] }
   },
   {
     "city": "Lanzhou",
@@ -2017,7 +2171,8 @@ const cities = [
     "admin_name": "Gansu",
     "capital": "admin",
     "population": "2561000",
-    "id": "1156280566"
+    "id": "1156280566",
+    "loc": { type: "Point", coordinates:  [ 103.792,36.056] }
   },
   {
     "city": "Incheon",
@@ -2030,7 +2185,8 @@ const cities = [
     "admin_name": "Incheon",
     "capital": "admin",
     "population": "2550000",
-    "id": "1410160313"
+    "id": "1410160313",
+    "loc": { type: "Point", coordinates:  [ 126.6422,37.4761] }
   },
   {
     "city": "Sapporo",
@@ -2043,7 +2199,8 @@ const cities = [
     "admin_name": "Hokkaidō",
     "capital": "admin",
     "population": "2544000",
-    "id": "1392000195"
+    "id": "1392000195",
+    "loc": { type: "Point", coordinates:  [ 141.34,43.075] }
   },
   {
     "city": "Xiamen",
@@ -2056,7 +2213,8 @@ const cities = [
     "admin_name": "Fujian",
     "capital": "minor",
     "population": "2519000",
-    "id": "1156212809"
+    "id": "1156212809",
+    "loc": { type: "Point", coordinates:  [ 118.08,24.45] }
   },
   {
     "city": "Guayaquil",
@@ -2069,7 +2227,8 @@ const cities = [
     "admin_name": "Guayas",
     "capital": "admin",
     "population": "2514000",
-    "id": "1218802178"
+    "id": "1218802178",
+    "loc": { type: "Point", coordinates:  [ -79.92,-2.22] }
   },
   {
     "city": "George Town",
@@ -2082,7 +2241,8 @@ const cities = [
     "admin_name": "Pulau Pinang",
     "capital": "admin",
     "population": "2500000",
-    "id": "1458236750"
+    "id": "1458236750",
+    "loc": { type: "Point", coordinates:  [ 100.3294,5.4136] }
   },
   {
     "city": "Mashhad",
@@ -2095,7 +2255,8 @@ const cities = [
     "admin_name": "Khorāsān-e Raẕavī",
     "capital": "admin",
     "population": "2469000",
-    "id": "1364123206"
+    "id": "1364123206",
+    "loc": { type: "Point", coordinates:  [ 59.57,36.27] }
   },
   {
     "city": "Damascus",
@@ -2108,7 +2269,8 @@ const cities = [
     "admin_name": "Dimashq",
     "capital": "primary",
     "population": "2466000",
-    "id": "1760685964"
+    "id": "1760685964",
+    "loc": { type: "Point", coordinates:  [ 36.3,33.5] }
   },
   {
     "city": "Daegu",
@@ -2121,7 +2283,8 @@ const cities = [
     "admin_name": "Daegu",
     "capital": "admin",
     "population": "2460000",
-    "id": "1410095252"
+    "id": "1410095252",
+    "loc": { type: "Point", coordinates:  [ 128.607,35.8668] }
   },
   {
     "city": "Nāgpur",
@@ -2133,7 +2296,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Mahārāshtra",
     "population": "2454000",
-    "id": "1356365743"
+    "id": "1356365743",
+    "loc": { type: "Point", coordinates:  [ 79.09,21.17] }
   },
   {
     "city": "Lianshan",
@@ -2146,7 +2310,8 @@ const cities = [
     "admin_name": "Liaoning",
     "capital": "minor",
     "population": "2426000",
-    "id": "1156046704"
+    "id": "1156046704",
+    "loc": { type: "Point", coordinates:  [ 120.83,40.7503] }
   },
   {
     "city": "Shijiazhuang",
@@ -2159,7 +2324,8 @@ const cities = [
     "admin_name": "Hebei",
     "capital": "admin",
     "population": "2417000",
-    "id": "1156217541"
+    "id": "1156217541",
+    "loc": { type: "Point", coordinates:  [ 114.48,38.05] }
   },
   {
     "city": "Tunis",
@@ -2172,7 +2338,8 @@ const cities = [
     "admin_name": "Tunis",
     "capital": "primary",
     "population": "2412500",
-    "id": "1788742103"
+    "id": "1788742103",
+    "loc": { type: "Point", coordinates:  [ 10.1797,36.8028] }
   },
   {
     "city": "Vienna",
@@ -2185,7 +2352,8 @@ const cities = [
     "admin_name": "Wien",
     "capital": "primary",
     "population": "2400000",
-    "id": "1040261752"
+    "id": "1040261752",
+    "loc": { type: "Point", coordinates:  [ 16.3666,48.2] }
   },
   {
     "city": "Jilin",
@@ -2197,7 +2365,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Jilin",
     "population": "2396000",
-    "id": "1156646448"
+    "id": "1156646448",
+    "loc": { type: "Point", coordinates:  [ 126.55,43.85] }
   },
   {
     "city": "Omdurman",
@@ -2209,7 +2378,8 @@ const cities = [
     "iso3": "SDN",
     "admin_name": "Khartoum",
     "population": "2395159",
-    "id": "1729912179"
+    "id": "1729912179",
+    "loc": { type: "Point", coordinates:  [ 32.48,15.6167] }
   },
   {
     "city": "Bandung",
@@ -2222,7 +2392,8 @@ const cities = [
     "admin_name": "Jawa Barat",
     "capital": "admin",
     "population": "2394000",
-    "id": "1360313023"
+    "id": "1360313023",
+    "loc": { type: "Point", coordinates:  [ 107.57,-6.95] }
   },
   {
     "city": "Bekasi",
@@ -2234,7 +2405,8 @@ const cities = [
     "iso3": "IDN",
     "admin_name": "Jawa Barat",
     "population": "2378211",
-    "id": "1360006015"
+    "id": "1360006015",
+    "loc": { type: "Point", coordinates:  [ 106.9723,-6.2173] }
   },
   {
     "city": "Mannheim",
@@ -2247,7 +2419,8 @@ const cities = [
     "admin_name": "Baden-Württemberg",
     "capital": "minor",
     "population": "2362000",
-    "id": "1276150104"
+    "id": "1276150104",
+    "loc": { type: "Point", coordinates:  [ 8.47,49.5004] }
   },
   {
     "city": "Nanchang",
@@ -2260,7 +2433,8 @@ const cities = [
     "admin_name": "Jiangxi",
     "capital": "admin",
     "population": "2350000",
-    "id": "1156198892"
+    "id": "1156198892",
+    "loc": { type: "Point", coordinates:  [ 115.88,28.68] }
   },
   {
     "city": "Wenzhou",
@@ -2272,7 +2446,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Zhejiang",
     "population": "2350000",
-    "id": "1156188829"
+    "id": "1156188829",
+    "loc": { type: "Point", coordinates:  [ 120.6501,28.02] }
   },
   {
     "city": "Queens",
@@ -2284,7 +2459,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "New York",
     "population": "2333054",
-    "id": "1840034002"
+    "id": "1840034002",
+    "loc": { type: "Point", coordinates:  [ -73.7976,40.7498] }
   },
   {
     "city": "Vancouver",
@@ -2296,7 +2472,8 @@ const cities = [
     "iso3": "CAN",
     "admin_name": "British Columbia",
     "population": "2313328",
-    "id": "1124825478"
+    "id": "1124825478",
+    "loc": { type: "Point", coordinates:  [ -123.1216,49.2734] }
   },
   {
     "city": "Birmingham",
@@ -2309,7 +2486,8 @@ const cities = [
     "admin_name": "Birmingham",
     "capital": "admin",
     "population": "2285000",
-    "id": "1826423213"
+    "id": "1826423213",
+    "loc": { type: "Point", coordinates:  [ -1.92,52.475] }
   },
   {
     "city": "Cali",
@@ -2322,7 +2500,8 @@ const cities = [
     "admin_name": "Valle del Cauca",
     "capital": "admin",
     "population": "2254000",
-    "id": "1170417589"
+    "id": "1170417589",
+    "loc": { type: "Point", coordinates:  [ -76.5,3.4] }
   },
   {
     "city": "Naples",
@@ -2335,7 +2514,8 @@ const cities = [
     "admin_name": "Campania",
     "capital": "admin",
     "population": "2250000",
-    "id": "1380646673"
+    "id": "1380646673",
+    "loc": { type: "Point", coordinates:  [ 14.245,40.84] }
   },
   {
     "city": "Sendai",
@@ -2348,7 +2528,8 @@ const cities = [
     "admin_name": "Miyagi",
     "capital": "admin",
     "population": "2250000",
-    "id": "1392457903"
+    "id": "1392457903",
+    "loc": { type: "Point", coordinates:  [ 141.0217,38.2871] }
   },
   {
     "city": "Manchester",
@@ -2361,7 +2542,8 @@ const cities = [
     "admin_name": "Manchester",
     "capital": "admin",
     "population": "2230000",
-    "id": "1826246335"
+    "id": "1826246335",
+    "loc": { type: "Point", coordinates:  [ -2.248,53.5004] }
   },
   {
     "city": "Puebla",
@@ -2374,7 +2556,8 @@ const cities = [
     "admin_name": "Puebla",
     "capital": "admin",
     "population": "2195000",
-    "id": "1484416394"
+    "id": "1484416394",
+    "loc": { type: "Point", coordinates:  [ -98.2,19.05] }
   },
   {
     "city": "Tripoli",
@@ -2387,7 +2570,8 @@ const cities = [
     "admin_name": "Ţarābulus",
     "capital": "primary",
     "population": "2189000",
-    "id": "1434201852"
+    "id": "1434201852",
+    "loc": { type: "Point", coordinates:  [ 13.18,32.8925] }
   },
   {
     "city": "Tashkent",
@@ -2400,7 +2584,8 @@ const cities = [
     "admin_name": "Toshkent",
     "capital": "primary",
     "population": "2184000",
-    "id": "1860331871"
+    "id": "1860331871",
+    "loc": { type: "Point", coordinates:  [ 69.2949,41.3117] }
   },
   {
     "city": "Havana",
@@ -2413,7 +2598,8 @@ const cities = [
     "admin_name": "La Habana",
     "capital": "primary",
     "population": "2174000",
-    "id": "1192752771"
+    "id": "1192752771",
+    "loc": { type: "Point", coordinates:  [ -82.3642,23.132] }
   },
   {
     "city": "Gaoping",
@@ -2426,7 +2612,8 @@ const cities = [
     "admin_name": "Sichuan",
     "capital": "minor",
     "population": "2174000",
-    "id": "1156522457"
+    "id": "1156522457",
+    "loc": { type: "Point", coordinates:  [ 106.13,30.7804] }
   },
   {
     "city": "Baltimore",
@@ -2438,7 +2625,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Maryland",
     "population": "2170504",
-    "id": "1840001592"
+    "id": "1840001592",
+    "loc": { type: "Point", coordinates:  [ -76.6144,39.3051] }
   },
   {
     "city": "Nanning",
@@ -2451,7 +2639,8 @@ const cities = [
     "admin_name": "Guangxi",
     "capital": "admin",
     "population": "2167000",
-    "id": "1156605439"
+    "id": "1156605439",
+    "loc": { type: "Point", coordinates:  [ 108.32,22.82] }
   },
   {
     "city": "Belém",
@@ -2464,7 +2653,8 @@ const cities = [
     "admin_name": "Pará",
     "capital": "admin",
     "population": "2167000",
-    "id": "1076646823"
+    "id": "1076646823",
+    "loc": { type: "Point", coordinates:  [ -48.48,-1.45] }
   },
   {
     "city": "Patna",
@@ -2477,7 +2667,8 @@ const cities = [
     "admin_name": "Bihār",
     "capital": "admin",
     "population": "2158000",
-    "id": "1356821429"
+    "id": "1356821429",
+    "loc": { type: "Point", coordinates:  [ 85.13,25.625] }
   },
   {
     "city": "Santo Domingo",
@@ -2490,7 +2681,8 @@ const cities = [
     "admin_name": "Ozama",
     "capital": "primary",
     "population": "2154000",
-    "id": "1214636202"
+    "id": "1214636202",
+    "loc": { type: "Point", coordinates:  [ -69.9001,18.4701] }
   },
   {
     "city": "Ürümqi",
@@ -2503,7 +2695,8 @@ const cities = [
     "admin_name": "Xinjiang",
     "capital": "admin",
     "population": "2151000",
-    "id": "1156051276"
+    "id": "1156051276",
+    "loc": { type: "Point", coordinates:  [ 87.575,43.805] }
   },
   {
     "city": "Zaozhuang",
@@ -2515,7 +2708,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Shandong",
     "population": "2145000",
-    "id": "1156796454"
+    "id": "1156796454",
+    "loc": { type: "Point", coordinates:  [ 117.57,34.88] }
   },
   {
     "city": "Baku",
@@ -2528,7 +2722,8 @@ const cities = [
     "admin_name": "Bakı",
     "capital": "primary",
     "population": "2122300",
-    "id": "1031946365"
+    "id": "1031946365",
+    "loc": { type: "Point", coordinates:  [ 49.8622,40.3953] }
   },
   {
     "city": "Accra",
@@ -2541,7 +2736,8 @@ const cities = [
     "admin_name": "Greater Accra",
     "capital": "primary",
     "population": "2121000",
-    "id": "1288299415"
+    "id": "1288299415",
+    "loc": { type: "Point", coordinates:  [ -0.2167,5.55] }
   },
   {
     "city": "Yantai",
@@ -2553,7 +2749,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Shandong",
     "population": "2116000",
-    "id": "1156932948"
+    "id": "1156932948",
+    "loc": { type: "Point", coordinates:  [ 121.4,37.5304] }
   },
   {
     "city": "Medan",
@@ -2566,7 +2763,8 @@ const cities = [
     "admin_name": "Sumatera Utara",
     "capital": "admin",
     "population": "2115000",
-    "id": "1360543171"
+    "id": "1360543171",
+    "loc": { type: "Point", coordinates:  [ 98.65,3.58] }
   },
   {
     "city": "Santa Cruz",
@@ -2578,7 +2776,8 @@ const cities = [
     "iso3": "BOL",
     "admin_name": "Santa Cruz",
     "population": "2102998",
-    "id": "1068002564"
+    "id": "1068002564",
+    "loc": { type: "Point", coordinates:  [ -63.226,-17.7539] }
   },
   {
     "city": "Tongshan",
@@ -2591,7 +2790,8 @@ const cities = [
     "admin_name": "Jiangsu",
     "capital": "minor",
     "population": "2091000",
-    "id": "1156241678"
+    "id": "1156241678",
+    "loc": { type: "Point", coordinates:  [ 117.18,34.28] }
   },
   {
     "city": "Riverside",
@@ -2603,7 +2803,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "California",
     "population": "2084749",
-    "id": "1840020551"
+    "id": "1840020551",
+    "loc": { type: "Point", coordinates:  [ -117.3948,33.9381] }
   },
   {
     "city": "Linyi",
@@ -2615,7 +2816,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Shandong",
     "population": "2082000",
-    "id": "1156086320"
+    "id": "1156086320",
+    "loc": { type: "Point", coordinates:  [ 118.33,35.08] }
   },
   {
     "city": "St. Louis",
@@ -2627,7 +2829,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Missouri",
     "population": "2078283",
-    "id": "1840001651"
+    "id": "1840001651",
+    "loc": { type: "Point", coordinates:  [ -90.2451,38.6358] }
   },
   {
     "city": "Las Vegas",
@@ -2639,7 +2842,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Nevada",
     "population": "2073045",
-    "id": "1840020364"
+    "id": "1840020364",
+    "loc": { type: "Point", coordinates:  [ -115.2654,36.2333] }
   },
   {
     "city": "Maracaibo",
@@ -2652,7 +2856,8 @@ const cities = [
     "admin_name": "Zulia",
     "capital": "admin",
     "population": "2072000",
-    "id": "1862072711"
+    "id": "1862072711",
+    "loc": { type: "Point", coordinates:  [ -71.66,10.73] }
   },
   {
     "city": "Kuwait City",
@@ -2665,7 +2870,8 @@ const cities = [
     "admin_name": "Al ‘Āşimah",
     "capital": "primary",
     "population": "2063000",
-    "id": "1414102075"
+    "id": "1414102075",
+    "loc": { type: "Point", coordinates:  [ 47.9783,29.3697] }
   },
   {
     "city": "Ad Dammām",
@@ -2678,7 +2884,8 @@ const cities = [
     "admin_name": "Ash Sharqīyah",
     "capital": "admin",
     "population": "2054710",
-    "id": "1682452296"
+    "id": "1682452296",
+    "loc": { type: "Point", coordinates:  [ 50.0997,26.4282] }
   },
   {
     "city": "Portland",
@@ -2690,7 +2897,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Oregon",
     "population": "2052796",
-    "id": "1840019941"
+    "id": "1840019941",
+    "loc": { type: "Point", coordinates:  [ -122.65,45.5371] }
   },
   {
     "city": "Haikou",
@@ -2703,7 +2911,8 @@ const cities = [
     "admin_name": "Hainan",
     "capital": "admin",
     "population": "2046189",
-    "id": "1156183327"
+    "id": "1156183327",
+    "loc": { type: "Point", coordinates:  [ 110.32,20.05] }
   },
   {
     "city": "Hiroshima",
@@ -2716,7 +2925,8 @@ const cities = [
     "admin_name": "Hiroshima",
     "capital": "admin",
     "population": "2045000",
-    "id": "1392373695"
+    "id": "1392373695",
+    "loc": { type: "Point", coordinates:  [ 132.4429,34.3878] }
   },
   {
     "city": "Baotou",
@@ -2728,7 +2938,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Inner Mongolia",
     "population": "2036000",
-    "id": "1156032751"
+    "id": "1156032751",
+    "loc": { type: "Point", coordinates:  [ 109.822,40.6522] }
   },
   {
     "city": "Hefei",
@@ -2741,7 +2952,8 @@ const cities = [
     "admin_name": "Anhui",
     "capital": "admin",
     "population": "2035000",
-    "id": "1156332710"
+    "id": "1156332710",
+    "loc": { type: "Point", coordinates:  [ 117.28,31.85] }
   },
   {
     "city": "Indore",
@@ -2753,7 +2965,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Madhya Pradesh",
     "population": "2026000",
-    "id": "1356402812"
+    "id": "1356402812",
+    "loc": { type: "Point", coordinates:  [ 75.865,22.7151] }
   },
   {
     "city": "Goiânia",
@@ -2766,7 +2979,8 @@ const cities = [
     "admin_name": "Goiás",
     "capital": "admin",
     "population": "2022000",
-    "id": "1076034054"
+    "id": "1076034054",
+    "loc": { type: "Point", coordinates:  [ -49.3,-16.72] }
   },
   {
     "city": "Sanaa",
@@ -2779,7 +2993,8 @@ const cities = [
     "admin_name": "Amānat al ‘Āşimah",
     "capital": "primary",
     "population": "2008000",
-    "id": "1887750814"
+    "id": "1887750814",
+    "loc": { type: "Point", coordinates:  [ 44.2066,15.3547] }
   },
   {
     "city": "San Antonio",
@@ -2791,7 +3006,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Texas",
     "population": "2002530",
-    "id": "1840022220"
+    "id": "1840022220",
+    "loc": { type: "Point", coordinates:  [ -98.5254,29.4658] }
   },
   {
     "city": "Port-au-Prince",
@@ -2804,7 +3020,8 @@ const cities = [
     "admin_name": "Ouest",
     "capital": "primary",
     "population": "1998000",
-    "id": "1332401940"
+    "id": "1332401940",
+    "loc": { type: "Point", coordinates:  [ -72.336,18.541] }
   },
   {
     "city": "Haiphong",
@@ -2817,7 +3034,8 @@ const cities = [
     "admin_name": "Hải Phòng",
     "capital": "admin",
     "population": "1969000",
-    "id": "1704000623"
+    "id": "1704000623",
+    "loc": { type: "Point", coordinates:  [ 106.6801,20.83] }
   },
   {
     "city": "Suzhou",
@@ -2829,7 +3047,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Anhui",
     "population": "1964000",
-    "id": "1156871297"
+    "id": "1156871297",
+    "loc": { type: "Point", coordinates:  [ 116.9789,33.6361] }
   },
   {
     "city": "Nanyang",
@@ -2841,7 +3060,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Henan",
     "population": "1944000",
-    "id": "1156192287"
+    "id": "1156192287",
+    "loc": { type: "Point", coordinates:  [ 112.53,33.0004] }
   },
   {
     "city": "Bucharest",
@@ -2854,7 +3074,8 @@ const cities = [
     "admin_name": "Bucureşti",
     "capital": "primary",
     "population": "1942000",
-    "id": "1642414442"
+    "id": "1642414442",
+    "loc": { type: "Point", coordinates:  [ 26.0999,44.4334] }
   },
   {
     "city": "Ningbo",
@@ -2867,7 +3088,8 @@ const cities = [
     "admin_name": "Zhejiang",
     "capital": "minor",
     "population": "1923000",
-    "id": "1156170787"
+    "id": "1156170787",
+    "loc": { type: "Point", coordinates:  [ 121.55,29.88] }
   },
   {
     "city": "Douala",
@@ -2880,7 +3102,8 @@ const cities = [
     "admin_name": "Littoral",
     "capital": "admin",
     "population": "1906000",
-    "id": "1120494607"
+    "id": "1120494607",
+    "loc": { type: "Point", coordinates:  [ 9.71,4.0604] }
   },
   {
     "city": "Tangshan",
@@ -2892,7 +3115,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Hebei",
     "population": "1879000",
-    "id": "1156904299"
+    "id": "1156904299",
+    "loc": { type: "Point", coordinates:  [ 118.1944,39.6243] }
   },
   {
     "city": "Tainan",
@@ -2905,7 +3129,8 @@ const cities = [
     "admin_name": "Tainan",
     "capital": "admin",
     "population": "1876312",
-    "id": "1158061376"
+    "id": "1158061376",
+    "loc": { type: "Point", coordinates:  [ 120.2,23] }
   },
   {
     "city": "Xiping",
@@ -2918,7 +3143,8 @@ const cities = [
     "admin_name": "Shanxi",
     "capital": "minor",
     "population": "1873000",
-    "id": "1156898522"
+    "id": "1156898522",
+    "loc": { type: "Point", coordinates:  [ 113.3,40.08] }
   },
   {
     "city": "Asunción",
@@ -2931,7 +3157,8 @@ const cities = [
     "admin_name": "Asunción",
     "capital": "primary",
     "population": "1870000",
-    "id": "1600057911"
+    "id": "1600057911",
+    "loc": { type: "Point", coordinates:  [ -57.6415,-25.2964] }
   },
   {
     "city": "Saidu Sharif",
@@ -2944,7 +3171,8 @@ const cities = [
     "admin_name": "Khyber Pakhtunkhwa",
     "capital": "minor",
     "population": "1860310",
-    "id": "1586619596"
+    "id": "1586619596",
+    "loc": { type: "Point", coordinates:  [ 72.35,34.75] }
   },
   {
     "city": "Brisbane",
@@ -2957,7 +3185,8 @@ const cities = [
     "admin_name": "Queensland",
     "capital": "admin",
     "population": "1860000",
-    "id": "1036192929"
+    "id": "1036192929",
+    "loc": { type: "Point", coordinates:  [ 153.0351,-27.455] }
   },
   {
     "city": "Rawalpindi",
@@ -2970,7 +3199,8 @@ const cities = [
     "admin_name": "Punjab",
     "capital": "minor",
     "population": "1858000",
-    "id": "1586344001"
+    "id": "1586344001",
+    "loc": { type: "Point", coordinates:  [ 73.04,33.6] }
   },
   {
     "city": "Sacramento",
@@ -2983,7 +3213,8 @@ const cities = [
     "admin_name": "California",
     "capital": "admin",
     "population": "1854698",
-    "id": "1840021491"
+    "id": "1840021491",
+    "loc": { type: "Point", coordinates:  [ -121.4683,38.5667] }
   },
   {
     "city": "Beirut",
@@ -2996,7 +3227,8 @@ const cities = [
     "admin_name": "Beyrouth",
     "capital": "primary",
     "population": "1846000",
-    "id": "1422847713"
+    "id": "1422847713",
+    "loc": { type: "Point", coordinates:  [ 35.5097,33.872] }
   },
   {
     "city": "San Jose",
@@ -3008,7 +3240,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "California",
     "population": "1821899",
-    "id": "1840021570"
+    "id": "1840021570",
+    "loc": { type: "Point", coordinates:  [ -121.8489,37.3021] }
   },
   {
     "city": "Minsk",
@@ -3021,7 +3254,8 @@ const cities = [
     "admin_name": "Minsk",
     "capital": "primary",
     "population": "1805000",
-    "id": "1112348503"
+    "id": "1112348503",
+    "loc": { type: "Point", coordinates:  [ 27.5666,53.9] }
   },
   {
     "city": "Kyōto",
@@ -3034,7 +3268,8 @@ const cities = [
     "admin_name": "Kyōto",
     "capital": "admin",
     "population": "1805000",
-    "id": "1392622735"
+    "id": "1392622735",
+    "loc": { type: "Point", coordinates:  [ 135.75,35.03] }
   },
   {
     "city": "Barranquilla",
@@ -3047,7 +3282,8 @@ const cities = [
     "admin_name": "Atlántico",
     "capital": "admin",
     "population": "1798000",
-    "id": "1170179113"
+    "id": "1170179113",
+    "loc": { type: "Point", coordinates:  [ -74.8,10.96] }
   },
   {
     "city": "Orlando",
@@ -3059,7 +3295,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Florida",
     "population": "1776841",
-    "id": "1840015099"
+    "id": "1840015099",
+    "loc": { type: "Point", coordinates:  [ -81.3369,28.4772] }
   },
   {
     "city": "Shuyangzha",
@@ -3071,7 +3308,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Jiangsu",
     "population": "1770000",
-    "id": "1156051957"
+    "id": "1156051957",
+    "loc": { type: "Point", coordinates:  [ 118.7734,34.1299] }
   },
   {
     "city": "Valencia",
@@ -3084,7 +3322,8 @@ const cities = [
     "admin_name": "Carabobo",
     "capital": "admin",
     "population": "1770000",
-    "id": "1862309871"
+    "id": "1862309871",
+    "loc": { type: "Point", coordinates:  [ -67.98,10.23] }
   },
   {
     "city": "Hamburg",
@@ -3097,7 +3336,8 @@ const cities = [
     "admin_name": "Hamburg",
     "capital": "admin",
     "population": "1757000",
-    "id": "1276041799"
+    "id": "1276041799",
+    "loc": { type: "Point", coordinates:  [ 10,53.55] }
   },
   {
     "city": "Vadodara",
@@ -3109,7 +3349,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Gujarāt",
     "population": "1756000",
-    "id": "1356705249"
+    "id": "1356705249",
+    "loc": { type: "Point", coordinates:  [ 73.18,22.31] }
   },
   {
     "city": "Manaus",
@@ -3122,7 +3363,8 @@ const cities = [
     "admin_name": "Amazonas",
     "capital": "admin",
     "population": "1753000",
-    "id": "1076607274"
+    "id": "1076607274",
+    "loc": { type: "Point", coordinates:  [ -60,-3.1] }
   },
   {
     "city": "Shangqiu",
@@ -3134,7 +3376,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Henan",
     "population": "1753000",
-    "id": "1156805441"
+    "id": "1156805441",
+    "loc": { type: "Point", coordinates:  [ 115.65,34.4504] }
   },
   {
     "city": "Wuxi",
@@ -3147,7 +3390,8 @@ const cities = [
     "admin_name": "Jiangsu",
     "capital": "minor",
     "population": "1749000",
-    "id": "1156019650"
+    "id": "1156019650",
+    "loc": { type: "Point", coordinates:  [ 120.3,31.58] }
   },
   {
     "city": "Palembang",
@@ -3160,7 +3404,8 @@ const cities = [
     "admin_name": "Sumatera Selatan",
     "capital": "admin",
     "population": "1749000",
-    "id": "1360902897"
+    "id": "1360902897",
+    "loc": { type: "Point", coordinates:  [ 104.75,-2.98] }
   },
   {
     "city": "Brussels",
@@ -3173,7 +3418,8 @@ const cities = [
     "admin_name": "Brussels-Capital Region",
     "capital": "primary",
     "population": "1743000",
-    "id": "1056469830"
+    "id": "1056469830",
+    "loc": { type: "Point", coordinates:  [ 4.3333,50.8333] }
   },
   {
     "city": "Essen",
@@ -3186,7 +3432,8 @@ const cities = [
     "admin_name": "North Rhine-Westphalia",
     "capital": "minor",
     "population": "1742135",
-    "id": "1276769247"
+    "id": "1276769247",
+    "loc": { type: "Point", coordinates:  [ 7.0166,51.45] }
   },
   {
     "city": "Cleveland",
@@ -3198,7 +3445,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Ohio",
     "population": "1730363",
-    "id": "1840000596"
+    "id": "1840000596",
+    "loc": { type: "Point", coordinates:  [ -81.6805,41.4767] }
   },
   {
     "city": "Bhopal",
@@ -3211,7 +3459,8 @@ const cities = [
     "admin_name": "Madhya Pradesh",
     "capital": "admin",
     "population": "1727000",
-    "id": "1356734039"
+    "id": "1356734039",
+    "loc": { type: "Point", coordinates:  [ 77.41,23.25] }
   },
   {
     "city": "Hohhot",
@@ -3224,7 +3473,8 @@ const cities = [
     "admin_name": "Inner Mongolia",
     "capital": "admin",
     "population": "1726000",
-    "id": "1156210167"
+    "id": "1156210167",
+    "loc": { type: "Point", coordinates:  [ 111.66,40.82] }
   },
   {
     "city": "Pittsburgh",
@@ -3236,7 +3486,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Pennsylvania",
     "population": "1715297",
-    "id": "1840001254"
+    "id": "1840001254",
+    "loc": { type: "Point", coordinates:  [ -79.9763,40.4396] }
   },
   {
     "city": "Luoyang",
@@ -3248,7 +3499,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Henan",
     "population": "1715000",
-    "id": "1156069315"
+    "id": "1156069315",
+    "loc": { type: "Point", coordinates:  [ 112.4701,34.68] }
   },
   {
     "city": "Santos",
@@ -3260,7 +3512,8 @@ const cities = [
     "iso3": "BRA",
     "admin_name": "São Paulo",
     "population": "1709000",
-    "id": "1076033299"
+    "id": "1076033299",
+    "loc": { type: "Point", coordinates:  [ -46.3329,-23.9537] }
   },
   {
     "city": "Jingling",
@@ -3272,7 +3525,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Hubei",
     "population": "1708000",
-    "id": "1156060544"
+    "id": "1156060544",
+    "loc": { type: "Point", coordinates:  [ 113.16,30.6501] }
   },
   {
     "city": "Warsaw",
@@ -3285,7 +3539,8 @@ const cities = [
     "admin_name": "Mazowieckie",
     "capital": "primary",
     "population": "1707000",
-    "id": "1616024847"
+    "id": "1616024847",
+    "loc": { type: "Point", coordinates:  [ 21,52.25] }
   },
   {
     "city": "Rabat",
@@ -3298,7 +3553,8 @@ const cities = [
     "admin_name": "Rabat-Salé-Kénitra",
     "capital": "primary",
     "population": "1705000",
-    "id": "1504023252"
+    "id": "1504023252",
+    "loc": { type: "Point", coordinates:  [ -6.8361,34.0253] }
   },
   {
     "city": "Vitória",
@@ -3311,7 +3567,8 @@ const cities = [
     "admin_name": "Espírito Santo",
     "capital": "admin",
     "population": "1704000",
-    "id": "1076376829"
+    "id": "1076376829",
+    "loc": { type: "Point", coordinates:  [ -40.366,-20.324] }
   },
   {
     "city": "Quito",
@@ -3324,7 +3581,8 @@ const cities = [
     "admin_name": "Pichincha",
     "capital": "primary",
     "population": "1701000",
-    "id": "1218441993"
+    "id": "1218441993",
+    "loc": { type: "Point", coordinates:  [ -78.5001,-0.215] }
   },
   {
     "city": "Antananarivo",
@@ -3337,7 +3595,8 @@ const cities = [
     "admin_name": "Antananarivo",
     "capital": "primary",
     "population": "1697000",
-    "id": "1450978461"
+    "id": "1450978461",
+    "loc": { type: "Point", coordinates:  [ 47.5166,-18.9166] }
   },
   {
     "city": "Coimbatore",
@@ -3349,7 +3608,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Tamil Nādu ",
     "population": "1696000",
-    "id": "1356999503"
+    "id": "1356999503",
+    "loc": { type: "Point", coordinates:  [ 76.95,11] }
   },
   {
     "city": "Daqing",
@@ -3361,7 +3621,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Heilongjiang",
     "population": "1693000",
-    "id": "1156403962"
+    "id": "1156403962",
+    "loc": { type: "Point", coordinates:  [ 125,46.58] }
   },
   {
     "city": "Lu’an",
@@ -3374,7 +3635,8 @@ const cities = [
     "admin_name": "Anhui",
     "capital": "minor",
     "population": "1690000",
-    "id": "1156499624"
+    "id": "1156499624",
+    "loc": { type: "Point", coordinates:  [ 116.48,31.7503] }
   },
   {
     "city": "Sanzhou",
@@ -3386,7 +3648,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Chongqing",
     "population": "1680000",
-    "id": "1156025536"
+    "id": "1156025536",
+    "loc": { type: "Point", coordinates:  [ 108.4,30.82] }
   },
   {
     "city": "Budapest",
@@ -3399,7 +3662,8 @@ const cities = [
     "admin_name": "Budapest",
     "capital": "primary",
     "population": "1679000",
-    "id": "1348611435"
+    "id": "1348611435",
+    "loc": { type: "Point", coordinates:  [ 19.0833,47.5] }
   },
   {
     "city": "Turin",
@@ -3412,7 +3676,8 @@ const cities = [
     "admin_name": "Piedmont",
     "capital": "admin",
     "population": "1652000",
-    "id": "1380244627"
+    "id": "1380244627",
+    "loc": { type: "Point", coordinates:  [ 7.67,45.0704] }
   },
   {
     "city": "Suzhou",
@@ -3425,7 +3690,8 @@ const cities = [
     "admin_name": "Jiangsu",
     "capital": "minor",
     "population": "1650000",
-    "id": "1156029196"
+    "id": "1156029196",
+    "loc": { type: "Point", coordinates:  [ 120.62,31.3005] }
   },
   {
     "city": "Ludhiāna",
@@ -3437,7 +3703,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Punjab",
     "population": "1649000",
-    "id": "1356929498"
+    "id": "1356929498",
+    "loc": { type: "Point", coordinates:  [ 75.8723,30.9278] }
   },
   {
     "city": "Cincinnati",
@@ -3449,7 +3716,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Ohio",
     "population": "1648254",
-    "id": "1840003814"
+    "id": "1840003814",
+    "loc": { type: "Point", coordinates:  [ -84.506,39.1412] }
   },
   {
     "city": "Kumasi",
@@ -3462,7 +3730,8 @@ const cities = [
     "admin_name": "Ashanti",
     "capital": "admin",
     "population": "1646000",
-    "id": "1288181103"
+    "id": "1288181103",
+    "loc": { type: "Point", coordinates:  [ -1.63,6.69] }
   },
   {
     "city": "Manhattan",
@@ -3474,7 +3743,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "New York",
     "population": "1643734",
-    "id": "1840034000"
+    "id": "1840034000",
+    "loc": { type: "Point", coordinates:  [ -73.9662,40.7834] }
   },
   {
     "city": "Qiqihar",
@@ -3487,7 +3757,8 @@ const cities = [
     "admin_name": "Heilongjiang",
     "capital": "minor",
     "population": "1641000",
-    "id": "1156775905"
+    "id": "1156775905",
+    "loc": { type: "Point", coordinates:  [ 123.99,47.345] }
   },
   {
     "city": "Anshan",
@@ -3499,7 +3770,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Liaoning",
     "population": "1639000",
-    "id": "1156901825"
+    "id": "1156901825",
+    "loc": { type: "Point", coordinates:  [ 122.94,41.115] }
   },
   {
     "city": "Austin",
@@ -3512,7 +3784,8 @@ const cities = [
     "admin_name": "Texas",
     "capital": "admin",
     "population": "1638716",
-    "id": "1840019590"
+    "id": "1840019590",
+    "loc": { type: "Point", coordinates:  [ -97.7517,30.3006] }
   },
   {
     "city": "Zhongli",
@@ -3524,7 +3797,8 @@ const cities = [
     "iso3": "TWN",
     "admin_name": "Taoyuan",
     "population": "1632616",
-    "id": "1158025380"
+    "id": "1158025380",
+    "loc": { type: "Point", coordinates:  [ 121.2168,24.965] }
   },
   {
     "city": "Handan",
@@ -3536,7 +3810,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Hebei",
     "population": "1631000",
-    "id": "1156957080"
+    "id": "1156957080",
+    "loc": { type: "Point", coordinates:  [ 114.48,36.58] }
   },
   {
     "city": "Tai’an",
@@ -3548,7 +3823,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Shandong",
     "population": "1629000",
-    "id": "1156095188"
+    "id": "1156095188",
+    "loc": { type: "Point", coordinates:  [ 117.1201,36.2] }
   },
   {
     "city": "Eşfahān",
@@ -3561,7 +3837,8 @@ const cities = [
     "admin_name": "Eşfahān",
     "capital": "admin",
     "population": "1628000",
-    "id": "1364023865"
+    "id": "1364023865",
+    "loc": { type: "Point", coordinates:  [ 51.7,32.7] }
   },
   {
     "city": "Kansas City",
@@ -3573,7 +3850,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Missouri",
     "population": "1615621",
-    "id": "1840008535"
+    "id": "1840008535",
+    "loc": { type: "Point", coordinates:  [ -94.5541,39.1239] }
   },
   {
     "city": "Yaoundé",
@@ -3586,7 +3864,8 @@ const cities = [
     "admin_name": "Centre",
     "capital": "primary",
     "population": "1611000",
-    "id": "1120298240"
+    "id": "1120298240",
+    "loc": { type: "Point", coordinates:  [ 11.5167,3.8667] }
   },
   {
     "city": "Shantou",
@@ -3599,7 +3878,8 @@ const cities = [
     "admin_name": "Guangdong",
     "capital": "minor",
     "population": "1601000",
-    "id": "1156457499"
+    "id": "1156457499",
+    "loc": { type: "Point", coordinates:  [ 116.67,23.37] }
   },
   {
     "city": "Āgra",
@@ -3611,7 +3891,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Uttar Pradesh",
     "population": "1592000",
-    "id": "1356187395"
+    "id": "1356187395",
+    "loc": { type: "Point", coordinates:  [ 78.015,27.1704] }
   },
   {
     "city": "Zhanjiang",
@@ -3624,7 +3905,8 @@ const cities = [
     "admin_name": "Guangdong",
     "capital": "minor",
     "population": "1590000",
-    "id": "1156502170"
+    "id": "1156502170",
+    "loc": { type: "Point", coordinates:  [ 110.38,21.2] }
   },
   {
     "city": "La Paz",
@@ -3637,7 +3919,8 @@ const cities = [
     "admin_name": "La Paz",
     "capital": "primary",
     "population": "1590000",
-    "id": "1068000064"
+    "id": "1068000064",
+    "loc": { type: "Point", coordinates:  [ -68.15,-16.498] }
   },
   {
     "city": "Kalyān",
@@ -3649,7 +3932,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Mahārāshtra",
     "population": "1576614",
-    "id": "1356172246"
+    "id": "1356172246",
+    "loc": { type: "Point", coordinates:  [ 73.1602,19.2502] }
   },
   {
     "city": "Abuja",
@@ -3662,7 +3946,8 @@ const cities = [
     "admin_name": "Federal Capital Territory",
     "capital": "primary",
     "population": "1576000",
-    "id": "1566342270"
+    "id": "1566342270",
+    "loc": { type: "Point", coordinates:  [ 7.5333,9.0833] }
   },
   {
     "city": "Harare",
@@ -3675,7 +3960,8 @@ const cities = [
     "admin_name": "Harare",
     "capital": "primary",
     "population": "1572000",
-    "id": "1716196799"
+    "id": "1716196799",
+    "loc": { type: "Point", coordinates:  [ 31.0447,-17.8178] }
   },
   {
     "city": "Indianapolis",
@@ -3688,7 +3974,8 @@ const cities = [
     "admin_name": "Indiana",
     "capital": "admin",
     "population": "1564699",
-    "id": "1840030084"
+    "id": "1840030084",
+    "loc": { type: "Point", coordinates:  [ -86.1458,39.7771] }
   },
   {
     "city": "Xiantao",
@@ -3700,7 +3987,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Hubei",
     "population": "1556000",
-    "id": "1156216927"
+    "id": "1156216927",
+    "loc": { type: "Point", coordinates:  [ 113.44,30.3704] }
   },
   {
     "city": "Khulna",
@@ -3713,7 +4001,8 @@ const cities = [
     "admin_name": "Khulna",
     "capital": "admin",
     "population": "1553000",
-    "id": "1050667339"
+    "id": "1050667339",
+    "loc": { type: "Point", coordinates:  [ 89.56,22.84] }
   },
   {
     "city": "Weifang",
@@ -3725,7 +4014,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Shandong",
     "population": "1553000",
-    "id": "1156912965"
+    "id": "1156912965",
+    "loc": { type: "Point", coordinates:  [ 119.1001,36.7204] }
   },
   {
     "city": "Tijuana",
@@ -3738,7 +4028,8 @@ const cities = [
     "admin_name": "Baja California",
     "capital": "minor",
     "population": "1553000",
-    "id": "1484708778"
+    "id": "1484708778",
+    "loc": { type: "Point", coordinates:  [ -117.08,32.5] }
   },
   {
     "city": "Santiago",
@@ -3751,7 +4042,8 @@ const cities = [
     "admin_name": "Cibao Norte",
     "capital": "admin",
     "population": "1550753",
-    "id": "1214985348"
+    "id": "1214985348",
+    "loc": { type: "Point", coordinates:  [ -70.67,19.5] }
   },
   {
     "city": "Xinyang",
@@ -3763,7 +4055,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Henan",
     "population": "1541000",
-    "id": "1156273453"
+    "id": "1156273453",
+    "loc": { type: "Point", coordinates:  [ 114.07,32.1304] }
   },
   {
     "city": "Luzhou",
@@ -3776,7 +4069,8 @@ const cities = [
     "admin_name": "Sichuan",
     "capital": "minor",
     "population": "1537000",
-    "id": "1156582079"
+    "id": "1156582079",
+    "loc": { type: "Point", coordinates:  [ 105.38,28.88] }
   },
   {
     "city": "Perth",
@@ -3789,7 +4083,8 @@ const cities = [
     "admin_name": "Western Australia",
     "capital": "admin",
     "population": "1532000",
-    "id": "1036178956"
+    "id": "1036178956",
+    "loc": { type: "Point", coordinates:  [ 115.84,-31.955] }
   },
   {
     "city": "Toluca",
@@ -3802,7 +4097,8 @@ const cities = [
     "admin_name": "México",
     "capital": "admin",
     "population": "1531000",
-    "id": "1484124846"
+    "id": "1484124846",
+    "loc": { type: "Point", coordinates:  [ -99.67,19.3304] }
   },
   {
     "city": "Vishākhapatnam",
@@ -3814,7 +4110,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Andhra Pradesh",
     "population": "1529000",
-    "id": "1356692563"
+    "id": "1356692563",
+    "loc": { type: "Point", coordinates:  [ 83.305,17.73] }
   },
   {
     "city": "Leeds",
@@ -3827,7 +4124,8 @@ const cities = [
     "admin_name": "Leeds",
     "capital": "admin",
     "population": "1529000",
-    "id": "1826343963"
+    "id": "1826343963",
+    "loc": { type: "Point", coordinates:  [ -1.58,53.83] }
   },
   {
     "city": "Kōbe",
@@ -3840,7 +4138,8 @@ const cities = [
     "admin_name": "Hyōgo",
     "capital": "admin",
     "population": "1528478",
-    "id": "1392978082"
+    "id": "1392978082",
+    "loc": { type: "Point", coordinates:  [ 135.17,34.68] }
   },
   {
     "city": "Columbus",
@@ -3853,7 +4152,8 @@ const cities = [
     "admin_name": "Ohio",
     "capital": "admin",
     "population": "1528314",
-    "id": "1840003760"
+    "id": "1840003760",
+    "loc": { type: "Point", coordinates:  [ -82.9851,39.986] }
   },
   {
     "city": "Multan",
@@ -3866,7 +4166,8 @@ const cities = [
     "admin_name": "Punjab",
     "capital": "minor",
     "population": "1522000",
-    "id": "1586256291"
+    "id": "1586256291",
+    "loc": { type: "Point", coordinates:  [ 71.455,30.2] }
   },
   {
     "city": "Kochi",
@@ -3878,7 +4179,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Kerala",
     "population": "1519000",
-    "id": "1356707865"
+    "id": "1356707865",
+    "loc": { type: "Point", coordinates:  [ 76.2239,10.015] }
   },
   {
     "city": "Montevideo",
@@ -3891,7 +4193,8 @@ const cities = [
     "admin_name": "Montevideo",
     "capital": "primary",
     "population": "1513000",
-    "id": "1858107000"
+    "id": "1858107000",
+    "loc": { type: "Point", coordinates:  [ -56.1711,-34.858] }
   },
   {
     "city": "Gujranwala",
@@ -3904,7 +4207,8 @@ const cities = [
     "admin_name": "Punjab",
     "capital": "minor",
     "population": "1513000",
-    "id": "1586400472"
+    "id": "1586400472",
+    "loc": { type: "Point", coordinates:  [ 74.185,32.1604] }
   },
   {
     "city": "Niterói",
@@ -3916,7 +4220,8 @@ const cities = [
     "iso3": "BRA",
     "admin_name": "Rio de Janeiro",
     "population": "1500513",
-    "id": "1076501425"
+    "id": "1076501425",
+    "loc": { type: "Point", coordinates:  [ -43.1,-22.9] }
   },
   {
     "city": "Ganzhou",
@@ -3929,7 +4234,8 @@ const cities = [
     "admin_name": "Jiangxi",
     "capital": "minor",
     "population": "1500000",
-    "id": "1156832475"
+    "id": "1156832475",
+    "loc": { type: "Point", coordinates:  [ 114.95,25.92] }
   },
   {
     "city": "Florence",
@@ -3942,7 +4248,8 @@ const cities = [
     "admin_name": "Tuscany",
     "capital": "admin",
     "population": "1500000",
-    "id": "1380726561"
+    "id": "1380726561",
+    "loc": { type: "Point", coordinates:  [ 11.25,43.78] }
   },
   {
     "city": "Liuzhou",
@@ -3955,7 +4262,8 @@ const cities = [
     "admin_name": "Guangxi",
     "capital": "minor",
     "population": "1497000",
-    "id": "1156360785"
+    "id": "1156360785",
+    "loc": { type: "Point", coordinates:  [ 109.25,24.28] }
   },
   {
     "city": "Bamako",
@@ -3968,7 +4276,8 @@ const cities = [
     "admin_name": "Bamako",
     "capital": "primary",
     "population": "1494000",
-    "id": "1466965925"
+    "id": "1466965925",
+    "loc": { type: "Point", coordinates:  [ -8,12.65] }
   },
   {
     "city": "Conakry",
@@ -3981,7 +4290,8 @@ const cities = [
     "admin_name": "Conakry",
     "capital": "primary",
     "population": "1494000",
-    "id": "1324568159"
+    "id": "1324568159",
+    "loc": { type: "Point", coordinates:  [ -13.6802,9.5315] }
   },
   {
     "city": "Bursa",
@@ -3994,7 +4304,8 @@ const cities = [
     "admin_name": "Bursa",
     "capital": "admin",
     "population": "1492000",
-    "id": "1792903330"
+    "id": "1792903330",
+    "loc": { type: "Point", coordinates:  [ 29.07,40.2] }
   },
   {
     "city": "León de los Aldama",
@@ -4007,7 +4318,8 @@ const cities = [
     "admin_name": "Guanajuato",
     "capital": "minor",
     "population": "1488000",
-    "id": "1484811199"
+    "id": "1484811199",
+    "loc": { type: "Point", coordinates:  [ -101.7,21.15] }
   },
   {
     "city": "Virginia Beach",
@@ -4019,7 +4331,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Virginia",
     "population": "1480383",
-    "id": "1840003871"
+    "id": "1840003871",
+    "loc": { type: "Point", coordinates:  [ -76.0435,36.7335] }
   },
   {
     "city": "Nāsik",
@@ -4031,7 +4344,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Mahārāshtra",
     "population": "1473000",
-    "id": "1356562598"
+    "id": "1356562598",
+    "loc": { type: "Point", coordinates:  [ 73.78,20.0004] }
   },
   {
     "city": "Fushun",
@@ -4043,7 +4357,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Liaoning",
     "population": "1470000",
-    "id": "1156857743"
+    "id": "1156857743",
+    "loc": { type: "Point", coordinates:  [ 123.87,41.8654] }
   },
   {
     "city": "Changde",
@@ -4056,7 +4371,8 @@ const cities = [
     "admin_name": "Hunan",
     "capital": "minor",
     "population": "1469000",
-    "id": "1156449091"
+    "id": "1156449091",
+    "loc": { type: "Point", coordinates:  [ 111.68,29.03] }
   },
   {
     "city": "Daejeon",
@@ -4069,7 +4385,8 @@ const cities = [
     "admin_name": "Daejeon",
     "capital": "admin",
     "population": "1468000",
-    "id": "1410993875"
+    "id": "1410993875",
+    "loc": { type: "Point", coordinates:  [ 127.425,36.3355] }
   },
   {
     "city": "Charlotte",
@@ -4081,7 +4398,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "North Carolina",
     "population": "1467362",
-    "id": "1840014557"
+    "id": "1840014557",
+    "loc": { type: "Point", coordinates:  [ -80.8304,35.2079] }
   },
   {
     "city": "Phnom Penh",
@@ -4094,7 +4412,8 @@ const cities = [
     "admin_name": "Phnom Penh",
     "capital": "primary",
     "population": "1466000",
-    "id": "1116260534"
+    "id": "1116260534",
+    "loc": { type: "Point", coordinates:  [ 104.9166,11.55] }
   },
   {
     "city": "Neijiang",
@@ -4107,7 +4426,8 @@ const cities = [
     "admin_name": "Sichuan",
     "capital": "minor",
     "population": "1466000",
-    "id": "1156516335"
+    "id": "1156516335",
+    "loc": { type: "Point", coordinates:  [ 105.05,29.5804] }
   },
   {
     "city": "Quanzhou",
@@ -4120,7 +4440,8 @@ const cities = [
     "admin_name": "Fujian",
     "capital": "minor",
     "population": "1463000",
-    "id": "1156829655"
+    "id": "1156829655",
+    "loc": { type: "Point", coordinates:  [ 118.58,24.9] }
   },
   {
     "city": "Kharkiv",
@@ -4133,7 +4454,8 @@ const cities = [
     "admin_name": "Kharkivs’ka Oblast’",
     "capital": "admin",
     "population": "1461000",
-    "id": "1804588111"
+    "id": "1804588111",
+    "loc": { type: "Point", coordinates:  [ 36.25,50] }
   },
   {
     "city": "Hyderabad City",
@@ -4145,7 +4467,8 @@ const cities = [
     "iso3": "PAK",
     "admin_name": "Sindh",
     "population": "1459000",
-    "id": "1586427790"
+    "id": "1586427790",
+    "loc": { type: "Point", coordinates:  [ 68.375,25.38] }
   },
   {
     "city": "Bronx",
@@ -4157,7 +4480,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "New York",
     "population": "1455720",
-    "id": "1840033999"
+    "id": "1840033999",
+    "loc": { type: "Point", coordinates:  [ -73.8662,40.8501] }
   },
   {
     "city": "Lomé",
@@ -4170,7 +4494,8 @@ const cities = [
     "admin_name": "Maritime",
     "capital": "primary",
     "population": "1452000",
-    "id": "1768409132"
+    "id": "1768409132",
+    "loc": { type: "Point", coordinates:  [ 1.2228,6.1319] }
   },
   {
     "city": "Córdoba",
@@ -4183,7 +4508,8 @@ const cities = [
     "admin_name": "Córdoba",
     "capital": "admin",
     "population": "1452000",
-    "id": "1032803249"
+    "id": "1032803249",
+    "loc": { type: "Point", coordinates:  [ -64.1823,-31.4] }
   },
   {
     "city": "Huainan",
@@ -4195,7 +4521,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Anhui",
     "population": "1451000",
-    "id": "1156877299"
+    "id": "1156877299",
+    "loc": { type: "Point", coordinates:  [ 116.98,32.63] }
   },
   {
     "city": "Doha",
@@ -4208,7 +4535,8 @@ const cities = [
     "admin_name": "Ad Dawḩah",
     "capital": "primary",
     "population": "1450000",
-    "id": "1634459660"
+    "id": "1634459660",
+    "loc": { type: "Point", coordinates:  [ 51.533,25.2866] }
   },
   {
     "city": "Kuala Lumpur",
@@ -4221,7 +4549,8 @@ const cities = [
     "admin_name": "Kuala Lumpur ",
     "capital": "primary",
     "population": "1448000",
-    "id": "1458988644"
+    "id": "1458988644",
+    "loc": { type: "Point", coordinates:  [ 101.7,3.1667] }
   },
   {
     "city": "Maputo",
@@ -4234,7 +4563,8 @@ const cities = [
     "admin_name": "Maputo",
     "capital": "primary",
     "population": "1446000",
-    "id": "1508074843"
+    "id": "1508074843",
+    "loc": { type: "Point", coordinates:  [ 32.5892,-25.9553] }
   },
   {
     "city": "Kaduna",
@@ -4247,7 +4577,8 @@ const cities = [
     "admin_name": "Kaduna",
     "capital": "admin",
     "population": "1442000",
-    "id": "1566368729"
+    "id": "1566368729",
+    "loc": { type: "Point", coordinates:  [ 7.44,10.52] }
   },
   {
     "city": "Gwangju",
@@ -4260,7 +4591,8 @@ const cities = [
     "admin_name": "Gwangju",
     "capital": "admin",
     "population": "1440000",
-    "id": "1410000087"
+    "id": "1410000087",
+    "loc": { type: "Point", coordinates:  [ 126.9104,35.171] }
   },
   {
     "city": "Kawanakajima",
@@ -4272,7 +4604,8 @@ const cities = [
     "iso3": "JPN",
     "admin_name": "Kanagawa",
     "population": "1437266",
-    "id": "1392879600"
+    "id": "1392879600",
+    "loc": { type: "Point", coordinates:  [ 139.705,35.53] }
   },
   {
     "city": "San Salvador",
@@ -4285,7 +4618,8 @@ const cities = [
     "admin_name": "San Salvador",
     "capital": "primary",
     "population": "1433000",
-    "id": "1222647454"
+    "id": "1222647454",
+    "loc": { type: "Point", coordinates:  [ -89.203,13.71] }
   },
   {
     "city": "Suining",
@@ -4298,7 +4632,8 @@ const cities = [
     "admin_name": "Sichuan",
     "capital": "minor",
     "population": "1425000",
-    "id": "1156655650"
+    "id": "1156655650",
+    "loc": { type: "Point", coordinates:  [ 105.5333,30.5333] }
   },
   {
     "city": "Lyon",
@@ -4311,7 +4646,8 @@ const cities = [
     "admin_name": "Auvergne-Rhône-Alpes",
     "capital": "admin",
     "population": "1423000",
-    "id": "1250196189"
+    "id": "1250196189",
+    "loc": { type: "Point", coordinates:  [ 4.83,45.77] }
   },
   {
     "city": "Karaj",
@@ -4324,7 +4660,8 @@ const cities = [
     "admin_name": "Alborz",
     "capital": "admin",
     "population": "1423000",
-    "id": "1364258511"
+    "id": "1364258511",
+    "loc": { type: "Point", coordinates:  [ 50.97,35.8004] }
   },
   {
     "city": "Kampala",
@@ -4337,7 +4674,8 @@ const cities = [
     "admin_name": "Kampala",
     "capital": "primary",
     "population": "1420000",
-    "id": "1800406299"
+    "id": "1800406299",
+    "loc": { type: "Point", coordinates:  [ 32.5833,0.3167] }
   },
   {
     "city": "Tabrīz",
@@ -4350,7 +4688,8 @@ const cities = [
     "admin_name": "Āz̄arbāyjān-e Sharqī",
     "capital": "admin",
     "population": "1413000",
-    "id": "1364141756"
+    "id": "1364141756",
+    "loc": { type: "Point", coordinates:  [ 46.3012,38.0863] }
   },
   {
     "city": "The Hague",
@@ -4363,7 +4702,8 @@ const cities = [
     "admin_name": "Zuid-Holland",
     "capital": "primary",
     "population": "1406000",
-    "id": "1528799905"
+    "id": "1528799905",
+    "loc": { type: "Point", coordinates:  [ 4.27,52.08] }
   },
   {
     "city": "Davao",
@@ -4376,7 +4716,8 @@ const cities = [
     "admin_name": "Davao",
     "capital": "admin",
     "population": "1402000",
-    "id": "1608906877"
+    "id": "1608906877",
+    "loc": { type: "Point", coordinates:  [ 125.63,7.11] }
   },
   {
     "city": "Marseille",
@@ -4389,7 +4730,8 @@ const cities = [
     "admin_name": "Provence-Alpes-Côte d’Azur",
     "capital": "admin",
     "population": "1400000",
-    "id": "1250774071"
+    "id": "1250774071",
+    "loc": { type: "Point", coordinates:  [ 5.375,43.29] }
   },
   {
     "city": "Meerut",
@@ -4401,7 +4743,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Uttar Pradesh",
     "population": "1398000",
-    "id": "1356390476"
+    "id": "1356390476",
+    "loc": { type: "Point", coordinates:  [ 77.7,29.0004] }
   },
   {
     "city": "Mianyang",
@@ -4414,7 +4757,8 @@ const cities = [
     "admin_name": "Sichuan",
     "capital": "minor",
     "population": "1396000",
-    "id": "1156417758"
+    "id": "1156417758",
+    "loc": { type: "Point", coordinates:  [ 104.77,31.47] }
   },
   {
     "city": "Semarang",
@@ -4427,7 +4771,8 @@ const cities = [
     "admin_name": "Jawa Tengah",
     "capital": "admin",
     "population": "1396000",
-    "id": "1360745537"
+    "id": "1360745537",
+    "loc": { type: "Point", coordinates:  [ 110.42,-6.9666] }
   },
   {
     "city": "Farīdābād",
@@ -4439,7 +4784,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Haryāna",
     "population": "1394000",
-    "id": "1356013205"
+    "id": "1356013205",
+    "loc": { type: "Point", coordinates:  [ 77.3167,28.4333] }
   },
   {
     "city": "Novosibirsk",
@@ -4452,7 +4798,8 @@ const cities = [
     "admin_name": "Novosibirskaya Oblast’",
     "capital": "admin",
     "population": "1389000",
-    "id": "1643399240"
+    "id": "1643399240",
+    "loc": { type: "Point", coordinates:  [ 82.96,55.03] }
   },
   {
     "city": "Mecca",
@@ -4465,7 +4812,8 @@ const cities = [
     "admin_name": "Makkah al Mukarramah",
     "capital": "admin",
     "population": "1385000",
-    "id": "1682169241"
+    "id": "1682169241",
+    "loc": { type: "Point", coordinates:  [ 39.82,21.43] }
   },
   {
     "city": "Dubai",
@@ -4478,7 +4826,8 @@ const cities = [
     "admin_name": "Dubayy",
     "capital": "admin",
     "population": "1379000",
-    "id": "1784736618"
+    "id": "1784736618",
+    "loc": { type: "Point", coordinates:  [ 55.28,25.23] }
   },
   {
     "city": "Milwaukee",
@@ -4490,7 +4839,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Wisconsin",
     "population": "1377808",
-    "id": "1840003046"
+    "id": "1840003046",
+    "loc": { type: "Point", coordinates:  [ -87.9673,43.0642] }
   },
   {
     "city": "Auckland",
@@ -4503,7 +4853,8 @@ const cities = [
     "admin_name": "Auckland",
     "capital": "admin",
     "population": "1377200",
-    "id": "1554435911"
+    "id": "1554435911",
+    "loc": { type: "Point", coordinates:  [ 174.763,-36.8481] }
   },
   {
     "city": "Ma’anshan",
@@ -4516,7 +4867,8 @@ const cities = [
     "admin_name": "Anhui",
     "capital": "minor",
     "population": "1366302",
-    "id": "1156847452"
+    "id": "1156847452",
+    "loc": { type: "Point", coordinates:  [ 118.48,31.7304] }
   },
   {
     "city": "Brazzaville",
@@ -4529,7 +4881,8 @@ const cities = [
     "admin_name": "Brazzaville",
     "capital": "primary",
     "population": "1355000",
-    "id": "1178340306"
+    "id": "1178340306",
+    "loc": { type: "Point", coordinates:  [ 15.2847,-4.2592] }
   },
   {
     "city": "Yiyang",
@@ -4541,7 +4894,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Hunan",
     "population": "1352000",
-    "id": "1156218615"
+    "id": "1156218615",
+    "loc": { type: "Point", coordinates:  [ 112.33,28.6004] }
   },
   {
     "city": "Vārānasi",
@@ -4553,7 +4907,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Uttar Pradesh",
     "population": "1352000",
-    "id": "1356145782"
+    "id": "1356145782",
+    "loc": { type: "Point", coordinates:  [ 83,25.33] }
   },
   {
     "city": "Lubumbashi",
@@ -4566,7 +4921,8 @@ const cities = [
     "admin_name": "Haut-Katanga",
     "capital": "admin",
     "population": "1352000",
-    "id": "1180506234"
+    "id": "1180506234",
+    "loc": { type: "Point", coordinates:  [ 27.48,-11.68] }
   },
   {
     "city": "Juárez",
@@ -4579,7 +4935,8 @@ const cities = [
     "admin_name": "Chihuahua",
     "capital": "minor",
     "population": "1343000",
-    "id": "1484840083"
+    "id": "1484840083",
+    "loc": { type: "Point", coordinates:  [ -106.49,31.6904] }
   },
   {
     "city": "Ghāziābād",
@@ -4591,7 +4948,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Uttar Pradesh",
     "population": "1341000",
-    "id": "1356691871"
+    "id": "1356691871",
+    "loc": { type: "Point", coordinates:  [ 77.4084,28.6604] }
   },
   {
     "city": "Pretoria",
@@ -4604,7 +4962,8 @@ const cities = [
     "admin_name": "Gauteng",
     "capital": "primary",
     "population": "1338000",
-    "id": "1710176249"
+    "id": "1710176249",
+    "loc": { type: "Point", coordinates:  [ 28.2294,-25.7069] }
   },
   {
     "city": "Heze",
@@ -4617,7 +4976,8 @@ const cities = [
     "admin_name": "Shandong",
     "capital": "minor",
     "population": "1338000",
-    "id": "1156225008"
+    "id": "1156225008",
+    "loc": { type: "Point", coordinates:  [ 115.45,35.23] }
   },
   {
     "city": "Porto",
@@ -4630,7 +4990,8 @@ const cities = [
     "admin_name": "Porto",
     "capital": "admin",
     "population": "1337000",
-    "id": "1620356810"
+    "id": "1620356810",
+    "loc": { type: "Point", coordinates:  [ -8.62,41.15] }
   },
   {
     "city": "Āsansol",
@@ -4642,7 +5003,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "West Bengal",
     "population": "1328000",
-    "id": "1356093694"
+    "id": "1356093694",
+    "loc": { type: "Point", coordinates:  [ 86.9833,23.6833] }
   },
   {
     "city": "Lusaka",
@@ -4655,7 +5017,8 @@ const cities = [
     "admin_name": "Lusaka",
     "capital": "primary",
     "population": "1328000",
-    "id": "1894157390"
+    "id": "1894157390",
+    "loc": { type: "Point", coordinates:  [ 28.2833,-15.4166] }
   },
   {
     "city": "Changzhou",
@@ -4668,7 +5031,8 @@ const cities = [
     "admin_name": "Jiangsu",
     "capital": "minor",
     "population": "1327000",
-    "id": "1156185511"
+    "id": "1156185511",
+    "loc": { type: "Point", coordinates:  [ 119.97,31.78] }
   },
   {
     "city": "Mosul",
@@ -4681,7 +5045,8 @@ const cities = [
     "admin_name": "Nīnawá",
     "capital": "admin",
     "population": "1316000",
-    "id": "1368194914"
+    "id": "1368194914",
+    "loc": { type: "Point", coordinates:  [ 43.145,36.345] }
   },
   {
     "city": "Yekaterinburg",
@@ -4694,7 +5059,8 @@ const cities = [
     "admin_name": "Sverdlovskaya Oblast’",
     "capital": "admin",
     "population": "1313000",
-    "id": "1643582706"
+    "id": "1643582706",
+    "loc": { type: "Point", coordinates:  [ 60.6,56.85] }
   },
   {
     "city": "Peshawar",
@@ -4707,7 +5073,8 @@ const cities = [
     "admin_name": "Khyber Pakhtunkhwa",
     "capital": "admin",
     "population": "1303000",
-    "id": "1586851102"
+    "id": "1586851102",
+    "loc": { type: "Point", coordinates:  [ 71.535,34.005] }
   },
   {
     "city": "Mandalay",
@@ -4720,7 +5087,8 @@ const cities = [
     "admin_name": "Mandalay",
     "capital": "admin",
     "population": "1300000",
-    "id": "1104468217"
+    "id": "1104468217",
+    "loc": { type: "Point", coordinates:  [ 96.085,21.97] }
   },
   {
     "city": "Jamshedpur",
@@ -4732,7 +5100,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Jharkhand",
     "population": "1300000",
-    "id": "1356501259"
+    "id": "1356501259",
+    "loc": { type: "Point", coordinates:  [ 86.1975,22.7875] }
   },
   {
     "city": "Mbuji-Mayi",
@@ -4745,7 +5114,8 @@ const cities = [
     "admin_name": "Kasaï Oriental",
     "capital": "admin",
     "population": "1295000",
-    "id": "1180399586"
+    "id": "1180399586",
+    "loc": { type: "Point", coordinates:  [ 23.6,-6.15] }
   },
   {
     "city": "Madura",
@@ -4757,7 +5127,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Tamil Nādu ",
     "population": "1294000",
-    "id": "1356257289"
+    "id": "1356257289",
+    "loc": { type: "Point", coordinates:  [ 78.12,9.92] }
   },
   {
     "city": "Adana",
@@ -4770,7 +5141,8 @@ const cities = [
     "admin_name": "Adana",
     "capital": "admin",
     "population": "1293000",
-    "id": "1792783772"
+    "id": "1792783772",
+    "loc": { type: "Point", coordinates:  [ 35.32,36.995] }
   },
   {
     "city": "Sheffield",
@@ -4783,7 +5155,8 @@ const cities = [
     "admin_name": "Sheffield",
     "capital": "admin",
     "population": "1292900",
-    "id": "1826289852"
+    "id": "1826289852",
+    "loc": { type: "Point", coordinates:  [ -1.5,53.3667] }
   },
   {
     "city": "Jabalpur",
@@ -4795,7 +5168,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Madhya Pradesh",
     "population": "1285000",
-    "id": "1356115460"
+    "id": "1356115460",
+    "loc": { type: "Point", coordinates:  [ 79.9551,23.1751] }
   },
   {
     "city": "San José",
@@ -4808,7 +5182,8 @@ const cities = [
     "admin_name": "San José",
     "capital": "primary",
     "population": "1284000",
-    "id": "1188749877"
+    "id": "1188749877",
+    "loc": { type: "Point", coordinates:  [ -84.0841,9.935] }
   },
   {
     "city": "Panama City",
@@ -4821,7 +5196,8 @@ const cities = [
     "admin_name": "Panamá",
     "capital": "primary",
     "population": "1281000",
-    "id": "1591672475"
+    "id": "1591672475",
+    "loc": { type: "Point", coordinates:  [ -79.533,8.968] }
   },
   {
     "city": "Nizhniy Novgorod",
@@ -4834,7 +5210,8 @@ const cities = [
     "admin_name": "Nizhegorodskaya Oblast’",
     "capital": "admin",
     "population": "1278000",
-    "id": "1643012126"
+    "id": "1643012126",
+    "loc": { type: "Point", coordinates:  [ 44.0001,56.333] }
   },
   {
     "city": "Chifeng",
@@ -4847,7 +5224,8 @@ const cities = [
     "admin_name": "Inner Mongolia",
     "capital": "minor",
     "population": "1277000",
-    "id": "1156277458"
+    "id": "1156277458",
+    "loc": { type: "Point", coordinates:  [ 118.95,42.27] }
   },
   {
     "city": "Duisburg",
@@ -4860,7 +5238,8 @@ const cities = [
     "admin_name": "North Rhine-Westphalia",
     "capital": "minor",
     "population": "1276757",
-    "id": "1276977172"
+    "id": "1276977172",
+    "loc": { type: "Point", coordinates:  [ 6.75,51.43] }
   },
   {
     "city": "Munich",
@@ -4873,7 +5252,8 @@ const cities = [
     "admin_name": "Bavaria",
     "capital": "admin",
     "population": "1275000",
-    "id": "1276692352"
+    "id": "1276692352",
+    "loc": { type: "Point", coordinates:  [ 11.575,48.1299] }
   },
   {
     "city": "Huaiyin",
@@ -4885,7 +5265,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Jiangsu",
     "population": "1264000",
-    "id": "1156662372"
+    "id": "1156662372",
+    "loc": { type: "Point", coordinates:  [ 119.03,33.58] }
   },
   {
     "city": "Stockholm",
@@ -4898,7 +5279,8 @@ const cities = [
     "admin_name": "Stockholm",
     "capital": "primary",
     "population": "1264000",
-    "id": "1752425602"
+    "id": "1752425602",
+    "loc": { type: "Point", coordinates:  [ 18.0973,59.3508] }
   },
   {
     "city": "Makassar",
@@ -4911,7 +5293,8 @@ const cities = [
     "admin_name": "Sulawesi Selatan",
     "capital": "admin",
     "population": "1262000",
-    "id": "1360051337"
+    "id": "1360051337",
+    "loc": { type: "Point", coordinates:  [ 119.432,-5.14] }
   },
   {
     "city": "Rājkot",
@@ -4923,7 +5306,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Gujarāt",
     "population": "1260000",
-    "id": "1356317190"
+    "id": "1356317190",
+    "loc": { type: "Point", coordinates:  [ 70.8,22.31] }
   },
   {
     "city": "Dhanbād",
@@ -4935,7 +5319,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Jharkhand",
     "population": "1246000",
-    "id": "1356103392"
+    "id": "1356103392",
+    "loc": { type: "Point", coordinates:  [ 86.42,23.8004] }
   },
   {
     "city": "Mudanjiang",
@@ -4948,7 +5333,8 @@ const cities = [
     "admin_name": "Heilongjiang",
     "capital": "minor",
     "population": "1244000",
-    "id": "1156249698"
+    "id": "1156249698",
+    "loc": { type: "Point", coordinates:  [ 129.59,44.575] }
   },
   {
     "city": "Geneva",
@@ -4961,7 +5347,8 @@ const cities = [
     "admin_name": "Genève",
     "capital": "admin",
     "population": "1240000",
-    "id": "1756810813"
+    "id": "1756810813",
+    "loc": { type: "Point", coordinates:  [ 6.14,46.21] }
   },
   {
     "city": "Shīrāz",
@@ -4974,7 +5361,8 @@ const cities = [
     "admin_name": "Fārs",
     "capital": "admin",
     "population": "1240000",
-    "id": "1364432238"
+    "id": "1364432238",
+    "loc": { type: "Point", coordinates:  [ 52.57,29.63] }
   },
   {
     "city": "Huzhou",
@@ -4987,7 +5375,8 @@ const cities = [
     "admin_name": "Zhejiang",
     "capital": "minor",
     "population": "1231000",
-    "id": "1156335543"
+    "id": "1156335543",
+    "loc": { type: "Point", coordinates:  [ 120.1,30.8704] }
   },
   {
     "city": "Beidao",
@@ -5000,7 +5389,8 @@ const cities = [
     "admin_name": "Gansu",
     "capital": "minor",
     "population": "1225000",
-    "id": "1156137209"
+    "id": "1156137209",
+    "loc": { type: "Point", coordinates:  [ 105.92,34.6] }
   },
   {
     "city": "Shuangshui",
@@ -5012,7 +5402,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Guizhou",
     "population": "1221000",
-    "id": "1156070389"
+    "id": "1156070389",
+    "loc": { type: "Point", coordinates:  [ 104.8333,26.5944] }
   },
   {
     "city": "Düsseldorf",
@@ -5025,7 +5416,8 @@ const cities = [
     "admin_name": "North Rhine-Westphalia",
     "capital": "admin",
     "population": "1220000",
-    "id": "1276615258"
+    "id": "1276615258",
+    "loc": { type: "Point", coordinates:  [ 6.78,51.2204] }
   },
   {
     "city": "Gaozhou",
@@ -5037,7 +5429,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Guangdong",
     "population": "1217715",
-    "id": "1156785303"
+    "id": "1156785303",
+    "loc": { type: "Point", coordinates:  [ 110.87,21.9204] }
   },
   {
     "city": "Sevilla",
@@ -5050,7 +5443,8 @@ const cities = [
     "admin_name": "Andalusia",
     "capital": "admin",
     "population": "1212045",
-    "id": "1724991838"
+    "id": "1724991838",
+    "loc": { type: "Point", coordinates:  [ -5.98,37.405] }
   },
   {
     "city": "Amritsar",
@@ -5062,7 +5456,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Punjab",
     "population": "1212000",
-    "id": "1356926507"
+    "id": "1356926507",
+    "loc": { type: "Point", coordinates:  [ 74.87,31.64] }
   },
   {
     "city": "Vila Velha",
@@ -5074,7 +5469,8 @@ const cities = [
     "iso3": "BRA",
     "admin_name": "Espírito Santo",
     "population": "1209091",
-    "id": "1076404077"
+    "id": "1076404077",
+    "loc": { type: "Point", coordinates:  [ -40.318,-20.3676] }
   },
   {
     "city": "Vila Velha",
@@ -5086,7 +5482,8 @@ const cities = [
     "iso3": "BRA",
     "admin_name": "Amapá",
     "population": "1209091",
-    "id": "1076575691"
+    "id": "1076575691",
+    "loc": { type: "Point", coordinates:  [ -51.2167,3.2167] }
   },
   {
     "city": "Almaty",
@@ -5099,7 +5496,8 @@ const cities = [
     "admin_name": "Almaty",
     "capital": "admin",
     "population": "1209000",
-    "id": "1398351701"
+    "id": "1398351701",
+    "loc": { type: "Point", coordinates:  [ 76.915,43.325] }
   },
   {
     "city": "Providence",
@@ -5112,7 +5510,8 @@ const cities = [
     "admin_name": "Rhode Island",
     "capital": "admin",
     "population": "1206642",
-    "id": "1840003289"
+    "id": "1840003289",
+    "loc": { type: "Point", coordinates:  [ -71.4187,41.823] }
   },
   {
     "city": "Warangal",
@@ -5124,7 +5523,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Telangana",
     "population": "1203853",
-    "id": "1356851618"
+    "id": "1356851618",
+    "loc": { type: "Point", coordinates:  [ 79.58,18.01] }
   },
   {
     "city": "Rosario",
@@ -5137,7 +5537,8 @@ const cities = [
     "admin_name": "Santa Fe",
     "capital": "minor",
     "population": "1203000",
-    "id": "1032770677"
+    "id": "1032770677",
+    "loc": { type: "Point", coordinates:  [ -60.6663,-32.9511] }
   },
   {
     "city": "Allahābād",
@@ -5149,7 +5550,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Uttar Pradesh",
     "population": "1201000",
-    "id": "1356718332"
+    "id": "1356718332",
+    "loc": { type: "Point", coordinates:  [ 81.84,25.455] }
   },
   {
     "city": "Benin City",
@@ -5162,7 +5564,8 @@ const cities = [
     "admin_name": "Edo",
     "capital": "admin",
     "population": "1190000",
-    "id": "1566080151"
+    "id": "1566080151",
+    "loc": { type: "Point", coordinates:  [ 5.62,6.3405] }
   },
   {
     "city": "Jining",
@@ -5174,7 +5577,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Shandong",
     "population": "1186000",
-    "id": "1156504601"
+    "id": "1156504601",
+    "loc": { type: "Point", coordinates:  [ 116.55,35.4004] }
   },
   {
     "city": "Maceió",
@@ -5187,7 +5591,8 @@ const cities = [
     "admin_name": "Alagoas",
     "capital": "admin",
     "population": "1186000",
-    "id": "1076440479"
+    "id": "1076440479",
+    "loc": { type: "Point", coordinates:  [ -35.73,-9.62] }
   },
   {
     "city": "Sofia",
@@ -5200,7 +5605,8 @@ const cities = [
     "admin_name": "Sofia-Grad",
     "capital": "primary",
     "population": "1185000",
-    "id": "1100762037"
+    "id": "1100762037",
+    "loc": { type: "Point", coordinates:  [ 23.3167,42.6833] }
   },
   {
     "city": "Abbottabad",
@@ -5213,7 +5619,8 @@ const cities = [
     "admin_name": "Khyber Pakhtunkhwa",
     "capital": "minor",
     "population": "1183647",
-    "id": "1586788758"
+    "id": "1586788758",
+    "loc": { type: "Point", coordinates:  [ 73.1995,34.1495] }
   },
   {
     "city": "Benghazi",
@@ -5226,7 +5633,8 @@ const cities = [
     "admin_name": "Banghāzī",
     "capital": "admin",
     "population": "1180000",
-    "id": "1434915572"
+    "id": "1434915572",
+    "loc": { type: "Point", coordinates:  [ 20.0667,32.1167] }
   },
   {
     "city": "Cilacap",
@@ -5239,7 +5647,8 @@ const cities = [
     "admin_name": "Jawa Tengah",
     "capital": "minor",
     "population": "1174964",
-    "id": "1360503809"
+    "id": "1360503809",
+    "loc": { type: "Point", coordinates:  [ 109.0154,-7.7188] }
   },
   {
     "city": "Prague",
@@ -5252,7 +5661,8 @@ const cities = [
     "admin_name": "Praha, Hlavní Město",
     "capital": "primary",
     "population": "1162000",
-    "id": "1203744823"
+    "id": "1203744823",
+    "loc": { type: "Point", coordinates:  [ 14.466,50.0833] }
   },
   {
     "city": "Glasgow",
@@ -5265,7 +5675,8 @@ const cities = [
     "admin_name": "Glasgow City",
     "capital": "admin",
     "population": "1160000",
-    "id": "1826836462"
+    "id": "1826836462",
+    "loc": { type: "Point", coordinates:  [ -4.2507,55.8744] }
   },
   {
     "city": "Leshan",
@@ -5277,7 +5688,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Sichuan",
     "population": "1157000",
-    "id": "1156203130"
+    "id": "1156203130",
+    "loc": { type: "Point", coordinates:  [ 103.7333,29.5671] }
   },
   {
     "city": "Jacksonville",
@@ -5289,7 +5701,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Florida",
     "population": "1156291",
-    "id": "1840015031"
+    "id": "1840015031",
+    "loc": { type: "Point", coordinates:  [ -81.6749,30.3322] }
   },
   {
     "city": "Ouagadougou",
@@ -5302,7 +5715,8 @@ const cities = [
     "admin_name": "Centre",
     "capital": "primary",
     "population": "1149000",
-    "id": "1854029208"
+    "id": "1854029208",
+    "loc": { type: "Point", coordinates:  [ -1.5247,12.3703] }
   },
   {
     "city": "Ottawa",
@@ -5315,7 +5729,8 @@ const cities = [
     "admin_name": "Ontario",
     "capital": "primary",
     "population": "1145000",
-    "id": "1124399363"
+    "id": "1124399363",
+    "loc": { type: "Point", coordinates:  [ -75.7,45.4167] }
   },
   {
     "city": "Adelaide",
@@ -5328,7 +5743,8 @@ const cities = [
     "admin_name": "South Australia",
     "capital": "admin",
     "population": "1145000",
-    "id": "1036538171"
+    "id": "1036538171",
+    "loc": { type: "Point", coordinates:  [ 138.6,-34.935] }
   },
   {
     "city": "Shangrao",
@@ -5341,7 +5757,8 @@ const cities = [
     "admin_name": "Jiangxi",
     "capital": "minor",
     "population": "1144577",
-    "id": "1156405492"
+    "id": "1156405492",
+    "loc": { type: "Point", coordinates:  [ 117.97,28.4704] }
   },
   {
     "city": "Torreón",
@@ -5354,7 +5771,8 @@ const cities = [
     "admin_name": "Coahuila de Zaragoza",
     "capital": "minor",
     "population": "1144000",
-    "id": "1484215762"
+    "id": "1484215762",
+    "loc": { type: "Point", coordinates:  [ -103.42,25.5701] }
   },
   {
     "city": "Srīnagar",
@@ -5367,7 +5785,8 @@ const cities = [
     "admin_name": "Jammu and Kashmīr",
     "capital": "admin",
     "population": "1140000",
-    "id": "1356442950"
+    "id": "1356442950",
+    "loc": { type: "Point", coordinates:  [ 74.815,34.1] }
   },
   {
     "city": "Bezwāda",
@@ -5379,7 +5798,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Andhra Pradesh",
     "population": "1137000",
-    "id": "1356807575"
+    "id": "1356807575",
+    "loc": { type: "Point", coordinates:  [ 80.63,16.52] }
   },
   {
     "city": "Samara",
@@ -5392,7 +5812,8 @@ const cities = [
     "admin_name": "Samarskaya Oblast’",
     "capital": "admin",
     "population": "1137000",
-    "id": "1643205757"
+    "id": "1643205757",
+    "loc": { type: "Point", coordinates:  [ 50.1513,53.195] }
   },
   {
     "city": "Omsk",
@@ -5405,7 +5826,8 @@ const cities = [
     "admin_name": "Omskaya Oblast’",
     "capital": "admin",
     "population": "1135000",
-    "id": "1643360863"
+    "id": "1643360863",
+    "loc": { type: "Point", coordinates:  [ 73.4,54.99] }
   },
   {
     "city": "Newcastle",
@@ -5417,7 +5839,8 @@ const cities = [
     "iso3": "AUS",
     "admin_name": "New South Wales",
     "population": "1134616",
-    "id": "1036468001"
+    "id": "1036468001",
+    "loc": { type: "Point", coordinates:  [ 151.815,-32.8453] }
   },
   {
     "city": "Yulin",
@@ -5429,7 +5852,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Guangxi",
     "population": "1127000",
-    "id": "1156901312"
+    "id": "1156901312",
+    "loc": { type: "Point", coordinates:  [ 110.15,22.63] }
   },
   {
     "city": "Namp’o",
@@ -5441,7 +5865,8 @@ const cities = [
     "iso3": "PRK",
     "capital": "admin",
     "population": "1127000",
-    "id": "1408892768"
+    "id": "1408892768",
+    "loc": { type: "Point", coordinates:  [ 125.4524,38.7669] }
   },
   {
     "city": "Xianyang",
@@ -5454,7 +5879,8 @@ const cities = [
     "admin_name": "Shaanxi",
     "capital": "minor",
     "population": "1126000",
-    "id": "1156120117"
+    "id": "1156120117",
+    "loc": { type: "Point", coordinates:  [ 108.7147,34.3456] }
   },
   {
     "city": "Cagayan de Oro",
@@ -5467,7 +5893,8 @@ const cities = [
     "admin_name": "Cagayan de Oro",
     "capital": "admin",
     "population": "1121561",
-    "id": "1608831546"
+    "id": "1608831546",
+    "loc": { type: "Point", coordinates:  [ 124.6853,8.4508] }
   },
   {
     "city": "Cần Thơ",
@@ -5480,7 +5907,8 @@ const cities = [
     "admin_name": "Cần Thơ",
     "capital": "admin",
     "population": "1121000",
-    "id": "1704783472"
+    "id": "1704783472",
+    "loc": { type: "Point", coordinates:  [ 105.77,10.05] }
   },
   {
     "city": "Barquisimeto",
@@ -5493,7 +5921,8 @@ const cities = [
     "admin_name": "Lara",
     "capital": "admin",
     "population": "1116000",
-    "id": "1862860739"
+    "id": "1862860739",
+    "loc": { type: "Point", coordinates:  [ -69.3,10.05] }
   },
   {
     "city": "Helsinki",
@@ -5506,7 +5935,8 @@ const cities = [
     "admin_name": "Uusimaa",
     "capital": "primary",
     "population": "1115000",
-    "id": "1246177997"
+    "id": "1246177997",
+    "loc": { type: "Point", coordinates:  [ 24.9341,60.1756] }
   },
   {
     "city": "Kazan’",
@@ -5519,7 +5949,8 @@ const cities = [
     "admin_name": "Tatarstan",
     "capital": "admin",
     "population": "1115000",
-    "id": "1643101260"
+    "id": "1643101260",
+    "loc": { type: "Point", coordinates:  [ 49.1263,55.7499] }
   },
   {
     "city": "Aurangābād",
@@ -5531,7 +5962,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Mahārāshtra",
     "population": "1113000",
-    "id": "1356840670"
+    "id": "1356840670",
+    "loc": { type: "Point", coordinates:  [ 75.3203,19.8957] }
   },
   {
     "city": "Calgary",
@@ -5543,7 +5975,8 @@ const cities = [
     "iso3": "CAN",
     "admin_name": "Alberta",
     "population": "1110000",
-    "id": "1124690423"
+    "id": "1124690423",
+    "loc": { type: "Point", coordinates:  [ -114.08,51.083] }
   },
   {
     "city": "Ciudad Nezahualcóyotl",
@@ -5555,7 +5988,8 @@ const cities = [
     "iso3": "MEX",
     "admin_name": "México",
     "population": "1109363",
-    "id": "1484016661"
+    "id": "1484016661",
+    "loc": { type: "Point", coordinates:  [ -99.03,19.41] }
   },
   {
     "city": "Zürich",
@@ -5568,7 +6002,8 @@ const cities = [
     "admin_name": "Zürich",
     "capital": "admin",
     "population": "1108000",
-    "id": "1756539143"
+    "id": "1756539143",
+    "loc": { type: "Point", coordinates:  [ 8.55,47.38] }
   },
   {
     "city": "Baoding",
@@ -5580,7 +6015,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Hebei",
     "population": "1107000",
-    "id": "1156256829"
+    "id": "1156256829",
+    "loc": { type: "Point", coordinates:  [ 115.48,38.8704] }
   },
   {
     "city": "Zigong",
@@ -5592,7 +6028,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Sichuan",
     "population": "1105000",
-    "id": "1156023354"
+    "id": "1156023354",
+    "loc": { type: "Point", coordinates:  [ 104.78,29.4] }
   },
   {
     "city": "Sharjah",
@@ -5605,7 +6042,8 @@ const cities = [
     "admin_name": "Ash Shāriqah",
     "capital": "admin",
     "population": "1103027",
-    "id": "1784152993"
+    "id": "1784152993",
+    "loc": { type: "Point", coordinates:  [ 55.4065,25.3714] }
   },
   {
     "city": "Yerevan",
@@ -5618,7 +6056,8 @@ const cities = [
     "admin_name": "Yerevan",
     "capital": "primary",
     "population": "1102000",
-    "id": "1051074169"
+    "id": "1051074169",
+    "loc": { type: "Point", coordinates:  [ 44.5136,40.1812] }
   },
   {
     "city": "Mogadishu",
@@ -5631,7 +6070,8 @@ const cities = [
     "admin_name": "Banaadir",
     "capital": "primary",
     "population": "1100000",
-    "id": "1706893395"
+    "id": "1706893395",
+    "loc": { type: "Point", coordinates:  [ 45.3667,2.0667] }
   },
   {
     "city": "Tbilisi",
@@ -5644,7 +6084,8 @@ const cities = [
     "admin_name": "Tbilisi",
     "capital": "primary",
     "population": "1100000",
-    "id": "1268203191"
+    "id": "1268203191",
+    "loc": { type: "Point", coordinates:  [ 44.7908,41.725] }
   },
   {
     "city": "Ankang",
@@ -5656,7 +6097,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Shaanxi",
     "population": "1100000",
-    "id": "1156255711"
+    "id": "1156255711",
+    "loc": { type: "Point", coordinates:  [ 109.02,32.68] }
   },
   {
     "city": "Huambo",
@@ -5669,7 +6111,8 @@ const cities = [
     "admin_name": "Huambo",
     "capital": "admin",
     "population": "1100000",
-    "id": "1024079828"
+    "id": "1024079828",
+    "loc": { type: "Point", coordinates:  [ 15.76,-12.75] }
   },
   {
     "city": "Ikare",
@@ -5682,7 +6125,8 @@ const cities = [
     "admin_name": "Ondo",
     "capital": "minor",
     "population": "1099931",
-    "id": "1566683694"
+    "id": "1566683694",
+    "loc": { type: "Point", coordinates:  [ 5.76,7.5304] }
   },
   {
     "city": "Belgrade",
@@ -5695,7 +6139,8 @@ const cities = [
     "admin_name": "Beograd",
     "capital": "primary",
     "population": "1099000",
-    "id": "1688374696"
+    "id": "1688374696",
+    "loc": { type: "Point", coordinates:  [ 20.468,44.8186] }
   },
   {
     "city": "Salt Lake City",
@@ -5708,7 +6153,8 @@ const cities = [
     "admin_name": "Utah",
     "capital": "admin",
     "population": "1098400",
-    "id": "1840021383"
+    "id": "1840021383",
+    "loc": { type: "Point", coordinates:  [ -111.93,40.7774] }
   },
   {
     "city": "Bhilai",
@@ -5720,7 +6166,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Chhattīsgarh",
     "population": "1097000",
-    "id": "1356071083"
+    "id": "1356071083",
+    "loc": { type: "Point", coordinates:  [ 81.4333,21.2167] }
   },
   {
     "city": "Jinhua",
@@ -5733,7 +6180,8 @@ const cities = [
     "admin_name": "Zhejiang",
     "capital": "minor",
     "population": "1092852",
-    "id": "1156547188"
+    "id": "1156547188",
+    "loc": { type: "Point", coordinates:  [ 119.65,29.12] }
   },
   {
     "city": "Chelyabinsk",
@@ -5746,7 +6194,8 @@ const cities = [
     "admin_name": "Chelyabinskaya Oblast’",
     "capital": "admin",
     "population": "1091000",
-    "id": "1643224011"
+    "id": "1643224011",
+    "loc": { type: "Point", coordinates:  [ 61.4387,55.155] }
   },
   {
     "city": "Natal",
@@ -5759,7 +6208,8 @@ const cities = [
     "admin_name": "Rio Grande do Norte",
     "capital": "admin",
     "population": "1088000",
-    "id": "1076697777"
+    "id": "1076697777",
+    "loc": { type: "Point", coordinates:  [ -35.24,-5.78] }
   },
   {
     "city": "Dushanbe",
@@ -5772,7 +6222,8 @@ const cities = [
     "admin_name": "Dushanbe",
     "capital": "primary",
     "population": "1086244",
-    "id": "1762930616"
+    "id": "1762930616",
+    "loc": { type: "Point", coordinates:  [ 68.7739,38.56] }
   },
   {
     "city": "Copenhagen",
@@ -5785,7 +6236,8 @@ const cities = [
     "admin_name": "Hovedstaden",
     "capital": "primary",
     "population": "1085000",
-    "id": "1208763942"
+    "id": "1208763942",
+    "loc": { type: "Point", coordinates:  [ 12.5635,55.6786] }
   },
   {
     "city": "Changwon",
@@ -5798,7 +6250,8 @@ const cities = [
     "admin_name": "Gyeongnam",
     "capital": "admin",
     "population": "1081499",
-    "id": "1410592618"
+    "id": "1410592618",
+    "loc": { type: "Point", coordinates:  [ 128.5836,35.2191] }
   },
   {
     "city": "Zhuzhou",
@@ -5811,7 +6264,8 @@ const cities = [
     "admin_name": "Hunan",
     "capital": "minor",
     "population": "1080000",
-    "id": "1156041962"
+    "id": "1156041962",
+    "loc": { type: "Point", coordinates:  [ 113.15,27.83] }
   },
   {
     "city": "Suwon",
@@ -5824,7 +6278,8 @@ const cities = [
     "admin_name": "Gyeonggi",
     "capital": "admin",
     "population": "1078000",
-    "id": "1410679777"
+    "id": "1410679777",
+    "loc": { type: "Point", coordinates:  [ 127.0109,37.2578] }
   },
   {
     "city": "Nashville",
@@ -5837,7 +6292,8 @@ const cities = [
     "admin_name": "Tennessee",
     "capital": "admin",
     "population": "1076645",
-    "id": "1840036155"
+    "id": "1840036155",
+    "loc": { type: "Point", coordinates:  [ -86.7843,36.1715] }
   },
   {
     "city": "Vereeniging",
@@ -5849,7 +6305,8 @@ const cities = [
     "iso3": "ZAF",
     "admin_name": "Gauteng",
     "population": "1074000",
-    "id": "1710271883"
+    "id": "1710271883",
+    "loc": { type: "Point", coordinates:  [ 27.96,-26.6496] }
   },
   {
     "city": "Xiangyang",
@@ -5862,7 +6319,8 @@ const cities = [
     "admin_name": "Hubei",
     "capital": "minor",
     "population": "1069000",
-    "id": "1156107325"
+    "id": "1156107325",
+    "loc": { type: "Point", coordinates:  [ 112.13,32.02] }
   },
   {
     "city": "Memphis",
@@ -5874,7 +6332,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Tennessee",
     "population": "1068873",
-    "id": "1840015457"
+    "id": "1840015457",
+    "loc": { type: "Point", coordinates:  [ -89.9773,35.1046] }
   },
   {
     "city": "Ulsan",
@@ -5887,7 +6346,8 @@ const cities = [
     "admin_name": "Ulsan",
     "capital": "admin",
     "population": "1061000",
-    "id": "1410134602"
+    "id": "1410134602",
+    "loc": { type: "Point", coordinates:  [ 129.317,35.5467] }
   },
   {
     "city": "Amman",
@@ -5900,7 +6360,8 @@ const cities = [
     "admin_name": "Al ‘Āşimah",
     "capital": "primary",
     "population": "1060000",
-    "id": "1400522593"
+    "id": "1400522593",
+    "loc": { type: "Point", coordinates:  [ 35.9333,31.95] }
   },
   {
     "city": "Mizhou",
@@ -5913,7 +6374,8 @@ const cities = [
     "admin_name": "Shandong",
     "capital": "minor",
     "population": "1060000",
-    "id": "1156935002"
+    "id": "1156935002",
+    "loc": { type: "Point", coordinates:  [ 119.3801,35.99] }
   },
   {
     "city": "Richmond",
@@ -5926,7 +6388,8 @@ const cities = [
     "admin_name": "Virginia",
     "capital": "admin",
     "population": "1059907",
-    "id": "1840001698"
+    "id": "1840001698",
+    "loc": { type: "Point", coordinates:  [ -77.4756,37.5295] }
   },
   {
     "city": "Dublin",
@@ -5939,7 +6402,8 @@ const cities = [
     "admin_name": "Dublin",
     "capital": "primary",
     "population": "1059000",
-    "id": "1372595407"
+    "id": "1372595407",
+    "loc": { type: "Point", coordinates:  [ -6.2489,53.3331] }
   },
   {
     "city": "Edmonton",
@@ -5952,7 +6416,8 @@ const cities = [
     "admin_name": "Alberta",
     "capital": "admin",
     "population": "1058000",
-    "id": "1124290735"
+    "id": "1124290735",
+    "loc": { type: "Point", coordinates:  [ -113.5,53.55] }
   },
   {
     "city": "Solāpur",
@@ -5964,7 +6429,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Mahārāshtra",
     "population": "1057000",
-    "id": "1356314385"
+    "id": "1356314385",
+    "loc": { type: "Point", coordinates:  [ 75.9,17.6704] }
   },
   {
     "city": "Rostov-na-Donu",
@@ -5977,7 +6443,8 @@ const cities = [
     "admin_name": "Rostovskaya Oblast’",
     "capital": "admin",
     "population": "1052000",
-    "id": "1643013518"
+    "id": "1643013518",
+    "loc": { type: "Point", coordinates:  [ 39.7127,47.2346] }
   },
   {
     "city": "Dnipro",
@@ -5990,7 +6457,8 @@ const cities = [
     "admin_name": "Dnipropetrovs’ka Oblast’",
     "capital": "admin",
     "population": "1050000",
-    "id": "1804152933"
+    "id": "1804152933",
+    "loc": { type: "Point", coordinates:  [ 35,48.48] }
   },
   {
     "city": "Xining",
@@ -6003,7 +6471,8 @@ const cities = [
     "admin_name": "Qinghai",
     "capital": "admin",
     "population": "1048000",
-    "id": "1156081448"
+    "id": "1156081448",
+    "loc": { type: "Point", coordinates:  [ 101.77,36.62] }
   },
   {
     "city": "Zhangjiakou",
@@ -6015,7 +6484,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Hebei",
     "population": "1046000",
-    "id": "1156800221"
+    "id": "1156800221",
+    "loc": { type: "Point", coordinates:  [ 114.93,40.83] }
   },
   {
     "city": "Lille",
@@ -6028,7 +6498,8 @@ const cities = [
     "admin_name": "Hauts-de-France",
     "capital": "admin",
     "population": "1044000",
-    "id": "1250071961"
+    "id": "1250071961",
+    "loc": { type: "Point", coordinates:  [ 3.08,50.65] }
   },
   {
     "city": "Ranchi",
@@ -6041,7 +6512,8 @@ const cities = [
     "admin_name": "Jharkhand",
     "capital": "admin",
     "population": "1044000",
-    "id": "1356110588"
+    "id": "1356110588",
+    "loc": { type: "Point", coordinates:  [ 85.33,23.37] }
   },
   {
     "city": "Gaziantep",
@@ -6054,7 +6526,8 @@ const cities = [
     "admin_name": "Gaziantep",
     "capital": "admin",
     "population": "1044000",
-    "id": "1792911843"
+    "id": "1792911843",
+    "loc": { type: "Point", coordinates:  [ 37.385,37.075] }
   },
   {
     "city": "Monrovia",
@@ -6067,7 +6540,8 @@ const cities = [
     "admin_name": "Montserrado",
     "capital": "primary",
     "population": "1041000",
-    "id": "1430477826"
+    "id": "1430477826",
+    "loc": { type: "Point", coordinates:  [ -10.8048,6.3106] }
   },
   {
     "city": "São Luís",
@@ -6080,7 +6554,8 @@ const cities = [
     "admin_name": "Maranhão",
     "capital": "admin",
     "population": "1038000",
-    "id": "1076819308"
+    "id": "1076819308",
+    "loc": { type: "Point", coordinates:  [ -44.266,-2.516] }
   },
   {
     "city": "Amsterdam",
@@ -6093,7 +6568,8 @@ const cities = [
     "admin_name": "Noord-Holland",
     "capital": "primary",
     "population": "1031000",
-    "id": "1528355309"
+    "id": "1528355309",
+    "loc": { type: "Point", coordinates:  [ 4.9166,52.35] }
   },
   {
     "city": "Jerusalem",
@@ -6105,7 +6581,8 @@ const cities = [
     "iso3": "ISR",
     "capital": "primary",
     "population": "1029300",
-    "id": "1376261644"
+    "id": "1376261644",
+    "loc": { type: "Point", coordinates:  [ 35.2066,31.7784] }
   },
   {
     "city": "New Orleans",
@@ -6117,7 +6594,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Louisiana",
     "population": "1029123",
-    "id": "1840001839"
+    "id": "1840001839",
+    "loc": { type: "Point", coordinates:  [ -89.9288,30.0687] }
   },
   {
     "city": "Guatemala City",
@@ -6130,7 +6608,8 @@ const cities = [
     "admin_name": "Guatemala",
     "capital": "primary",
     "population": "1024000",
-    "id": "1320197916"
+    "id": "1320197916",
+    "loc": { type: "Point", coordinates:  [ -90.527,14.6211] }
   },
   {
     "city": "Zhuhai",
@@ -6143,7 +6622,8 @@ const cities = [
     "admin_name": "Guangdong",
     "capital": "minor",
     "population": "1023000",
-    "id": "1156722242"
+    "id": "1156722242",
+    "loc": { type: "Point", coordinates:  [ 113.5678,22.2769] }
   },
   {
     "city": "Florianópolis",
@@ -6156,7 +6636,8 @@ const cities = [
     "admin_name": "Santa Catarina",
     "capital": "admin",
     "population": "1023000",
-    "id": "1076190259"
+    "id": "1076190259",
+    "loc": { type: "Point", coordinates:  [ -48.52,-27.58] }
   },
   {
     "city": "Port Elizabeth",
@@ -6168,7 +6649,8 @@ const cities = [
     "iso3": "ZAF",
     "admin_name": "Eastern Cape",
     "population": "1021000",
-    "id": "1710918997"
+    "id": "1710918997",
+    "loc": { type: "Point", coordinates:  [ 25.6,-33.97] }
   },
   {
     "city": "Jiamusi",
@@ -6181,7 +6663,8 @@ const cities = [
     "admin_name": "Heilongjiang",
     "capital": "minor",
     "population": "1020000",
-    "id": "1156350864"
+    "id": "1156350864",
+    "loc": { type: "Point", coordinates:  [ 130.35,46.83] }
   },
   {
     "city": "Port Harcourt",
@@ -6194,7 +6677,8 @@ const cities = [
     "admin_name": "Rivers",
     "capital": "admin",
     "population": "1020000",
-    "id": "1566070649"
+    "id": "1566070649",
+    "loc": { type: "Point", coordinates:  [ 7.01,4.81] }
   },
   {
     "city": "Raleigh",
@@ -6207,7 +6691,8 @@ const cities = [
     "admin_name": "North Carolina",
     "capital": "admin",
     "population": "1018336",
-    "id": "1840014497"
+    "id": "1840014497",
+    "loc": { type: "Point", coordinates:  [ -78.6438,35.8324] }
   },
   {
     "city": "Ufa",
@@ -6220,7 +6705,8 @@ const cities = [
     "admin_name": "Bashkortostan",
     "capital": "admin",
     "population": "1018000",
-    "id": "1643722928"
+    "id": "1643722928",
+    "loc": { type: "Point", coordinates:  [ 56.04,54.79] }
   },
   {
     "city": "Hengyang",
@@ -6232,7 +6718,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Hunan",
     "population": "1016000",
-    "id": "1156696884"
+    "id": "1156696884",
+    "loc": { type: "Point", coordinates:  [ 112.59,26.88] }
   },
   {
     "city": "Benxi",
@@ -6244,7 +6731,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Liaoning",
     "population": "1012000",
-    "id": "1156097909"
+    "id": "1156097909",
+    "loc": { type: "Point", coordinates:  [ 123.75,41.3304] }
   },
   {
     "city": "Louisville",
@@ -6256,7 +6744,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Kentucky",
     "population": "1011696",
-    "id": "1840030815"
+    "id": "1840030815",
+    "loc": { type: "Point", coordinates:  [ -85.6485,38.1663] }
   },
   {
     "city": "Haifa",
@@ -6269,7 +6758,8 @@ const cities = [
     "admin_name": "Haifa",
     "capital": "admin",
     "population": "1011000",
-    "id": "1376133727"
+    "id": "1376133727",
+    "loc": { type: "Point", coordinates:  [ 34.98,32.8204] }
   },
   {
     "city": "Medina",
@@ -6282,7 +6772,8 @@ const cities = [
     "admin_name": "Al Madīnah al Munawwarah",
     "capital": "admin",
     "population": "1010000",
-    "id": "1682345785"
+    "id": "1682345785",
+    "loc": { type: "Point", coordinates:  [ 39.58,24.5] }
   },
   {
     "city": "Bucaramanga",
@@ -6295,7 +6786,8 @@ const cities = [
     "admin_name": "Santander",
     "capital": "admin",
     "population": "1009000",
-    "id": "1170940590"
+    "id": "1170940590",
+    "loc": { type: "Point", coordinates:  [ -73.1259,7.1301] }
   },
   {
     "city": "Maracay",
@@ -6308,7 +6800,8 @@ const cities = [
     "admin_name": "Aragua",
     "capital": "admin",
     "population": "1007000",
-    "id": "1862284350"
+    "id": "1862284350",
+    "loc": { type: "Point", coordinates:  [ -67.5958,10.2469] }
   },
   {
     "city": "Rotterdam",
@@ -6321,7 +6814,8 @@ const cities = [
     "admin_name": "Zuid-Holland",
     "capital": "minor",
     "population": "1005000",
-    "id": "1528892850"
+    "id": "1528892850",
+    "loc": { type: "Point", coordinates:  [ 4.48,51.92] }
   },
   {
     "city": "Homs",
@@ -6334,7 +6828,8 @@ const cities = [
     "admin_name": "Ḩimş",
     "capital": "admin",
     "population": "1005000",
-    "id": "1760013934"
+    "id": "1760013934",
+    "loc": { type: "Point", coordinates:  [ 36.72,34.73] }
   },
   {
     "city": "Cologne",
@@ -6346,7 +6841,8 @@ const cities = [
     "iso3": "DEU",
     "admin_name": "North Rhine-Westphalia",
     "population": "1004000",
-    "id": "1276015998"
+    "id": "1276015998",
+    "loc": { type: "Point", coordinates:  [ 6.95,50.93] }
   },
   {
     "city": "Qinhuangdao",
@@ -6358,7 +6854,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Hebei",
     "population": "1003000",
-    "id": "1156091093"
+    "id": "1156091093",
+    "loc": { type: "Point", coordinates:  [ 119.62,39.9304] }
   },
   {
     "city": "Fès",
@@ -6371,7 +6868,8 @@ const cities = [
     "admin_name": "Fès-Meknès",
     "capital": "admin",
     "population": "1002000",
-    "id": "1504861997"
+    "id": "1504861997",
+    "loc": { type: "Point", coordinates:  [ -5.0004,34.0546] }
   },
   {
     "city": "N’Djamena",
@@ -6384,7 +6882,8 @@ const cities = [
     "admin_name": "Ville de N’Djaména",
     "capital": "primary",
     "population": "989000",
-    "id": "1148708596"
+    "id": "1148708596",
+    "loc": { type: "Point", coordinates:  [ 15.0491,12.1131] }
   },
   {
     "city": "Tegucigalpa",
@@ -6397,7 +6896,8 @@ const cities = [
     "admin_name": "Francisco Morazán",
     "capital": "primary",
     "population": "946000",
-    "id": "1340344059"
+    "id": "1340344059",
+    "loc": { type: "Point", coordinates:  [ -87.2175,14.102] }
   },
   {
     "city": "Kingston",
@@ -6410,7 +6910,8 @@ const cities = [
     "admin_name": "Kingston",
     "capital": "primary",
     "population": "937700",
-    "id": "1388709177"
+    "id": "1388709177",
+    "loc": { type: "Point", coordinates:  [ -76.7674,17.9771] }
   },
   {
     "city": "Nay Pyi Taw",
@@ -6423,7 +6924,8 @@ const cities = [
     "admin_name": "Nay Pyi Taw",
     "capital": "primary",
     "population": "930000",
-    "id": "1104838105"
+    "id": "1104838105",
+    "loc": { type: "Point", coordinates:  [ 96.1186,19.7666] }
   },
   {
     "city": "Djibouti",
@@ -6436,7 +6938,8 @@ const cities = [
     "admin_name": "Djibouti",
     "capital": "primary",
     "population": "923000",
-    "id": "1262028958"
+    "id": "1262028958",
+    "loc": { type: "Point", coordinates:  [ 43.148,11.595] }
   },
   {
     "city": "Managua",
@@ -6449,7 +6952,8 @@ const cities = [
     "admin_name": "Managua",
     "capital": "primary",
     "population": "920000",
-    "id": "1558296252"
+    "id": "1558296252",
+    "loc": { type: "Point", coordinates:  [ -86.2685,12.153] }
   },
   {
     "city": "Niamey",
@@ -6462,7 +6966,8 @@ const cities = [
     "admin_name": "Niamey",
     "capital": "primary",
     "population": "915000",
-    "id": "1562932886"
+    "id": "1562932886",
+    "loc": { type: "Point", coordinates:  [ 2.1167,13.5167] }
   },
   {
     "city": "Tirana",
@@ -6475,7 +6980,8 @@ const cities = [
     "admin_name": "Tiranë",
     "capital": "primary",
     "population": "895350",
-    "id": "1008162156"
+    "id": "1008162156",
+    "loc": { type: "Point", coordinates:  [ 19.8189,41.3275] }
   },
   {
     "city": "Kathmandu",
@@ -6488,7 +6994,8 @@ const cities = [
     "admin_name": "Bāgmatī",
     "capital": "primary",
     "population": "895000",
-    "id": "1524589448"
+    "id": "1524589448",
+    "loc": { type: "Point", coordinates:  [ 85.3166,27.7167] }
   },
   {
     "city": "Ulaanbaatar",
@@ -6501,7 +7008,8 @@ const cities = [
     "admin_name": "Ulaanbaatar",
     "capital": "primary",
     "population": "885000",
-    "id": "1496024767"
+    "id": "1496024767",
+    "loc": { type: "Point", coordinates:  [ 106.9166,47.9167] }
   },
   {
     "city": "Kigali",
@@ -6514,7 +7022,8 @@ const cities = [
     "admin_name": "Kigali",
     "capital": "primary",
     "population": "860000",
-    "id": "1646923541"
+    "id": "1646923541",
+    "loc": { type: "Point", coordinates:  [ 30.0605,-1.9536] }
   },
   {
     "city": "Bishkek",
@@ -6527,7 +7036,8 @@ const cities = [
     "admin_name": "Bishkek",
     "capital": "primary",
     "population": "837000",
-    "id": "1417191971"
+    "id": "1417191971",
+    "loc": { type: "Point", coordinates:  [ 74.5852,42.8731] }
   },
   {
     "city": "Oslo",
@@ -6540,7 +7050,8 @@ const cities = [
     "admin_name": "Oslo",
     "capital": "primary",
     "population": "835000",
-    "id": "1578324706"
+    "id": "1578324706",
+    "loc": { type: "Point", coordinates:  [ 10.75,59.9167] }
   },
   {
     "city": "Bangui",
@@ -6553,7 +7064,8 @@ const cities = [
     "admin_name": "Bangui",
     "capital": "primary",
     "population": "831925",
-    "id": "1140080881"
+    "id": "1140080881",
+    "loc": { type: "Point", coordinates:  [ 18.5583,4.3666] }
   },
   {
     "city": "Freetown",
@@ -6566,7 +7078,8 @@ const cities = [
     "admin_name": "Western Area",
     "capital": "primary",
     "population": "827000",
-    "id": "1694085071"
+    "id": "1694085071",
+    "loc": { type: "Point", coordinates:  [ -13.2342,8.47] }
   },
   {
     "city": "Islamabad",
@@ -6579,7 +7092,8 @@ const cities = [
     "admin_name": "Islāmābād",
     "capital": "primary",
     "population": "780000",
-    "id": "1586306717"
+    "id": "1586306717",
+    "loc": { type: "Point", coordinates:  [ 73.1666,33.7] }
   },
   {
     "city": "Cotonou",
@@ -6592,7 +7106,8 @@ const cities = [
     "admin_name": "Littoral",
     "capital": "primary",
     "population": "762000",
-    "id": "1204955174"
+    "id": "1204955174",
+    "loc": { type: "Point", coordinates:  [ 2.52,6.4] }
   },
   {
     "city": "Vientiane",
@@ -6605,7 +7120,8 @@ const cities = [
     "admin_name": "Viangchan",
     "capital": "primary",
     "population": "754000",
-    "id": "1418732714"
+    "id": "1418732714",
+    "loc": { type: "Point", coordinates:  [ 102.6,17.9667] }
   },
   {
     "city": "Riga",
@@ -6618,7 +7134,8 @@ const cities = [
     "admin_name": "Rīga",
     "capital": "primary",
     "population": "742572",
-    "id": "1428586192"
+    "id": "1428586192",
+    "loc": { type: "Point", coordinates:  [ 24.1,56.95] }
   },
   {
     "city": "Nouakchott",
@@ -6630,7 +7147,8 @@ const cities = [
     "iso3": "MRT",
     "capital": "primary",
     "population": "742144",
-    "id": "1478414984"
+    "id": "1478414984",
+    "loc": { type: "Point", coordinates:  [ -15.9753,18.0864] }
   },
   {
     "city": "Muscat",
@@ -6643,7 +7161,8 @@ const cities = [
     "admin_name": "Masqaţ",
     "capital": "primary",
     "population": "734697",
-    "id": "1512035506"
+    "id": "1512035506",
+    "loc": { type: "Point", coordinates:  [ 58.5933,23.6133] }
   },
   {
     "city": "Ashgabat",
@@ -6655,7 +7174,8 @@ const cities = [
     "iso3": "TKM",
     "capital": "primary",
     "population": "727700",
-    "id": "1795049992"
+    "id": "1795049992",
+    "loc": { type: "Point", coordinates:  [ 58.3833,37.95] }
   },
   {
     "city": "Zagreb",
@@ -6668,7 +7188,8 @@ const cities = [
     "admin_name": "Zagreb, Grad",
     "capital": "primary",
     "population": "722526",
-    "id": "1191233290"
+    "id": "1191233290",
+    "loc": { type: "Point", coordinates:  [ 16,45.8] }
   },
   {
     "city": "Sarajevo",
@@ -6681,7 +7202,8 @@ const cities = [
     "admin_name": "Bosnia and Herzegovina, Federation of",
     "capital": "primary",
     "population": "696731",
-    "id": "1070966777"
+    "id": "1070966777",
+    "loc": { type: "Point", coordinates:  [ 18.383,43.85] }
   },
   {
     "city": "Chisinau",
@@ -6694,7 +7216,8 @@ const cities = [
     "admin_name": "Chişinău",
     "capital": "primary",
     "population": "688134",
-    "id": "1498011437"
+    "id": "1498011437",
+    "loc": { type: "Point", coordinates:  [ 28.8577,47.005] }
   },
   {
     "city": "Lilongwe",
@@ -6707,7 +7230,8 @@ const cities = [
     "admin_name": "Lilongwe",
     "capital": "primary",
     "population": "646750",
-    "id": "1454688499"
+    "id": "1454688499",
+    "loc": { type: "Point", coordinates:  [ 33.7833,-13.9833] }
   },
   {
     "city": "Asmara",
@@ -6720,7 +7244,8 @@ const cities = [
     "admin_name": "Ma’ākel",
     "capital": "primary",
     "population": "620802",
-    "id": "1232791236"
+    "id": "1232791236",
+    "loc": { type: "Point", coordinates:  [ 38.9333,15.3333] }
   },
   {
     "city": "Abu Dhabi",
@@ -6733,7 +7258,8 @@ const cities = [
     "admin_name": "Abū Z̧aby",
     "capital": "primary",
     "population": "603492",
-    "id": "1784176710"
+    "id": "1784176710",
+    "loc": { type: "Point", coordinates:  [ 54.3666,24.4667] }
   },
   {
     "city": "Port Louis",
@@ -6746,7 +7272,8 @@ const cities = [
     "admin_name": "Port Louis",
     "capital": "primary",
     "population": "595491",
-    "id": "1480131261"
+    "id": "1480131261",
+    "loc": { type: "Point", coordinates:  [ 57.5,-20.1666] }
   },
   {
     "city": "Libreville",
@@ -6759,7 +7286,8 @@ const cities = [
     "admin_name": "Estuaire",
     "capital": "primary",
     "population": "578156",
-    "id": "1266952885"
+    "id": "1266952885",
+    "loc": { type: "Point", coordinates:  [ 9.458,0.3854] }
   },
   {
     "city": "Manama",
@@ -6772,7 +7300,8 @@ const cities = [
     "admin_name": "Al ‘Āşimah",
     "capital": "primary",
     "population": "563920",
-    "id": "1048989486"
+    "id": "1048989486",
+    "loc": { type: "Point", coordinates:  [ 50.5831,26.2361] }
   },
   {
     "city": "Vilnius",
@@ -6785,7 +7314,8 @@ const cities = [
     "admin_name": "Vilniaus Miestas",
     "capital": "primary",
     "population": "542366",
-    "id": "1440887149"
+    "id": "1440887149",
+    "loc": { type: "Point", coordinates:  [ 25.3166,54.6834] }
   },
   {
     "city": "Skopje",
@@ -6798,7 +7328,8 @@ const cities = [
     "admin_name": "Skopje",
     "capital": "primary",
     "population": "494087",
-    "id": "1807600615"
+    "id": "1807600615",
+    "loc": { type: "Point", coordinates:  [ 21.4335,42] }
   },
   {
     "city": "Bloemfontein",
@@ -6811,7 +7342,8 @@ const cities = [
     "admin_name": "Free State",
     "capital": "primary",
     "population": "463064",
-    "id": "1710495933"
+    "id": "1710495933",
+    "loc": { type: "Point", coordinates:  [ 26.2299,-29.12] }
   },
   {
     "city": "Bratislava",
@@ -6824,7 +7356,8 @@ const cities = [
     "admin_name": "Bratislavský",
     "capital": "primary",
     "population": "423737",
-    "id": "1703195001"
+    "id": "1703195001",
+    "loc": { type: "Point", coordinates:  [ 17.117,48.15] }
   },
   {
     "city": "Bissau",
@@ -6837,7 +7370,8 @@ const cities = [
     "admin_name": "Bissau",
     "capital": "primary",
     "population": "403339",
-    "id": "1624168850"
+    "id": "1624168850",
+    "loc": { type: "Point", coordinates:  [ -15.5984,11.865] }
   },
   {
     "city": "Tallinn",
@@ -6850,7 +7384,8 @@ const cities = [
     "admin_name": "Harjumaa",
     "capital": "primary",
     "population": "394024",
-    "id": "1233260021"
+    "id": "1233260021",
+    "loc": { type: "Point", coordinates:  [ 24.728,59.4339] }
   },
   {
     "city": "Wellington",
@@ -6863,7 +7398,8 @@ const cities = [
     "admin_name": "Wellington",
     "capital": "primary",
     "population": "393400",
-    "id": "1554772152"
+    "id": "1554772152",
+    "loc": { type: "Point", coordinates:  [ 174.7833,-41.3] }
   },
   {
     "city": "Valletta",
@@ -6876,7 +7412,8 @@ const cities = [
     "admin_name": "Valletta",
     "capital": "primary",
     "population": "368250",
-    "id": "1470574399"
+    "id": "1470574399",
+    "loc": { type: "Point", coordinates:  [ 14.5147,35.8997] }
   },
   {
     "city": "Maseru",
@@ -6889,7 +7426,8 @@ const cities = [
     "admin_name": "Maseru",
     "capital": "primary",
     "population": "361324",
-    "id": "1426977668"
+    "id": "1426977668",
+    "loc": { type: "Point", coordinates:  [ 27.4833,-29.3167] }
   },
   {
     "city": "Nur-Sultan",
@@ -6902,7 +7440,8 @@ const cities = [
     "admin_name": "Astana",
     "capital": "primary",
     "population": "345604",
-    "id": "1398516045"
+    "id": "1398516045",
+    "loc": { type: "Point", coordinates:  [ 71.4278,51.1811] }
   },
   {
     "city": "Bujumbura",
@@ -6915,7 +7454,8 @@ const cities = [
     "admin_name": "Bujumbura Mairie",
     "capital": "primary",
     "population": "331700",
-    "id": "1108101689"
+    "id": "1108101689",
+    "loc": { type: "Point", coordinates:  [ 29.36,-3.3761] }
   },
   {
     "city": "Canberra",
@@ -6928,7 +7468,8 @@ const cities = [
     "admin_name": "Australian Capital Territory",
     "capital": "primary",
     "population": "327700",
-    "id": "1036142029"
+    "id": "1036142029",
+    "loc": { type: "Point", coordinates:  [ 149.129,-35.283] }
   },
   {
     "city": "New Delhi",
@@ -6941,7 +7482,8 @@ const cities = [
     "admin_name": "Delhi",
     "capital": "primary",
     "population": "317797",
-    "id": "1356215164"
+    "id": "1356215164",
+    "loc": { type: "Point", coordinates:  [ 77.2,28.6] }
   },
   {
     "city": "Ljubljana",
@@ -6954,7 +7496,8 @@ const cities = [
     "admin_name": "Ljubljana",
     "capital": "primary",
     "population": "314807",
-    "id": "1705917455"
+    "id": "1705917455",
+    "loc": { type: "Point", coordinates:  [ 14.515,46.0553] }
   },
   {
     "city": "Porto-Novo",
@@ -6967,7 +7510,8 @@ const cities = [
     "admin_name": "Ouémé",
     "capital": "primary",
     "population": "300000",
-    "id": "1204172060"
+    "id": "1204172060",
+    "loc": { type: "Point", coordinates:  [ 2.6166,6.4833] }
   },
   {
     "city": "Bandar Seri Begawan",
@@ -6980,7 +7524,8 @@ const cities = [
     "admin_name": "Brunei and Muara",
     "capital": "primary",
     "population": "296500",
-    "id": "1096465895"
+    "id": "1096465895",
+    "loc": { type: "Point", coordinates:  [ 114.9333,4.8833] }
   },
   {
     "city": "Port of Spain",
@@ -6993,7 +7538,8 @@ const cities = [
     "admin_name": "Port of Spain",
     "capital": "primary",
     "population": "294934",
-    "id": "1780670676"
+    "id": "1780670676",
+    "loc": { type: "Point", coordinates:  [ -61.517,10.652] }
   },
   {
     "city": "Port Moresby",
@@ -7006,7 +7552,8 @@ const cities = [
     "admin_name": "National Capital",
     "capital": "primary",
     "population": "283733",
-    "id": "1598685395"
+    "id": "1598685395",
+    "loc": { type: "Point", coordinates:  [ 147.1925,-9.4647] }
   },
   {
     "city": "Bern",
@@ -7019,7 +7566,8 @@ const cities = [
     "admin_name": "Bern",
     "capital": "primary",
     "population": "275329",
-    "id": "1756374318"
+    "id": "1756374318",
+    "loc": { type: "Point", coordinates:  [ 7.467,46.9167] }
   },
   {
     "city": "Windhoek",
@@ -7032,7 +7580,8 @@ const cities = [
     "admin_name": "Khomas",
     "capital": "primary",
     "population": "268132",
-    "id": "1516802003"
+    "id": "1516802003",
+    "loc": { type: "Point", coordinates:  [ 17.0835,-22.57] }
   },
   {
     "city": "Georgetown",
@@ -7045,7 +7594,8 @@ const cities = [
     "admin_name": "Demerara-Mahaica",
     "capital": "primary",
     "population": "264350",
-    "id": "1328160906"
+    "id": "1328160906",
+    "loc": { type: "Point", coordinates:  [ -58.167,6.802] }
   },
   {
     "city": "Paramaribo",
@@ -7058,7 +7608,8 @@ const cities = [
     "admin_name": "Paramaribo",
     "capital": "primary",
     "population": "254169",
-    "id": "1740518660"
+    "id": "1740518660",
+    "loc": { type: "Point", coordinates:  [ -55.167,5.835] }
   },
   {
     "city": "Dili",
@@ -7071,7 +7622,8 @@ const cities = [
     "admin_name": "Díli",
     "capital": "primary",
     "population": "234331",
-    "id": "1626308942"
+    "id": "1626308942",
+    "loc": { type: "Point", coordinates:  [ 125.5795,-8.5594] }
   },
   {
     "city": "Nassau",
@@ -7083,7 +7635,8 @@ const cities = [
     "iso3": "BHS",
     "capital": "primary",
     "population": "227940",
-    "id": "1044318561"
+    "id": "1044318561",
+    "loc": { type: "Point", coordinates:  [ -77.35,25.0834] }
   },
   {
     "city": "Sucre",
@@ -7096,7 +7649,8 @@ const cities = [
     "admin_name": "Chuquisaca",
     "capital": "primary",
     "population": "224838",
-    "id": "1068823873"
+    "id": "1068823873",
+    "loc": { type: "Point", coordinates:  [ -65.2595,-19.041] }
   },
   {
     "city": "Nicosia",
@@ -7109,7 +7663,8 @@ const cities = [
     "admin_name": "Lefkosía",
     "capital": "primary",
     "population": "224300",
-    "id": "1196944155"
+    "id": "1196944155",
+    "loc": { type: "Point", coordinates:  [ 33.3666,35.1667] }
   },
   {
     "city": "Dodoma",
@@ -7122,7 +7677,8 @@ const cities = [
     "admin_name": "Dodoma",
     "capital": "primary",
     "population": "218269",
-    "id": "1834288497"
+    "id": "1834288497",
+    "loc": { type: "Point", coordinates:  [ 35.75,-6.1833] }
   },
   {
     "city": "Colombo",
@@ -7135,7 +7691,8 @@ const cities = [
     "admin_name": "Western",
     "capital": "primary",
     "population": "217000",
-    "id": "1144251314"
+    "id": "1144251314",
+    "loc": { type: "Point", coordinates:  [ 79.8578,6.932] }
   },
   {
     "city": "Gaborone",
@@ -7148,7 +7705,8 @@ const cities = [
     "admin_name": "Gaborone",
     "capital": "primary",
     "population": "208411",
-    "id": "1072756768"
+    "id": "1072756768",
+    "loc": { type: "Point", coordinates:  [ 25.9119,-24.6463] }
   },
   {
     "city": "Yamoussoukro",
@@ -7161,7 +7719,8 @@ const cities = [
     "admin_name": "Yamoussoukro",
     "capital": "primary",
     "population": "206499",
-    "id": "1384683557"
+    "id": "1384683557",
+    "loc": { type: "Point", coordinates:  [ -5.2755,6.8184] }
   },
   {
     "city": "Bridgetown",
@@ -7174,7 +7733,8 @@ const cities = [
     "admin_name": "Saint Michael",
     "capital": "primary",
     "population": "191152",
-    "id": "1052274244"
+    "id": "1052274244",
+    "loc": { type: "Point", coordinates:  [ -59.6165,13.102] }
   },
   {
     "city": "Suva",
@@ -7187,7 +7747,8 @@ const cities = [
     "admin_name": "Rewa",
     "capital": "primary",
     "population": "175399",
-    "id": "1242615095"
+    "id": "1242615095",
+    "loc": { type: "Point", coordinates:  [ 178.4417,-18.133] }
   },
   {
     "city": "Reykjavík",
@@ -7200,7 +7761,8 @@ const cities = [
     "admin_name": "Höfuðborgarsvæði",
     "capital": "primary",
     "population": "166212",
-    "id": "1352327190"
+    "id": "1352327190",
+    "loc": { type: "Point", coordinates:  [ -21.95,64.15] }
   },
   {
     "city": "Malabo",
@@ -7213,7 +7775,8 @@ const cities = [
     "admin_name": "Bioko Norte",
     "capital": "primary",
     "population": "155963",
-    "id": "1226861333"
+    "id": "1226861333",
+    "loc": { type: "Point", coordinates:  [ 8.7833,3.75] }
   },
   {
     "city": "Willemstad",
@@ -7225,7 +7788,8 @@ const cities = [
     "iso3": "CUW",
     "capital": "primary",
     "population": "146813",
-    "id": "1531000000"
+    "id": "1531000000",
+    "loc": { type: "Point", coordinates:  [ -69.02,12.2004] }
   },
   {
     "city": "Podgorica",
@@ -7238,7 +7802,8 @@ const cities = [
     "admin_name": "Podgorica",
     "capital": "primary",
     "population": "145850",
-    "id": "1499454516"
+    "id": "1499454516",
+    "loc": { type: "Point", coordinates:  [ 19.2663,42.466] }
   },
   {
     "city": "Moroni",
@@ -7251,7 +7816,8 @@ const cities = [
     "admin_name": "Grande Comore",
     "capital": "primary",
     "population": "128698",
-    "id": "1174793581"
+    "id": "1174793581",
+    "loc": { type: "Point", coordinates:  [ 43.2402,-11.7042] }
   },
   {
     "city": "Sri Jayewardenepura Kotte",
@@ -7264,7 +7830,8 @@ const cities = [
     "admin_name": "Western",
     "capital": "primary",
     "population": "115826",
-    "id": "1144239330"
+    "id": "1144239330",
+    "loc": { type: "Point", coordinates:  [ 79.95,6.9] }
   },
   {
     "city": "Praia",
@@ -7277,7 +7844,8 @@ const cities = [
     "admin_name": "Praia",
     "capital": "primary",
     "population": "113364",
-    "id": "1132398770"
+    "id": "1132398770",
+    "loc": { type: "Point", coordinates:  [ -23.5167,14.9167] }
   },
   {
     "city": "Male",
@@ -7290,7 +7858,8 @@ const cities = [
     "admin_name": "Maale",
     "capital": "primary",
     "population": "112927",
-    "id": "1462441685"
+    "id": "1462441685",
+    "loc": { type: "Point", coordinates:  [ 73.4999,4.1667] }
   },
   {
     "city": "Juba",
@@ -7303,7 +7872,8 @@ const cities = [
     "admin_name": "Central Equatoria",
     "capital": "primary",
     "population": "111975",
-    "id": "1728444337"
+    "id": "1728444337",
+    "loc": { type: "Point", coordinates:  [ 31.58,4.83] }
   },
   {
     "city": "Luxembourg",
@@ -7316,7 +7886,8 @@ const cities = [
     "admin_name": "Luxembourg",
     "capital": "primary",
     "population": "107260",
-    "id": "1442262731"
+    "id": "1442262731",
+    "loc": { type: "Point", coordinates:  [ 6.13,49.6117] }
   },
   {
     "city": "Thimphu",
@@ -7329,7 +7900,8 @@ const cities = [
     "admin_name": "Thimphu",
     "capital": "primary",
     "population": "98676",
-    "id": "1064010361"
+    "id": "1064010361",
+    "loc": { type: "Point", coordinates:  [ 89.639,27.473] }
   },
   {
     "city": "Mbabane",
@@ -7342,7 +7914,8 @@ const cities = [
     "admin_name": "Hhohho",
     "capital": "primary",
     "population": "90138",
-    "id": "1748811945"
+    "id": "1748811945",
+    "loc": { type: "Point", coordinates:  [ 31.1333,-26.3167] }
   },
   {
     "city": "São Tomé",
@@ -7355,7 +7928,8 @@ const cities = [
     "admin_name": "São Tomé",
     "capital": "primary",
     "population": "88219",
-    "id": "1678301324"
+    "id": "1678301324",
+    "loc": { type: "Point", coordinates:  [ 6.7333,0.3334] }
   },
   {
     "city": "Honiara",
@@ -7368,7 +7942,8 @@ const cities = [
     "admin_name": "Honiara",
     "capital": "primary",
     "population": "76328",
-    "id": "1090737486"
+    "id": "1090737486",
+    "loc": { type: "Point", coordinates:  [ 159.9498,-9.438] }
   },
   {
     "city": "Oranjestad",
@@ -7380,7 +7955,8 @@ const cities = [
     "iso3": "ABW",
     "capital": "primary",
     "population": "68775",
-    "id": "1533513057"
+    "id": "1533513057",
+    "loc": { type: "Point", coordinates:  [ -70.029,12.5304] }
   },
   {
     "city": "Apia",
@@ -7393,7 +7969,8 @@ const cities = [
     "admin_name": "Tuamasaga",
     "capital": "primary",
     "population": "61916",
-    "id": "1882489296"
+    "id": "1882489296",
+    "loc": { type: "Point", coordinates:  [ -171.7386,-13.8415] }
   },
   {
     "city": "Andorra la Vella",
@@ -7406,7 +7983,8 @@ const cities = [
     "admin_name": "Andorra la Vella",
     "capital": "primary",
     "population": "53998",
-    "id": "1020828846"
+    "id": "1020828846",
+    "loc": { type: "Point", coordinates:  [ 1.5165,42.5] }
   },
   {
     "city": "Kingstown",
@@ -7419,7 +7997,8 @@ const cities = [
     "admin_name": "Saint George",
     "capital": "primary",
     "population": "49485",
-    "id": "1670376659"
+    "id": "1670376659",
+    "loc": { type: "Point", coordinates:  [ -61.2121,13.1483] }
   },
   {
     "city": "Port-Vila",
@@ -7432,7 +8011,8 @@ const cities = [
     "admin_name": "Shefa",
     "capital": "primary",
     "population": "44040",
-    "id": "1548805075"
+    "id": "1548805075",
+    "loc": { type: "Point", coordinates:  [ 168.3166,-17.7334] }
   },
   {
     "city": "Banjul",
@@ -7445,7 +8025,8 @@ const cities = [
     "admin_name": "Banjul",
     "capital": "primary",
     "population": "43094",
-    "id": "1270723713"
+    "id": "1270723713",
+    "loc": { type: "Point", coordinates:  [ -16.5917,13.4539] }
   },
   {
     "city": "Nuku‘alofa",
@@ -7458,7 +8039,8 @@ const cities = [
     "admin_name": "Tongatapu",
     "capital": "primary",
     "population": "42620",
-    "id": "1776737461"
+    "id": "1776737461",
+    "loc": { type: "Point", coordinates:  [ -175.2206,-21.1385] }
   },
   {
     "city": "Castries",
@@ -7471,7 +8053,8 @@ const cities = [
     "admin_name": "Castries",
     "capital": "primary",
     "population": "37963",
-    "id": "1662922505"
+    "id": "1662922505",
+    "loc": { type: "Point", coordinates:  [ -61,14.002] }
   },
   {
     "city": "Monaco",
@@ -7483,7 +8066,8 @@ const cities = [
     "iso3": "MCO",
     "capital": "primary",
     "population": "36371",
-    "id": "1492854256"
+    "id": "1492854256",
+    "loc": { type: "Point", coordinates:  [ 7.4069,43.7396] }
   },
   {
     "city": "Vaduz",
@@ -7496,7 +8080,8 @@ const cities = [
     "admin_name": "Vaduz",
     "capital": "primary",
     "population": "36281",
-    "id": "1438317747"
+    "id": "1438317747",
+    "loc": { type: "Point", coordinates:  [ 9.5167,47.1337] }
   },
   {
     "city": "Saint John’s",
@@ -7509,7 +8094,8 @@ const cities = [
     "admin_name": "Saint John",
     "capital": "primary",
     "population": "35499",
-    "id": "1028912067"
+    "id": "1028912067",
+    "loc": { type: "Point", coordinates:  [ -61.85,17.118] }
   },
   {
     "city": "Saint George’s",
@@ -7522,7 +8108,8 @@ const cities = [
     "admin_name": "Saint George",
     "capital": "primary",
     "population": "33734",
-    "id": "1308891766"
+    "id": "1308891766",
+    "loc": { type: "Point", coordinates:  [ -61.7416,12.0526] }
   },
   {
     "city": "Victoria",
@@ -7534,7 +8121,8 @@ const cities = [
     "iso3": "SYC",
     "capital": "primary",
     "population": "33576",
-    "id": "1690193579"
+    "id": "1690193579",
+    "loc": { type: "Point", coordinates:  [ 55.45,-4.6166] }
   },
   {
     "city": "San Marino",
@@ -7547,7 +8135,8 @@ const cities = [
     "admin_name": "San Marino Città",
     "capital": "primary",
     "population": "29579",
-    "id": "1674741947"
+    "id": "1674741947",
+    "loc": { type: "Point", coordinates:  [ 12.4667,43.9172] }
   },
   {
     "city": "Tarawa",
@@ -7559,7 +8148,8 @@ const cities = [
     "iso3": "KIR",
     "capital": "primary",
     "population": "28802",
-    "id": "1296152641"
+    "id": "1296152641",
+    "loc": { type: "Point", coordinates:  [ 173.0176,1.3382] }
   },
   {
     "city": "Majuro",
@@ -7572,7 +8162,8 @@ const cities = [
     "admin_name": "Majuro",
     "capital": "primary",
     "population": "25400",
-    "id": "1584000000"
+    "id": "1584000000",
+    "loc": { type: "Point", coordinates:  [ 171.38,7.103] }
   },
   {
     "city": "Roseau",
@@ -7585,7 +8176,8 @@ const cities = [
     "admin_name": "Saint George",
     "capital": "primary",
     "population": "23336",
-    "id": "1212060440"
+    "id": "1212060440",
+    "loc": { type: "Point", coordinates:  [ -61.387,15.301] }
   },
   {
     "city": "Basseterre",
@@ -7598,7 +8190,8 @@ const cities = [
     "admin_name": "Saint George Basseterre",
     "capital": "primary",
     "population": "21887",
-    "id": "1659198919"
+    "id": "1659198919",
+    "loc": { type: "Point", coordinates:  [ -62.717,17.302] }
   },
   {
     "city": "Belmopan",
@@ -7611,7 +8204,8 @@ const cities = [
     "admin_name": "Cayo",
     "capital": "primary",
     "population": "15220",
-    "id": "1084586375"
+    "id": "1084586375",
+    "loc": { type: "Point", coordinates:  [ -88.7671,17.252] }
   },
   {
     "city": "Pago Pago",
@@ -7623,7 +8217,8 @@ const cities = [
     "iso3": "ASM",
     "capital": "primary",
     "population": "12576",
-    "id": "1016976740"
+    "id": "1016976740",
+    "loc": { type: "Point", coordinates:  [ -170.7046,-14.274] }
   },
   {
     "city": "Lobamba",
@@ -7636,7 +8231,8 @@ const cities = [
     "admin_name": "Hhohho",
     "capital": "primary",
     "population": "9782",
-    "id": "1748963140"
+    "id": "1748963140",
+    "loc": { type: "Point", coordinates:  [ 31.2,-26.4667] }
   },
   {
     "city": "Funafuti",
@@ -7649,7 +8245,8 @@ const cities = [
     "admin_name": "Funafuti",
     "capital": "primary",
     "population": "4749",
-    "id": "1798251391"
+    "id": "1798251391",
+    "loc": { type: "Point", coordinates:  [ 179.2166,-8.5167] }
   },
   {
     "city": "Palikir",
@@ -7662,7 +8259,8 @@ const cities = [
     "admin_name": "Pohnpei",
     "capital": "primary",
     "population": "4645",
-    "id": "1583008885"
+    "id": "1583008885",
+    "loc": { type: "Point", coordinates:  [ 158.15,6.9166] }
   },
   {
     "city": "Capitol Hill",
@@ -7674,7 +8272,8 @@ const cities = [
     "iso3": "MNP",
     "capital": "primary",
     "population": "2500",
-    "id": "1580556972"
+    "id": "1580556972",
+    "loc": { type: "Point", coordinates:  [ 145.7546,15.2137] }
   },
   {
     "city": "Hagåtña",
@@ -7686,7 +8285,8 @@ const cities = [
     "iso3": "GUM",
     "capital": "primary",
     "population": "1051",
-    "id": "1316937540"
+    "id": "1316937540",
+    "loc": { type: "Point", coordinates:  [ 144.7504,13.4745] }
   },
   {
     "city": "Al Quds",
@@ -7697,7 +8297,8 @@ const cities = [
     "iso2": "XW",
     "iso3": "XWB",
     "capital": "primary",
-    "id": "1934000006"
+    "id": "1934000006",
+    "loc": { type: "Point", coordinates:  [ 35.2269,31.7764] }
   },
   {
     "city": "Philipsburg",
@@ -7708,7 +8309,8 @@ const cities = [
     "iso2": "SX",
     "iso3": "SXM",
     "capital": "primary",
-    "id": "1534859858"
+    "id": "1534859858",
+    "loc": { type: "Point", coordinates:  [ -63.045,18.0255] }
   },
   {
     "city": "Gitega",
@@ -7720,7 +8322,8 @@ const cities = [
     "iso3": "BDI",
     "admin_name": "Gitega",
     "capital": "primary",
-    "id": "1108778000"
+    "id": "1108778000",
+    "loc": { type: "Point", coordinates:  [ 29.9246,-3.4271] }
   },
   {
     "city": "Pristina",
@@ -7732,7 +8335,8 @@ const cities = [
     "iso3": "XKS",
     "admin_name": "Prishtinë",
     "capital": "primary",
-    "id": "1901760068"
+    "id": "1901760068",
+    "loc": { type: "Point", coordinates:  [ 21.1724,42.6666] }
   },
   {
     "city": "Ngerulmud",
@@ -7744,7 +8348,8 @@ const cities = [
     "iso3": "PLW",
     "admin_name": "Melekeok",
     "capital": "primary",
-    "id": "1585525081"
+    "id": "1585525081",
+    "loc": { type: "Point", coordinates:  [ 134.6242,7.5] }
   },
   {
     "city": "Aden",
@@ -7757,7 +8362,8 @@ const cities = [
     "admin_name": "‘Adan",
     "capital": "admin",
     "population": "1000000",
-    "id": "1887867886"
+    "id": "1887867886",
+    "loc": { type: "Point", coordinates:  [ 45.0095,12.7797] }
   },
   {
     "city": "Cochabamba",
@@ -7770,7 +8376,8 @@ const cities = [
     "admin_name": "Cochabamba",
     "capital": "admin",
     "population": "1000000",
-    "id": "1068793894"
+    "id": "1068793894",
+    "loc": { type: "Point", coordinates:  [ -66.17,-17.41] }
   },
   {
     "city": "Yongzhou",
@@ -7782,7 +8389,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Hunan",
     "population": "1000000",
-    "id": "1156694479"
+    "id": "1156694479",
+    "loc": { type: "Point", coordinates:  [ 111.62,26.2304] }
   },
   {
     "city": "Baoshan",
@@ -7794,7 +8402,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Yunnan",
     "population": "1000000",
-    "id": "1156546994"
+    "id": "1156546994",
+    "loc": { type: "Point", coordinates:  [ 99.15,25.12] }
   },
   {
     "city": "Quảng Hà",
@@ -7806,7 +8415,8 @@ const cities = [
     "iso3": "VNM",
     "admin_name": "Quảng Nam",
     "population": "1000000",
-    "id": "1704966442"
+    "id": "1704966442",
+    "loc": { type: "Point", coordinates:  [ 108.25,16.06] }
   },
   {
     "city": "Kitaku",
@@ -7818,7 +8428,8 @@ const cities = [
     "iso3": "JPN",
     "admin_name": "Fukuoka",
     "population": "997536",
-    "id": "1392129541"
+    "id": "1392129541",
+    "loc": { type: "Point", coordinates:  [ 130.82,33.8704] }
   },
   {
     "city": "Perm’",
@@ -7830,7 +8441,8 @@ const cities = [
     "iso3": "RUS",
     "admin_name": "Permskiy Kray",
     "population": "997000",
-    "id": "1643700880"
+    "id": "1643700880",
+    "loc": { type: "Point", coordinates:  [ 56.25,58] }
   },
   {
     "city": "Ahvāz",
@@ -7843,7 +8455,8 @@ const cities = [
     "admin_name": "Khūzestān",
     "capital": "admin",
     "population": "996000",
-    "id": "1364350188"
+    "id": "1364350188",
+    "loc": { type: "Point", coordinates:  [ 48.72,31.28] }
   },
   {
     "city": "Jodhpur",
@@ -7855,7 +8468,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Rājasthān",
     "population": "995000",
-    "id": "1356727084"
+    "id": "1356727084",
+    "loc": { type: "Point", coordinates:  [ 73.0168,26.2918] }
   },
   {
     "city": "San Luis Potosí",
@@ -7868,7 +8482,8 @@ const cities = [
     "admin_name": "San Luis Potosí",
     "capital": "admin",
     "population": "992000",
-    "id": "1484583620"
+    "id": "1484583620",
+    "loc": { type: "Point", coordinates:  [ -101,22.17] }
   },
   {
     "city": "Odesa",
@@ -7881,7 +8496,8 @@ const cities = [
     "admin_name": "Odes’ka Oblast’",
     "capital": "admin",
     "population": "991000",
-    "id": "1804178102"
+    "id": "1804178102",
+    "loc": { type: "Point", coordinates:  [ 30.71,46.49] }
   },
   {
     "city": "Yinchuan",
@@ -7894,7 +8510,8 @@ const cities = [
     "admin_name": "Ningxia",
     "capital": "admin",
     "population": "991000",
-    "id": "1156359072"
+    "id": "1156359072",
+    "loc": { type: "Point", coordinates:  [ 106.273,38.468] }
   },
   {
     "city": "Jiaxing",
@@ -7907,7 +8524,8 @@ const cities = [
     "admin_name": "Zhejiang",
     "capital": "minor",
     "population": "988000",
-    "id": "1156491661"
+    "id": "1156491661",
+    "loc": { type: "Point", coordinates:  [ 120.75,30.7704] }
   },
   {
     "city": "Joinvile",
@@ -7919,7 +8537,8 @@ const cities = [
     "iso3": "BRA",
     "admin_name": "Santa Catarina",
     "population": "988000",
-    "id": "1076050637"
+    "id": "1076050637",
+    "loc": { type: "Point", coordinates:  [ -48.8399,-26.32] }
   },
   {
     "city": "Donets’k",
@@ -7932,7 +8551,8 @@ const cities = [
     "admin_name": "Donets’ka Oblast’",
     "capital": "admin",
     "population": "988000",
-    "id": "1804963805"
+    "id": "1804963805",
+    "loc": { type: "Point", coordinates:  [ 37.83,48] }
   },
   {
     "city": "Guilin",
@@ -7945,7 +8565,8 @@ const cities = [
     "admin_name": "Guangxi",
     "capital": "minor",
     "population": "987000",
-    "id": "1156235364"
+    "id": "1156235364",
+    "loc": { type: "Point", coordinates:  [ 110.28,25.28] }
   },
   {
     "city": "Dahūk",
@@ -7958,7 +8579,8 @@ const cities = [
     "admin_name": "Dahūk",
     "capital": "admin",
     "population": "986000",
-    "id": "1368137126"
+    "id": "1368137126",
+    "loc": { type: "Point", coordinates:  [ 43,36.8667] }
   },
   {
     "city": "Volgograd",
@@ -7971,7 +8593,8 @@ const cities = [
     "admin_name": "Volgogradskaya Oblast’",
     "capital": "admin",
     "population": "984000",
-    "id": "1643577201"
+    "id": "1643577201",
+    "loc": { type: "Point", coordinates:  [ 44.5,48.71] }
   },
   {
     "city": "Guwāhāti",
@@ -7983,7 +8606,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Assam",
     "population": "983000",
-    "id": "1356593800"
+    "id": "1356593800",
+    "loc": { type: "Point", coordinates:  [ 91.77,26.16] }
   },
   {
     "city": "Yichun",
@@ -7996,7 +8620,8 @@ const cities = [
     "admin_name": "Jiangxi",
     "capital": "minor",
     "population": "982000",
-    "id": "1156229590"
+    "id": "1156229590",
+    "loc": { type: "Point", coordinates:  [ 114.4,27.8333] }
   },
   {
     "city": "Yangquan",
@@ -8009,7 +8634,8 @@ const cities = [
     "admin_name": "Shanxi",
     "capital": "minor",
     "population": "981448",
-    "id": "1156157844"
+    "id": "1156157844",
+    "loc": { type: "Point", coordinates:  [ 113.57,37.87] }
   },
   {
     "city": "Natal",
@@ -8021,7 +8647,8 @@ const cities = [
     "iso3": "BRA",
     "admin_name": "Amazonas",
     "population": "980588",
-    "id": "1076336975"
+    "id": "1076336975",
+    "loc": { type: "Point", coordinates:  [ -60.2699,-6.9838] }
   },
   {
     "city": "Chandigarh",
@@ -8034,7 +8661,8 @@ const cities = [
     "admin_name": "Chandīgarh",
     "capital": "admin",
     "population": "979000",
-    "id": "1356739179"
+    "id": "1356739179",
+    "loc": { type: "Point", coordinates:  [ 76.78,30.72] }
   },
   {
     "city": "Gwalior",
@@ -8046,7 +8674,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Madhya Pradesh",
     "population": "978000",
-    "id": "1356363967"
+    "id": "1356363967",
+    "loc": { type: "Point", coordinates:  [ 78.1801,26.23] }
   },
   {
     "city": "Hamamatsu",
@@ -8058,7 +8687,8 @@ const cities = [
     "iso3": "JPN",
     "admin_name": "Shizuoka",
     "population": "977023",
-    "id": "1392174500"
+    "id": "1392174500",
+    "loc": { type: "Point", coordinates:  [ 137.7327,34.7181] }
   },
   {
     "city": "Qom",
@@ -8071,7 +8701,8 @@ const cities = [
     "admin_name": "Qom",
     "capital": "admin",
     "population": "973000",
-    "id": "1364701633"
+    "id": "1364701633",
+    "loc": { type: "Point", coordinates:  [ 50.95,34.65] }
   },
   {
     "city": "Jixi",
@@ -8084,7 +8715,8 @@ const cities = [
     "admin_name": "Heilongjiang",
     "capital": "minor",
     "population": "965000",
-    "id": "1156393765"
+    "id": "1156393765",
+    "loc": { type: "Point", coordinates:  [ 130.97,45.3] }
   },
   {
     "city": "Mérida",
@@ -8097,7 +8729,8 @@ const cities = [
     "admin_name": "Yucatán",
     "capital": "admin",
     "population": "965000",
-    "id": "1484396779"
+    "id": "1484396779",
+    "loc": { type: "Point", coordinates:  [ -89.6166,20.9666] }
   },
   {
     "city": "Xin’an",
@@ -8109,7 +8742,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Jiangsu",
     "population": "962656",
-    "id": "1156236053"
+    "id": "1156236053",
+    "loc": { type: "Point", coordinates:  [ 118.35,34.38] }
   },
   {
     "city": "Querétaro",
@@ -8122,7 +8756,8 @@ const cities = [
     "admin_name": "Querétaro",
     "capital": "admin",
     "population": "961000",
-    "id": "1484604775"
+    "id": "1484604775",
+    "loc": { type: "Point", coordinates:  [ -100.38,20.63] }
   },
   {
     "city": "Pingxiang",
@@ -8135,7 +8770,8 @@ const cities = [
     "admin_name": "Jiangxi",
     "capital": "minor",
     "population": "961000",
-    "id": "1156066465"
+    "id": "1156066465",
+    "loc": { type: "Point", coordinates:  [ 113.85,27.62] }
   },
   {
     "city": "João Pessoa",
@@ -8148,7 +8784,8 @@ const cities = [
     "admin_name": "Paraíba",
     "capital": "admin",
     "population": "956000",
-    "id": "1076922014"
+    "id": "1076922014",
+    "loc": { type: "Point", coordinates:  [ -34.8761,-7.1011] }
   },
   {
     "city": "Klang",
@@ -8160,7 +8797,8 @@ const cities = [
     "iso3": "MYS",
     "admin_name": "Selangor",
     "population": "956000",
-    "id": "1458509635"
+    "id": "1458509635",
+    "loc": { type: "Point", coordinates:  [ 101.55,3.0204] }
   },
   {
     "city": "Jinzhou",
@@ -8172,7 +8810,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Liaoning",
     "population": "956000",
-    "id": "1156157151"
+    "id": "1156157151",
+    "loc": { type: "Point", coordinates:  [ 121.1,41.1204] }
   },
   {
     "city": "Oklahoma City",
@@ -8185,7 +8824,8 @@ const cities = [
     "admin_name": "Oklahoma",
     "capital": "admin",
     "population": "955998",
-    "id": "1840020428"
+    "id": "1840020428",
+    "loc": { type: "Point", coordinates:  [ -97.5137,35.4676] }
   },
   {
     "city": "Salerno",
@@ -8198,7 +8838,8 @@ const cities = [
     "admin_name": "Campania",
     "capital": "minor",
     "population": "954265",
-    "id": "1380863448"
+    "id": "1380863448",
+    "loc": { type: "Point", coordinates:  [ 14.7699,40.6804] }
   },
   {
     "city": "Thiruvananthapuram",
@@ -8211,7 +8852,8 @@ const cities = [
     "admin_name": "Kerala",
     "capital": "admin",
     "population": "954000",
-    "id": "1356024354"
+    "id": "1356024354",
+    "loc": { type: "Point", coordinates:  [ 76.95,8.5] }
   },
   {
     "city": "Calicut",
@@ -8224,7 +8866,8 @@ const cities = [
     "admin_name": "Kerala",
     "capital": "minor",
     "population": "953000",
-    "id": "1356010401"
+    "id": "1356010401",
+    "loc": { type: "Point", coordinates:  [ 75.77,11.2504] }
   },
   {
     "city": "Trichinopoly",
@@ -8236,7 +8879,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Tamil Nādu ",
     "population": "951000",
-    "id": "1356884472"
+    "id": "1356884472",
+    "loc": { type: "Point", coordinates:  [ 78.69,10.81] }
   },
   {
     "city": "Ogbomoso",
@@ -8249,7 +8893,8 @@ const cities = [
     "admin_name": "Oyo",
     "capital": "minor",
     "population": "951000",
-    "id": "1566373448"
+    "id": "1566373448",
+    "loc": { type: "Point", coordinates:  [ 4.24,8.13] }
   },
   {
     "city": "General Santos",
@@ -8262,7 +8907,8 @@ const cities = [
     "admin_name": "General Santos",
     "capital": "admin",
     "population": "950530",
-    "id": "1608171585"
+    "id": "1608171585",
+    "loc": { type: "Point", coordinates:  [ 125.1747,6.1108] }
   },
   {
     "city": "Huế",
@@ -8275,7 +8921,8 @@ const cities = [
     "admin_name": "Thừa Thiên-Huế",
     "capital": "admin",
     "population": "950000",
-    "id": "1704016023"
+    "id": "1704016023",
+    "loc": { type: "Point", coordinates:  [ 107.58,16.47] }
   },
   {
     "city": "Bacolod",
@@ -8288,7 +8935,8 @@ const cities = [
     "admin_name": "Bacolod",
     "capital": "admin",
     "population": "949354",
-    "id": "1608244137"
+    "id": "1608244137",
+    "loc": { type: "Point", coordinates:  [ 122.9817,10.6317] }
   },
   {
     "city": "Nantong",
@@ -8301,7 +8949,8 @@ const cities = [
     "admin_name": "Jiangsu",
     "capital": "minor",
     "population": "947000",
-    "id": "1156045365"
+    "id": "1156045365",
+    "loc": { type: "Point", coordinates:  [ 120.825,32.0304] }
   },
   {
     "city": "Foshan",
@@ -8314,7 +8963,8 @@ const cities = [
     "admin_name": "Guangdong",
     "capital": "minor",
     "population": "943000",
-    "id": "1156738403"
+    "id": "1156738403",
+    "loc": { type: "Point", coordinates:  [ 113.12,23.0301] }
   },
   {
     "city": "Sŏngnam",
@@ -8326,7 +8976,8 @@ const cities = [
     "iso3": "KOR",
     "admin_name": "Gyeonggi",
     "population": "942000",
-    "id": "1410622472"
+    "id": "1410622472",
+    "loc": { type: "Point", coordinates:  [ 127.1378,37.4386] }
   },
   {
     "city": "Bridgeport",
@@ -8338,7 +8989,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Connecticut",
     "population": "938406",
-    "id": "1840004836"
+    "id": "1840004836",
+    "loc": { type: "Point", coordinates:  [ -73.1953,41.1918] }
   },
   {
     "city": "Nice",
@@ -8351,7 +9003,8 @@ const cities = [
     "admin_name": "Provence-Alpes-Côte d’Azur",
     "capital": "minor",
     "population": "927000",
-    "id": "1250774553"
+    "id": "1250774553",
+    "loc": { type: "Point", coordinates:  [ 7.265,43.715] }
   },
   {
     "city": "Buffalo",
@@ -8363,7 +9016,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "New York",
     "population": "926261",
-    "id": "1840000386"
+    "id": "1840000386",
+    "loc": { type: "Point", coordinates:  [ -78.8487,42.9017] }
   },
   {
     "city": "Erbil",
@@ -8376,7 +9030,8 @@ const cities = [
     "admin_name": "Arbīl",
     "capital": "admin",
     "population": "926000",
-    "id": "1368578192"
+    "id": "1368578192",
+    "loc": { type: "Point", coordinates:  [ 44.0086,36.179] }
   },
   {
     "city": "Krasnoyarsk",
@@ -8389,7 +9044,8 @@ const cities = [
     "admin_name": "Krasnoyarskiy Kray",
     "capital": "admin",
     "population": "925000",
-    "id": "1643544975"
+    "id": "1643544975",
+    "loc": { type: "Point", coordinates:  [ 92.866,56.014] }
   },
   {
     "city": "Olinda",
@@ -8401,7 +9057,8 @@ const cities = [
     "iso3": "BRA",
     "admin_name": "Pernambuco",
     "population": "921840",
-    "id": "1076784718"
+    "id": "1076784718",
+    "loc": { type: "Point", coordinates:  [ -34.85,-8] }
   },
   {
     "city": "Antwerp",
@@ -8414,7 +9071,8 @@ const cities = [
     "admin_name": "Flanders",
     "capital": "minor",
     "population": "920000",
-    "id": "1056168623"
+    "id": "1056168623",
+    "loc": { type: "Point", coordinates:  [ 4.415,51.2204] }
   },
   {
     "city": "Konya",
@@ -8427,7 +9085,8 @@ const cities = [
     "admin_name": "Konya",
     "capital": "admin",
     "population": "919000",
-    "id": "1792014004"
+    "id": "1792014004",
+    "loc": { type: "Point", coordinates:  [ 32.475,37.875] }
   },
   {
     "city": "Bogor",
@@ -8439,7 +9098,8 @@ const cities = [
     "iso3": "IDN",
     "admin_name": "Jawa Barat",
     "population": "918000",
-    "id": "1360771925"
+    "id": "1360771925",
+    "loc": { type: "Point", coordinates:  [ 106.75,-6.57] }
   },
   {
     "city": "Hartford",
@@ -8451,7 +9111,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Connecticut",
     "population": "914751",
-    "id": "1840004773"
+    "id": "1840004773",
+    "loc": { type: "Point", coordinates:  [ -72.6834,41.7661] }
   },
   {
     "city": "Huaibei",
@@ -8463,7 +9124,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Anhui",
     "population": "913000",
-    "id": "1156142626"
+    "id": "1156142626",
+    "loc": { type: "Point", coordinates:  [ 116.75,33.9504] }
   },
   {
     "city": "Xinyu",
@@ -8476,7 +9138,8 @@ const cities = [
     "admin_name": "Jiangxi",
     "capital": "minor",
     "population": "913000",
-    "id": "1156138735"
+    "id": "1156138735",
+    "loc": { type: "Point", coordinates:  [ 114.93,27.8] }
   },
   {
     "city": "Teresina",
@@ -8489,7 +9152,8 @@ const cities = [
     "admin_name": "Piauí",
     "capital": "admin",
     "population": "907000",
-    "id": "1076727667"
+    "id": "1076727667",
+    "loc": { type: "Point", coordinates:  [ -42.78,-5.095] }
   },
   {
     "city": "Naha",
@@ -8502,7 +9166,8 @@ const cities = [
     "admin_name": "Okinawa",
     "capital": "admin",
     "population": "905238",
-    "id": "1392583118"
+    "id": "1392583118",
+    "loc": { type: "Point", coordinates:  [ 127.673,26.2072] }
   },
   {
     "city": "Goyang",
@@ -8515,7 +9180,8 @@ const cities = [
     "admin_name": "Gyeonggi",
     "capital": "minor",
     "population": "903000",
-    "id": "1410511255"
+    "id": "1410511255",
+    "loc": { type: "Point", coordinates:  [ 126.8372,37.6527] }
   },
   {
     "city": "Nangandao",
@@ -8528,7 +9194,8 @@ const cities = [
     "admin_name": "Henan",
     "capital": "minor",
     "population": "903000",
-    "id": "1156127660"
+    "id": "1156127660",
+    "loc": { type: "Point", coordinates:  [ 113.87,35.3204] }
   },
   {
     "city": "Yibin",
@@ -8541,7 +9208,8 @@ const cities = [
     "admin_name": "Sichuan",
     "capital": "minor",
     "population": "902000",
-    "id": "1156107603"
+    "id": "1156107603",
+    "loc": { type: "Point", coordinates:  [ 104.57,28.77] }
   },
   {
     "city": "Aba",
@@ -8554,7 +9222,8 @@ const cities = [
     "admin_name": "Abia",
     "capital": "minor",
     "population": "897560",
-    "id": "1566262000"
+    "id": "1566262000",
+    "loc": { type: "Point", coordinates:  [ 7.35,5.1004] }
   },
   {
     "city": "Maiduguri",
@@ -8567,7 +9236,8 @@ const cities = [
     "admin_name": "Borno",
     "capital": "admin",
     "population": "896000",
-    "id": "1566540296"
+    "id": "1566540296",
+    "loc": { type: "Point", coordinates:  [ 13.16,11.85] }
   },
   {
     "city": "Az Zarqā’",
@@ -8580,7 +9250,8 @@ const cities = [
     "admin_name": "Az Zarqā’",
     "capital": "admin",
     "population": "894691",
-    "id": "1400161837"
+    "id": "1400161837",
+    "loc": { type: "Point", coordinates:  [ 36.1,32.07] }
   },
   {
     "city": "Tarsus",
@@ -8593,7 +9264,8 @@ const cities = [
     "admin_name": "Mersin",
     "capital": "minor",
     "population": "894318",
-    "id": "1792003860"
+    "id": "1792003860",
+    "loc": { type: "Point", coordinates:  [ 34.88,36.9204] }
   },
   {
     "city": "Bengbu",
@@ -8605,7 +9277,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Anhui",
     "population": "894000",
-    "id": "1156440668"
+    "id": "1156440668",
+    "loc": { type: "Point", coordinates:  [ 117.33,32.95] }
   },
   {
     "city": "Mendoza",
@@ -8618,7 +9291,8 @@ const cities = [
     "admin_name": "Mendoza",
     "capital": "admin",
     "population": "893000",
-    "id": "1032433516"
+    "id": "1032433516",
+    "loc": { type: "Point", coordinates:  [ -68.8166,-32.8833] }
   },
   {
     "city": "Hubli",
@@ -8630,7 +9304,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Karnātaka",
     "population": "890000",
-    "id": "1356102365"
+    "id": "1356102365",
+    "loc": { type: "Point", coordinates:  [ 75.125,15.36] }
   },
   {
     "city": "Concepción",
@@ -8643,7 +9318,8 @@ const cities = [
     "admin_name": "Biobío",
     "capital": "admin",
     "population": "889725",
-    "id": "1152838958"
+    "id": "1152838958",
+    "loc": { type: "Point", coordinates:  [ -73.05,-36.83] }
   },
   {
     "city": "Zaria",
@@ -8656,7 +9332,8 @@ const cities = [
     "admin_name": "Kaduna",
     "capital": "minor",
     "population": "889000",
-    "id": "1566287704"
+    "id": "1566287704",
+    "loc": { type: "Point", coordinates:  [ 7.71,11.08] }
   },
   {
     "city": "Dengtalu",
@@ -8669,7 +9346,8 @@ const cities = [
     "admin_name": "Henan",
     "capital": "minor",
     "population": "887000",
-    "id": "1156202014"
+    "id": "1156202014",
+    "loc": { type: "Point", coordinates:  [ 114.35,36.08] }
   },
   {
     "city": "Cartagena",
@@ -8682,7 +9360,8 @@ const cities = [
     "admin_name": "Bolívar",
     "capital": "admin",
     "population": "887000",
-    "id": "1170886102"
+    "id": "1170886102",
+    "loc": { type: "Point", coordinates:  [ -75.5144,10.3997] }
   },
   {
     "city": "Mysore",
@@ -8694,7 +9373,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Karnātaka",
     "population": "887000",
-    "id": "1356779323"
+    "id": "1356779323",
+    "loc": { type: "Point", coordinates:  [ 76.66,12.31] }
   },
   {
     "city": "Mexicali",
@@ -8707,7 +9387,8 @@ const cities = [
     "admin_name": "Baja California",
     "capital": "admin",
     "population": "885000",
-    "id": "1484788702"
+    "id": "1484788702",
+    "loc": { type: "Point", coordinates:  [ -115.48,32.65] }
   },
   {
     "city": "Tongliao",
@@ -8720,7 +9401,8 @@ const cities = [
     "admin_name": "Inner Mongolia",
     "capital": "minor",
     "population": "884000",
-    "id": "1156358686"
+    "id": "1156358686",
+    "loc": { type: "Point", coordinates:  [ 122.27,43.62] }
   },
   {
     "city": "Mombasa",
@@ -8733,7 +9415,8 @@ const cities = [
     "admin_name": "Mombasa",
     "capital": "admin",
     "population": "882000",
-    "id": "1404512373"
+    "id": "1404512373",
+    "loc": { type: "Point", coordinates:  [ 39.6899,-4.04] }
   },
   {
     "city": "Newcastle upon Tyne",
@@ -8746,7 +9429,8 @@ const cities = [
     "admin_name": "Newcastle upon Tyne",
     "capital": "admin",
     "population": "882000",
-    "id": "1826292220"
+    "id": "1826292220",
+    "loc": { type: "Point", coordinates:  [ -1.6,55.0004] }
   },
   {
     "city": "Novo Hamburgo",
@@ -8758,7 +9442,8 @@ const cities = [
     "iso3": "BRA",
     "admin_name": "Rio Grande do Sul",
     "population": "876990",
-    "id": "1076221386"
+    "id": "1076221386",
+    "loc": { type: "Point", coordinates:  [ -51.14,-29.7096] }
   },
   {
     "city": "Callao",
@@ -8771,7 +9456,8 @@ const cities = [
     "admin_name": "Callao",
     "capital": "admin",
     "population": "876877",
-    "id": "1604422141"
+    "id": "1604422141",
+    "loc": { type: "Point", coordinates:  [ -77.135,-12.07] }
   },
   {
     "city": "Bilbao",
@@ -8784,7 +9470,8 @@ const cities = [
     "admin_name": "Basque Country",
     "capital": "minor",
     "population": "875552",
-    "id": "1724331267"
+    "id": "1724331267",
+    "loc": { type: "Point", coordinates:  [ -2.93,43.25] }
   },
   {
     "city": "Johor Bahru",
@@ -8797,7 +9484,8 @@ const cities = [
     "admin_name": "Johor",
     "capital": "admin",
     "population": "875000",
-    "id": "1458747615"
+    "id": "1458747615",
+    "loc": { type: "Point", coordinates:  [ 103.73,1.48] }
   },
   {
     "city": "Raipur",
@@ -8810,7 +9498,8 @@ const cities = [
     "admin_name": "Chhattīsgarh",
     "capital": "admin",
     "population": "875000",
-    "id": "1356374983"
+    "id": "1356374983",
+    "loc": { type: "Point", coordinates:  [ 81.635,21.235] }
   },
   {
     "city": "Xiaoxita",
@@ -8823,7 +9512,8 @@ const cities = [
     "admin_name": "Hubei",
     "capital": "minor",
     "population": "875000",
-    "id": "1156764447"
+    "id": "1156764447",
+    "loc": { type: "Point", coordinates:  [ 111.28,30.7] }
   },
   {
     "city": "Fort Worth",
@@ -8835,7 +9525,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Texas",
     "population": "874168",
-    "id": "1840020696"
+    "id": "1840020696",
+    "loc": { type: "Point", coordinates:  [ -97.3472,32.7812] }
   },
   {
     "city": "Salem",
@@ -8847,7 +9538,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Tamil Nādu ",
     "population": "873000",
-    "id": "1356567087"
+    "id": "1356567087",
+    "loc": { type: "Point", coordinates:  [ 78.1801,11.67] }
   },
   {
     "city": "Yangjiang",
@@ -8860,7 +9552,8 @@ const cities = [
     "admin_name": "Guangdong",
     "capital": "minor",
     "population": "872363",
-    "id": "1156123172"
+    "id": "1156123172",
+    "loc": { type: "Point", coordinates:  [ 111.97,21.8504] }
   },
   {
     "city": "Marrakech",
@@ -8873,7 +9566,8 @@ const cities = [
     "admin_name": "Marrakech-Safi",
     "capital": "admin",
     "population": "872000",
-    "id": "1504172585"
+    "id": "1504172585",
+    "loc": { type: "Point", coordinates:  [ -8,31.63] }
   },
   {
     "city": "Kaifeng Chengguanzhen",
@@ -8886,7 +9580,8 @@ const cities = [
     "admin_name": "Henan",
     "capital": "minor",
     "population": "872000",
-    "id": "1156686574"
+    "id": "1156686574",
+    "loc": { type: "Point", coordinates:  [ 114.35,34.85] }
   },
   {
     "city": "Dandong",
@@ -8898,7 +9593,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Liaoning",
     "population": "870000",
-    "id": "1156178316"
+    "id": "1156178316",
+    "loc": { type: "Point", coordinates:  [ 124.3936,40.1436] }
   },
   {
     "city": "Al Başrah",
@@ -8911,7 +9607,8 @@ const cities = [
     "admin_name": "Al Başrah",
     "capital": "admin",
     "population": "870000",
-    "id": "1368714645"
+    "id": "1368714645",
+    "loc": { type: "Point", coordinates:  [ 47.8136,30.5135] }
   },
   {
     "city": "Aguascalientes",
@@ -8924,7 +9621,8 @@ const cities = [
     "admin_name": "Aguascalientes",
     "capital": "admin",
     "population": "869000",
-    "id": "1484666646"
+    "id": "1484666646",
+    "loc": { type: "Point", coordinates:  [ -102.2904,21.8795] }
   },
   {
     "city": "Tucson",
@@ -8936,7 +9634,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Arizona",
     "population": "868391",
-    "id": "1840022101"
+    "id": "1840022101",
+    "loc": { type: "Point", coordinates:  [ -110.8782,32.1545] }
   },
   {
     "city": "Okayama",
@@ -8949,7 +9648,8 @@ const cities = [
     "admin_name": "Okayama",
     "capital": "admin",
     "population": "866092",
-    "id": "1392954750"
+    "id": "1392954750",
+    "loc": { type: "Point", coordinates:  [ 133.9171,34.672] }
   },
   {
     "city": "Bucheon",
@@ -8962,7 +9662,8 @@ const cities = [
     "admin_name": "Gyeonggi",
     "capital": "minor",
     "population": "866000",
-    "id": "1410428222"
+    "id": "1410428222",
+    "loc": { type: "Point", coordinates:  [ 126.7831,37.4989] }
   },
   {
     "city": "Xuanzhou",
@@ -8974,7 +9675,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Anhui",
     "population": "866000",
-    "id": "1156424311"
+    "id": "1156424311",
+    "loc": { type: "Point", coordinates:  [ 118.7553,30.9525] }
   },
   {
     "city": "Bandar Lampung",
@@ -8987,7 +9689,8 @@ const cities = [
     "admin_name": "Lampung",
     "capital": "admin",
     "population": "865000",
-    "id": "1360243491"
+    "id": "1360243491",
+    "loc": { type: "Point", coordinates:  [ 105.27,-5.43] }
   },
   {
     "city": "Rizhao",
@@ -9000,7 +9703,8 @@ const cities = [
     "admin_name": "Shandong",
     "capital": "minor",
     "population": "865000",
-    "id": "1156032841"
+    "id": "1156032841",
+    "loc": { type: "Point", coordinates:  [ 119.45,35.4304] }
   },
   {
     "city": "Palermo",
@@ -9013,7 +9717,8 @@ const cities = [
     "admin_name": "Sicilia",
     "capital": "admin",
     "population": "863000",
-    "id": "1380428434"
+    "id": "1380428434",
+    "loc": { type: "Point", coordinates:  [ 13.35,38.125] }
   },
   {
     "city": "Caerdydd",
@@ -9026,7 +9731,8 @@ const cities = [
     "admin_name": "Cardiff",
     "capital": "admin",
     "population": "861400",
-    "id": "1826362422"
+    "id": "1826362422",
+    "loc": { type: "Point", coordinates:  [ -3.225,51.5] }
   },
   {
     "city": "Tampico",
@@ -9039,7 +9745,8 @@ const cities = [
     "admin_name": "Tamaulipas",
     "capital": "minor",
     "population": "859419",
-    "id": "1484060031"
+    "id": "1484060031",
+    "loc": { type: "Point", coordinates:  [ -97.87,22.3] }
   },
   {
     "city": "Jiaozuo",
@@ -9051,7 +9758,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Henan",
     "population": "857000",
-    "id": "1156157854"
+    "id": "1156157854",
+    "loc": { type: "Point", coordinates:  [ 113.22,35.25] }
   },
   {
     "city": "Padang",
@@ -9064,7 +9772,8 @@ const cities = [
     "admin_name": "Sumatera Barat",
     "capital": "admin",
     "population": "855000",
-    "id": "1360900986"
+    "id": "1360900986",
+    "loc": { type: "Point", coordinates:  [ 100.36,-0.96] }
   },
   {
     "city": "Jalandhar",
@@ -9076,7 +9785,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Punjab",
     "population": "855000",
-    "id": "1356494816"
+    "id": "1356494816",
+    "loc": { type: "Point", coordinates:  [ 75.569,31.3349] }
   },
   {
     "city": "Zhenjiang",
@@ -9089,7 +9799,8 @@ const cities = [
     "admin_name": "Jiangsu",
     "capital": "minor",
     "population": "854000",
-    "id": "1156934125"
+    "id": "1156934125",
+    "loc": { type: "Point", coordinates:  [ 119.43,32.22] }
   },
   {
     "city": "Valparaíso",
@@ -9102,7 +9813,8 @@ const cities = [
     "admin_name": "Valparaíso",
     "capital": "admin",
     "population": "854000",
-    "id": "1152337970"
+    "id": "1152337970",
+    "loc": { type: "Point", coordinates:  [ -71.621,-33.0478] }
   },
   {
     "city": "Pingdingshan",
@@ -9114,7 +9826,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Henan",
     "population": "849000",
-    "id": "1156735124"
+    "id": "1156735124",
+    "loc": { type: "Point", coordinates:  [ 113.3,33.7304] }
   },
   {
     "city": "Zunyi",
@@ -9126,7 +9839,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Guizhou",
     "population": "849000",
-    "id": "1156539782"
+    "id": "1156539782",
+    "loc": { type: "Point", coordinates:  [ 106.92,27.7] }
   },
   {
     "city": "Anshun",
@@ -9138,7 +9852,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Guizhou",
     "population": "849000",
-    "id": "1156415948"
+    "id": "1156415948",
+    "loc": { type: "Point", coordinates:  [ 105.93,26.2504] }
   },
   {
     "city": "Toulouse",
@@ -9151,7 +9866,8 @@ const cities = [
     "admin_name": "Occitanie",
     "capital": "admin",
     "population": "847000",
-    "id": "1250258110"
+    "id": "1250258110",
+    "loc": { type: "Point", coordinates:  [ 1.4499,43.62] }
   },
   {
     "city": "El Paso",
@@ -9163,7 +9879,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Texas",
     "population": "845674",
-    "id": "1840023252"
+    "id": "1840023252",
+    "loc": { type: "Point", coordinates:  [ -106.4309,31.8479] }
   },
   {
     "city": "Iguaçu",
@@ -9175,7 +9892,8 @@ const cities = [
     "iso3": "BRA",
     "admin_name": "Rio de Janeiro",
     "population": "844583",
-    "id": "1076339714"
+    "id": "1076339714",
+    "loc": { type: "Point", coordinates:  [ -43.47,-22.74] }
   },
   {
     "city": "Bhubaneshwar",
@@ -9188,7 +9906,8 @@ const cities = [
     "admin_name": "Odisha",
     "capital": "admin",
     "population": "844000",
-    "id": "1356140143"
+    "id": "1356140143",
+    "loc": { type: "Point", coordinates:  [ 85.8274,20.2704] }
   },
   {
     "city": "Voronezh",
@@ -9201,7 +9920,8 @@ const cities = [
     "admin_name": "Voronezhskaya Oblast’",
     "capital": "admin",
     "population": "844000",
-    "id": "1643811064"
+    "id": "1643811064",
+    "loc": { type: "Point", coordinates:  [ 39.27,51.73] }
   },
   {
     "city": "Saratov",
@@ -9214,7 +9934,8 @@ const cities = [
     "admin_name": "Saratovskaya Oblast’",
     "capital": "admin",
     "population": "843000",
-    "id": "1643556540"
+    "id": "1643556540",
+    "loc": { type: "Point", coordinates:  [ 46.03,51.58] }
   },
   {
     "city": "Yuci",
@@ -9226,7 +9947,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Shanxi",
     "population": "840000",
-    "id": "1156177817"
+    "id": "1156177817",
+    "loc": { type: "Point", coordinates:  [ 112.73,37.6804] }
   },
   {
     "city": "Yancheng",
@@ -9239,7 +9961,8 @@ const cities = [
     "admin_name": "Jiangsu",
     "capital": "minor",
     "population": "839000",
-    "id": "1156995410"
+    "id": "1156995410",
+    "loc": { type: "Point", coordinates:  [ 120.1253,33.3856] }
   },
   {
     "city": "Cuernavaca",
@@ -9252,7 +9975,8 @@ const cities = [
     "admin_name": "Morelos",
     "capital": "admin",
     "population": "834001",
-    "id": "1484926471"
+    "id": "1484926471",
+    "loc": { type: "Point", coordinates:  [ -99.24,18.9211] }
   },
   {
     "city": "Linfen",
@@ -9264,7 +9988,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Shanxi",
     "population": "834000",
-    "id": "1156416074"
+    "id": "1156416074",
+    "loc": { type: "Point", coordinates:  [ 111.52,36.0803] }
   },
   {
     "city": "Honolulu",
@@ -9277,7 +10002,8 @@ const cities = [
     "admin_name": "Hawaii",
     "capital": "admin",
     "population": "833671",
-    "id": "1840013305"
+    "id": "1840013305",
+    "loc": { type: "Point", coordinates:  [ -157.846,21.3294] }
   },
   {
     "city": "Warri",
@@ -9290,7 +10016,8 @@ const cities = [
     "admin_name": "Delta",
     "capital": "minor",
     "population": "830106",
-    "id": "1566325734"
+    "id": "1566325734",
+    "loc": { type: "Point", coordinates:  [ 5.76,5.52] }
   },
   {
     "city": "Basel",
@@ -9303,7 +10030,8 @@ const cities = [
     "admin_name": "Basel-Stadt",
     "capital": "admin",
     "population": "830000",
-    "id": "1756731313"
+    "id": "1756731313",
+    "loc": { type: "Point", coordinates:  [ 7.59,47.5804] }
   },
   {
     "city": "San Miguel de Tucumán",
@@ -9316,7 +10044,8 @@ const cities = [
     "admin_name": "Tucumán",
     "capital": "admin",
     "population": "830000",
-    "id": "1032233996"
+    "id": "1032233996",
+    "loc": { type: "Point", coordinates:  [ -65.2166,-26.816] }
   },
   {
     "city": "Kermānshāh",
@@ -9329,7 +10058,8 @@ const cities = [
     "admin_name": "Kermānshāh",
     "capital": "admin",
     "population": "828313",
-    "id": "1364535690"
+    "id": "1364535690",
+    "loc": { type: "Point", coordinates:  [ 47.06,34.38] }
   },
   {
     "city": "Thessaloníki",
@@ -9342,7 +10072,8 @@ const cities = [
     "admin_name": "Kentrikí Makedonía",
     "capital": "admin",
     "population": "828000",
-    "id": "1300397999"
+    "id": "1300397999",
+    "loc": { type: "Point", coordinates:  [ 22.885,40.6961] }
   },
   {
     "city": "Omaha",
@@ -9354,7 +10085,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Nebraska",
     "population": "827786",
-    "id": "1840009315"
+    "id": "1840009315",
+    "loc": { type: "Point", coordinates:  [ -96.0498,41.2628] }
   },
   {
     "city": "Kota",
@@ -9366,7 +10098,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Rājasthān",
     "population": "827000",
-    "id": "1356820310"
+    "id": "1356820310",
+    "loc": { type: "Point", coordinates:  [ 75.835,25.18] }
   },
   {
     "city": "Braga",
@@ -9379,7 +10112,8 @@ const cities = [
     "admin_name": "Braga",
     "capital": "admin",
     "population": "826833",
-    "id": "1620949401"
+    "id": "1620949401",
+    "loc": { type: "Point", coordinates:  [ -8.4213,41.555] }
   },
   {
     "city": "Jhānsi",
@@ -9391,7 +10125,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Uttar Pradesh",
     "population": "826494",
-    "id": "1356712664"
+    "id": "1356712664",
+    "loc": { type: "Point", coordinates:  [ 78.5575,25.453] }
   },
   {
     "city": "Rongjiawan",
@@ -9404,7 +10139,8 @@ const cities = [
     "admin_name": "Hunan",
     "capital": "minor",
     "population": "826000",
-    "id": "1156795164"
+    "id": "1156795164",
+    "loc": { type: "Point", coordinates:  [ 113.1,29.3801] }
   },
   {
     "city": "Nottingham",
@@ -9417,7 +10153,8 @@ const cities = [
     "admin_name": "Nottingham",
     "capital": "admin",
     "population": "825600",
-    "id": "1826122597"
+    "id": "1826122597",
+    "loc": { type: "Point", coordinates:  [ -1.17,52.9703] }
   },
   {
     "city": "Agadir",
@@ -9430,7 +10167,8 @@ const cities = [
     "admin_name": "Souss-Massa",
     "capital": "admin",
     "population": "825467",
-    "id": "1504116858"
+    "id": "1504116858",
+    "loc": { type: "Point", coordinates:  [ -9.62,30.44] }
   },
   {
     "city": "Butterworth",
@@ -9442,7 +10180,8 @@ const cities = [
     "iso3": "MYS",
     "admin_name": "Pulau Pinang",
     "population": "821652",
-    "id": "1458469233"
+    "id": "1458469233",
+    "loc": { type: "Point", coordinates:  [ 100.4,5.4171] }
   },
   {
     "city": "Bareilly",
@@ -9454,7 +10193,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Uttar Pradesh",
     "population": "817000",
-    "id": "1356698199"
+    "id": "1356698199",
+    "loc": { type: "Point", coordinates:  [ 79.42,28.3454] }
   },
   {
     "city": "Jos",
@@ -9467,7 +10207,8 @@ const cities = [
     "admin_name": "Plateau",
     "capital": "admin",
     "population": "816824",
-    "id": "1566773679"
+    "id": "1566773679",
+    "loc": { type: "Point", coordinates:  [ 8.89,9.93] }
   },
   {
     "city": "Xingyi",
@@ -9479,7 +10220,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Guizhou",
     "population": "816000",
-    "id": "1156255316"
+    "id": "1156255316",
+    "loc": { type: "Point", coordinates:  [ 104.89,25.0904] }
   },
   {
     "city": "Cebu City",
@@ -9492,7 +10234,8 @@ const cities = [
     "admin_name": "Cebu",
     "capital": "admin",
     "population": "815000",
-    "id": "1608136151"
+    "id": "1608136151",
+    "loc": { type: "Point", coordinates:  [ 123.9001,10.32] }
   },
   {
     "city": "Arequipa",
@@ -9505,7 +10248,8 @@ const cities = [
     "admin_name": "Arequipa",
     "capital": "admin",
     "population": "815000",
-    "id": "1604723954"
+    "id": "1604723954",
+    "loc": { type: "Point", coordinates:  [ -71.53,-16.42] }
   },
   {
     "city": "Liverpool",
@@ -9518,7 +10262,8 @@ const cities = [
     "admin_name": "Liverpool",
     "capital": "admin",
     "population": "811000",
-    "id": "1826558678"
+    "id": "1826558678",
+    "loc": { type: "Point", coordinates:  [ -2.918,53.416] }
   },
   {
     "city": "Wuhu",
@@ -9531,7 +10276,8 @@ const cities = [
     "admin_name": "Anhui",
     "capital": "minor",
     "population": "810000",
-    "id": "1156315512"
+    "id": "1156315512",
+    "loc": { type: "Point", coordinates:  [ 118.37,31.3504] }
   },
   {
     "city": "Langfang",
@@ -9543,7 +10289,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Hebei",
     "population": "810000",
-    "id": "1156109017"
+    "id": "1156109017",
+    "loc": { type: "Point", coordinates:  [ 116.68,39.5204] }
   },
   {
     "city": "Rājshāhi",
@@ -9556,7 +10303,8 @@ const cities = [
     "admin_name": "Rājshāhi",
     "capital": "admin",
     "population": "810000",
-    "id": "1050547831"
+    "id": "1050547831",
+    "loc": { type: "Point", coordinates:  [ 88.605,24.375] }
   },
   {
     "city": "Zhaotong",
@@ -9568,7 +10316,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Yunnan",
     "population": "809000",
-    "id": "1156924687"
+    "id": "1156924687",
+    "loc": { type: "Point", coordinates:  [ 103.72,27.3204] }
   },
   {
     "city": "Culiacán",
@@ -9581,7 +10330,8 @@ const cities = [
     "admin_name": "Sinaloa",
     "capital": "admin",
     "population": "809000",
-    "id": "1484516810"
+    "id": "1484516810",
+    "loc": { type: "Point", coordinates:  [ -107.38,24.83] }
   },
   {
     "city": "Valencia",
@@ -9594,7 +10344,8 @@ const cities = [
     "admin_name": "Valencia",
     "capital": "admin",
     "population": "808000",
-    "id": "1724981666"
+    "id": "1724981666",
+    "loc": { type: "Point", coordinates:  [ -0.4,39.485] }
   },
   {
     "city": "Lingyuan",
@@ -9606,7 +10357,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Liaoning",
     "population": "806000",
-    "id": "1156184681"
+    "id": "1156184681",
+    "loc": { type: "Point", coordinates:  [ 119.4011,41.24] }
   },
   {
     "city": "Cuiabá",
@@ -9619,7 +10371,8 @@ const cities = [
     "admin_name": "Mato Grosso",
     "capital": "admin",
     "population": "806000",
-    "id": "1076112309"
+    "id": "1076112309",
+    "loc": { type: "Point", coordinates:  [ -56.085,-15.5696] }
   },
   {
     "city": "Quy Nhơn",
@@ -9632,7 +10385,8 @@ const cities = [
     "admin_name": "Bình Định",
     "capital": "admin",
     "population": "805290",
-    "id": "1704056461"
+    "id": "1704056461",
+    "loc": { type: "Point", coordinates:  [ 109.18,13.78] }
   },
   {
     "city": "Malang",
@@ -9644,7 +10398,8 @@ const cities = [
     "iso3": "IDN",
     "admin_name": "Jawa Timur",
     "population": "805000",
-    "id": "1360141408"
+    "id": "1360141408",
+    "loc": { type: "Point", coordinates:  [ 112.61,-7.98] }
   },
   {
     "city": "Alīgarh",
@@ -9656,7 +10411,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Uttar Pradesh",
     "population": "805000",
-    "id": "1356076391"
+    "id": "1356076391",
+    "loc": { type: "Point", coordinates:  [ 78.0618,27.8922] }
   },
   {
     "city": "L’viv",
@@ -9669,7 +10425,8 @@ const cities = [
     "admin_name": "L’vivs’ka Oblast’",
     "capital": "admin",
     "population": "803880",
-    "id": "1804939658"
+    "id": "1804939658",
+    "loc": { type: "Point", coordinates:  [ 24.03,49.835] }
   },
   {
     "city": "Bordeaux",
@@ -9682,7 +10439,8 @@ const cities = [
     "admin_name": "Nouvelle-Aquitaine",
     "capital": "admin",
     "population": "803000",
-    "id": "1250449238"
+    "id": "1250449238",
+    "loc": { type: "Point", coordinates:  [ -0.595,44.85] }
   },
   {
     "city": "McAllen",
@@ -9694,7 +10452,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Texas",
     "population": "800904",
-    "id": "1840021024"
+    "id": "1840021024",
+    "loc": { type: "Point", coordinates:  [ -98.2471,26.2273] }
   },
   {
     "city": "Baojishi",
@@ -9706,7 +10465,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Shaanxi",
     "population": "800000",
-    "id": "1156101096"
+    "id": "1156101096",
+    "loc": { type: "Point", coordinates:  [ 107.15,34.38] }
   },
   {
     "city": "Pekanbaru",
@@ -9719,7 +10479,8 @@ const cities = [
     "admin_name": "Riau",
     "capital": "admin",
     "population": "799000",
-    "id": "1360422679"
+    "id": "1360422679",
+    "loc": { type: "Point", coordinates:  [ 101.425,0.565] }
   },
   {
     "city": "Oran",
@@ -9732,7 +10493,8 @@ const cities = [
     "admin_name": "Oran",
     "capital": "admin",
     "population": "798000",
-    "id": "1012126319"
+    "id": "1012126319",
+    "loc": { type: "Point", coordinates:  [ -0.62,35.71] }
   },
   {
     "city": "Yingkou",
@@ -9745,7 +10507,8 @@ const cities = [
     "admin_name": "Liaoning",
     "capital": "minor",
     "population": "795000",
-    "id": "1156257074"
+    "id": "1156257074",
+    "loc": { type: "Point", coordinates:  [ 122.28,40.6703] }
   },
   {
     "city": "Bhiwandi",
@@ -9757,7 +10520,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Mahārāshtra",
     "population": "795000",
-    "id": "1356763571"
+    "id": "1356763571",
+    "loc": { type: "Point", coordinates:  [ 73.13,19.35] }
   },
   {
     "city": "Liaoyang",
@@ -9769,7 +10533,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Liaoning",
     "population": "794000",
-    "id": "1156202749"
+    "id": "1156202749",
+    "loc": { type: "Point", coordinates:  [ 123.18,41.28] }
   },
   {
     "city": "Chihuahua",
@@ -9782,7 +10547,8 @@ const cities = [
     "admin_name": "Chihuahua",
     "capital": "admin",
     "population": "793000",
-    "id": "1484335603"
+    "id": "1484335603",
+    "loc": { type: "Point", coordinates:  [ -106.085,28.645] }
   },
   {
     "city": "Jammu",
@@ -9794,7 +10560,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Jammu and Kashmīr",
     "population": "791000",
-    "id": "1356491738"
+    "id": "1356491738",
+    "loc": { type: "Point", coordinates:  [ 74.8467,32.7118] }
   },
   {
     "city": "Melaka",
@@ -9807,7 +10574,8 @@ const cities = [
     "admin_name": "Melaka",
     "capital": "admin",
     "population": "788706",
-    "id": "1458467506"
+    "id": "1458467506",
+    "loc": { type: "Point", coordinates:  [ 102.2465,2.2064] }
   },
   {
     "city": "Zaporizhzhya",
@@ -9820,7 +10588,8 @@ const cities = [
     "admin_name": "Zaporiz’ka Oblast’",
     "capital": "admin",
     "population": "788000",
-    "id": "1804644752"
+    "id": "1804644752",
+    "loc": { type: "Point", coordinates:  [ 35.1768,47.8573] }
   },
   {
     "city": "Morādābād",
@@ -9832,7 +10601,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Uttar Pradesh",
     "population": "787000",
-    "id": "1356269375"
+    "id": "1356269375",
+    "loc": { type: "Point", coordinates:  [ 78.7568,28.8418] }
   },
   {
     "city": "Antalya",
@@ -9845,7 +10615,8 @@ const cities = [
     "admin_name": "Antalya",
     "capital": "admin",
     "population": "783000",
-    "id": "1792988434"
+    "id": "1792988434",
+    "loc": { type: "Point", coordinates:  [ 30.7,36.89] }
   },
   {
     "city": "Al Ḩudaydah",
@@ -9858,7 +10629,8 @@ const cities = [
     "admin_name": "Al Ḩudaydah",
     "capital": "admin",
     "population": "780000",
-    "id": "1887984890"
+    "id": "1887984890",
+    "loc": { type: "Point", coordinates:  [ 42.953,14.7979] }
   },
   {
     "city": "Campo Grande",
@@ -9871,7 +10643,8 @@ const cities = [
     "admin_name": "Mato Grosso do Sul",
     "capital": "admin",
     "population": "778000",
-    "id": "1076660445"
+    "id": "1076660445",
+    "loc": { type: "Point", coordinates:  [ -54.6166,-20.45] }
   },
   {
     "city": "Shaoxing",
@@ -9884,7 +10657,8 @@ const cities = [
     "admin_name": "Zhejiang",
     "capital": "minor",
     "population": "777000",
-    "id": "1156893449"
+    "id": "1156893449",
+    "loc": { type: "Point", coordinates:  [ 120.57,30.0004] }
   },
   {
     "city": "Yichun",
@@ -9897,7 +10671,8 @@ const cities = [
     "admin_name": "Heilongjiang",
     "capital": "minor",
     "population": "777000",
-    "id": "1156757274"
+    "id": "1156757274",
+    "loc": { type: "Point", coordinates:  [ 128.9,47.6999] }
   },
   {
     "city": "Mangalore",
@@ -9909,7 +10684,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Karnātaka",
     "population": "776632",
-    "id": "1356972351"
+    "id": "1356972351",
+    "loc": { type: "Point", coordinates:  [ 74.85,12.9] }
   },
   {
     "city": "Pontianak",
@@ -9922,7 +10698,8 @@ const cities = [
     "admin_name": "Kalimantan Barat",
     "capital": "admin",
     "population": "607311",
-    "id": "1360992394"
+    "id": "1360992394",
+    "loc": { type: "Point", coordinates:  [ 109.32,-0.03] }
   },
   {
     "city": "Yaroslavl’",
@@ -9935,7 +10712,8 @@ const cities = [
     "admin_name": "Yaroslavskaya Oblast’",
     "capital": "admin",
     "population": "606730",
-    "id": "1643338528"
+    "id": "1643338528",
+    "loc": { type: "Point", coordinates:  [ 39.87,57.62] }
   },
   {
     "city": "Constantine",
@@ -9948,7 +10726,8 @@ const cities = [
     "admin_name": "Constantine",
     "capital": "admin",
     "population": "605179",
-    "id": "1012275076"
+    "id": "1012275076",
+    "loc": { type: "Point", coordinates:  [ 6.5999,36.36] }
   },
   {
     "city": "Banjarmasin",
@@ -9961,7 +10740,8 @@ const cities = [
     "admin_name": "Kalimantan Selatan",
     "capital": "admin",
     "population": "603576",
-    "id": "1360685223"
+    "id": "1360685223",
+    "loc": { type: "Point", coordinates:  [ 114.5801,-3.33] }
   },
   {
     "city": "Grand Rapids",
@@ -9973,7 +10753,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Michigan",
     "population": "602694",
-    "id": "1840002928"
+    "id": "1840002928",
+    "loc": { type: "Point", coordinates:  [ -85.6557,42.9615] }
   },
   {
     "city": "Kirkuk",
@@ -9986,7 +10767,8 @@ const cities = [
     "admin_name": "Kirkūk",
     "capital": "admin",
     "population": "601433",
-    "id": "1368344172"
+    "id": "1368344172",
+    "loc": { type: "Point", coordinates:  [ 44.3923,35.4722] }
   },
   {
     "city": "Sāngli",
@@ -9998,7 +10780,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Mahārāshtra",
     "population": "601214",
-    "id": "1356921375"
+    "id": "1356921375",
+    "loc": { type: "Point", coordinates:  [ 74.575,16.8604] }
   },
   {
     "city": "Barcelona",
@@ -10011,7 +10794,8 @@ const cities = [
     "admin_name": "Anzoátegui",
     "capital": "admin",
     "population": "600954",
-    "id": "1862418619"
+    "id": "1862418619",
+    "loc": { type: "Point", coordinates:  [ -64.72,10.1304] }
   },
   {
     "city": "Mission Viejo",
@@ -10023,7 +10807,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "California",
     "population": "600474",
-    "id": "1840020580"
+    "id": "1840020580",
+    "loc": { type: "Point", coordinates:  [ -117.655,33.6095] }
   },
   {
     "city": "Sūhāj",
@@ -10036,7 +10821,8 @@ const cities = [
     "admin_name": "Sūhāj",
     "capital": "admin",
     "population": "600000",
-    "id": "1818460403"
+    "id": "1818460403",
+    "loc": { type: "Point", coordinates:  [ 31.7,26.5504] }
   },
   {
     "city": "Al Manşūrah",
@@ -10049,7 +10835,8 @@ const cities = [
     "admin_name": "Ad Daqahlīyah",
     "capital": "admin",
     "population": "600000",
-    "id": "1818255319"
+    "id": "1818255319",
+    "loc": { type: "Point", coordinates:  [ 31.38,31.0504] }
   },
   {
     "city": "Canoas",
@@ -10061,7 +10848,8 @@ const cities = [
     "iso3": "BRA",
     "admin_name": "Rio Grande do Sul",
     "population": "600000",
-    "id": "1076009922"
+    "id": "1076009922",
+    "loc": { type: "Point", coordinates:  [ -51.18,-29.92] }
   },
   {
     "city": "Barnaul",
@@ -10074,7 +10862,8 @@ const cities = [
     "admin_name": "Altayskiy Kray",
     "capital": "admin",
     "population": "599579",
-    "id": "1643318931"
+    "id": "1643318931",
+    "loc": { type: "Point", coordinates:  [ 83.745,53.355] }
   },
   {
     "city": "Zāhedān",
@@ -10087,7 +10876,8 @@ const cities = [
     "admin_name": "Sīstān va Balūchestān",
     "capital": "admin",
     "population": "598887",
-    "id": "1364072353"
+    "id": "1364072353",
+    "loc": { type: "Point", coordinates:  [ 60.83,29.5] }
   },
   {
     "city": "Jalālābād",
@@ -10100,7 +10890,8 @@ const cities = [
     "admin_name": "Nangarhār",
     "capital": "admin",
     "population": "597971",
-    "id": "1004315012"
+    "id": "1004315012",
+    "loc": { type: "Point", coordinates:  [ 70.4361,34.4415] }
   },
   {
     "city": "Albany",
@@ -10113,7 +10904,8 @@ const cities = [
     "admin_name": "New York",
     "capital": "admin",
     "population": "597270",
-    "id": "1840000417"
+    "id": "1840000417",
+    "loc": { type: "Point", coordinates:  [ -73.7987,42.6664] }
   },
   {
     "city": "Chiclayo",
@@ -10126,7 +10918,8 @@ const cities = [
     "admin_name": "Lambayeque",
     "capital": "admin",
     "population": "596792",
-    "id": "1604799615"
+    "id": "1604799615",
+    "loc": { type: "Point", coordinates:  [ -79.8366,-6.7629] }
   },
   {
     "city": "Hermosillo",
@@ -10139,7 +10932,8 @@ const cities = [
     "admin_name": "Sonora",
     "capital": "admin",
     "population": "595811",
-    "id": "1484015319"
+    "id": "1484015319",
+    "loc": { type: "Point", coordinates:  [ -110.9541,29.0989] }
   },
   {
     "city": "Chānda",
@@ -10151,7 +10945,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Mahārāshtra",
     "population": "595118",
-    "id": "1356592607"
+    "id": "1356592607",
+    "loc": { type: "Point", coordinates:  [ 79.3,19.97] }
   },
   {
     "city": "Al Ḩillah",
@@ -10164,7 +10959,8 @@ const cities = [
     "admin_name": "Bābil",
     "capital": "admin",
     "population": "594605",
-    "id": "1368916692"
+    "id": "1368916692",
+    "loc": { type: "Point", coordinates:  [ 44.4217,32.4721] }
   },
   {
     "city": "Al Ḩillah",
@@ -10176,7 +10972,8 @@ const cities = [
     "iso3": "SAU",
     "admin_name": "Ar Riyāḑ",
     "population": "594605",
-    "id": "1682494753"
+    "id": "1682494753",
+    "loc": { type: "Point", coordinates:  [ 46.7564,23.4895] }
   },
   {
     "city": "Rasht",
@@ -10189,7 +10986,8 @@ const cities = [
     "admin_name": "Gīlān",
     "capital": "admin",
     "population": "594590",
-    "id": "1364630382"
+    "id": "1364630382",
+    "loc": { type: "Point", coordinates:  [ 49.63,37.3] }
   },
   {
     "city": "Nagano",
@@ -10202,7 +11000,8 @@ const cities = [
     "admin_name": "Nagano",
     "capital": "admin",
     "population": "594311",
-    "id": "1392603439"
+    "id": "1392603439",
+    "loc": { type: "Point", coordinates:  [ 138.17,36.65] }
   },
   {
     "city": "Vinh",
@@ -10215,7 +11014,8 @@ const cities = [
     "admin_name": "Nghệ An",
     "capital": "admin",
     "population": "593645",
-    "id": "1704960059"
+    "id": "1704960059",
+    "loc": { type: "Point", coordinates:  [ 105.68,18.7] }
   },
   {
     "city": "Abeokuta",
@@ -10228,7 +11028,8 @@ const cities = [
     "admin_name": "Ogun",
     "capital": "admin",
     "population": "593100",
-    "id": "1566979497"
+    "id": "1566979497",
+    "loc": { type: "Point", coordinates:  [ 3.35,7.1604] }
   },
   {
     "city": "Kayseri",
@@ -10241,7 +11042,8 @@ const cities = [
     "admin_name": "Kayseri",
     "capital": "admin",
     "population": "592840",
-    "id": "1792945815"
+    "id": "1792945815",
+    "loc": { type: "Point", coordinates:  [ 35.49,38.735] }
   },
   {
     "city": "Samarinda",
@@ -10254,7 +11056,8 @@ const cities = [
     "admin_name": "Kalimantan Timur",
     "capital": "admin",
     "population": "592228",
-    "id": "1360684979"
+    "id": "1360684979",
+    "loc": { type: "Point", coordinates:  [ 117.15,-0.5] }
   },
   {
     "city": "Ajmer",
@@ -10266,7 +11069,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Rājasthān",
     "population": "589985",
-    "id": "1356058258"
+    "id": "1356058258",
+    "loc": { type: "Point", coordinates:  [ 74.64,26.45] }
   },
   {
     "city": "Dortmund",
@@ -10279,7 +11083,8 @@ const cities = [
     "admin_name": "North Rhine-Westphalia",
     "capital": "minor",
     "population": "588462",
-    "id": "1276562886"
+    "id": "1276562886",
+    "loc": { type: "Point", coordinates:  [ 7.45,51.53] }
   },
   {
     "city": "Vladivostok",
@@ -10292,7 +11097,8 @@ const cities = [
     "admin_name": "Primorskiy Kray",
     "capital": "admin",
     "population": "587022",
-    "id": "1643832017"
+    "id": "1643832017",
+    "loc": { type: "Point", coordinates:  [ 131.91,43.13] }
   },
   {
     "city": "Irkutsk",
@@ -10305,7 +11111,8 @@ const cities = [
     "admin_name": "Irkutskaya Oblast’",
     "capital": "admin",
     "population": "586695",
-    "id": "1643439037"
+    "id": "1643439037",
+    "loc": { type: "Point", coordinates:  [ 104.245,52.32] }
   },
   {
     "city": "Knoxville",
@@ -10317,7 +11124,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Tennessee",
     "population": "585249",
-    "id": "1840014486"
+    "id": "1840014486",
+    "loc": { type: "Point", coordinates:  [ -83.9496,35.9692] }
   },
   {
     "city": "Blantyre",
@@ -10330,7 +11138,8 @@ const cities = [
     "admin_name": "Blantyre",
     "capital": "admin",
     "population": "584877",
-    "id": "1454145012"
+    "id": "1454145012",
+    "loc": { type: "Point", coordinates:  [ 34.9899,-15.79] }
   },
   {
     "city": "Baton Rouge",
@@ -10343,7 +11152,8 @@ const cities = [
     "admin_name": "Louisiana",
     "capital": "admin",
     "population": "583613",
-    "id": "1840013941"
+    "id": "1840013941",
+    "loc": { type: "Point", coordinates:  [ -91.131,30.4419] }
   },
   {
     "city": "Anqing",
@@ -10356,7 +11166,8 @@ const cities = [
     "admin_name": "Anhui",
     "capital": "minor",
     "population": "580497",
-    "id": "1156238875"
+    "id": "1156238875",
+    "loc": { type: "Point", coordinates:  [ 117.05,30.5] }
   },
   {
     "city": "Cuttack",
@@ -10368,7 +11179,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Odisha",
     "population": "580000",
-    "id": "1356872061"
+    "id": "1356872061",
+    "loc": { type: "Point", coordinates:  [ 85.8899,20.47] }
   },
   {
     "city": "Hachiōji",
@@ -10380,7 +11192,8 @@ const cities = [
     "iso3": "JPN",
     "admin_name": "Tōkyō",
     "population": "579399",
-    "id": "1392172935"
+    "id": "1392172935",
+    "loc": { type: "Point", coordinates:  [ 139.3261,35.6577] }
   },
   {
     "city": "Khabarovsk",
@@ -10393,7 +11206,8 @@ const cities = [
     "admin_name": "Khabarovskiy Kray",
     "capital": "admin",
     "population": "579000",
-    "id": "1643175363"
+    "id": "1643175363",
+    "loc": { type: "Point", coordinates:  [ 135.12,48.455] }
   },
   {
     "city": "Veracruz",
@@ -10406,7 +11220,8 @@ const cities = [
     "admin_name": "Veracruz",
     "capital": "minor",
     "population": "578963",
-    "id": "1484992153"
+    "id": "1484992153",
+    "loc": { type: "Point", coordinates:  [ -96.16,19.1773] }
   },
   {
     "city": "Kisangani",
@@ -10419,7 +11234,8 @@ const cities = [
     "admin_name": "Tshopo",
     "capital": "admin",
     "population": "578470",
-    "id": "1180478201"
+    "id": "1180478201",
+    "loc": { type: "Point", coordinates:  [ 25.22,0.52] }
   },
   {
     "city": "Kermān",
@@ -10432,7 +11248,8 @@ const cities = [
     "admin_name": "Kermān",
     "capital": "admin",
     "population": "577514",
-    "id": "1364554896"
+    "id": "1364554896",
+    "loc": { type: "Point", coordinates:  [ 57.08,30.3] }
   },
   {
     "city": "Orūmīyeh",
@@ -10445,7 +11262,8 @@ const cities = [
     "admin_name": "Āz̄arbāyjān-e Gharbī",
     "capital": "admin",
     "population": "577307",
-    "id": "1364158221"
+    "id": "1364158221",
+    "loc": { type: "Point", coordinates:  [ 45,37.53] }
   },
   {
     "city": "Bīkaner",
@@ -10457,7 +11275,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Rājasthān",
     "population": "576015",
-    "id": "1356026593"
+    "id": "1356026593",
+    "loc": { type: "Point", coordinates:  [ 73.3299,28.0304] }
   },
   {
     "city": "Quetzaltenango",
@@ -10470,7 +11289,8 @@ const cities = [
     "admin_name": "Quetzaltenango",
     "capital": "admin",
     "population": "575263",
-    "id": "1320083599"
+    "id": "1320083599",
+    "loc": { type: "Point", coordinates:  [ -91.52,14.83] }
   },
   {
     "city": "Bakersfield",
@@ -10482,7 +11302,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "California",
     "population": "574362",
-    "id": "1840019148"
+    "id": "1840019148",
+    "loc": { type: "Point", coordinates:  [ -119.0359,35.353] }
   },
   {
     "city": "Ogden",
@@ -10494,7 +11315,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Utah",
     "population": "573632",
-    "id": "1840020135"
+    "id": "1840020135",
+    "loc": { type: "Point", coordinates:  [ -111.9677,41.228] }
   },
   {
     "city": "Shihezi",
@@ -10507,7 +11329,8 @@ const cities = [
     "admin_name": "Xinjiang",
     "capital": "minor",
     "population": "573182",
-    "id": "1156232270"
+    "id": "1156232270",
+    "loc": { type: "Point", coordinates:  [ 86.0299,44.3] }
   },
   {
     "city": "Kuching",
@@ -10520,7 +11343,8 @@ const cities = [
     "admin_name": "Sarawak",
     "capital": "admin",
     "population": "570407",
-    "id": "1458462262"
+    "id": "1458462262",
+    "loc": { type: "Point", coordinates:  [ 110.33,1.53] }
   },
   {
     "city": "Shuozhou",
@@ -10533,7 +11357,8 @@ const cities = [
     "admin_name": "Shanxi",
     "capital": "minor",
     "population": "570000",
-    "id": "1156227167"
+    "id": "1156227167",
+    "loc": { type: "Point", coordinates:  [ 112.42,39.3004] }
   },
   {
     "city": "Niigata",
@@ -10546,7 +11371,8 @@ const cities = [
     "admin_name": "Niigata",
     "capital": "admin",
     "population": "569797",
-    "id": "1392913753"
+    "id": "1392913753",
+    "loc": { type: "Point", coordinates:  [ 139.04,37.92] }
   },
   {
     "city": "Pereira",
@@ -10559,7 +11385,8 @@ const cities = [
     "admin_name": "Risaralda",
     "capital": "admin",
     "population": "568750",
-    "id": "1170386718"
+    "id": "1170386718",
+    "loc": { type: "Point", coordinates:  [ -75.68,4.8104] }
   },
   {
     "city": "Macau",
@@ -10570,7 +11397,8 @@ const cities = [
     "iso2": "MO",
     "iso3": "MAC",
     "population": "568700",
-    "id": "1446227359"
+    "id": "1446227359",
+    "loc": { type: "Point", coordinates:  [ 113.545,22.203] }
   },
   {
     "city": "New Haven",
@@ -10582,7 +11410,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Connecticut",
     "population": "568144",
-    "id": "1840004850"
+    "id": "1840004850",
+    "loc": { type: "Point", coordinates:  [ -72.9246,41.3112] }
   },
   {
     "city": "Bouaké",
@@ -10595,7 +11424,8 @@ const cities = [
     "admin_name": "Vallée du Bandama",
     "capital": "admin",
     "population": "567481",
-    "id": "1384983838"
+    "id": "1384983838",
+    "loc": { type: "Point", coordinates:  [ -5.03,7.69] }
   },
   {
     "city": "Columbia",
@@ -10608,7 +11438,8 @@ const cities = [
     "admin_name": "South Carolina",
     "capital": "admin",
     "population": "566166",
-    "id": "1840014730"
+    "id": "1840014730",
+    "loc": { type: "Point", coordinates:  [ -80.9037,34.0376] }
   },
   {
     "city": "Akron",
@@ -10620,7 +11451,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Ohio",
     "population": "565920",
-    "id": "1840000791"
+    "id": "1840000791",
+    "loc": { type: "Point", coordinates:  [ -81.5219,41.0798] }
   },
   {
     "city": "Binjai",
@@ -10632,7 +11464,8 @@ const cities = [
     "iso3": "IDN",
     "admin_name": "Sumatera Utara",
     "population": "564979",
-    "id": "1360884608"
+    "id": "1360884608",
+    "loc": { type: "Point", coordinates:  [ 98.5001,3.6204] }
   },
   {
     "city": "Uberlândia",
@@ -10644,7 +11477,8 @@ const cities = [
     "iso3": "BRA",
     "admin_name": "Minas Gerais",
     "population": "563536",
-    "id": "1076495001"
+    "id": "1076495001",
+    "loc": { type: "Point", coordinates:  [ -48.28,-18.9] }
   },
   {
     "city": "Sorocaba",
@@ -10656,7 +11490,8 @@ const cities = [
     "iso3": "BRA",
     "admin_name": "São Paulo",
     "population": "563281",
-    "id": "1076758708"
+    "id": "1076758708",
+    "loc": { type: "Point", coordinates:  [ -47.47,-23.49] }
   },
   {
     "city": "Wusong",
@@ -10669,7 +11504,8 @@ const cities = [
     "admin_name": "Anhui",
     "capital": "minor",
     "population": "562832",
-    "id": "1156264408"
+    "id": "1156264408",
+    "loc": { type: "Point", coordinates:  [ 117.78,30.9504] }
   },
   {
     "city": "Weihai",
@@ -10682,7 +11518,8 @@ const cities = [
     "admin_name": "Shandong",
     "capital": "minor",
     "population": "560255",
-    "id": "1156473300"
+    "id": "1156473300",
+    "loc": { type: "Point", coordinates:  [ 122.1,37.5] }
   },
   {
     "city": "Mar del Plata",
@@ -10695,7 +11532,8 @@ const cities = [
     "admin_name": "Buenos Aires",
     "capital": "minor",
     "population": "555897",
-    "id": "1032456103"
+    "id": "1032456103",
+    "loc": { type: "Point", coordinates:  [ -57.58,-38] }
   },
   {
     "city": "Santiago de Cuba",
@@ -10708,7 +11546,8 @@ const cities = [
     "admin_name": "Santiago de Cuba",
     "capital": "admin",
     "population": "555865",
-    "id": "1192766111"
+    "id": "1192766111",
+    "loc": { type: "Point", coordinates:  [ -75.8213,20.025] }
   },
   {
     "city": "Siping",
@@ -10720,7 +11559,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Jilin",
     "population": "555609",
-    "id": "1156063295"
+    "id": "1156063295",
+    "loc": { type: "Point", coordinates:  [ 124.33,43.17] }
   },
   {
     "city": "Kagoshima",
@@ -10733,7 +11573,8 @@ const cities = [
     "admin_name": "Kagoshima",
     "capital": "admin",
     "population": "555352",
-    "id": "1392120675"
+    "id": "1392120675",
+    "loc": { type: "Point", coordinates:  [ 130.5611,31.586] }
   },
   {
     "city": "Surakarta",
@@ -10745,7 +11586,8 @@ const cities = [
     "iso3": "IDN",
     "admin_name": "Jawa Tengah",
     "population": "555308",
-    "id": "1360853933"
+    "id": "1360853933",
+    "loc": { type: "Point", coordinates:  [ 110.825,-7.565] }
   },
   {
     "city": "Makhachkala",
@@ -10758,7 +11600,8 @@ const cities = [
     "admin_name": "Dagestan",
     "capital": "admin",
     "population": "554981",
-    "id": "1643580480"
+    "id": "1643580480",
+    "loc": { type: "Point", coordinates:  [ 47.5,42.98] }
   },
   {
     "city": "Bhāvnagar",
@@ -10770,7 +11613,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Gujarāt",
     "population": "554978",
-    "id": "1356982375"
+    "id": "1356982375",
+    "loc": { type: "Point", coordinates:  [ 72.13,21.7784] }
   },
   {
     "city": "Uyo",
@@ -10783,7 +11627,8 @@ const cities = [
     "admin_name": "Akwa Ibom",
     "capital": "admin",
     "population": "554906",
-    "id": "1566061694"
+    "id": "1566061694",
+    "loc": { type: "Point", coordinates:  [ 7.85,5.008] }
   },
   {
     "city": "Bristol",
@@ -10796,7 +11641,8 @@ const cities = [
     "admin_name": "Bristol, City of",
     "capital": "admin",
     "population": "553528",
-    "id": "1826921049"
+    "id": "1826921049",
+    "loc": { type: "Point", coordinates:  [ -2.5833,51.45] }
   },
   {
     "city": "Bahawalpur",
@@ -10809,7 +11655,8 @@ const cities = [
     "admin_name": "Punjab",
     "capital": "minor",
     "population": "552607",
-    "id": "1586038700"
+    "id": "1586038700",
+    "loc": { type: "Point", coordinates:  [ 71.675,29.39] }
   },
   {
     "city": "Kenitra",
@@ -10821,7 +11668,8 @@ const cities = [
     "iso3": "MAR",
     "admin_name": "Rabat-Salé-Kénitra",
     "population": "551786",
-    "id": "1504534876"
+    "id": "1504534876",
+    "loc": { type: "Point", coordinates:  [ -6.58,34.2704] }
   },
   {
     "city": "Ribeirão Prêto",
@@ -10833,7 +11681,8 @@ const cities = [
     "iso3": "BRA",
     "admin_name": "São Paulo",
     "population": "551267",
-    "id": "1076524478"
+    "id": "1076524478",
+    "loc": { type: "Point", coordinates:  [ -47.83,-21.17] }
   },
   {
     "city": "Kanazawa",
@@ -10846,7 +11695,8 @@ const cities = [
     "admin_name": "Ishikawa",
     "capital": "admin",
     "population": "551249",
-    "id": "1392684679"
+    "id": "1392684679",
+    "loc": { type: "Point", coordinates:  [ 136.64,36.56] }
   },
   {
     "city": "Orenburg",
@@ -10859,7 +11709,8 @@ const cities = [
     "admin_name": "Orenburgskaya Oblast’",
     "capital": "admin",
     "population": "550204",
-    "id": "1643685056"
+    "id": "1643685056",
+    "loc": { type: "Point", coordinates:  [ 55.11,51.78] }
   },
   {
     "city": "Málaga",
@@ -10872,7 +11723,8 @@ const cities = [
     "admin_name": "Andalusia",
     "capital": "minor",
     "population": "550058",
-    "id": "1724397372"
+    "id": "1724397372",
+    "loc": { type: "Point", coordinates:  [ -4.42,36.7204] }
   },
   {
     "city": "Tabūk",
@@ -10885,7 +11737,8 @@ const cities = [
     "admin_name": "Tabūk",
     "capital": "admin",
     "population": "547957",
-    "id": "1682590992"
+    "id": "1682590992",
+    "loc": { type: "Point", coordinates:  [ 36.555,28.3838] }
   },
   {
     "city": "Puerto La Cruz",
@@ -10898,7 +11751,8 @@ const cities = [
     "admin_name": "Anzoátegui",
     "capital": "minor",
     "population": "546616",
-    "id": "1862856141"
+    "id": "1862856141",
+    "loc": { type: "Point", coordinates:  [ -64.68,10.17] }
   },
   {
     "city": "Jiujiang",
@@ -10911,7 +11765,8 @@ const cities = [
     "admin_name": "Jiangxi",
     "capital": "minor",
     "population": "545616",
-    "id": "1156206041"
+    "id": "1156206041",
+    "loc": { type: "Point", coordinates:  [ 115.98,29.73] }
   },
   {
     "city": "Hisar",
@@ -10923,7 +11778,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Haryāna",
     "population": "544829",
-    "id": "1356004790"
+    "id": "1356004790",
+    "loc": { type: "Point", coordinates:  [ 75.725,29.17] }
   },
   {
     "city": "Kashgar",
@@ -10936,7 +11792,8 @@ const cities = [
     "admin_name": "Xinjiang",
     "capital": "minor",
     "population": "543914",
-    "id": "1156113193"
+    "id": "1156113193",
+    "loc": { type: "Point", coordinates:  [ 75.9699,39.4763] }
   },
   {
     "city": "Matola",
@@ -10948,7 +11805,8 @@ const cities = [
     "iso3": "MOZ",
     "admin_name": "Maputo",
     "population": "543907",
-    "id": "1508768577"
+    "id": "1508768577",
+    "loc": { type: "Point", coordinates:  [ 32.46,-25.9696] }
   },
   {
     "city": "Bilāspur",
@@ -10960,7 +11818,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Chhattīsgarh",
     "population": "543454",
-    "id": "1356820491"
+    "id": "1356820491",
+    "loc": { type: "Point", coordinates:  [ 82.16,22.0904] }
   },
   {
     "city": "Sargodha",
@@ -10973,7 +11832,8 @@ const cities = [
     "admin_name": "Punjab",
     "capital": "minor",
     "population": "542603",
-    "id": "1586696588"
+    "id": "1586696588",
+    "loc": { type: "Point", coordinates:  [ 72.675,32.0854] }
   },
   {
     "city": "Leipzig",
@@ -10986,7 +11846,8 @@ const cities = [
     "admin_name": "Saxony",
     "capital": "minor",
     "population": "542529",
-    "id": "1276563678"
+    "id": "1276563678",
+    "loc": { type: "Point", coordinates:  [ 12.41,51.3354] }
   },
   {
     "city": "Tinnevelly",
@@ -10998,7 +11859,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Tamil Nādu ",
     "population": "542200",
-    "id": "1356037155"
+    "id": "1356037155",
+    "loc": { type: "Point", coordinates:  [ 77.69,8.7304] }
   },
   {
     "city": "Cancún",
@@ -11011,7 +11873,8 @@ const cities = [
     "admin_name": "Quintana Roo",
     "capital": "minor",
     "population": "542043",
-    "id": "1484010310"
+    "id": "1484010310",
+    "loc": { type: "Point", coordinates:  [ -86.83,21.17] }
   },
   {
     "city": "Yangzhou",
@@ -11023,7 +11886,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Jiangsu",
     "population": "539715",
-    "id": "1156818601"
+    "id": "1156818601",
+    "loc": { type: "Point", coordinates:  [ 119.43,32.4] }
   },
   {
     "city": "Novokuznetsk",
@@ -11035,7 +11899,8 @@ const cities = [
     "iso3": "RUS",
     "admin_name": "Kemerovskaya Oblast’",
     "population": "539616",
-    "id": "1643628717"
+    "id": "1643628717",
+    "loc": { type: "Point", coordinates:  [ 87.115,53.75] }
   },
   {
     "city": "Latakia",
@@ -11048,7 +11913,8 @@ const cities = [
     "admin_name": "Al Lādhiqīyah",
     "capital": "admin",
     "population": "539147",
-    "id": "1760555544"
+    "id": "1760555544",
+    "loc": { type: "Point", coordinates:  [ 35.78,35.54] }
   },
   {
     "city": "Heroica Matamoros",
@@ -11061,7 +11927,8 @@ const cities = [
     "admin_name": "Tamaulipas",
     "capital": "minor",
     "population": "538785",
-    "id": "1484614906"
+    "id": "1484614906",
+    "loc": { type: "Point", coordinates:  [ -97.5,25.88] }
   },
   {
     "city": "Göteborg",
@@ -11074,7 +11941,8 @@ const cities = [
     "admin_name": "Västra Götaland",
     "capital": "admin",
     "population": "537797",
-    "id": "1752059374"
+    "id": "1752059374",
+    "loc": { type: "Point", coordinates:  [ 12,57.75] }
   },
   {
     "city": "Ōtsu",
@@ -11087,7 +11955,8 @@ const cities = [
     "admin_name": "Shiga",
     "capital": "admin",
     "population": "536976",
-    "id": "1392164106"
+    "id": "1392164106",
+    "loc": { type: "Point", coordinates:  [ 135.8674,35.0064] }
   },
   {
     "city": "Tomsk",
@@ -11100,7 +11969,8 @@ const cities = [
     "admin_name": "Tomskaya Oblast’",
     "capital": "admin",
     "population": "535479",
-    "id": "1643258928"
+    "id": "1643258928",
+    "loc": { type: "Point", coordinates:  [ 84.975,56.495] }
   },
   {
     "city": "Linxia Chengguanzhen",
@@ -11113,7 +11983,8 @@ const cities = [
     "admin_name": "Gansu",
     "capital": "minor",
     "population": "534555",
-    "id": "1156043522"
+    "id": "1156043522",
+    "loc": { type: "Point", coordinates:  [ 103.2,35.6] }
   },
   {
     "city": "Matsuyama",
@@ -11126,7 +11997,8 @@ const cities = [
     "admin_name": "Ehime",
     "capital": "admin",
     "population": "533541",
-    "id": "1392220893"
+    "id": "1392220893",
+    "loc": { type: "Point", coordinates:  [ 132.7658,33.8455] }
   },
   {
     "city": "Rouen",
@@ -11139,7 +12011,8 @@ const cities = [
     "admin_name": "Normandie",
     "capital": "admin",
     "population": "532559",
-    "id": "1250372069"
+    "id": "1250372069",
+    "loc": { type: "Point", coordinates:  [ 1.08,49.4304] }
   },
   {
     "city": "Jiangmen",
@@ -11152,7 +12025,8 @@ const cities = [
     "admin_name": "Guangdong",
     "capital": "minor",
     "population": "532419",
-    "id": "1156105613"
+    "id": "1156105613",
+    "loc": { type: "Point", coordinates:  [ 113.08,22.5804] }
   },
   {
     "city": "Oaxaca",
@@ -11165,7 +12039,8 @@ const cities = [
     "admin_name": "Oaxaca",
     "capital": "admin",
     "population": "530728",
-    "id": "1484301467"
+    "id": "1484301467",
+    "loc": { type: "Point", coordinates:  [ -96.6699,17.0827] }
   },
   {
     "city": "Beira",
@@ -11178,7 +12053,8 @@ const cities = [
     "admin_name": "Sofala",
     "capital": "admin",
     "population": "530604",
-    "id": "1508407369"
+    "id": "1508407369",
+    "loc": { type: "Point", coordinates:  [ 34.87,-19.82] }
   },
   {
     "city": "Guntūr",
@@ -11190,7 +12066,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Andhra Pradesh",
     "population": "530577",
-    "id": "1356374905"
+    "id": "1356374905",
+    "loc": { type: "Point", coordinates:  [ 80.45,16.33] }
   },
   {
     "city": "Tripoli",
@@ -11203,7 +12080,8 @@ const cities = [
     "admin_name": "Liban-Nord",
     "capital": "admin",
     "population": "530000",
-    "id": "1422886065"
+    "id": "1422886065",
+    "loc": { type: "Point", coordinates:  [ 35.87,34.42] }
   },
   {
     "city": "Hamadān",
@@ -11216,7 +12094,8 @@ const cities = [
     "admin_name": "Hamadān",
     "capital": "admin",
     "population": "528256",
-    "id": "1364126377"
+    "id": "1364126377",
+    "loc": { type: "Point", coordinates:  [ 48.515,34.796] }
   },
   {
     "city": "Cangzhou",
@@ -11228,7 +12107,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Hebei",
     "population": "527681",
-    "id": "1156698069"
+    "id": "1156698069",
+    "loc": { type: "Point", coordinates:  [ 116.87,38.3204] }
   },
   {
     "city": "Kota Kinabalu",
@@ -11241,7 +12121,8 @@ const cities = [
     "admin_name": "Sabah",
     "capital": "admin",
     "population": "527671",
-    "id": "1458441859"
+    "id": "1458441859",
+    "loc": { type: "Point", coordinates:  [ 116.11,5.98] }
   },
   {
     "city": "Gold Coast",
@@ -11253,7 +12134,8 @@ const cities = [
     "iso3": "AUS",
     "admin_name": "Queensland",
     "population": "527660",
-    "id": "1036153217"
+    "id": "1036153217",
+    "loc": { type: "Point", coordinates:  [ 153.4482,-28.0815] }
   },
   {
     "city": "Ji’an",
@@ -11266,7 +12148,8 @@ const cities = [
     "admin_name": "Jiangxi",
     "capital": "minor",
     "population": "520248",
-    "id": "1156278215"
+    "id": "1156278215",
+    "loc": { type: "Point", coordinates:  [ 115,27.1304] }
   },
   {
     "city": "Londrina",
@@ -11278,7 +12161,8 @@ const cities = [
     "iso3": "BRA",
     "admin_name": "Paraná",
     "population": "520238",
-    "id": "1076723241"
+    "id": "1076723241",
+    "loc": { type: "Point", coordinates:  [ -51.18,-23.3] }
   },
   {
     "city": "Ryazan’",
@@ -11291,7 +12175,8 @@ const cities = [
     "admin_name": "Ryazanskaya Oblast’",
     "capital": "admin",
     "population": "520173",
-    "id": "1643205787"
+    "id": "1643205787",
+    "loc": { type: "Point", coordinates:  [ 39.72,54.62] }
   },
   {
     "city": "Shashi",
@@ -11303,7 +12188,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Hubei",
     "population": "520000",
-    "id": "1156254380"
+    "id": "1156254380",
+    "loc": { type: "Point", coordinates:  [ 112.23,30.32] }
   },
   {
     "city": "Bello",
@@ -11316,7 +12202,8 @@ const cities = [
     "admin_name": "Antioquia",
     "capital": "minor",
     "population": "519670",
-    "id": "1170423489"
+    "id": "1170423489",
+    "loc": { type: "Point", coordinates:  [ -75.57,6.33] }
   },
   {
     "city": "Tyumen’",
@@ -11329,7 +12216,8 @@ const cities = [
     "admin_name": "Tyumenskaya Oblast’",
     "capital": "admin",
     "population": "519119",
-    "id": "1643040435"
+    "id": "1643040435",
+    "loc": { type: "Point", coordinates:  [ 65.53,57.14] }
   },
   {
     "city": "Lipetsk",
@@ -11342,7 +12230,8 @@ const cities = [
     "admin_name": "Lipetskaya Oblast’",
     "capital": "admin",
     "population": "515655",
-    "id": "1643772906"
+    "id": "1643772906",
+    "loc": { type: "Point", coordinates:  [ 39.64,52.62] }
   },
   {
     "city": "Shiliguri",
@@ -11354,7 +12243,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "West Bengal",
     "population": "515574",
-    "id": "1356724691"
+    "id": "1356724691",
+    "loc": { type: "Point", coordinates:  [ 88.455,26.7204] }
   },
   {
     "city": "Eskişehir",
@@ -11367,7 +12257,8 @@ const cities = [
     "admin_name": "Eskişehir",
     "capital": "admin",
     "population": "514869",
-    "id": "1792933981"
+    "id": "1792933981",
+    "loc": { type: "Point", coordinates:  [ 30.53,39.795] }
   },
   {
     "city": "Banda Aceh",
@@ -11380,7 +12271,8 @@ const cities = [
     "admin_name": "Aceh",
     "capital": "admin",
     "population": "513698",
-    "id": "1360353144"
+    "id": "1360353144",
+    "loc": { type: "Point", coordinates:  [ 95.32,5.55] }
   },
   {
     "city": "Ujjain",
@@ -11392,7 +12284,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Madhya Pradesh",
     "population": "513350",
-    "id": "1356050735"
+    "id": "1356050735",
+    "loc": { type: "Point", coordinates:  [ 75.79,23.1904] }
   },
   {
     "city": "Salta",
@@ -11405,7 +12298,8 @@ const cities = [
     "admin_name": "Salta",
     "capital": "admin",
     "population": "512686",
-    "id": "1032926124"
+    "id": "1032926124",
+    "loc": { type: "Point", coordinates:  [ -65.4166,-24.7834] }
   },
   {
     "city": "Penza",
@@ -11418,7 +12312,8 @@ const cities = [
     "admin_name": "Penzenskaya Oblast’",
     "capital": "admin",
     "population": "512602",
-    "id": "1643492830"
+    "id": "1643492830",
+    "loc": { type: "Point", coordinates:  [ 45,53.18] }
   },
   {
     "city": "Blida",
@@ -11431,7 +12326,8 @@ const cities = [
     "admin_name": "Blida",
     "capital": "admin",
     "population": "511348",
-    "id": "1012045589"
+    "id": "1012045589",
+    "loc": { type: "Point", coordinates:  [ 2.83,36.4203] }
   },
   {
     "city": "Mykolayiv",
@@ -11444,7 +12340,8 @@ const cities = [
     "admin_name": "Mykolayivs’ka Oblast’",
     "capital": "admin",
     "population": "510840",
-    "id": "1804398395"
+    "id": "1804398395",
+    "loc": { type: "Point", coordinates:  [ 31.9843,46.9677] }
   },
   {
     "city": "Karbalā’",
@@ -11457,7 +12354,8 @@ const cities = [
     "admin_name": "Karbalā’",
     "capital": "admin",
     "population": "510692",
-    "id": "1368597794"
+    "id": "1368597794",
+    "loc": { type: "Point", coordinates:  [ 44.0245,32.6149] }
   },
   {
     "city": "Suez",
@@ -11470,7 +12368,8 @@ const cities = [
     "admin_name": "As Suways",
     "capital": "admin",
     "population": "508335",
-    "id": "1818495972"
+    "id": "1818495972",
+    "loc": { type: "Point", coordinates:  [ 32.5499,30.005] }
   },
   {
     "city": "Gliwice",
@@ -11483,7 +12382,8 @@ const cities = [
     "admin_name": "Śląskie",
     "capital": "minor",
     "population": "507670",
-    "id": "1616311376"
+    "id": "1616311376",
+    "loc": { type: "Point", coordinates:  [ 18.67,50.3304] }
   },
   {
     "city": "Bukittinggi",
@@ -11495,7 +12395,8 @@ const cities = [
     "iso3": "IDN",
     "admin_name": "Sumatera Barat",
     "population": "506964",
-    "id": "1360552560"
+    "id": "1360552560",
+    "loc": { type: "Point", coordinates:  [ 100.3615,-0.3031] }
   },
   {
     "city": "Liaoyuan",
@@ -11507,7 +12408,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Jilin",
     "population": "506548",
-    "id": "1156249772"
+    "id": "1156249772",
+    "loc": { type: "Point", coordinates:  [ 125.13,42.9] }
   },
   {
     "city": "Kota Bharu",
@@ -11520,7 +12422,8 @@ const cities = [
     "admin_name": "Kelantan",
     "capital": "admin",
     "population": "505583",
-    "id": "1458150101"
+    "id": "1458150101",
+    "loc": { type: "Point", coordinates:  [ 102.23,6.12] }
   },
   {
     "city": "Jundiaí",
@@ -11532,7 +12435,8 @@ const cities = [
     "iso3": "BRA",
     "admin_name": "São Paulo",
     "population": "505548",
-    "id": "1076998392"
+    "id": "1076998392",
+    "loc": { type: "Point", coordinates:  [ -46.88,-23.2] }
   },
   {
     "city": "Edinburgh",
@@ -11545,7 +12449,8 @@ const cities = [
     "admin_name": "Edinburgh, City of",
     "capital": "admin",
     "population": "504966",
-    "id": "1826492520"
+    "id": "1826492520",
+    "loc": { type: "Point", coordinates:  [ -3.2191,55.9483] }
   },
   {
     "city": "Tlaxcala",
@@ -11558,7 +12463,8 @@ const cities = [
     "admin_name": "Tlaxcala",
     "capital": "admin",
     "population": "503878",
-    "id": "1484359502"
+    "id": "1484359502",
+    "loc": { type: "Point", coordinates:  [ -98.23,19.32] }
   },
   {
     "city": "Provo",
@@ -11570,7 +12476,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Utah",
     "population": "503695",
-    "id": "1840020174"
+    "id": "1840020174",
+    "loc": { type: "Point", coordinates:  [ -111.6457,40.2457] }
   },
   {
     "city": "Arāk",
@@ -11583,7 +12490,8 @@ const cities = [
     "admin_name": "Markazī",
     "capital": "admin",
     "population": "503647",
-    "id": "1364624691"
+    "id": "1364624691",
+    "loc": { type: "Point", coordinates:  [ 49.7,34.0804] }
   },
   {
     "city": "Davangere",
@@ -11595,7 +12503,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Karnātaka",
     "population": "503564",
-    "id": "1356445061"
+    "id": "1356445061",
+    "loc": { type: "Point", coordinates:  [ 75.92,14.47] }
   },
   {
     "city": "Viña del Mar",
@@ -11607,7 +12516,8 @@ const cities = [
     "iso3": "CHL",
     "admin_name": "Valparaíso",
     "population": "503534",
-    "id": "1152898644"
+    "id": "1152898644",
+    "loc": { type: "Point", coordinates:  [ -71.54,-33.03] }
   },
   {
     "city": "Pingtung",
@@ -11620,7 +12530,8 @@ const cities = [
     "admin_name": "Pingtung",
     "capital": "admin",
     "population": "503530",
-    "id": "1158209038"
+    "id": "1158209038",
+    "loc": { type: "Point", coordinates:  [ 120.4817,22.6817] }
   },
   {
     "city": "Annaba",
@@ -11633,7 +12544,8 @@ const cities = [
     "admin_name": "Annaba",
     "capital": "admin",
     "population": "503524",
-    "id": "1012600001"
+    "id": "1012600001",
+    "loc": { type: "Point", coordinates:  [ 7.76,36.92] }
   },
   {
     "city": "Akola",
@@ -11645,7 +12557,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Mahārāshtra",
     "population": "503502",
-    "id": "1356089496"
+    "id": "1356089496",
+    "loc": { type: "Point", coordinates:  [ 77.01,20.71] }
   },
   {
     "city": "Brighton",
@@ -11657,7 +12570,8 @@ const cities = [
     "iso3": "GBR",
     "admin_name": "Brighton and Hove",
     "population": "503008",
-    "id": "1826609057"
+    "id": "1826609057",
+    "loc": { type: "Point", coordinates:  [ -0.17,50.8303] }
   },
   {
     "city": "Astrakhan’",
@@ -11670,7 +12584,8 @@ const cities = [
     "admin_name": "Astrakhanskaya Oblast’",
     "capital": "admin",
     "population": "502533",
-    "id": "1643407929"
+    "id": "1643407929",
+    "loc": { type: "Point", coordinates:  [ 48.055,46.3487] }
   },
   {
     "city": "Bradford",
@@ -11683,7 +12598,8 @@ const cities = [
     "admin_name": "Bradford",
     "capital": "admin",
     "population": "501700",
-    "id": "1826687116"
+    "id": "1826687116",
+    "loc": { type: "Point", coordinates:  [ -1.75,53.8] }
   },
   {
     "city": "Bari",
@@ -11696,7 +12612,8 @@ const cities = [
     "admin_name": "Puglia",
     "capital": "admin",
     "population": "500577",
-    "id": "1380991126"
+    "id": "1380991126",
+    "loc": { type: "Point", coordinates:  [ 16.8728,41.1142] }
   },
   {
     "city": "Damanhūr",
@@ -11709,7 +12626,8 @@ const cities = [
     "admin_name": "Al Buḩayrah",
     "capital": "admin",
     "population": "500000",
-    "id": "1818708838"
+    "id": "1818708838",
+    "loc": { type: "Point", coordinates:  [ 30.47,31.0504] }
   },
   {
     "city": "Al Minyā",
@@ -11722,7 +12640,8 @@ const cities = [
     "admin_name": "Al Minyā",
     "capital": "admin",
     "population": "500000",
-    "id": "1818607968"
+    "id": "1818607968",
+    "loc": { type: "Point", coordinates:  [ 30.75,28.09] }
   },
   {
     "city": "Taoyuan District",
@@ -11735,7 +12654,8 @@ const cities = [
     "admin_name": "Taoyuan",
     "capital": "admin",
     "population": "500000",
-    "id": "1158127875"
+    "id": "1158127875",
+    "loc": { type: "Point", coordinates:  [ 121.3111,24.9889] }
   },
   {
     "city": "Keelung",
@@ -11748,7 +12668,8 @@ const cities = [
     "admin_name": "Keelung",
     "capital": "admin",
     "population": "500000",
-    "id": "1158820647"
+    "id": "1158820647",
+    "loc": { type: "Point", coordinates:  [ 121.7333,25.1333] }
   },
   {
     "city": "San Lorenzo",
@@ -11760,7 +12681,8 @@ const cities = [
     "iso3": "PRY",
     "admin_name": "Central",
     "population": "500000",
-    "id": "1600667303"
+    "id": "1600667303",
+    "loc": { type: "Point", coordinates:  [ -57.52,-25.34] }
   },
   {
     "city": "Pasuruan",
@@ -11772,7 +12694,8 @@ const cities = [
     "iso3": "IDN",
     "admin_name": "Jawa Timur",
     "population": "500000",
-    "id": "1360084806"
+    "id": "1360084806",
+    "loc": { type: "Point", coordinates:  [ 112.9,-7.6296] }
   },
   {
     "city": "Chiayi",
@@ -11785,7 +12708,8 @@ const cities = [
     "admin_name": "Chiayi",
     "capital": "admin",
     "population": "500000",
-    "id": "1158867217"
+    "id": "1158867217",
+    "loc": { type: "Point", coordinates:  [ 120.4351,23.4755] }
   },
   {
     "city": "Thái Nguyên",
@@ -11798,7 +12722,8 @@ const cities = [
     "admin_name": "Thái Nguyên",
     "capital": "admin",
     "population": "500000",
-    "id": "1704613715"
+    "id": "1704613715",
+    "loc": { type: "Point", coordinates:  [ 105.83,21.6] }
   },
   {
     "city": "Awka",
@@ -11811,7 +12736,8 @@ const cities = [
     "admin_name": "Anambra",
     "capital": "admin",
     "population": "500000",
-    "id": "1566560581"
+    "id": "1566560581",
+    "loc": { type: "Point", coordinates:  [ 7.07,6.2104] }
   },
   {
     "city": "Shuangyashan",
@@ -11823,7 +12749,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Heilongjiang",
     "population": "500000",
-    "id": "1156245904"
+    "id": "1156245904",
+    "loc": { type: "Point", coordinates:  [ 131.35,46.6704] }
   },
   {
     "city": "Mazatán",
@@ -11836,7 +12763,8 @@ const cities = [
     "admin_name": "Sonora",
     "capital": "minor",
     "population": "500000",
-    "id": "1484350756"
+    "id": "1484350756",
+    "loc": { type: "Point", coordinates:  [ -110.1333,29.0171] }
   },
   {
     "city": "Tsu",
@@ -11849,7 +12777,8 @@ const cities = [
     "admin_name": "Mie",
     "capital": "admin",
     "population": "500000",
-    "id": "1392082102"
+    "id": "1392082102",
+    "loc": { type: "Point", coordinates:  [ 136.5167,34.7171] }
   },
   {
     "city": "Mataram",
@@ -11862,7 +12791,8 @@ const cities = [
     "admin_name": "Nusa Tenggara Barat",
     "capital": "admin",
     "population": "499409",
-    "id": "1360021952"
+    "id": "1360021952",
+    "loc": { type: "Point", coordinates:  [ 116.135,-8.5795] }
   },
   {
     "city": "Macapá",
@@ -11875,7 +12805,8 @@ const cities = [
     "admin_name": "Amapá",
     "capital": "admin",
     "population": "499166",
-    "id": "1076189884"
+    "id": "1076189884",
+    "loc": { type: "Point", coordinates:  [ -51.05,0.033] }
   },
   {
     "city": "Worcester",
@@ -11887,7 +12818,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Massachusetts",
     "population": "498997",
-    "id": "1840000434"
+    "id": "1840000434",
+    "loc": { type: "Point", coordinates:  [ -71.8079,42.2705] }
   },
   {
     "city": "Reynosa",
@@ -11900,7 +12832,8 @@ const cities = [
     "admin_name": "Tamaulipas",
     "capital": "minor",
     "population": "498654",
-    "id": "1484737671"
+    "id": "1484737671",
+    "loc": { type: "Point", coordinates:  [ -98.3,26.08] }
   },
   {
     "city": "Shahrisabz",
@@ -11912,7 +12845,8 @@ const cities = [
     "iso3": "UZB",
     "admin_name": "Qashqadaryo",
     "population": "498545",
-    "id": "1860513278"
+    "id": "1860513278",
+    "loc": { type: "Point", coordinates:  [ 66.8315,39.0618] }
   },
   {
     "city": "Mesa",
@@ -11924,7 +12858,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Arizona",
     "population": "496401",
-    "id": "1840020566"
+    "id": "1840020566",
+    "loc": { type: "Point", coordinates:  [ -111.7181,33.4017] }
   },
   {
     "city": "Dūmā",
@@ -11937,7 +12872,8 @@ const cities = [
     "admin_name": "Rīf Dimashq",
     "capital": "minor",
     "population": "496145",
-    "id": "1760821818"
+    "id": "1760821818",
+    "loc": { type: "Point", coordinates:  [ 36.4,33.5833] }
   },
   {
     "city": "Mwanza",
@@ -11950,7 +12886,8 @@ const cities = [
     "admin_name": "Mwanza",
     "capital": "admin",
     "population": "493944",
-    "id": "1834011288"
+    "id": "1834011288",
+    "loc": { type: "Point", coordinates:  [ 32.93,-2.52] }
   },
   {
     "city": "Wuwei",
@@ -11963,7 +12900,8 @@ const cities = [
     "admin_name": "Gansu",
     "capital": "minor",
     "population": "493092",
-    "id": "1156760291"
+    "id": "1156760291",
+    "loc": { type: "Point", coordinates:  [ 102.641,37.928] }
   },
   {
     "city": "Palm Bay",
@@ -11975,7 +12913,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Florida",
     "population": "489912",
-    "id": "1840015094"
+    "id": "1840015094",
+    "loc": { type: "Point", coordinates:  [ -80.6628,27.955] }
   },
   {
     "city": "Port Sudan",
@@ -11988,7 +12927,8 @@ const cities = [
     "admin_name": "Red Sea",
     "capital": "admin",
     "population": "489725",
-    "id": "1729710259"
+    "id": "1729710259",
+    "loc": { type: "Point", coordinates:  [ 37.2164,19.6158] }
   },
   {
     "city": "Santa Fe",
@@ -12001,7 +12941,8 @@ const cities = [
     "admin_name": "Santa Fe",
     "capital": "admin",
     "population": "489505",
-    "id": "1032817575"
+    "id": "1032817575",
+    "loc": { type: "Point", coordinates:  [ -60.69,-31.6239] }
   },
   {
     "city": "Tula",
@@ -12014,7 +12955,8 @@ const cities = [
     "admin_name": "Tul’skaya Oblast’",
     "capital": "admin",
     "population": "489486",
-    "id": "1643255206"
+    "id": "1643255206",
+    "loc": { type: "Point", coordinates:  [ 37.6299,54.2] }
   },
   {
     "city": "Banī Suwayf",
@@ -12027,7 +12969,8 @@ const cities = [
     "admin_name": "Banī Suwayf",
     "capital": "admin",
     "population": "489450",
-    "id": "1818902849"
+    "id": "1818902849",
+    "loc": { type: "Point", coordinates:  [ 31.09,29.0804] }
   },
   {
     "city": "Yanji",
@@ -12039,7 +12982,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Jilin",
     "population": "488740",
-    "id": "1156405468"
+    "id": "1156405468",
+    "loc": { type: "Point", coordinates:  [ 129.5128,42.8823] }
   },
   {
     "city": "Toledo",
@@ -12051,7 +12995,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Ohio",
     "population": "488672",
-    "id": "1840000572"
+    "id": "1840000572",
+    "loc": { type: "Point", coordinates:  [ -83.5822,41.6639] }
   },
   {
     "city": "Bologna",
@@ -12064,7 +13009,8 @@ const cities = [
     "admin_name": "Emilia-Romagna",
     "capital": "admin",
     "population": "488172",
-    "id": "1380202039"
+    "id": "1380202039",
+    "loc": { type: "Point", coordinates:  [ 11.34,44.5004] }
   },
   {
     "city": "Brookhaven",
@@ -12076,7 +13022,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "New York",
     "population": "487731",
-    "id": "1840057464"
+    "id": "1840057464",
+    "loc": { type: "Point", coordinates:  [ -72.9518,40.8321] }
   },
   {
     "city": "Sahāranpur",
@@ -12088,7 +13035,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Uttar Pradesh",
     "population": "484873",
-    "id": "1356139858"
+    "id": "1356139858",
+    "loc": { type: "Point", coordinates:  [ 77.55,29.97] }
   },
   {
     "city": "Murrieta",
@@ -12100,7 +13048,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "California",
     "population": "483681",
-    "id": "1840020553"
+    "id": "1840020553",
+    "loc": { type: "Point", coordinates:  [ -117.1909,33.572] }
   },
   {
     "city": "Gulbarga",
@@ -12112,7 +13061,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Karnātaka",
     "population": "483615",
-    "id": "1356091187"
+    "id": "1356091187",
+    "loc": { type: "Point", coordinates:  [ 76.82,17.35] }
   },
   {
     "city": "Bhātpāra",
@@ -12124,7 +13074,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "West Bengal",
     "population": "483129",
-    "id": "1356022456"
+    "id": "1356022456",
+    "loc": { type: "Point", coordinates:  [ 88.52,22.8504] }
   },
   {
     "city": "Wichita",
@@ -12136,7 +13087,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "Kansas",
     "population": "483057",
-    "id": "1840001686"
+    "id": "1840001686",
+    "loc": { type: "Point", coordinates:  [ -97.3441,37.6897] }
   },
   {
     "city": "Ile-Ife",
@@ -12149,7 +13101,8 @@ const cities = [
     "admin_name": "Osun",
     "capital": "minor",
     "population": "482365",
-    "id": "1566756897"
+    "id": "1566756897",
+    "loc": { type: "Point", coordinates:  [ 4.56,7.4804] }
   },
   {
     "city": "Feira de Santana",
@@ -12161,7 +13114,8 @@ const cities = [
     "iso3": "BRA",
     "admin_name": "Bahia",
     "population": "481911",
-    "id": "1076892244"
+    "id": "1076892244",
+    "loc": { type: "Point", coordinates:  [ -38.97,-12.25] }
   },
   {
     "city": "Shah Alam",
@@ -12174,7 +13128,8 @@ const cities = [
     "admin_name": "Selangor",
     "capital": "admin",
     "population": "481654",
-    "id": "1458194263"
+    "id": "1458194263",
+    "loc": { type: "Point", coordinates:  [ 101.55,3.0667] }
   },
   {
     "city": "Mariupol’",
@@ -12186,7 +13141,8 @@ const cities = [
     "iso3": "UKR",
     "admin_name": "Donets’ka Oblast’",
     "population": "481626",
-    "id": "1804630021"
+    "id": "1804630021",
+    "loc": { type: "Point", coordinates:  [ 37.5562,47.0962] }
   },
   {
     "city": "Des Moines",
@@ -12199,7 +13155,8 @@ const cities = [
     "admin_name": "Iowa",
     "capital": "admin",
     "population": "481222",
-    "id": "1840007069"
+    "id": "1840007069",
+    "loc": { type: "Point", coordinates:  [ -93.6105,41.5725] }
   },
   {
     "city": "Tuxtla",
@@ -12212,7 +13169,8 @@ const cities = [
     "admin_name": "Chiapas",
     "capital": "admin",
     "population": "481128",
-    "id": "1484832519"
+    "id": "1484832519",
+    "loc": { type: "Point", coordinates:  [ -93.15,16.75] }
   },
   {
     "city": "Herāt",
@@ -12225,7 +13183,8 @@ const cities = [
     "admin_name": "Herāt",
     "capital": "admin",
     "population": "481009",
-    "id": "1004237782"
+    "id": "1004237782",
+    "loc": { type: "Point", coordinates:  [ 62.17,34.33] }
   },
   {
     "city": "Homyel’",
@@ -12238,7 +13197,8 @@ const cities = [
     "admin_name": "Homyel’skaya Voblasts’",
     "capital": "admin",
     "population": "480951",
-    "id": "1112580227"
+    "id": "1112580227",
+    "loc": { type: "Point", coordinates:  [ 31,52.43] }
   },
   {
     "city": "Zhaoqing",
@@ -12251,7 +13211,8 @@ const cities = [
     "admin_name": "Guangdong",
     "capital": "minor",
     "population": "480000",
-    "id": "1156170144"
+    "id": "1156170144",
+    "loc": { type: "Point", coordinates:  [ 112.45,23.0504] }
   },
   {
     "city": "Americana",
@@ -12263,7 +13224,8 @@ const cities = [
     "iso3": "BRA",
     "admin_name": "São Paulo",
     "population": "479472",
-    "id": "1076922153"
+    "id": "1076922153",
+    "loc": { type: "Point", coordinates:  [ -47.33,-22.7499] }
   },
   {
     "city": "Dhūlia",
@@ -12275,7 +13237,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Mahārāshtra",
     "population": "479073",
-    "id": "1356224695"
+    "id": "1356224695",
+    "loc": { type: "Point", coordinates:  [ 74.77,20.9] }
   },
   {
     "city": "Ostrava",
@@ -12288,7 +13251,8 @@ const cities = [
     "admin_name": "Moravskoslezský Kraj ",
     "capital": "admin",
     "population": "478963",
-    "id": "1203687206"
+    "id": "1203687206",
+    "loc": { type: "Point", coordinates:  [ 18.25,49.8304] }
   },
   {
     "city": "Yazd",
@@ -12301,7 +13265,8 @@ const cities = [
     "admin_name": "Yazd",
     "capital": "admin",
     "population": "477905",
-    "id": "1364429875"
+    "id": "1364429875",
+    "loc": { type: "Point", coordinates:  [ 54.37,31.9201] }
   },
   {
     "city": "Sialkot City",
@@ -12314,7 +13279,8 @@ const cities = [
     "admin_name": "Punjab",
     "capital": "minor",
     "population": "477396",
-    "id": "1586141444"
+    "id": "1586141444",
+    "loc": { type: "Point", coordinates:  [ 74.56,32.52] }
   },
   {
     "city": "Kemerovo",
@@ -12327,7 +13293,8 @@ const cities = [
     "admin_name": "Kemerovskaya Oblast’",
     "capital": "admin",
     "population": "477090",
-    "id": "1643216311"
+    "id": "1643216311",
+    "loc": { type: "Point", coordinates:  [ 86.09,55.34] }
   },
   {
     "city": "Nazrēt",
@@ -12339,7 +13306,8 @@ const cities = [
     "iso3": "ETH",
     "admin_name": "Oromīya",
     "population": "476892",
-    "id": "1231826873"
+    "id": "1231826873",
+    "loc": { type: "Point", coordinates:  [ 39.27,8.55] }
   },
   {
     "city": "Staten Island",
@@ -12351,7 +13319,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "New York",
     "population": "476015",
-    "id": "1840034032"
+    "id": "1840034032",
+    "loc": { type: "Point", coordinates:  [ -74.1496,40.5834] }
   },
   {
     "city": "Jiaojiangcun",
@@ -12363,7 +13332,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Zhejiang",
     "population": "471500",
-    "id": "1156812073"
+    "id": "1156812073",
+    "loc": { type: "Point", coordinates:  [ 121.45,28.6804] }
   },
   {
     "city": "Chaoyang",
@@ -12375,7 +13345,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Liaoning",
     "population": "470296",
-    "id": "1156706927"
+    "id": "1156706927",
+    "loc": { type: "Point", coordinates:  [ 120.42,41.5504] }
   },
   {
     "city": "Juiz de Fora",
@@ -12387,7 +13358,8 @@ const cities = [
     "iso3": "BRA",
     "admin_name": "Minas Gerais",
     "population": "470193",
-    "id": "1076006144"
+    "id": "1076006144",
+    "loc": { type: "Point", coordinates:  [ -43.375,-21.77] }
   },
   {
     "city": "Udaipur",
@@ -12399,7 +13371,8 @@ const cities = [
     "iso3": "IND",
     "admin_name": "Rājasthān",
     "population": "469737",
-    "id": "1356266094"
+    "id": "1356266094",
+    "loc": { type: "Point", coordinates:  [ 73.73,24.6] }
   },
   {
     "city": "Long Beach",
@@ -12411,7 +13384,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "California",
     "population": "469450",
-    "id": "1840020490"
+    "id": "1840020490",
+    "loc": { type: "Point", coordinates:  [ -118.1675,33.798] }
   },
   {
     "city": "Greenville",
@@ -12423,7 +13397,8 @@ const cities = [
     "iso3": "USA",
     "admin_name": "South Carolina",
     "population": "467894",
-    "id": "1840013501"
+    "id": "1840013501",
+    "loc": { type: "Point", coordinates:  [ -82.3649,34.8362] }
   },
   {
     "city": "Kocaeli",
@@ -12436,7 +13411,8 @@ const cities = [
     "admin_name": "Kocaeli",
     "capital": "admin",
     "population": "466504",
-    "id": "1792965114"
+    "id": "1792965114",
+    "loc": { type: "Point", coordinates:  [ 29.9306,40.776] }
   },
   {
     "city": "Piraeus",
@@ -12449,7 +13425,8 @@ const cities = [
     "admin_name": "Attikí",
     "capital": "minor",
     "population": "466065",
-    "id": "1300458367"
+    "id": "1300458367",
+    "loc": { type: "Point", coordinates:  [ 23.7,37.95] }
   },
   {
     "city": "Shymkent",
@@ -12461,7 +13438,8 @@ const cities = [
     "iso3": "KAZ",
     "capital": "admin",
     "population": "465392",
-    "id": "1398791401"
+    "id": "1398791401",
+    "loc": { type: "Point", coordinates:  [ 69.595,42.32] }
   },
   {
     "city": "Iligan",
@@ -12474,7 +13452,8 @@ const cities = [
     "admin_name": "Iligan",
     "capital": "admin",
     "population": "464599",
-    "id": "1608000268"
+    "id": "1608000268",
+    "loc": { type: "Point", coordinates:  [ 124.2154,8.1712] }
   },
   {
     "city": "Qazvīn",
@@ -12487,7 +13466,8 @@ const cities = [
     "admin_name": "Qazvīn",
     "capital": "admin",
     "population": "464551",
-    "id": "1364073420"
+    "id": "1364073420",
+    "loc": { type: "Point", coordinates:  [ 50,36.27] }
   },
   {
     "city": "Calabar",
@@ -12500,7 +13480,8 @@ const cities = [
     "admin_name": "Cross River",
     "capital": "admin",
     "population": "461796",
-    "id": "1566495489"
+    "id": "1566495489",
+    "loc": { type: "Point", coordinates:  [ 8.33,4.9604] }
   },
   {
     "city": "Malatya",
@@ -12513,7 +13494,8 @@ const cities = [
     "admin_name": "Malatya",
     "capital": "admin",
     "population": "461574",
-    "id": "1792485155"
+    "id": "1792485155",
+    "loc": { type: "Point", coordinates:  [ 38.3,38.3704] }
   },
   {
     "city": "Dadukou",
@@ -12526,7 +13508,8 @@ const cities = [
     "admin_name": "Sichuan",
     "capital": "minor",
     "population": "461513",
-    "id": "1156901342"
+    "id": "1156901342",
+    "loc": { type: "Point", coordinates:  [ 101.73,26.55] }
   },
   {
     "city": "Bandar ‘Abbās",
@@ -12539,7 +13522,8 @@ const cities = [
     "admin_name": "Hormozgān",
     "capital": "admin",
     "population": "461499",
-    "id": "1364120623"
+    "id": "1364120623",
+    "loc": { type: "Point", coordinates:  [ 56.2721,27.2041] }
   },
   {
     "city": "Naberezhnyye Chelny",
@@ -12551,7 +13535,8 @@ const cities = [
     "iso3": "RUS",
     "admin_name": "Tatarstan",
     "population": "461086",
-    "id": "1643008493"
+    "id": "1643008493",
+    "loc": { type: "Point", coordinates:  [ 52.3199,55.7] }
   },
   {
     "city": "Ḩamāh",
@@ -12564,7 +13549,8 @@ const cities = [
     "admin_name": "Ḩamāh",
     "capital": "admin",
     "population": "460602",
-    "id": "1760197502"
+    "id": "1760197502",
+    "loc": { type: "Point", coordinates:  [ 36.73,35.1503] }
   },
   {
     "city": "Cranbourne",
@@ -12576,7 +13562,8 @@ const cities = [
     "iso3": "AUS",
     "admin_name": "Victoria",
     "population": "460491",
-    "id": "1036639986"
+    "id": "1036639986",
+    "loc": { type: "Point", coordinates:  [ 145.2834,-38.0996] }
   },
   {
     "city": "Iquitos",
@@ -12589,7 +13576,8 @@ const cities = [
     "admin_name": "Loreto",
     "capital": "admin",
     "population": "458729",
-    "id": "1604493809"
+    "id": "1604493809",
+    "loc": { type: "Point", coordinates:  [ -73.25,-3.75] }
   },
   {
     "city": "Mazār-e Sharīf",
@@ -12602,7 +13590,8 @@ const cities = [
     "admin_name": "Balkh",
     "capital": "admin",
     "population": "458151",
-    "id": "1004436363"
+    "id": "1004436363",
+    "loc": { type: "Point", coordinates:  [ 67.1,36.7] }
   },
   {
     "city": "Leicester",
@@ -12615,7 +13604,8 @@ const cities = [
     "admin_name": "Leicester",
     "capital": "admin",
     "population": "457983",
-    "id": "1826431946"
+    "id": "1826431946",
+    "loc": { type: "Point", coordinates:  [ -1.1332,52.63] }
   },
   {
     "city": "Kirov",
@@ -12628,7 +13618,8 @@ const cities = [
     "admin_name": "Kirovskaya Oblast’",
     "capital": "admin",
     "population": "457437",
-    "id": "1643106064"
+    "id": "1643106064",
+    "loc": { type: "Point", coordinates:  [ 49.67,58.5901] }
   },
   {
     "city": "Jingdezhen",
@@ -12641,7 +13632,8 @@ const cities = [
     "admin_name": "Jiangxi",
     "capital": "minor",
     "population": "457298",
-    "id": "1156038165"
+    "id": "1156038165",
+    "loc": { type: "Point", coordinates:  [ 117.18,29.2704] }
   },
   {
     "city": "Durango",
@@ -12654,7 +13646,8 @@ const cities = [
     "admin_name": "Durango",
     "capital": "admin",
     "population": "457140",
-    "id": "1484854616"
+    "id": "1484854616",
+    "loc": { type: "Point", coordinates:  [ -104.67,24.0311] }
   },
   {
     "city": "Jambi",
@@ -12667,7 +13660,8 @@ const cities = [
     "admin_name": "Jambi",
     "capital": "admin",
     "population": "457090",
-    "id": "1360645580"
+    "id": "1360645580",
+    "loc": { type: "Point", coordinates:  [ 103.61,-1.59] }
   },
   {
     "city": "Volta Redonda",
@@ -12679,7 +13673,8 @@ const cities = [
     "iso3": "BRA",
     "admin_name": "Rio de Janeiro",
     "population": "456362",
-    "id": "1076343513"
+    "id": "1076343513",
+    "loc": { type: "Point", coordinates:  [ -44.095,-22.5196] }
   },
   {
     "city": "Hengshui",
@@ -12691,7 +13686,8 @@ const cities = [
     "iso3": "CHN",
     "admin_name": "Hebei",
     "population": "456356",
-    "id": "1156803028"
+    "id": "1156803028",
+    "loc": { type: "Point", coordinates:  [ 115.7,37.72] }
   },
   {
     "city": "Sfax",
@@ -12704,7 +13700,8 @@ const cities = [
     "admin_name": "Sfax",
     "capital": "admin",
     "population": "453050",
-    "id": "1788741658"
+    "id": "1788741658",
+    "loc": { type: "Point", coordinates:  [ 10.72,34.75] }
   },
   {
     "city": "Sunderland",
@@ -12717,9 +13714,11 @@ const cities = [
     "admin_name": "Sunderland",
     "capital": "admin",
     "population": "452934",
-    "id": "1826736387"
+    "id": "1826736387",
+    "loc": { type: "Point", coordinates:  [ -1.38,54.92] }
   }
 ];
+
 
 // start the database
 require("../configs/db.config");
