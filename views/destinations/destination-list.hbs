@@ -1,5 +1,6 @@
 {{#each places}}
 <div class="destination-list">
+  <div>Top 10 Destinations</div>
   <div class="destination">
     <h2>{{this.name}}, {{this.country_name}}</h2>
   </div>
@@ -7,5 +8,6 @@
     <h4>Rating: {{this.rate}}</h4>
   </div>
   <img width="550" height="350" src={{this.img}}>
+  <h4>Occurences: {{this.count}} (for testing purposes, to be removed later)</h4>
 </div>
 {{/each}}
