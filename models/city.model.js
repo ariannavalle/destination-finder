@@ -15,6 +15,12 @@ const citySchema = new Schema(
     lng: {
       type: String
     },
+    country: {
+      type: String
+    },
+    img: {
+      type: String
+    },
     iso2: {
       type: String
     },

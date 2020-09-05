@@ -9,9 +9,6 @@ const filterSchema = new Schema(
     citySize: {
       type: Number
     },
-    budget: {
-      type: Number
-    },
     categories: {
       type: String
     }

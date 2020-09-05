@@ -11,22 +11,15 @@ body {
   height: 100vh;
 }
 
-/* sign in page */
-.form-signin {
-  width: 100%;
-  max-width: 330px;
-  padding: 15px;
-  margin: auto;
+.destination-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.text-center {
-  text-align: center!important;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
+.destination {
+  padding: 4rem 0;
 }
 
 /* Blog posts */
