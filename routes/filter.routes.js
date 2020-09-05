@@ -13,8 +13,8 @@ router.get('/', (req, res) => res.render('index'));
 router.post('/find-destination', (req, res, next) => {
 
   //this function takes care of calculating the average rating for each city
-  async function getCityInfo(citiesArray) {
-    const result = await citiesArray.reduce((obj, elem) => {
+   function getCityInfo(citiesArray) {
+    const result =  citiesArray.reduce((obj, elem) => {
       if (!elem.city) return obj
       if (elem.city in obj) {
         obj[elem.city].count++;
@@ -28,6 +28,7 @@ router.post('/find-destination', (req, res, next) => {
           count: 1,
           total_rating: elem.rating,
           rate: elem.rating,
+          img: elem.img
         }
       }
       return obj;
@@ -38,7 +39,7 @@ router.post('/find-destination', (req, res, next) => {
   //calling this api returns different locations based on the coordinates and categories provided
   axios
     //@todo remove "&limit=" before deploying
-    .get(`https://api.opentripmap.com/0.1/en/places/bbox?${req.body.coordinates}&kinds=${req.body.categories}&apikey=${opentripAPIKey}&limit=100`)
+    .get(`https://api.opentripmap.com/0.1/en/places/bbox?${req.body.coordinates}&kinds=${req.body.categories}&apikey=${opentripAPIKey}&limit=300`)
     .then(response => {
       // console.log("coordinates from opentripmap", response.data.features[0].geometry.coordinates);
       const placeObj = [];
@@ -74,10 +75,19 @@ router.post('/find-destination', (req, res, next) => {
             name: response.data.features[i].properties.name,
             categories: response.data.features[i].properties.kinds,
             city: data[i].city,
-            country: data[i].country
+            country: data[i].country,
+            img: data[i].img
           });
         });
-        const places = await getCityInfo(placeObj)
+
+        //sort by count
+        let places = await getCityInfo(placeObj)
+        places.sort((a, b) => {
+          return b.count - a.count
+        })
+        //only return the top 10 places
+        places = places.slice(0,10)
+
         res.render('destinations/destination-list', { places });
       })
         .catch(err => console.log(`Error finding the location's city: ${err}`));

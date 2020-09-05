@@ -11,6 +11,17 @@ body {
   height: 100vh;
 }
 
+.destination-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.destination {
+  padding: 4rem 0;
+}
+
 /* Blog posts */
 .blog-container {
   display: flex;
