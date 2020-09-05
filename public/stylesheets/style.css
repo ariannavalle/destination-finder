@@ -11,6 +11,24 @@ body {
   height: 100vh;
 }
 
+/* sign in page */
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.text-center {
+  text-align: center!important;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 /* Blog posts */
 .blog-container {
   display: flex;
