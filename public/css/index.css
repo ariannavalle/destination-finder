@@ -3,14 +3,24 @@ body {
   padding: 0;
 }
 
+/* main page (index) */
 .main {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  height: 60vh;
 }
 
+.separator {
+  background-color: #ff5f5f;
+  color: #fff;
+  font-size: 40px;
+  width: 100%;
+  height: 150px;
+}
+
+/* destination list */
 .destination-list {
   display: flex;
   justify-content: center;
