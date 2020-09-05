@@ -1,11 +1,11 @@
 {{#each places}}
-<div class="thumbnail">
-  <div>
+<div class="destination-list">
+  <div class="destination">
     <h2>{{this.name}}, {{this.country_name}}</h2>
   </div>
   <div>
     <h4>Rating: {{this.rate}}</h4>
   </div>
-  <img src={{this.img}}>
+  <img width="550" height="350" src={{this.img}}>
 </div>
 {{/each}}

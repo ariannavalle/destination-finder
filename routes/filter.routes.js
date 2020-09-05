@@ -28,6 +28,7 @@ router.post('/find-destination', (req, res, next) => {
           count: 1,
           total_rating: elem.rating,
           rate: elem.rating,
+          img: elem.img
         }
       }
       return obj;
@@ -74,7 +75,8 @@ router.post('/find-destination', (req, res, next) => {
             name: response.data.features[i].properties.name,
             categories: response.data.features[i].properties.kinds,
             city: data[i].city,
-            country: data[i].country
+            country: data[i].country,
+            img: data[i].img
           });
         });
         const places = await getCityInfo(placeObj)
