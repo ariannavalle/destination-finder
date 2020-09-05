@@ -1,3 +1,4 @@
+/* eslint-disable no-sparse-arrays */
 const mongoose = require('mongoose');
 const User = require('../models/user.model');
 const City = require('../models/city.model');
