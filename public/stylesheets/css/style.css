@@ -7596,7 +7596,8 @@ h1, h2, h3, h4, h5,
 
 @media (min-width: 768px) {
   .tabulation-search {
-    margin-top: -60px; } }
+    margin-top: -60px;
+  height: 200px; } }
 
 .tabulation-search .nav-pills p {
   margin-bottom: 0; }
