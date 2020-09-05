@@ -1,13 +1,13 @@
-{{#each places}}
 <div class="destination-list">
-  <div>Top 10 Destinations</div>
+  <div>
+    <h1>Your Top 10 Destinations</h1>
+  </div>
+  {{#each places}}
   <div class="destination">
     <h2>{{this.name}}, {{this.country_name}}</h2>
-  </div>
-  <div>
+    <img width="550" height="350" src={{this.img}}>
     <h4>Rating: {{this.rate}}</h4>
+    <h4>Occurences: {{this.count}}</h4> (for testing purposes, to be removed later)
   </div>
-  <img width="550" height="350" src={{this.img}}>
-  <h4>Occurences: {{this.count}} (for testing purposes, to be removed later)</h4>
+  {{/each}}
 </div>
-{{/each}}
