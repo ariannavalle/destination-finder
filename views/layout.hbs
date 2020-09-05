@@ -1,31 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{title}}</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="/stylesheets/style.css" />
-  </head>
+<head>
+  <title>{{title}}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <body>
-    <nav>
-          <a href="/"> Home</a><span> | </span>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="/stylesheets/css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="/stylesheets/css/animate.css">
+
+  <link rel="stylesheet" href="/stylesheets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="/stylesheets/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="/stylesheets/css/magnific-popup.css">
+
+  <link rel="stylesheet" href="/stylesheets/css/aos.css">
+
+  <link rel="stylesheet" href="/stylesheets/css/ionicons.min.css">
+
+  <link rel="stylesheet" href="/stylesheets/css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="/stylesheets/css/jquery.timepicker.css">
+
+
+  <link rel="stylesheet" href="/stylesheets/css/flaticon.css">
+  <link rel="stylesheet" href="/stylesheets/css/icomoon.css">
+  <link rel="stylesheet" href="/stylesheets/css/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a href="/" class="nav-link">Home</a></li>
+
           {{#if user}}
-            <a href="/blog">Blog</a> <span> | </span>
-            <a href="/{{ user.username }}">Profile</a> <span> | </span>
-            <a href="/logout">Logout</a> <span> | </span>
+          <li class="nav-item"><a href="/logout" class="nav-link">Logout</a></li>
+          <li class="nav-item"><a href="/blog" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
           {{else}}
-            <a href="/blog">Blog</a> <span> | </span>
-            <a href="/signup">Signup</a> <span> | </span>
-            <a href="/login">Login</a> <span> | </span>
+          <li class="nav-item"><a href="/login" class="nav-link">Login</a></li>
+          <li class="nav-item"><a href="/signup" class="nav-link">Sign up</a></li>
+          <li class="nav-item"><a href="/blog" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
           {{/if}}
-    </nav>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END nav -->
 
-    {{{body}}}
+  {{{body}}}
 
-  </body>
+  <footer class="ftco-footer ftco-bg-dark ftco-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Voyage Fellow Tourist</h2>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+              blind texts.</p>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Book Now</h2>
+            <ul class="list-unstyled">
+              <li><a href="#" class="py-2 d-block">Flight</a></li>
+              <li><a href="#" class="py-2 d-block">Hotels</a></li>
+              <li><a href="#" class="py-2 d-block">Tour</a></li>
+              <li><a href="#" class="py-2 d-block">Car Rent</a></li>
+              <li><a href="#" class="py-2 d-block">Beach &amp; Resorts</a></li>
+              <li><a href="#" class="py-2 d-block">Mountains</a></li>
+              <li><a href="#" class="py-2 d-block">Cruises</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Top Deals</h2>
+            <ul class="list-unstyled">
+              <li><a href="#" class="py-2 d-block">Luxe Hotel</a></li>
+              <li><a href="#" class="py-2 d-block">Venice Tours</a></li>
+              <li><a href="#" class="py-2 d-block">Deluxe Hotels</a></li>
+              <li><a href="#" class="py-2 d-block">Boracay Beach &amp; Resorts</a></li>
+              <li><a href="#" class="py-2 d-block">Beach &amp; Resorts</a></li>
+              <li><a href="#" class="py-2 d-block">Fuente Villa</a></li>
+              <li><a href="#" class="py-2 d-block">Japan Tours</a></li>
+              <li><a href="#" class="py-2 d-block">Philippines Tours</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Contact Information</h2>
+            <ul class="list-unstyled">
+              <li><a href="#" class="py-2 d-block">198 West 21th Street, Suite 721 New York NY 10016</a></li>
+              <li><a href="#" class="py-2 d-block">+ 1235 2355 98</a></li>
+              <li><a href="#" class="py-2 d-block">info@yoursite.com</a></li>
+              <li><a href="#" class="py-2 d-block">email@email.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <ul class="ftco-footer-social list-unstyled float-md-right float-lft">
+              <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+
+          <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with
+            <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#F96D00" /></svg></div>
+
+  <script src="/javascript/jquery.min.js"></script>
+  <script src="/javascript/jquery-migrate-3.0.1.min.js"></script>
+  <script src="/javascript/popper.min.js"></script>
+  <script src="/javascript/bootstrap.min.js"></script>
+  <script src="/javascript/jquery.easing.1.3.js"></script>
+  <script src="/javascript/jquery.waypoints.min.js"></script>
+  <script src="/javascript/jquery.stellar.min.js"></script>
+  <script src="/javascript/owl.carousel.min.js"></script>
+  <script src="/javascript/jquery.magnific-popup.min.js"></script>
+  <script src="/javascript/aos.js"></script>
+  <script src="/javascript/jquery.animateNumber.min.js"></script>
+  <script src="/javascript/bootstrap-datepicker.js"></script>
+  <script src="/javascript/jquery.timepicker.min.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="/javascript/google-map.js"></script>
+  <script src="/javascript/main.js"></script>
+
+</body>
 
 </html>
