@@ -10,4 +10,19 @@ document.addEventListener("DOMContentLoaded", function (event) {
       }
     });
   });
+
+  let favorites = document.querySelectorAll(".heart-icon");
+  [...favorites].forEach(fav => {
+    fav.addEventListener('click', function (event) {
+      if (fav.getAttribute("src") === "images/heart_inactive.png") {
+        fav.setAttribute("src", "images/heart_active.png");
+      }
+      else {
+        fav.setAttribute("src", "images/heart_inactive.png");
+      }
+    })
+  });
 });
+
+
+
