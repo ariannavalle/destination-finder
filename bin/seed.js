@@ -283,7 +283,7 @@ const cities = [
     population: '10452000',
     id: '1643318494',
     loc: { type: 'Point', coordinates: [37.6155, 55.7522] },
-    img: 'https://i.ytimg.com/vi/q05EFU4eUhc/maxresdefault.jpg'
+    img: 'https://img.theculturetrip.com/768x432/wp-content/uploads/2018/02/moscow-2105606_1920.jpg'
   }
   ,
   ,
@@ -375,7 +375,7 @@ const cities = [
     population: '8829000',
     id: '1156237133',
     loc: { type: 'Point', coordinates: [113.325, 23.145] },
-    img: 'https://upload.wikimedia.org/wikipedia/commons/f/fe/Guangzhou_montage.png'
+    img: 'https://www.tripsavvy.com/thmb/orpt6zZKdJLlgF5upJw4pEA-d34=/2119x1415/filters:fill(auto,1)/night-view-of-guangzhou-956095614-02914cb9e8324c49be6421560ba5ffed.jpg'
   },
   {
     city: 'Chicago',
@@ -419,7 +419,7 @@ const cities = [
     population: '8012000',
     id: '1604728603',
     loc: { type: 'Point', coordinates: [-77.0501, -12.048] },
-    img: 'https://lonelyplanetwp.imgix.net/2018/04/Lima_coast_peru-c38ff3c151fb.jpg?fit=min&q=40&sharp=10&vib=20&w=1470'
+    img: 'https://skyticket.com/guide/wp-content/uploads/2017/12/shutterstock_1047718252-e1534475560773.jpg'
   },
   {
     city: 'Tehran',
@@ -464,7 +464,7 @@ const cities = [
     population: '7772000',
     id: '1170483426',
     loc: { type: 'Point', coordinates: [-74.0833, 4.5964] },
-    img: 'https://coincenter.org/files/2019-04/bogota-small.jpg?d8e08a676f'
+    img: 'https://media.worldnomads.com/Travel-Safety/colombia/bogota-colombia-skyline.jpg'
   },
   {
     city: 'Shenzhen',
@@ -522,7 +522,7 @@ const cities = [
     population: '7180000',
     id: '1156174046',
     loc: { type: 'Point', coordinates: [117.2, 39.13] },
-    img: 'https://upload.wikimedia.org/wikipedia/commons/3/39/Tianjin_montage.jpg'
+    img: 'https://teach-english-in-china.co.uk/wp-content/uploads/2018/12/Tianjin.jpg'
   },
   {
     city: 'Chennai',
@@ -567,7 +567,7 @@ const cities = [
     population: '6787000',
     id: '1356410365',
     loc: { type: 'Point', coordinates: [77.56, 12.97] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Bangkok',
@@ -628,7 +628,7 @@ const cities = [
     population: '6381966',
     id: '1840015149',
     loc: { type: 'Point', coordinates: [-80.2102, 25.7839] },
-    img: 'http://www.bsdconsulting.com/images/uploads/office/map_large/usa_miami.jpg'
+    img: 'https://www.nationalgeographic.com/content/dam/travel/2018-digital/city-guides-2018/miami-florida/aerial-beach-miami-florida.jpg'
   },
   {
     city: 'Hyderabad',
@@ -730,7 +730,7 @@ const cities = [
     population: '5446468',
     id: '1840020925',
     loc: { type: 'Point', coordinates: [-95.3905, 29.7869] },
-    img: 'https://media-cdn.tripadvisor.com/media/photo-s/01/79/a3/e4/houston-tx-united-states.jpg'
+    img: 'https://media.timeout.com/images/105124790/image.jpg'
   },
   {
     city: 'Ahmadābād',
@@ -775,7 +775,7 @@ const cities = [
     population: '5289420',
     id: '1840006060',
     loc: { type: 'Point', coordinates: [ -77.0163, 38.9047 ] },
-    img: 'http://www.thetimenow.com/blog/wp-content/uploads/2015/06/map-washington-united-states.jpg'
+    img: 'https://cdn.aarp.net/content/dam/aarp/travel/destination-guides/2018/03/1140-trv-dst-dc-main.imgcache.revd66f01d4a19adcecdb09fdacd4471fa8.web.650.370.jpg'
   },
   {
     city: 'Atlanta',
@@ -790,7 +790,7 @@ const cities = [
     population: '5228750',
     id: '1840013660',
     loc: { type: 'Point', coordinates: [ -84.4225, 33.7627 ] },
-    img: 'http://www.world-guides.com/images/atlanta/map1_atlanta.jpg'
+    img: 'https://ticket.gruposenda.com/images/Blog/201806/atlanta/banner_m.jpg'
   },
   {
     city: 'Toronto',
@@ -864,7 +864,7 @@ const cities = [
     population: '4920000',
     id: '1724594040',
     loc: { type: 'Point', coordinates: [ 2.1834, 41.3833 ] },
-    img: 'https://www.earthtrekkers.com/wp-content/uploads/2016/10/Best-things-to-do-in-Barcelona-Spain.jpg'
+    img: 'https://www.spain.info/.content/imagenes/cabeceras-grandes/cataluna/park-guell-barcelona-s-305364611.jpg'
   },
   {
     city: 'Hāora',
@@ -878,7 +878,7 @@ const cities = [
     population: '4841638',
     id: '1356986516',
     loc: { type: 'Point', coordinates: [ 88.3299, 22.5804 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Shenyang',
@@ -937,7 +937,7 @@ const cities = [
     population: '4637537',
     id: '1840000455',
     loc: { type: 'Point', coordinates: [ -71.0846, 42.3188 ] },
-    img: 'http://1.bp.blogspot.com/-lMYWyVg7CmE/URRVLAwaHAI/AAAAAAAAdmg/Jli7QXfqkpk/s1600/Boston+USA+85.jpg'
+    img: 'https://www.visittheusa.com/sites/default/files/styles/hero_l_x2/public/images/hero_media_image/2019-02/b5cd4bad3ab7fac1f38e2e5c8ad0cce0.jpeg?itok=fuHbmlE1'
   },
   {
     city: 'Sydney',
@@ -1042,7 +1042,7 @@ const cities = [
     population: '4198000',
     id: '1484950208',
     loc: { type: 'Point', coordinates: [ -103.33, 20.67 ] },
-    img: 'http://worldofbigbrother.com/pics/maps/Mexico-Guadalajara.jpg'
+    img: 'https://media1.popsugar-assets.com/files/thumbor/aIoLzgXwJt3-qtaTOlvuP4B9rdE/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2019/10/21/694/n/44554866/fb9645a5e90b9bf5_09_Guadalajara-Mexico-A-Airbnb-20-for-2020/i/Guadalajara-Mexico.jpg'
   },
   {
     city: 'Melbourne',
@@ -1117,7 +1117,7 @@ const cities = [
     population: '4081849',
     id: '1840020568',
     loc: { type: 'Point', coordinates: [ -112.0891, 33.5722 ] },
-    img: 'http://www.worldeasyguides.com/wp-content/uploads/2013/08/Phoenix-on-Map-of-United-States.jpg'
+    img: 'https://res.cloudinary.com/simpleview/image/upload/v1529338942/clients/phoenix/148e5282_6056_4aca_9135_d0d5f25e9a9d_df00ab2b-7f9c-462e-a8a7-903f8757870e.jpg'
   },
   {
     city: 'Xi’an',
@@ -1161,7 +1161,7 @@ const cities = [
     population: '3842000',
     id: '1356758738',
     loc: { type: 'Point', coordinates: [ 72.84, 21.2 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Hechi',
@@ -1205,7 +1205,7 @@ const cities = [
     population: '3716996',
     id: '1076144436',
     loc: { type: 'Point', coordinates: [ -47.9161, -15.7833 ] },
-    img: 'https://i.pinimg.com/originals/a3/b0/05/a3b005009d116ca78d56a22a849c2900.jpg'
+    img: 'https://portal.fgv.br/sites/portal.fgv.br/files/styles/noticia_geral/public/noticias/05/19/academic_masters_degree_in_public_policy_and_government.jpg?itok=3PUn67lH'
   },
   {
     city: 'Ankara',
@@ -1323,7 +1323,7 @@ const cities = [
     population: '3643765',
     id: '1840021117',
     loc: { type: 'Point', coordinates: [ -122.3244, 47.6211 ] },
-    img: 'http://data2.1freewallpapers.com/download/seattle-united-states-washington-1600x900.jpg'
+    img: 'https://laurenonlocation.com/wp-content/uploads/2018/07/One-Day-in-Seattle-Washington.png'
   },
   {
     city: 'Harbin',
@@ -3768,7 +3768,7 @@ const cities = [
     population: '1707000',
     id: '1616024847',
     loc: { type: 'Point', coordinates: [ 21, 52.25 ] },
-    img: 'https://i.ytimg.com/vi/wf-gwGNpXoc/maxresdefault.jpg'
+    img: 'https://www.chicagomag.com/images/cache/cache_d/cache_5/cache_b/C201701-Locals-Travel-Guide-Warsaw-Old-Town-e0625b5d.jpeg'
   },
   {
     city: 'Rabat',
@@ -4176,7 +4176,7 @@ const cities = [
     population: '1576614',
     id: '1356172246',
     loc: { type: 'Point', coordinates: [ 73.1602, 19.2502 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Abuja',
@@ -4397,7 +4397,7 @@ const cities = [
     population: '1528478',
     id: '1392978082',
     loc: { type: 'Point', coordinates: [ 135.17, 34.68 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Columbus',
@@ -4485,7 +4485,7 @@ const cities = [
     population: '1500513',
     id: '1076501425',
     loc: { type: 'Point', coordinates: [ -43.1, -22.9 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Ganzhou',
@@ -4618,7 +4618,7 @@ const cities = [
     population: '1473000',
     id: '1356562598',
     loc: { type: 'Point', coordinates: [ 73.78, 20.0004 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Fushun',
@@ -4973,7 +4973,7 @@ const cities = [
     population: '1413000',
     id: '1364141756',
     loc: { type: 'Point', coordinates: [ 46.3012, 38.0863 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'The Hague',
@@ -5208,7 +5208,7 @@ const cities = [
     population: '1352000',
     id: '1356145782',
     loc: { type: 'Point', coordinates: [ 83, 25.33 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Lubumbashi',
@@ -5252,7 +5252,7 @@ const cities = [
     population: '1341000',
     id: '1356691871',
     loc: { type: 'Point', coordinates: [ 77.4084, 28.6604 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Pretoria',
@@ -5371,7 +5371,7 @@ const cities = [
     population: '1313000',
     id: '1643582706',
     loc: { type: 'Point', coordinates: [ 60.6, 56.85 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Peshawar',
@@ -5459,7 +5459,7 @@ const cities = [
     population: '1293000',
     id: '1792783772',
     loc: { type: 'Point', coordinates: [ 35.32, 36.995 ] },
-    img: 'https://globalyodel-wpengine.netdna-ssl.com/wp-content/uploads/2017/02/featured-Adana-2.11.17-ADANA-MERKEZ-MOSQUE-VIEW-FROM-HOTEL.jpg'
+    img: 'https://cdnp.flypgs.com/files/Sehirler-long-tail/Adana/adana.jpg'
   },
   {
     city: 'Sheffield',
@@ -5636,7 +5636,7 @@ const cities = [
     population: '1260000',
     id: '1356317190',
     loc: { type: 'Point', coordinates: [ 70.8, 22.31 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Dhanbād',
@@ -5650,7 +5650,7 @@ const cities = [
     population: '1246000',
     id: '1356103392',
     loc: { type: 'Point', coordinates: [ 86.42, 23.8004 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Mudanjiang',
@@ -5695,7 +5695,7 @@ const cities = [
     population: '1240000',
     id: '1364432238',
     loc: { type: 'Point', coordinates: [ 52.57, 29.63 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Huzhou',
@@ -5898,7 +5898,7 @@ const cities = [
     population: '1201000',
     id: '1356718332',
     loc: { type: 'Point', coordinates: [ 81.84, 25.455 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Benin City',
@@ -6150,7 +6150,7 @@ const cities = [
     population: '1140000',
     id: '1356442950',
     loc: { type: 'Point', coordinates: [ 74.815, 34.1 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Bezwāda',
@@ -6164,7 +6164,7 @@ const cities = [
     population: '1137000',
     id: '1356807575',
     loc: { type: 'Point', coordinates: [ 80.63, 16.52 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Samara',
@@ -6340,7 +6340,7 @@ const cities = [
     population: '1113000',
     id: '1356840670',
     loc: { type: 'Point', coordinates: [ 75.3203, 19.8957 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Calgary',
@@ -6368,7 +6368,7 @@ const cities = [
     population: '1109363',
     id: '1484016661',
     loc: { type: 'Point', coordinates: [ -99.03, 19.41 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Zürich',
@@ -6841,7 +6841,7 @@ const cities = [
     population: '1057000',
     id: '1356314385',
     loc: { type: 'Point', coordinates: [ 75.9, 17.6704 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Rostov-na-Donu',
@@ -7402,7 +7402,7 @@ const cities = [
     population: '920000',
     id: '1558296252',
     loc: { type: 'Point', coordinates: [ -86.2685, 12.153 ] },
-    img: 'http://www.tourist-destinations.com/wp-content/uploads/2013/07/Nicaragua-Managua-The-Undisputed-Commercial-Political-Cultural-and-Religious-Center-of-Nicaragua.jpg'
+    img: 'https://www.visitcentroamerica.com/wp-content/uploads/2017/09/ver-centroamerica-nicaragua-managua-02.jpg'
   },
   {
     city: 'Niamey',
@@ -7730,7 +7730,7 @@ const cities = [
     population: '603492',
     id: '1784176710',
     loc: { type: 'Point', coordinates: [ 54.3666, 24.4667 ] },
-    img: 'https://www.azamaraclubcruises.com/sites/default/files/heros/abu-dhabi-united-arab-emirates.jpg'
+    img: 'https://amp.thenational.ae/image/policy:1.900743:1573659768/bz20-Aug-Retirement-Ages-UAE.jpg?f=16x9&w=1200&$p$f$w=236f2fb'
   },
   {
     city: 'Port Louis',
@@ -9014,7 +9014,7 @@ const cities = [
     population: '996000',
     id: '1364350188',
     loc: { type: 'Point', coordinates: [ 48.72, 31.28 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Jodhpur',
@@ -9073,7 +9073,7 @@ const cities = [
     population: '991000',
     id: '1156359072',
     loc: { type: 'Point', coordinates: [ 106.273, 38.468 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Joinvile',
@@ -9132,7 +9132,7 @@ const cities = [
     population: '986000',
     id: '1368137126',
     loc: { type: 'Point', coordinates: [ 43, 36.8667 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Volgograd',
@@ -9161,7 +9161,7 @@ const cities = [
     population: '983000',
     id: '1356593800',
     loc: { type: 'Point', coordinates: [ 91.77, 26.16 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Yichun',
@@ -9499,7 +9499,7 @@ const cities = [
     population: '950000',
     id: '1704016023',
     loc: { type: 'Point', coordinates: [ 107.58, 16.47 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Bacolod',
@@ -9792,7 +9792,7 @@ const cities = [
     population: '903000',
     id: '1156127660',
     loc: { type: 'Point', coordinates: [ 113.87, 35.3204 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Yibin',
@@ -9970,7 +9970,7 @@ const cities = [
     population: '887000',
     id: '1170886102',
     loc: { type: 'Point', coordinates: [ -75.5144, 10.3997 ] },
-    img: 'https://upload.wikimedia.org/wikipedia/commons/1/1d/Montaje_Cartagena%2C_Colombia.jpg'
+    img: 'https://lp-cms-production.imgix.net/features/2013/01/Cartagena_Colombia_cs-b9a2c77a9fe3.jpg'
   },
   {
     city: 'Mysore',
@@ -10235,7 +10235,7 @@ const cities = [
     population: '870000',
     id: '1368714645',
     loc: { type: 'Point', coordinates: [ 47.8136, 30.5135 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Aguascalientes',
@@ -10791,7 +10791,7 @@ const cities = [
     population: '826494',
     id: '1356712664',
     loc: { type: 'Point', coordinates: [ 78.5575, 25.453 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Rongjiawan',
@@ -10982,7 +10982,7 @@ const cities = [
     population: '810000',
     id: '1050547831',
     loc: { type: 'Point', coordinates: [ 88.605, 24.375 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Zhaotong',
@@ -11098,7 +11098,7 @@ const cities = [
     population: '805000',
     id: '1356076391',
     loc: { type: 'Point', coordinates: [ 78.0618, 27.8922 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'L’viv',
@@ -11332,7 +11332,7 @@ const cities = [
     population: '780000',
     id: '1887984890',
     loc: { type: 'Point', coordinates: [ 42.953, 14.7979 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Campo Grande',
@@ -11494,7 +11494,7 @@ const cities = [
     population: '601214',
     id: '1356921375',
     loc: { type: 'Point', coordinates: [ 74.575, 16.8604 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Barcelona',
@@ -11538,7 +11538,7 @@ const cities = [
     population: '600000',
     id: '1818460403',
     loc: { type: 'Point', coordinates: [ 31.7, 26.5504 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Al Manşūrah',
@@ -11553,7 +11553,7 @@ const cities = [
     population: '600000',
     id: '1818255319',
     loc: { type: 'Point', coordinates: [ 31.38, 31.0504 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Canoas',
@@ -11597,7 +11597,7 @@ const cities = [
     population: '598887',
     id: '1364072353',
     loc: { type: 'Point', coordinates: [ 60.83, 29.5 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Jalālābād',
@@ -11612,7 +11612,7 @@ const cities = [
     population: '597971',
     id: '1004315012',
     loc: { type: 'Point', coordinates: [ 70.4361, 34.4415 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Albany',
@@ -11996,7 +11996,7 @@ const cities = [
     population: '577514',
     id: '1364554896',
     loc: { type: 'Point', coordinates: [ 57.08, 30.3 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Orūmīyeh',
@@ -12011,7 +12011,7 @@ const cities = [
     population: '577307',
     id: '1364158221',
     loc: { type: 'Point', coordinates: [ 45, 37.53 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Bīkaner',
@@ -12025,7 +12025,7 @@ const cities = [
     population: '576015',
     id: '1356026593',
     loc: { type: 'Point', coordinates: [ 73.3299, 28.0304 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Quetzaltenango',
@@ -12171,21 +12171,6 @@ const cities = [
     id: '1840004850',
     loc: { type: 'Point', coordinates: [ -72.9246, 41.3112 ] },
     img: 'https://www.goodfreephotos.com/albums/united-states/connecticut/new-haven/chapel-at-yale-university-in-new-haven-connecticut.jpg'
-  },
-  {
-    city: 'Bouaké',
-    city_ascii: 'Bouake',
-    lat: '7.69',
-    lng: '-5.03',
-    country: 'Côte D’Ivoire',
-    iso2: 'CI',
-    iso3: 'CIV',
-    admin_name: 'Vallée du Bandama',
-    capital: 'admin',
-    population: '567481',
-    id: '1384983838',
-    loc: { type: 'Point', coordinates: [ -5.03, 7.69 ] },
-    img: 'https://www.rti.ci/upload/d23162f42ff01622288058391f712d62.jpg'
   },
   {
     city: 'Columbia',
@@ -12608,7 +12593,7 @@ const cities = [
     population: '543454',
     id: '1356820491',
     loc: { type: 'Point', coordinates: [ 82.16, 22.0904 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Sargodha',
@@ -12755,7 +12740,7 @@ const cities = [
     population: '536976',
     id: '1392164106',
     loc: { type: 'Point', coordinates: [ 135.8674, 35.0064 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Tomsk',
@@ -12874,7 +12859,7 @@ const cities = [
     population: '530577',
     id: '1356374905',
     loc: { type: 'Point', coordinates: [ 80.45, 16.33 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Tripoli',
@@ -13126,21 +13111,6 @@ const cities = [
     img: 'http://www.chimuadventures.com/blog/wp-content/uploads/2017/09/shutterstock_193704581.jpg'
   },
   {
-    city: 'Penza',
-    city_ascii: 'Penza',
-    lat: '53.18',
-    lng: '45',
-    country: 'Russia',
-    iso2: 'RU',
-    iso3: 'RUS',
-    admin_name: 'Penzenskaya Oblast’',
-    capital: 'admin',
-    population: '512602',
-    id: '1643492830',
-    loc: { type: 'Point', coordinates: [ 45, 53.18 ] },
-    img: 'https://upload.wikimedia.org/wikipedia/commons/8/8e/Penza_2013.png'
-  },
-  {
     city: 'Blida',
     city_ascii: 'Blida',
     lat: '36.4203',
@@ -13329,7 +13299,7 @@ const cities = [
     population: '503647',
     id: '1364624691',
     loc: { type: 'Point', coordinates: [ 49.7, 34.0804 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Davangere',
@@ -13475,7 +13445,7 @@ const cities = [
     population: '500000',
     id: '1818708838',
     loc: { type: 'Point', coordinates: [ 30.47, 31.0504 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Al Minyā',
@@ -13490,7 +13460,7 @@ const cities = [
     population: '500000',
     id: '1818607968',
     loc: { type: 'Point', coordinates: [ 30.75, 28.09 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Taoyuan District',
@@ -13622,7 +13592,7 @@ const cities = [
     population: '500000',
     id: '1484350756',
     loc: { type: 'Point', coordinates: [ -110.1333, 29.0171 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Tsu',
@@ -13739,7 +13709,7 @@ const cities = [
     population: '496145',
     id: '1760821818',
     loc: { type: 'Point', coordinates: [ 36.4, 33.5833 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Mwanza',
@@ -13843,7 +13813,7 @@ const cities = [
     population: '489450',
     id: '1818902849',
     loc: { type: 'Point', coordinates: [ 31.09, 29.0804 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Yanji',
@@ -14147,7 +14117,7 @@ const cities = [
     population: '477905',
     id: '1364429875',
     loc: { type: 'Point', coordinates: [ 54.37, 31.9201 ] },
-    img: 'https://i.pinimg.com/736x/14/87/2b/14872b11692d0d3ed154c27348823b73.jpg'
+    img: 'https://journey2iran.com/wp-content/uploads/2019/05/yazd-city-std-1024x594.jpg'
   },
   {
     city: 'Sialkot City',
@@ -14363,7 +14333,7 @@ const cities = [
     population: '464551',
     id: '1364073420',
     loc: { type: 'Point', coordinates: [ 50, 36.27 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Calabar',
@@ -14423,7 +14393,7 @@ const cities = [
     population: '461499',
     id: '1364120623',
     loc: { type: 'Point', coordinates: [ 56.2721, 27.2041 ] },
-    img: ''
+    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
   },
   {
     city: 'Naberezhnyye Chelny',
@@ -14614,7 +14584,7 @@ const cities = [
     population: '453050',
     id: '1788741658',
     loc: { type: 'Point', coordinates: [ 10.72, 34.75 ] },
-    img: 'https://www.footballlive.ng/wp-content/uploads/2018/10/Tunisia-city-of-Sfax.jpg'
+    img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Grande_Mosqu%C3%A9e_de_Sfax_09.jpg/1200px-Grande_Mosqu%C3%A9e_de_Sfax_09.jpg'
   },
   {
     city: 'Sunderland',
@@ -14630,6 +14600,21 @@ const cities = [
     id: '1826736387',
     loc: { type: 'Point', coordinates: [ -1.38, 54.92 ] },
     img: 'http://images.marinas.com/med_res_id/105152'
+  },
+  {
+    city: 'Interlaken',
+    city_ascii: 'Interlaken',
+    lat: '46.683334',
+    lng: '7.850000',
+    country: 'Switzerland',
+    iso2: 'IN',
+    iso3: 'INT',
+    admin_name: 'Interlaken',
+    capital: 'admin',
+    population: '5606',
+    id: '1826736388',
+    loc: { type: 'Point', coordinates: [ 7.850000, 46.683334 ] },
+    img: 'https://www.travelingnext.com/wp-content/uploads/2019/09/top-10-things-to-do-in-Interlaken-Switzerland-1.jpg'
   }
 ];
 
