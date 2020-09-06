@@ -32,6 +32,10 @@ body {
   padding: 4rem 0;
 }
 
+.hide-cb {
+  display: none;
+}
+
 /* Blog posts */
 .blog-container {
   display: flex;
