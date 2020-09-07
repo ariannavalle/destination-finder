@@ -17,10 +17,10 @@
   </div>
   {{#each places}}
   <div class="destination">
+    <img width="30" height="30" class="heart-icon" city-id="{{this._id}}" src="images/heart_inactive.png" alt="Add {{this.name}} to favorites" >
     <h2>{{this.name}}, {{this.country_name}}</h2>
     <img width="550" height="350" src={{this.img}}>
-    <h4>Rating: {{this.rate}}</h4>
-    <h4>Occurences: {{this.count}}</h4> (for testing purposes, to be removed later)
+    <p>Population: {{this.population}}</p>
   </div>
   {{/each}}
 </div>

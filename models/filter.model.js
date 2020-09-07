@@ -6,9 +6,6 @@ const filterSchema = new Schema(
     continent: {
       type: String
     },
-    citySize: {
-      type: Number
-    },
     categories: {
       type: String
     }

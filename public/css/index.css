@@ -9,7 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 60vh;
+  height: 80vh;
 }
 
 .separator {
@@ -29,7 +29,15 @@ body {
 }
 
 .destination {
-  padding: 4rem 0;
+  padding-top: 4rem;
+}
+
+.hide-cb {
+  display: none;
+}
+
+.heart-icon {
+  float: right;
 }
 
 /* Blog posts */
