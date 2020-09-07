@@ -15,7 +15,7 @@ router.post('/find-destination', (req, res, next) => {
   //this function takes care of calculating the average rating for each city
    function getCityInfo(citiesArray) {
     const result =  citiesArray.reduce((obj, elem) => {
-      if (!elem.city) return obj
+      if (!elem.city) return obj;
       if (elem.city in obj) {
         obj[elem.city].count++;
         // obj[elem.city].total_rating += elem.rating
@@ -61,13 +61,16 @@ router.post('/find-destination', (req, res, next) => {
                     coordinates: [place.geometry.coordinates[0], place.geometry.coordinates[1]]
                   },
                   // if we set a max distance, we might not get any results
-                  // $maxDistance: 900000
+                  // $maxDistance: 500000
                 }
               }
             }
-          )
+          );
+
         cities.push(prom);
       });
+
+      console.log('cities length', cities.length);
 
       Promise.all(cities).then(async citiesAPIResponse => {
         citiesAPIResponse.forEach((data, i) => {
@@ -85,12 +88,12 @@ router.post('/find-destination', (req, res, next) => {
         });
 
         //sort by count
-        let places = await getCityInfo(placeObj)
+        let places = await getCityInfo(placeObj);
         places.sort((a, b) => {
-          return b.count - a.count
-        })
+          return b.count - a.count;
+        });
         //only return the top 10 places
-        places = places.slice(0,10)
+        places = places.slice(0,10);
 
         res.render('destinations/destination-list', { places });
       })
