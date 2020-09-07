@@ -2623,7 +2623,7 @@ const cities = [
     population: '2333054',
     id: '1840034002',
     loc: { type: 'Point', coordinates: [ -73.7976, 40.7498 ] },
-    img: 'http://media.buzzle.com/media/images-en/gallery/countries/united-states/new-york/1200-519575527-queens-borough-new-york.jpg'
+    img: 'https://blog-www.pods.com/wp-content/uploads/2020/01/MG_NY_8_1_Queens.jpg'
   },
   {
     city: 'Vancouver',
@@ -4088,7 +4088,7 @@ const cities = [
     population: '1615621',
     id: '1840008535',
     loc: { type: 'Point', coordinates: [ -94.5541, 39.1239 ] },
-    img: 'http://www.world-guides.com/images/kansas_city/map1_kansas_city.jpg'
+    img: 'https://www.choicehotels.com/cms/images/choice-hotels/pace/hero-things-to-do-Kansas-City/hero-things-to-do-Kansas-City.jpg'
   },
   {
     city: 'Yaoundé',
@@ -7018,7 +7018,7 @@ const cities = [
     population: '1029123',
     id: '1840001839',
     loc: { type: 'Point', coordinates: [ -89.9288, 30.0687 ] },
-    img: 'https://cdn.vox-cdn.com/thumbor/nLHDu6tgu48Ug6JPhrBkabeOhfs%3D/0x0:1024x770/1200x800/filters:focal%28431x304:593x466%29/cdn.vox-cdn.com/uploads/chorus_image/image/55717349/ABODO_2.0.png'
+    img: 'https://d36tnp772eyphs.cloudfront.net/blogs/1/2019/02/New-Orleans-at-night.jpg'
   },
   {
     city: 'Guatemala City',
@@ -7077,7 +7077,7 @@ const cities = [
     population: '1021000',
     id: '1710918997',
     loc: { type: 'Point', coordinates: [ 25.6, -33.97 ] },
-    img: 'https://queerintheworld.com/wp-content/uploads/2019/01/Port-Elizabeth-2.jpg'
+    img: 'https://d3500i1ecak5li.cloudfront.net/s3fs-public/styles/banner/public/images/chapters/port-elizabeth-Travel-massive.jpg'
   },
   {
     city: 'Jiamusi',
@@ -9852,7 +9852,7 @@ const cities = [
     population: '894691',
     id: '1400161837',
     loc: { type: 'Point', coordinates: [ 36.1, 32.07 ] },
-    img: 'https://cdn.datingnode.com/file/scale/_a680c__455363/_800x800__1413667012.jpg'
+    img: 'https://i.ytimg.com/vi/RP53RDAv_S0/maxresdefault.jpg'
   },
   {
     city: 'Tarsus',
@@ -10073,7 +10073,7 @@ const cities = [
     population: '876877',
     id: '1604422141',
     loc: { type: 'Point', coordinates: [ -77.135, -12.07 ] },
-    img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Mozaico_Callao.jpg/1200px-Mozaico_Callao.jpg'
+    img: 'https://www.telegraph.co.uk/content/dam/Travel/Cruise/River/CROP-Lima-El-Malcon-Park-Getty.jpg'
   },
   {
     city: 'Bilbao',
@@ -10748,7 +10748,7 @@ const cities = [
     population: '827786',
     id: '1840009315',
     loc: { type: 'Point', coordinates: [ -96.0498, 41.2628 ] },
-    img: 'http://www.world-guides.com/images/omaha/map1_omaha.jpg'
+    img: 'https://res.cloudinary.com/simpleview/image/upload/v1441744731/clients/omaha/OmahaSkyline_fountain_04fab722-1e4b-4daa-a2b0-ac604ee9d765.jpg'
   },
   {
     city: 'Kota',
@@ -11686,7 +11686,7 @@ const cities = [
     population: '594605',
     id: '1368916692',
     loc: { type: 'Point', coordinates: [ 44.4217, 32.4721 ] },
-    img: 'https://upload.wikimedia.org/wikipedia/commons/3/3c/%27Abd_al-Ilah_of_Hejaz.jpg'
+    img: 'https://media-cdn.tripadvisor.com/media/photo-s/0f/93/c6/c2/photo2jpg.jpg'
   },
   {
     city: 'Al Ḩillah',
@@ -12491,7 +12491,7 @@ const cities = [
     population: '550058',
     id: '1724397372',
     loc: { type: 'Point', coordinates: [ -4.42, 36.7204 ] },
-    img: 'https://regency7seas.files.wordpress.com/2012/03/map13malaga-spain-google-maps-usemea.jpg'
+    img: 'https://i.pinimg.com/originals/b5/c4/36/b5c436f81b039c28b5b1222954a0386c.jpg'
   },
   {
     city: 'Tabūk',
@@ -13299,7 +13299,7 @@ const cities = [
     population: '503647',
     id: '1364624691',
     loc: { type: 'Point', coordinates: [ 49.7, 34.0804 ] },
-    img: 'https://cdn.asiatatler.com/asiatatler/i/hk/2020/04/03174439-white-airliner-wing-on-top-of-sea-clouds-2007401_cover_2000x1333.jpg'
+    img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Naghshejahan.jpg/1280px-Naghshejahan.jpg'
   },
   {
     city: 'Davangere',
@@ -13884,7 +13884,7 @@ const cities = [
     population: '483681',
     id: '1840020553',
     loc: { type: 'Point', coordinates: [ -117.1909, 33.572 ] },
-    img: 'http://s3-media1.fl.yelpcdn.com/bphoto/gz5fPA6VHeIMdHWJ8XwTzg/o.jpg'
+    img: 'https://www.brookfieldresidential.com/-/media/brp/residence/variable-stacked-gallery/southern-california/spencers-crossing/mpc/aerial-view-the-oasis-at-spencers-crossing-murrieta-california-brookfield-residential-1071x600.jpg?h=600&w=1071&la=en&hash=C33AE292D1F0D40282664E5644006FA8A3891121'
   },
   {
     city: 'Gulbarga',
@@ -14481,7 +14481,7 @@ const cities = [
     population: '457983',
     id: '1826431946',
     loc: { type: 'Point', coordinates: [ -1.1332, 52.63 ] },
-    img: 'https://lh3.googleusercontent.com/proxy/exy6Keqe6llpg51p2BuMgkM0uXE_eknnzDYFrwbeVNOysS_H05GeSnSOOn0O_70OF0Zm6caW1dDM83xsMlhAs3faRX0bW4KhvEtYiERZLnqVBIQ0ts640-IpBg'
+    img: 'https://nm5zu2xoezn44ivk1qpa1y1a-wpengine.netdna-ssl.com/wp-content/uploads/2019/11/shutterstock_1072081757-779x450.jpg'
   },
   {
     city: 'Kirov',

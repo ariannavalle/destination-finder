@@ -19,7 +19,8 @@ const citySchema = new Schema(
       type: String
     },
     img: {
-      type: String
+      type: String,
+      default: "https://busites-www.s3.amazonaws.com/blog-margaritaville/2018/03/travel-generic-shot.jpg"
     },
     iso2: {
       type: String
