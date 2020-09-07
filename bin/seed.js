@@ -4088,7 +4088,7 @@ const cities = [
     population: '1615621',
     id: '1840008535',
     loc: { type: 'Point', coordinates: [ -94.5541, 39.1239 ] },
-    img: 'http://www.world-guides.com/images/kansas_city/map1_kansas_city.jpg'
+    img: 'https://www.choicehotels.com/cms/images/choice-hotels/pace/hero-things-to-do-Kansas-City/hero-things-to-do-Kansas-City.jpg'
   },
   {
     city: 'Yaoundé',
@@ -7018,7 +7018,7 @@ const cities = [
     population: '1029123',
     id: '1840001839',
     loc: { type: 'Point', coordinates: [ -89.9288, 30.0687 ] },
-    img: 'https://cdn.vox-cdn.com/thumbor/nLHDu6tgu48Ug6JPhrBkabeOhfs%3D/0x0:1024x770/1200x800/filters:focal%28431x304:593x466%29/cdn.vox-cdn.com/uploads/chorus_image/image/55717349/ABODO_2.0.png'
+    img: 'https://d36tnp772eyphs.cloudfront.net/blogs/1/2019/02/New-Orleans-at-night.jpg'
   },
   {
     city: 'Guatemala City',
@@ -13884,7 +13884,7 @@ const cities = [
     population: '483681',
     id: '1840020553',
     loc: { type: 'Point', coordinates: [ -117.1909, 33.572 ] },
-    img: 'http://s3-media1.fl.yelpcdn.com/bphoto/gz5fPA6VHeIMdHWJ8XwTzg/o.jpg'
+    img: 'https://www.brookfieldresidential.com/-/media/brp/residence/variable-stacked-gallery/southern-california/spencers-crossing/mpc/aerial-view-the-oasis-at-spencers-crossing-murrieta-california-brookfield-residential-1071x600.jpg?h=600&w=1071&la=en&hash=C33AE292D1F0D40282664E5644006FA8A3891121'
   },
   {
     city: 'Gulbarga',
