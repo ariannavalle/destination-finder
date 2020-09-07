@@ -18,17 +18,19 @@ router.post('/find-destination', (req, res, next) => {
       if (!elem.city) return obj
       if (elem.city in obj) {
         obj[elem.city].count++;
-        obj[elem.city].total_rating += elem.rating
-        obj[elem.city].rate = Math.round(obj[elem.city].total_rating / obj[elem.city].count)
+        // obj[elem.city].total_rating += elem.rating
+        // obj[elem.city].rate = Math.round(obj[elem.city].total_rating / obj[elem.city].count)
       }
       else {
         obj[elem.city] = {
           name: elem.city,
           country_name: elem.country,
           count: 1,
-          total_rating: elem.rating,
-          rate: elem.rating,
-          img: elem.img
+          // total_rating: elem.rating,
+          // rate: elem.rating,
+          img: elem.img,
+          population: elem.population,
+          _id: elem._id
         }
       }
       return obj;
@@ -71,12 +73,14 @@ router.post('/find-destination', (req, res, next) => {
         citiesAPIResponse.forEach((data, i) => {
           placeObj.push({
             coordinates: response.data.features[i].geometry.coordinates,
-            rating: response.data.features[i].properties.rate,
-            name: response.data.features[i].properties.name,
-            categories: response.data.features[i].properties.kinds,
+            // rating: response.data.features[i].properties.rate,
+            // name: response.data.features[i].properties.name,
+            // categories: response.data.features[i].properties.kinds,
             city: data[i].city,
             country: data[i].country,
-            img: data[i].img
+            img: data[i].img,
+            population: data[i].population,
+            _id: data[i]._id
           });
         });
 
