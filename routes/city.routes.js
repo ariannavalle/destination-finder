@@ -7,18 +7,18 @@ const Post = require('../models/post.model');
 //API Key
 const opentripAPIKey = process.env.OPENTRIPMAP_API_KEY;
 
-router.get('/:cityName', (req, res) => {
-  const cityName = req.params.cityName;
+router.get('/:location', (req, res) => {
+  const location = req.params.location;
 
   axios
-    .get(`https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&titles=${cityName}`)
+    .get(`https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&titles=${location}`)
     .then(response => {
       const cityWiki = response.data.query.pages;
       const cityWikiKeys = Object.keys(cityWiki);
       const cityInfo = cityWiki[cityWikiKeys[0]].extract;      
 
       City
-        .find({ city: cityName.split(',_')[0] })
+        .find({ city: location.split(',_')[0] })
         .populate('comments')
         .then(cityFromDB => {
           

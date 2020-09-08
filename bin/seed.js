@@ -33,7 +33,7 @@ const cities = [
     img: 'http://4.bp.blogspot.com/-iPvDnOC_QH8/T7YqlWsQf7I/AAAAAAAACtE/-7Bocbnsyjo/s1600/Tokyo+japan+city_.jpg'
   },
   {
-    city: 'New York',
+    city: 'New York City',
     city_ascii: 'New York',
     lat: '40.6943',
     lng: '-73.9249',
