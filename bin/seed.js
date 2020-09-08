@@ -2,6 +2,7 @@
 const mongoose = require('mongoose');
 const User = require('../models/user.model');
 const City = require('../models/city.model');
+const Post = require('../models/post.model');
 
 const users = [
   {
@@ -14624,6 +14625,7 @@ require("../configs/db.config");
 // clear the users and cities collection
 User.collection.drop();
 City.collection.drop();
+Post.collection.drop();
 
 // seed the database with users and cities
 User
