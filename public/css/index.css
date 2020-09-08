@@ -40,28 +40,14 @@ body {
   float: right;
 }
 
-/* Blog posts */
-.blog-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 2rem 19%;
+/* posts */
+.nav-tabs li {
+  margin: 0.5rem;
 }
 
-.blog-post {
-  width: 200px;
-  height: 300px;
-  margin: 3rem;
-  position: relative;
-}
-
-.blog-post-info {
-  position: absolute;
-  top: 200px;
-}
-
-.blog-post-image img {
-  width: 200px;
+/* city details*/
+.about-city {
+  padding: 2rem 1rem;
 }
 
 /* login form */

@@ -40,7 +40,8 @@ const citySchema = new Schema(
     loc: {
       type: { type: String }
       , coordinates: []
-    }
+    },
+    comments: { type: [{ type: Schema.Types.ObjectId, ref: "Post" }] }
   },
   {
     timestamps: true

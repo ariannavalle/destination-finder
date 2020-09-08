@@ -1,14 +1,5 @@
 const {Schema, model} = require('mongoose');
 
-
-// posts will need
-// -title
-// -content
-// -user object.id ref
-// -image
-// -reference to city/cities
-// -time premiting have comments array
-
 const postSchema = new Schema(
   {
     title: { 
@@ -21,14 +12,7 @@ const postSchema = new Schema(
       type: String,
       default: "https://res.cloudinary.com/dllcgl1lt/image/upload/v1598816216/default_ckcccr.jpg"
     },
-    location: { 
-      type: [{ type: String }],
-      trim: true
-    },
-    owner: {
-      type: Boolean,
-      default: false
-    }
+    city: { type: Schema.Types.ObjectId, ref: "City" }
   },
   {
     timestamps: true

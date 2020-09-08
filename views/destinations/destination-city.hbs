@@ -1,0 +1,53 @@
+<section class="home-slider owl-carousel">
+  <div class="slider-item" style="background-image: url({{ city.info.img }});" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row slider-text align-items-center">
+        <div class="col-md-7 col-sm-12 ftco-animate">
+          <h1 class="mb-3">{{ city.info.city }}, {{ city.info.country }}</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container about-city">
+  <h4>About</h4>
+  <p>{{ city.description }}</p>
+</div>
+
+<div class="container">
+  <h4>Leave your comment</h4>
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#comments">Comments</a>
+    <li><a data-toggle="tab" href="#add-comment">Add Comment</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="comments" class="tab-pane fade in active">
+      <h3>Comments</h3>
+
+      <div class="media border p-3">
+        <img src="img_avatar3.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+        <div class="media-body">
+          <h4>John Doe <small><i>Posted on February 19, 2016</i></small></h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nobis beatae, officiis similique omnis delectus doloremque ullam illo excepturi ipsa.</p>
+        </div>
+      </div>
+
+      <div class="media border p-3">
+        <img src="img_avatar3.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+        <div class="media-body">
+          <h4>John Doe <small><i>Posted on February 19, 2016</i></small></h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nobis beatae, officiis similique omnis delectus doloremque ullam illo excepturi ipsa.</p>
+        </div>
+      </div>
+      
+    </div>
+    <div id="add-comment" class="tab-pane fade">
+      <h3>Add a comment</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+</div>

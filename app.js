@@ -19,7 +19,8 @@ const indexRouter = require('./routes/index.routes');
 const authRouter = require('./routes/auth.routes');
 const filterRouter = require('./routes/filter.routes');
 const userRouter = require('./routes/user.routes');
-const blogRouter = require('./routes/post.routes');
+const postRouter = require('./routes/post.routes');
+const cityRouter = require('./routes/city.routes');
 
 const app = express();
 
@@ -51,10 +52,11 @@ app.use(bindUserToViewLocals);
 
 // Routes middleware
 app.use('/', indexRouter);
-app.use('/blog', blogRouter);
 app.use('/', authRouter);
 app.use('/', filterRouter);
 app.use('/', userRouter);
+app.use('/city', cityRouter);
+app.use('/blog', postRouter);
 
 // Catch missing routes and forward to error handler
 app.use((req, res, next) => next(createError(404)));
