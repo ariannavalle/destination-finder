@@ -686,7 +686,7 @@ const cities = [
     population: '5637884',
     id: '1840000673',
     loc: { type: 'Point', coordinates: [-75.1339, 40.0077] },
-    img: 'https://lh3.googleusercontent.com/proxy/WwajrLOrfx57KfgmSnWO40blcEuO6S4NKjbyFZ_Qf6315J9qvaq1olXl__4gAcrQz-Sv8DuslBqT8Sur2JX1HCHeqbbfyUplIASdZmK5OGuSb8-YeWxfrnVamQ=s0-d'
+    img: 'https://www.mccarter.com/wp-content/uploads/2019/10/Location-Philadelphia.png'
   },
   {
     city: 'Belo Horizonte',
@@ -2801,7 +2801,7 @@ const cities = [
     population: '2170504',
     id: '1840001592',
     loc: { type: 'Point', coordinates: [ -76.6144, 39.3051 ] },
-    img: 'http://www.worldeasyguides.com/wp-content/uploads/2013/08/Baltimore-on-Map-of-United-States.jpg'
+    img: 'https://www.contourmortgage.com/hubfs/Blog/10-Best-Baltimore-Neighborhoods-To-Live-In--Image-of-Baltimore---Birds-eye.jpg'
   },
   {
     city: 'Nanning',
@@ -3020,7 +3020,7 @@ const cities = [
     population: '2078283',
     id: '1840001651',
     loc: { type: 'Point', coordinates: [ -90.2451, 38.6358 ] },
-    img: 'https://thumbs.dreamstime.com/z/st-louis-united-states-america-14026911.jpg'
+    img: 'https://bookwormhistory.files.wordpress.com/2016/03/st_louis_night_expblend.jpg'
   },
   {
     city: 'Las Vegas',
@@ -3210,7 +3210,7 @@ const cities = [
     population: '2002530',
     id: '1840022220',
     loc: { type: 'Point', coordinates: [ -98.5254, 29.4658 ] },
-    img: 'http://www.world-guides.com/images/san_antonio/map1_san_antonio.jpg'
+    img: 'https://www.rackspace.com/sites/default/files/article-images/blog_426.jpg'
   },
   {
     city: 'Port-au-Prince',
@@ -3711,7 +3711,7 @@ const cities = [
     population: '1715297',
     id: '1840001254',
     loc: { type: 'Point', coordinates: [ -79.9763, 40.4396 ] },
-    img: 'http://c8.alamy.com/comp/CFR685/pittsburgh-skyline-pittsburgh-pennsylvania-united-states-of-america-CFR685.jpg'
+    img: 'https://wp-media.petersons.com/blog/wp-content/uploads/2019/05/30111501/iStock-1127453938.jpg'
   },
   {
     city: 'Luoyang',
@@ -3944,7 +3944,7 @@ const cities = [
     population: '1648254',
     id: '1840003814',
     loc: { type: 'Point', coordinates: [ -84.506, 39.1412 ] },
-    img: 'http://www.world-guides.com/images/cincinnati/map1_cincinnati.jpg'
+    img: 'https://cincinnatiusa.com/sites/default/files/styles/Array/public/hotels/MH_CVGDR_Cincinnati_Dusk%20copy%20resized.jpg'
   },
   {
     city: 'Kumasi',
@@ -6827,7 +6827,7 @@ const cities = [
     population: '1058000',
     id: '1124290735',
     loc: { type: 'Point', coordinates: [ -113.5, 53.55 ] },
-    img: 'http://www.justmaps.org/maps/images/canada/edmonton-map1.gif'
+    img: 'https://assets.exploreedmonton.com/images/_1200x630_crop_center-center_none/Edmonton_Skyline_Panoramic.jpg'
   },
   {
     city: 'Solāpur',
