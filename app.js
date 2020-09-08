@@ -20,7 +20,7 @@ const authRouter = require('./routes/auth.routes');
 const filterRouter = require('./routes/filter.routes');
 const userRouter = require('./routes/user.routes');
 const postRouter = require('./routes/post.routes');
-const cityRouter = require('./routes/city.routes');
+const detailsRouter = require('./routes/details.routes');
 
 const app = express();
 
@@ -55,8 +55,8 @@ app.use('/', indexRouter);
 app.use('/', authRouter);
 app.use('/', filterRouter);
 app.use('/', userRouter);
-app.use('/city', cityRouter);
-app.use('/blog', postRouter);
+app.use('/city', detailsRouter);
+app.use('/post', postRouter);
 
 // Catch missing routes and forward to error handler
 app.use((req, res, next) => next(createError(404)));

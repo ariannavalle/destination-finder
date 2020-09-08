@@ -18,18 +18,24 @@ router.get('/:location', (req, res) => {
       const cityInfo = cityWiki[cityWikiKeys[0]].extract;      
 
       City
-        .find({ city: location.split(',_')[0] })
+        .findOne({ city: location.split(',_')[0] })
         .populate('comments')
+        .populate({
+          path: 'comments',
+          populate: {
+            path: 'user'
+          }
+        })
         .then(cityFromDB => {
           
           const cityDetails = {
             description: cityInfo,
-            info: cityFromDB[0]
+            details: cityFromDB
           };
 
-          console.log(cityDetails.info);
+          console.log('city details: ', cityFromDB);
 
-          res.render('destinations/destination-city', {city: cityDetails});
+          res.render('destinations/destination-details', {city: cityDetails});
         })
         .catch(err => console.log(err));
     })

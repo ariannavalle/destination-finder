@@ -33,49 +33,47 @@ router.get('/create', ensureAuthentication, (req, res) => {
 });
 
 // POST create new post
-router.post('/create', fileUploader.single('image'), (req, res) => {
-  const { title, content, location } = req.body;
-  let loggedInUser = "";
+router.post('/create/:cityId', ensureAuthentication, (req, res) => {
+  const { content } = req.body;
+  const cityId = req.params.cityId;
+  const user = req.user;  
 
-  if (req.user) {
-    loggedInUser = req.user._id;
-  }
-  
-  let newPost = {};
-
-  if (req.file) {
-    newPost = {
-      title,
-      content,
-      location,
-      image: req.file.path,
-      user: req.user._id
-    };
-  } else {
-    newPost = {
-      title,
-      content,
-      location,
-      user: req.user._id
-    };
-  }  
+  const newPost = {
+          city: cityId,
+          content,
+          user: user._id
+        };
 
   Post
     .create(newPost)
     .then(newPostDoc => {
       
       User
-        .findById(loggedInUser)
-        .then(user => {
-          user.posts.push(newPostDoc._id);
+        .findById(user._id)
+        .then(userFromDB => {
+          userFromDB.posts.push(newPostDoc._id);
+
           user
             .save()
             .then(() => {
 
-              console.log({newPostDoc});
-              console.log({user});
-              res.redirect('/blog');
+              City
+                .findById(cityId)
+                .then(cityFromDB => {
+                  cityFromDB.comments.unshift(newPostDoc._id);
 
+                  cityFromDB
+                    .save()
+                    .then(() => {
+
+                      console.log({newPostDoc});
+                      console.log({user});
+        
+                      res.redirect('back');
+                    })
+                    .catch(err => console.log(err));
+                })
+                .catch(err => console.log(err));
             })
             .catch(err => console.log(err));
         })
