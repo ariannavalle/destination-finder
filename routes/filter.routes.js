@@ -12,22 +12,18 @@ router.get('/', (req, res) => res.render('index'));
 
 router.post('/find-destination', (req, res, next) => {
 
-  //this function takes care of calculating the average rating for each city
-   function getCityInfo(citiesArray) {
-    const result =  citiesArray.reduce((obj, elem) => {
+  //this function takes care of getting the count for each city
+  function getCityInfo(citiesArray) {
+    const result = citiesArray.reduce((obj, elem) => {
       if (!elem.city) return obj;
       if (elem.city in obj) {
         obj[elem.city].count++;
-        // obj[elem.city].total_rating += elem.rating
-        // obj[elem.city].rate = Math.round(obj[elem.city].total_rating / obj[elem.city].count)
       }
       else {
         obj[elem.city] = {
           name: elem.city,
           country_name: elem.country,
           count: 1,
-          // total_rating: elem.rating,
-          // rate: elem.rating,
           img: elem.img,
           population: elem.population,
           _id: elem._id
@@ -40,8 +36,7 @@ router.post('/find-destination', (req, res, next) => {
 
   //calling this api returns different locations based on the coordinates and categories provided
   axios
-    //@todo remove "&limit=" before deploying
-    .get(`https://api.opentripmap.com/0.1/en/places/bbox?${req.body.coordinates}&kinds=${req.body.categories}&apikey=${opentripAPIKey}&limit=300`)
+    .get(`https://api.opentripmap.com/0.1/en/places/bbox?${req.body.coordinates}&kinds=${req.body.categories}&apikey=${opentripAPIKey}`)
     .then(response => {
       // console.log("coordinates from opentripmap", response.data.features[0].geometry.coordinates);
       const placeObj = [];
@@ -51,7 +46,7 @@ router.post('/find-destination', (req, res, next) => {
         const prom =
 
           //$nearSphere — MongoDB geospatial query operator that returns geospatial objects in proximity to a point on a sphere
-          City.find(
+          City.findOne(
             {
               loc: {
                 $near: {
@@ -60,31 +55,28 @@ router.post('/find-destination', (req, res, next) => {
                     // coordinates : [ <longitude>, <latitude> ]    
                     coordinates: [place.geometry.coordinates[0], place.geometry.coordinates[1]]
                   },
-                  // if we set a max distance, we might not get any results
-                  // $maxDistance: 500000
+                  $maxDistance: 10000
                 }
               }
             }
-          );
+          )
 
         cities.push(prom);
       });
 
-      console.log('cities length', cities.length);
-
       Promise.all(cities).then(async citiesAPIResponse => {
+
         citiesAPIResponse.forEach((data, i) => {
-          placeObj.push({
-            coordinates: response.data.features[i].geometry.coordinates,
-            // rating: response.data.features[i].properties.rate,
-            // name: response.data.features[i].properties.name,
-            // categories: response.data.features[i].properties.kinds,
-            city: data[i].city,
-            country: data[i].country,
-            img: data[i].img,
-            population: data[i].population,
-            _id: data[i]._id
-          });
+          if (data) {
+            placeObj.push({
+              coordinates: response.data.features[i].geometry.coordinates,
+              city: data.city,
+              country: data.country,
+              img: data.img,
+              population: data.population,
+              _id: data._id
+            })
+          }
         });
 
         //sort by count
@@ -93,7 +85,7 @@ router.post('/find-destination', (req, res, next) => {
           return b.count - a.count;
         });
         //only return the top 10 places
-        places = places.slice(0,10);
+        places = places.slice(0, 10);
 
         res.render('destinations/destination-list', { places });
       })
