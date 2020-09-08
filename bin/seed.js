@@ -33,7 +33,7 @@ const cities = [
     img: 'http://4.bp.blogspot.com/-iPvDnOC_QH8/T7YqlWsQf7I/AAAAAAAACtE/-7Bocbnsyjo/s1600/Tokyo+japan+city_.jpg'
   },
   {
-    city: 'New York',
+    city: 'New York City',
     city_ascii: 'New York',
     lat: '40.6943',
     lng: '-73.9249',
@@ -3108,7 +3108,7 @@ const cities = [
     population: '2046189',
     id: '1156183327',
     loc: { type: 'Point', coordinates: [ 110.32, 20.05 ] },
-    img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Haikou_montage_-_03.jpg/1200px-Haikou_montage_-_03.jpg'
+    img: 'https://www.chinadaily.com.cn/cndy/attachement/jpg/site1/20080505/000802ab80450988bb9317.jpg'
   },
   {
     city: 'Hiroshima',
@@ -8831,7 +8831,7 @@ const cities = [
     population: '1051',
     id: '1316937540',
     loc: { type: 'Point', coordinates: [ 144.7504, 13.4745 ] },
-    img: 'http://www.ufosnw.com/sighting_reports/2008/hagatnaguam03242008/ufoweb.jpg'
+    img: 'https://www.united.com/en-us/flights/media-em/ua/5b0dcdf85036a_GUAM_shutterstock_484513306.jpg'
   },
   {
     city: 'Al Quds',
@@ -13079,7 +13079,7 @@ const cities = [
     population: '513698',
     id: '1360353144',
     loc: { type: 'Point', coordinates: [ 95.32, 5.55 ] },
-    img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Coast_of_Banda_Aceh_2-12-05_050212-N-1450G-241.jpg/1200px-Coast_of_Banda_Aceh_2-12-05_050212-N-1450G-241.jpg'
+    img: 'https://allindonesiatravel.com/images/mosque-masjid-banda-aceh.jpg'
   },
   {
     city: 'Ujjain',
@@ -13607,7 +13607,7 @@ const cities = [
     population: '500000',
     id: '1392082102',
     loc: { type: 'Point', coordinates: [ 136.5167, 34.7171 ] },
-    img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Japanese_Katakana_TSU.png/75px-Japanese_Katakana_TSU.png'
+    img: 'https://www.ar.jal.co.jp/world/en/guidetojapan/howto/culture/how-to-visit-a-temple/img/img_culture5-1.jpg'
   },
   {
     city: 'Mataram',

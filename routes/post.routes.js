@@ -8,6 +8,7 @@ const ensureAuthentication = require('../configs/route-guard.config');
 // require models
 const User = require('../models/user.model');
 const Post = require('../models/post.model');
+const City = require('../models/city.model');
 
 // read the posts, blog page or posts on a details page
 // -all USBAT read all posts
