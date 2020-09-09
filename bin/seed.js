@@ -1251,7 +1251,7 @@ const cities = [
     population: '3697894',
     id: '1392118339',
     loc: { type: 'Point', coordinates: [ 139.58, 35.32 ] },
-    img: 'https://upload.wikimedia.org/wikipedia/commons/6/69/Japan_Yokohama.png'
+    img: 'https://www.nationsonline.org/gallery/Japan/Minato_Mirai.jpg'
   },
   {
     city: 'Nanjing',
@@ -3551,7 +3551,7 @@ const cities = [
     population: '1757000',
     id: '1276041799',
     loc: { type: 'Point', coordinates: [ 10, 53.55 ] },
-    img: 'http://www.canuckabroad.com/places/wp-content/uploads/2013/09/Hamburg-Germany-1.jpg'
+    img: 'https://imageresizer.static9.net.au/tbhCYmujR09AMhF7nodLkZuaHUE=/1200x675/https%3A%2F%2Fprod.static9.net.au%2F_%2Fmedia%2F2018%2F05%2F01%2F14%2F54%2F1_speicherstadt_thumb.jpg'
   },
   {
     city: 'Vadodara',
@@ -6209,7 +6209,7 @@ const cities = [
     population: '1134616',
     id: '1036468001',
     loc: { type: 'Point', coordinates: [ 151.815, -32.8453 ] },
-    img: 'https://i.ytimg.com/vi/v5fXYWHA824/maxresdefault.jpg'
+    img: 'https://www.visitnsw.com/sites/visitnsw/files/styles/landscape_992x558/public/2019-10/NewcastleOceanBaths-AQUABUMPS-_S1A0678_Jul%2001%202018_0.jpg'
   },
   {
     city: 'Yulin',
@@ -12892,7 +12892,7 @@ const cities = [
     population: '527660',
     id: '1036153217',
     loc: { type: 'Point', coordinates: [ 153.4482, -28.0815 ] },
-    img: 'https://lonelyplanetwp.imgix.net/2017/10/shutterstockRF_550879138-d5b90d9affbb.jpg?fit=min&q=40&sharp=10&vib=20&w=1470'
+    img: 'https://www.australia.com/content/australia/en/places/gold-coast-and-surrounds/guide-to-the-gold-coast/_jcr_content/mainParsys/imagewithcaption/LargeImageTile/largeImageSrc.adapt.740.medium.jpg'
   },
   {
     city: 'Ji’an',
