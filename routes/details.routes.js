@@ -2,13 +2,11 @@ const express = require('express');
 const router = express.Router();
 const axios = require('axios');
 const City = require('../models/city.model');
-const Post = require('../models/post.model');
 
-//API Key
-const opentripAPIKey = process.env.OPENTRIPMAP_API_KEY;
-
+// GET city detials page
 router.get('/:location', (req, res) => {
   const location = req.params.location;
+  const user = req.user;
 
   axios
     .get(`https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&titles=${location}`)
@@ -19,21 +17,25 @@ router.get('/:location', (req, res) => {
 
       City
         .findOne({ city: location.split(',_')[0] })
-        .populate('comments')
+        .populate('posts')
         .populate({
-          path: 'comments',
+          path: 'posts',
           populate: {
             path: 'user'
           }
         })
         .then(cityFromDB => {
+
+          cityFromDB.posts.forEach(post => {
+            if (user) post.owner = user.posts.includes(post._id);
+          });
           
           const cityDetails = {
             description: cityInfo,
             details: cityFromDB
           };
 
-          console.log('city details: ', cityFromDB);
+          console.log(cityDetails.details);
 
           res.render('destinations/destination-details', {city: cityDetails});
         })
