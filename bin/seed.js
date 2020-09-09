@@ -968,7 +968,7 @@ const cities = [
     population: '4553000',
     id: '1643616350',
     loc: { type: 'Point', coordinates: [ 30.316, 59.939 ] },
-    img: 'http://trueanomaly.org/wp-content/uploads/2017/02/SP_cathedral.jpg'
+    img: 'https://aic.azureedge.net/pgl-release/Images/ArticleImages/18/18424.jpg'
   },
   {
     city: 'Chittagong',
@@ -1577,7 +1577,7 @@ const cities = [
     population: '3215000',
     id: '1710680650',
     loc: { type: 'Point', coordinates: [ 18.435, -33.92 ] },
-    img: 'https://d1ljaggyrdca1l.cloudfront.net/wp-content/uploads/sites/5/2018/07/cape-town-aerial-view-greenpoint-stadium.jpg'
+    img: 'https://www.thoughtco.com/thmb/LWkkeQ6BIedNEYwHxMNeEkQrk_8=/2172x1222/smart/filters:no_upscale()/GettyImages-1057137024-d3c6daf73fcb48d38ce252f5c6314e96.jpg'
   },
   {
     city: 'San Diego',
@@ -1709,7 +1709,7 @@ const cities = [
     population: '3084000',
     id: '1076701712',
     loc: { type: 'Point', coordinates: [ -49.32, -25.42 ] },
-    img: 'http://www.wur.nl/upload_mm/8/9/2/b3f510a1-676f-4fb1-aa4a-4c26a9023549_Curitiba)shutterstock_249660031.jpg'
+    img: 'https://www.wur.nl/upload_mm/b/9/b/2939cb32-84a7-4a87-a8f0-d3eafeb912a2_Curitiba%29shutterstock_249660031_12c62aa0_586x394.jpg'
   },
   {
     city: 'Zibo',
@@ -1870,7 +1870,7 @@ const cities = [
     population: '2926757',
     id: '1840007830',
     loc: { type: 'Point', coordinates: [ -93.2678, 44.9635 ] },
-    img: 'http://www.thetimenow.com/blog/wp-content/uploads/2015/08/map-minnesota-united-states.jpg'
+    img: 'https://thumbnails.trvl-media.com/VQ4avlDjRCpNwWPkCWJ3AhiP3gA=/500x333/smart/filters:quality(80)/images.trvl-media.com/hotels/3000000/2360000/2351500/2351476/53f9cf98_z.jpg'
   },
   {
     city: 'Jaipur',
@@ -8745,7 +8745,7 @@ const cities = [
     population: '15220',
     id: '1084586375',
     loc: { type: 'Point', coordinates: [ -88.7671, 17.252 ] },
-    img: 'http://www.tourist-destinations.com/wp-content/uploads/2013/06/Belmopan1.jpg'
+    img: 'https://static1.squarespace.com/static/54d18503e4b0e6a1ae62b32b/54d7d87ee4b0b41c024c76db/5a6fa8f1419202aacbc755d0/1536284846280/Ambergris-Caye-Aerial+.jpg'
   },
   {
     city: 'Pago Pago',
@@ -8833,19 +8833,6 @@ const cities = [
     id: '1316937540',
     loc: { type: 'Point', coordinates: [ 144.7504, 13.4745 ] },
     img: 'https://www.united.com/en-us/flights/media-em/ua/5b0dcdf85036a_GUAM_shutterstock_484513306.jpg'
-  },
-  {
-    city: 'Al Quds',
-    city_ascii: 'Al Quds',
-    lat: '31.7764',
-    lng: '35.2269',
-    country: 'West Bank',
-    iso2: 'XW',
-    iso3: 'XWB',
-    capital: 'primary',
-    id: '1934000006',
-    loc: { type: 'Point', coordinates: [ 35.2269, 31.7764 ] },
-    img: 'https://media.mehrnews.com/d/2017/12/08/3/2656664.jpg'
   },
   {
     city: 'Philipsburg',
@@ -9562,20 +9549,6 @@ const cities = [
     img: 'http://farm3.staticflickr.com/2152/2286517254_4a0ea7ccf2_b.jpg'
   },
   {
-    city: 'Bridgeport',
-    city_ascii: 'Bridgeport',
-    lat: '41.1918',
-    lng: '-73.1953',
-    country: 'United States',
-    iso2: 'US',
-    iso3: 'USA',
-    admin_name: 'Connecticut',
-    population: '938406',
-    id: '1840004836',
-    loc: { type: 'Point', coordinates: [ -73.1953, 41.1918 ] },
-    img: 'http://imgc.allpostersimages.com/images/P-473-488-90/67/6773/4LQZ100Z/posters/1886-bridgeport-west-virginia-united-states.jpg'
-  },
-  {
     city: 'Nice',
     city_ascii: 'Nice',
     lat: '43.715',
@@ -10251,7 +10224,7 @@ const cities = [
     population: '869000',
     id: '1484666646',
     loc: { type: 'Point', coordinates: [ -102.2904, 21.8795 ] },
-    img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/AGUASCALIENTES_CITY.jpg/1200px-AGUASCALIENTES_CITY.jpg'
+    img: 'https://nomadlist.com/assets/img/places/aguascalientes-mexico-500px.jpg'
   },
   {
     city: 'Tucson',
@@ -11130,20 +11103,6 @@ const cities = [
     id: '1250449238',
     loc: { type: 'Point', coordinates: [ -0.595, 44.85 ] },
     img: 'http://1.bp.blogspot.com/-eo-gbD4DcRw/UJ0btjP71jI/AAAAAAABup4/--P2UJXfraE/s1600/27.JPG'
-  },
-  {
-    city: 'McAllen',
-    city_ascii: 'McAllen',
-    lat: '26.2273',
-    lng: '-98.2471',
-    country: 'United States',
-    iso2: 'US',
-    iso3: 'USA',
-    admin_name: 'Texas',
-    population: '800904',
-    id: '1840021024',
-    loc: { type: 'Point', coordinates: [ -98.2471, 26.2273 ] },
-    img: 'http://www.istanbul-city-guide.com/map/united-states/texas/mcallen/mcallen_map_usa_population.png'
   },
   {
     city: 'Baojishi',
@@ -12726,7 +12685,7 @@ const cities = [
     population: '537797',
     id: '1752059374',
     loc: { type: 'Point', coordinates: [ 12, 57.75 ] },
-    img: 'https://lonelyplanetwp.imgix.net/2017/11/GettyImages-456127449-2b37e775bab8.jpg?fit=min&q=40&sharp=10&vib=20&w=1470'
+    img: 'https://www.travelmag.com/wp-content/uploads/2019/10/Gothenburg.jpg'
   },
   {
     city: 'Ōtsu',
@@ -14616,7 +14575,142 @@ const cities = [
     id: '1826736388',
     loc: { type: 'Point', coordinates: [ 7.850000, 46.683334 ] },
     img: 'https://www.travelingnext.com/wp-content/uploads/2019/09/top-10-things-to-do-in-Interlaken-Switzerland-1.jpg'
-  }
+  },
+  {
+    "city": "San Pedro Sula",
+    "city_ascii": "San Pedro Sula",
+    "lat": "15.5",
+    "lng": "-88.03",
+    "country": "Honduras",
+    "iso2": "HN",
+    "iso3": "HND",
+    "admin_name": "Cortés",
+    "capital": "admin",
+    "population": "680091",
+    "id": "1340568412",
+    "loc": { type: 'Point', coordinates:  [ -88.03,15.5] },
+    "img" : 'https://www.visitcentroamerica.com/wp-content/uploads/2017/09/place-central-america-honduras-san-pedro-sula-05.jpg'
+},
+{
+    "city": "La Ceiba",
+    "city_ascii": "La Ceiba",
+    "lat": "15.7631",
+    "lng": "-86.797",
+    "country": "Honduras",
+    "iso2": "HN",
+    "iso3": "HND",
+    "admin_name": "Atlántida",
+    "capital": "admin",
+    "population": "145926",
+    "id": "1340870189",
+    "loc": { type: 'Point', coordinates:  [ -86.797,15.7631] },
+    "img" : 'https://lostworld.com/media/20258/roatan.jpg'
+},
+{
+    "city": "Belize City",
+    "city_ascii": "Belize City",
+    "lat": "17.4987",
+    "lng": "-88.1884",
+    "country": "Belize",
+    "iso2": "BZ",
+    "iso3": "BLZ",
+    "admin_name": "Belize",
+    "capital": "admin",
+    "population": "63028",
+    "id": "1084150679",
+    "loc": { type: 'Point', coordinates:  [ -88.1884,17.4987] },
+    "img" : 'https://cdn.britannica.com/65/193865-050-50806851/view-Belize-City.jpg'
+},
+{
+    "city": "Santa Ana",
+    "city_ascii": "Santa Ana",
+    "lat": "13.9946",
+    "lng": "-89.5598",
+    "country": "El Salvador",
+    "iso2": "SV",
+    "iso3": "SLV",
+    "admin_name": "Santa Ana",
+    "capital": "admin",
+    "population": "234478",
+    "id": "1222021362",
+    "loc": { type: 'Point', coordinates:  [ -89.5598,13.9946] },
+    "img" : 'https://elsalvadorinfo.net/wp-content/uploads/2019/08/santa-ana.jpg'
+},
+{
+    "city": "León",
+    "city_ascii": "Leon",
+    "lat": "12.4356",
+    "lng": "-86.8794",
+    "country": "Nicaragua",
+    "iso2": "NI",
+    "iso3": "NIC",
+    "admin_name": "León",
+    "capital": "admin",
+    "population": "164441",
+    "id": "1558654236",
+    "loc": { type: 'Point', coordinates:  [ -86.8794,12.4356] },
+    "img" : 'https://media.nomadicmatt.com/leonlead.jpg'
+},
+{
+    "city": "Chinandega",
+    "city_ascii": "Chinandega",
+    "lat": "12.6304",
+    "lng": "-87.13",
+    "country": "Nicaragua",
+    "iso2": "NI",
+    "iso3": "NIC",
+    "admin_name": "Chinandega",
+    "capital": "admin",
+    "population": "139023",
+    "id": "1558172276",
+    "loc": { type: 'Point', coordinates:  [ -87.13,12.6304] },
+    "img" : 'https://upload.wikimedia.org/wikipedia/commons/a/a0/Ciudad_Chinandega.jpg'
+},
+{
+    "city": "Alajuela",
+    "city_ascii": "Alajuela",
+    "lat": "10.02",
+    "lng": "-84.23",
+    "country": "Costa Rica",
+    "iso2": "CR",
+    "iso3": "CRI",
+    "admin_name": "Alajuela",
+    "capital": "admin",
+    "population": "387743",
+    "id": "1188394508",
+    "loc": { type: 'Point', coordinates:  [ -84.23,10.02] },
+    "img" : 'https://img.grouponcdn.com/deal/qwovY8wGDjt6eHNTTryG/Lt-960x582/v1/c700x420.jpg'
+},
+{
+    "city": "Cartago",
+    "city_ascii": "Cartago",
+    "lat": "9.87",
+    "lng": "-83.93",
+    "country": "Costa Rica",
+    "iso2": "CR",
+    "iso3": "CRI",
+    "admin_name": "Cartago",
+    "capital": "admin",
+    "population": "196946",
+    "id": "1188911724",
+    "loc": { type: 'Point', coordinates:  [ -83.93,9.87] },
+    "img" : 'https://pix10.agoda.net/geo/city/19721/d314d48ef32387718cdf11dfbae2ef41.jpg?s=1920x822'
+},
+{
+    "city": "Colón",
+    "city_ascii": "Colon",
+    "lat": "9.365",
+    "lng": "-79.875",
+    "country": "Panama",
+    "iso2": "PA",
+    "iso3": "PAN",
+    "admin_name": "Colón",
+    "capital": "admin",
+    "population": "204000",
+    "id": "1591599922",
+    "loc": { type: 'Point', coordinates:  [ -79.875,9.365] },
+    "img" : 'https://panamacrucerotours.com/wp-content/uploads/2018/12/boletin35-2_Page_02_Image_0001-e1458589975574.jpg'
+}
 ];
 
 // start the database
