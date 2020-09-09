@@ -45,60 +45,105 @@
 	<form action="/find-destination" method="post">
 
 		<h3>Region</h3>
-		{{!-- lon_min=&lon_max=&lat_min=&lat_max= --}}
-		<label for="all" class="btn btn-outline-primary"> <input type="radio" id="all" name="coordinates" class="hide-cb"
-				value="lon_min=-180&lon_max=180&lat_min=-85&lat_max=85">
+
+		{{!-- All --}}
+		<label for="all" class="btn btn-primary"> <input type="radio" id="all" name="coordinates" class="hide-cb"
+				value="lon_min=-180&lon_max=180&lat_min=-85&lat_max=85" checked>
 			All</label>
-
-		{{!-- lon_min=&lon_max=&lat_min=&lat_max= --}}
-		<label for="africa" class="btn btn-outline-primary"> <input type="radio" id="africa" name="coordinates"
-				class="hide-cb" value="lon_min=-17.53&lon_max=51.2667&lat_min=-34.8333&lat_max=37.3500">
-			Africa</label>
-
-		{{!-- lon_min=&lon_max=&lat_min=&lat_max= --}}
-		<label for="asia" class="btn btn-outline-primary"> <input type="radio" id="asia" name="coordinates"
-				class="hide-cb" value="lon_min=-169.666667&lon_max=26.066667&lat_min=1.266667&lat_max=77.716667">
-			Asia</label>
-
-		{{!-- lon_min=&lon_max=&lat_min=&lat_max= --}}
-		<label for="australia" class="btn btn-outline-primary"> <input type="radio" id="australia" name="coordinates"
-				class="hide-cb" value="lon_min=113.15&lon_max=153.633333&lat_min=-39.133333&lat_max=-10.683333">
-			Australia</label>
-
-		{{!-- lon_min=&lon_max=&lat_min=&lat_max= --}}
-		<label for="europe" class="btn btn-outline-primary"> <input type="radio" id="europe" name="coordinates"
-				class="hide-cb" value="lon_min=-9.498361&lon_max=66.618056&lat_min=36.0025&lat_max=71.1337">
-			Europe</label>
 
 		<br>
 
+		{{!-- Africa --}}
+		<p>Africa</p>
+		<label for="africa" class="btn btn-outline-primary"> <input type="radio" id="africa" name="coordinates"
+				class="hide-cb" value="lon_min=-24.257813&lon_max=36.562500&lat_min=-35.460670&lat_max=34.016242">
+			All</label>
+
+		<label for="north_africa" class="btn btn-outline-primary"> <input type="radio" id="north_africa" name="coordinates"
+				class="hide-cb" value="lon_min=-17.006744&lon_max=34.297943&lat_min=9.644077&lat_max=34.759666">
+			North Africa</label>
+
+		<label for="south_africa" class="btn btn-outline-primary"> <input type="radio" id="south_africa" name="coordinates"
+				class="hide-cb" value="lon_min=-17.578125&lon_max=52.207031&lat_min=-35.029996&lat_max=12.382928">
+			South Africa</label>
+
+		<br>
+
+		{{!-- Asia --}}
+		<p>Asia</p>
+
+		<label for="asia" class="btn btn-outline-primary"> <input type="radio" id="asia" name="coordinates" class="hide-cb"
+				value="lon_min=&lon_max=&lat_min=&lat_max=">
+			All</label>
+
+		<label for="northern_asia" class="btn btn-outline-primary"> <input type="radio" id="northern_asia"
+				name="coordinates" class="hide-cb" value="lon_min=&lon_max=&lat_min=&lat_max=">
+			Northern Asia</label>
+
+		<label for="southern_asia" class="btn btn-outline-primary"> <input type="radio" id="southern_asia"
+				name="coordinates" class="hide-cb" value="lon_min=&lon_max=&lat_min=&lat_max=">
+			Southern Asia</label>
+
+		<br>
+
+		{{!-- Europe & Australia --}}
+		<p>Europe & Australia</p>
+
+		<label for="europe" class="btn btn-outline-primary"> <input type="radio" id="europe" name="coordinates"
+				class="hide-cb" value="lon_min=&lon_max=&lat_min=&lat_max=">
+			Europe</label>
+
+		<label for="northern_europe" class="btn btn-outline-primary"> <input type="radio" id="northern_europe"
+				name="coordinates" class="hide-cb" value="lon_min=&lon_max=&lat_min=&lat_max=">
+			Northern Europe</label>
+
+		<label for="southern_europe" class="btn btn-outline-primary"> <input type="radio" id="southern_europe"
+				name="coordinates" class="hide-cb" value="lon_min=&lon_max=&lat_min=&lat_max=">
+			Southern Europe</label>
+
+		<label for="australia" class="btn btn-outline-primary"> <input type="radio" id="australia" name="coordinates"
+				class="hide-cb" value="lon_min=&lon_max=&lat_min=&lat_max=">
+			Australia</label>
+
+		<br>
+
+		{{!-- North America --}}
 		<p>North America</p>
+
+		<label for="north_america" class="btn btn-outline-primary"> <input type="radio" id="north_america"
+				name="coordinates" class="hide-cb"
+				value="lon_min=-162.215195&lon_max=-55.340195&lat_min=13.633308&lat_max=70.336537">
+			All</label>
+
 		<label for="canada_us" class="btn btn-outline-primary"> <input type="radio" id="canada_us" name="coordinates"
 				class="hide-cb" value="lon_min=-134.208641&lon_max=-54.403954&lat_min=27.846058&lat_max=59.538321">
 			Canada & United States</label>
 
-		{{!-- lon_min=&lon_max=&lat_min=&lat_max= --}}
 		<label for="mexico" class="btn btn-outline-primary"> <input type="radio" id="mexico" name="coordinates"
-				class="hide-cb" value="lon_min=-162.943726&lon_max=-61.517944&lat_min=38.841312&lat_max=69.787257">
+				class="hide-cb" value="lon_min=-115.807056&lon_max=-86.671314&lat_min=18.207339&lat_max=27.049036">
 			Mexico</label>
 
-		{{!-- lon_min=&lon_max=&lat_min=&lat_max= --}}
 		<label for="central_america" class="btn btn-outline-primary"> <input type="radio" id="central_america"
 				name="coordinates" class="hide-cb"
-				value="lon_min=-90.435505&lon_max=-77.493610&lat_min=7.778605&lat_max=17.771819">
+				value="lon_min=-91.086016&lon_max=-77.902422&lat_min=7.157018&lat_max=17.802549">
 			Central America</label>
 
+		{{!-- South America --}}
 		<p>South America</p>
 
-		{{!-- lon_min=&lon_max=&lat_min=&lat_max= --}}
-		<label for="northern_south_america" class="btn btn-outline-primary"> <input type="radio"
-				id="northern_south_america" name="coordinates" class="hide-cb"
-				value="lon_min=-81.3225&lon_max=-34.7914668341&lat_min=-53.9333&lat_max=12.4547">
+		<label for="south_america" class="btn btn-outline-primary"> <input type="radio" id="south_america"
+				name="coordinates" class="hide-cb"
+				value="lon_min=-81.920242&lon_max=-33.931961&lat_min=-55.001913&lat_max=10.801607">
+			All</label>
+
+		<label for="northern_south_america" class="btn btn-outline-primary"> <input type="radio" id="northern_south_america"
+				name="coordinates" class="hide-cb"
+				value="lon_min=-80.545235&lon_max=-34.314766&lat_min=-17.887926&lat_max=11.788719">
 			South America (Northern)</label>
-		{{!-- lon_min=&lon_max=&lat_min=&lat_max= --}}
-		<label for="southern_south_america" class="btn btn-outline-primary"> <input type="radio"
-				id="southern_south_america" name="coordinates" class="hide-cb"
-				value="lon_min=-81.3225&lon_max=-34.7914668341&lat_min=-53.9333&lat_max=12.4547">
+
+		<label for="southern_south_america" class="btn btn-outline-primary"> <input type="radio" id="southern_south_america"
+				name="coordinates" class="hide-cb"
+				value="lon_min=-74.513054&lon_max=-40.000000&lat_min=-56.098854&lat_max=-17.522273">
 			South America (Southern)</label>
 
 		<br>
@@ -126,7 +171,7 @@
 		</label>
 
 		<label for="hot_springs" class="btn btn-outline-primary">
-			<input type="checkbox" id="hot_springs" name="categories" value="hot_springs" class="hide-cb">
+			<input type="checkbox" id="hot_springs" name="categories" value="hot_springs,springs_others" class="hide-cb">
 			Hot Springs</label>
 
 		<label for="foods" class="btn btn-outline-primary">
