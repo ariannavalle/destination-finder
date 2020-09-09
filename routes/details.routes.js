@@ -35,7 +35,7 @@ router.get('/:location', (req, res) => {
             details: cityFromDB
           };
 
-          console.log({cityDetails});
+          console.log(cityDetails.details);
 
           res.render('destinations/destination-details', {city: cityDetails});
         })
