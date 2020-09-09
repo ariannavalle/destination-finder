@@ -1,3 +1,16 @@
+<section class="home-slider owl-carousel">
+  <div class="slider-item" style="background-image: url('https://images.pexels.com/photos/3014826/pexels-photo-3014826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row slider-text align-items-center">
+        <div class="col-md-7 col-sm-12 ftco-animate">
+          <h1 class="mb-3">Welcome, {{ user.username }}</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <div>
     <h2>Welcome, {{ user.username }}!</h2>
     <p>This is your profile page my friend! And your email is: {{ user.email }}</p>
@@ -12,15 +25,4 @@
 
 <div>
     <button><a href="/{{ user._id }}/delete">Delete profile</a></button>
-</div>
-
-<div>
-    <ul>
-        {{#each loggedInUser.posts}}
-            <li><a href="/blog/edit/{{ this._id }}">{{ this.title }}</a></li>
-            <form action="/blog/delete/{{ this._id }}" method="post">
-                <button>Delete post</button>
-            </form>
-        {{/each}}
-    </ul>
 </div>
