@@ -1251,7 +1251,7 @@ const cities = [
     population: '3697894',
     id: '1392118339',
     loc: { type: 'Point', coordinates: [ 139.58, 35.32 ] },
-    img: 'https://upload.wikimedia.org/wikipedia/commons/6/69/Japan_Yokohama.png'
+    img: 'https://www.nationsonline.org/gallery/Japan/Minato_Mirai.jpg'
   },
   {
     city: 'Nanjing',
