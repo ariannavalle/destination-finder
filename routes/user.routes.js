@@ -58,6 +58,12 @@ router.post('/:username/update', fileUploader.single('image'), (req, res, next) 
     image
   };
 
+  //GET contact us
+  router.get('/contact-form', (req, res) => {
+    res.render('contact-form.hbs');
+  });
+  
+
   User
     .findByIdAndUpdate(_id, newUserInfo, { new: true })
     .then(updatedUser => {

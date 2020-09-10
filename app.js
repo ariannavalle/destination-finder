@@ -7,6 +7,8 @@ const favicon = require('serve-favicon');
 const cookieParser = require('cookie-parser');
 const passport = require("passport");
 const flash = require('connect-flash');
+const nodemailer = require('nodemailer');
+const bodyParser = require('body-parser');
 
 // Set up the database
 require('./configs/db.config');
@@ -21,6 +23,7 @@ const filterRouter = require('./routes/filter.routes');
 const userRouter = require('./routes/user.routes');
 const postRouter = require('./routes/post.routes');
 const detailsRouter = require('./routes/details.routes');
+const mailRouter = require('./routes/mail.routes');
 
 const app = express();
 
@@ -57,6 +60,7 @@ app.use('/', filterRouter);
 app.use('/', userRouter);
 app.use('/city', detailsRouter);
 app.use('/post', postRouter);
+app.use('/', mailRouter);
 
 // Catch missing routes and forward to error handler
 app.use((req, res, next) => next(createError(404)));
@@ -71,5 +75,8 @@ app.use((error, req, res) => {
   res.status(error.status || 500);
   res.render('error');
 });
+
+// middleware package to parse the data from the contact form
+app.use(bodyParser.urlencoded({extended:true}));
 
 module.exports = app;
