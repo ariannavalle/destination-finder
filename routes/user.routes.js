@@ -67,7 +67,7 @@ router.post('/:username/update', fileUploader.single('image'), (req, res, next) 
     .catch(error => {
       if (error.code === 11000) {
         res.status(500).render('users/user-profile-settings', {
-          errorMessage: 'Username and email need to be unique. Either username or email is already used.'
+          errorMessage: 'Username and email need to be unique. Either username or email is already in use.'
         });
       } else {
         next(error);

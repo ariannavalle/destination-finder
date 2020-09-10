@@ -1,24 +1,44 @@
-<form action="/{{ user.username }}/update" method="post" enctype="multipart/form-data">
-  <label>Username
-      <input type="text" name="username" value="{{ user.username }}" />
-    </label>
+<section class="home-slider owl-carousel">
+  <div class="slider-item"
+    style="background-image: url('https://uhs.berkeley.edu/sites/default/files/styles/openberkeley_image_full/public/general/airplane.jpg');"
+    data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row slider-text align-items-center">
+        <div class="col-md-7 col-sm-12 ftco-animate">
+          <h1 class="mb-3">Welcome, {{ user.username }}</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <label>Email
+<div class="text-center">
+  <form action="/{{ user.username }}/update" method="post" enctype="multipart/form-data">
+    <br>
+    <h1 class="h3 mb-3 font-weight-normal">Edit Profile</h1>
+
+    {{#if errorMessage}}
+    <p class="error text-danger">{{errorMessage}}</p>
+    {{/if}}
+
+    <label>Username<br>
+      <input type="text" name="username" value="{{ user.username }}" />
+    </label><br>
+
+    <label>Email address<br>
       <input type="email" name="email" value="{{ user.email }}" />
-    </label>
+    </label><br><br>
 
     {{!-- <label>Password
       <input type="password" name="password" placeholder="********" />
-    </label> --}}
+    </label><br> --}}
 
-    <label>Upload profile image
-      <input type="file" name="image" value="{{ user.image }}"/>
-    </label>
-    
+    <label>Upload profile image<br>
+      <input type="file" name="image" value="{{ user.image }}" />
+    </label><br><br>
 
-    <button type="submit">Update Profile</button>
+    <button class="btn btn-lg btn-primary" type="submit">Update Profile</button><br><br>
 
-    {{#if errorMessage}}
-      <p class="error">{{errorMessage}}</p>
-    {{/if}}
-</form>
+  </form>
+</div>
