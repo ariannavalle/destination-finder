@@ -38,6 +38,12 @@ body {
 
 .heart-icon {
   float: right;
+  transition: all .2s ease-in-out;
+}
+
+.heart-icon:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 /* posts */
@@ -60,4 +66,10 @@ body {
   max-width: 330px;
   padding: 15px;
   margin: 2rem auto;
+}
+
+/* user profile */
+.profile-image img {
+  width: 100px;
+  height: 100px;
 }

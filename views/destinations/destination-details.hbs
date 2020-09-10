@@ -35,13 +35,17 @@
   <div class="tab-content">
     <div id="comments" class="tab-pane container active">
       <br>
-      {{#each city.details.comments}}
+      {{#each city.details.posts}}
         <div class="media border p-3">
-          <img src={{ this.user.image }} alt={{ this.user.username }} class="mr-3 mt-3 rounded-circle" style="width:60px;">
+          <img src={{ this.user.image }} alt={{ this.user.username }} class="mr-3 mt-3 rounded-circle" style="width:60px; height:60px;">
           <div class="media-body">
             <h4>{{ this.user.username }} <small><i>{{ this.createdAt }}</i></small></h4>
             <p>{{ this.content }}</p>
           </div>
+          {{#if this.owner}}
+            <a class="btn" href="/post/edit/{{ this._id }}">Edit</a>
+            <a class="btn" href="/post/delete/{{ this._id }}/{{ ../city.details._id }}">Delete</a>
+          {{/if}}
         </div>
       {{/each}}
       <br>  
@@ -55,7 +59,7 @@
           <div class="form-group">
               <label for="email" class="col-sm-2 control-label">Comment</label>
               <div class="col-sm-10">
-                <textarea class="form-control" name="content" id="addComment" rows="5"></textarea>
+                <textarea maxlength="300" class="form-control" name="content" id="addComment" rows="5"></textarea>
               </div>
           </div>
 

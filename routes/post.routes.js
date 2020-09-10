@@ -1,6 +1,5 @@
 const { Router } = require('express');
 const router = new Router();
-const fileUploader = require('../configs/cloudinary.config');
 
 // route protection through passport's req.isAuthenticated() method
 const ensureAuthentication = require('../configs/route-guard.config');
@@ -9,28 +8,6 @@ const ensureAuthentication = require('../configs/route-guard.config');
 const User = require('../models/user.model');
 const Post = require('../models/post.model');
 const City = require('../models/city.model');
-
-// read the posts, blog page or posts on a details page
-// -all USBAT read all posts
-router.get('/', (req, res) => {
-  console.log('blog page GET route');
-  Post
-    .find()
-    .populate('user')
-    .then(postsFromDB => {
-
-      console.log(postsFromDB[0]);
-      res.render('blog/blog-page.hbs', {posts: postsFromDB});
-
-    })
-    .catch(err => console.log(err));
-});
-
-// create a post, route protected
-// -USBAT write about there expirence, add an image, and rate the location only if they are logged in
-router.get('/create', ensureAuthentication, (req, res) => {
-  res.render('blog/blog-post-create.hbs');
-});
 
 // POST create new post
 router.post('/create/:cityId', ensureAuthentication, (req, res) => {
@@ -53,21 +30,21 @@ router.post('/create/:cityId', ensureAuthentication, (req, res) => {
         .then(userFromDB => {
           userFromDB.posts.push(newPostDoc._id);
 
-          user
+          userFromDB
             .save()
             .then(() => {
 
               City
                 .findById(cityId)
                 .then(cityFromDB => {
-                  cityFromDB.comments.unshift(newPostDoc._id);
+                  cityFromDB.posts.unshift(newPostDoc._id);
 
                   cityFromDB
                     .save()
                     .then(() => {
 
-                      console.log({newPostDoc});
-                      console.log({user});
+                      // console.log({newPostDoc});
+                      // console.log({user});
         
                       res.redirect('back');
                     })
@@ -90,37 +67,37 @@ router.get('/edit/:blogPostId', ensureAuthentication, (req, res) => {
   Post
     .findById(blogPostId)
     .then(postFromDB => {
-      console.log(`post to edit: ${postFromDB}`);
-      res.render('blog/blog-edit-page.hbs', {post : postFromDB});
+
+      // console.log(`post to edit: ${postFromDB}`);
+      res.render('posts/post-edit', {post : postFromDB});
+
     })
     .catch(err => console.log(err));
 
 });
 
-router.post('/edit/:blogPostId', fileUploader.single('image'), (req, res) => {
-  const { title, content } = req.body;
-  const blogPostId = req.params.blogPostId;
-  let updatedPost = {};
+router.post('/edit/:blogPostId', ensureAuthentication, (req, res) => {
+  const { content } = req.body;
+  const { blogPostId } = req.params;
 
-  if (req.file) {
-    updatedPost = {
-      title,
-      content,
-      image: req.file.path
-    };
-  } else {
-    updatedPost = {
-      title,
-      content,
-      image: req.user.image
-    };
-  }
+  const updatedPost = {
+          content
+        };
 
   Post
     .findByIdAndUpdate(blogPostId, updatedPost, {new: true})
     .then(postFromDB => {
-      console.log({postFromDB});
-      res.redirect('/blog');
+
+      City
+        .findById(postFromDB.city)
+        .then(cityFromDB => {
+
+          const cityUrl = `/city/${cityFromDB.city_ascii},_${cityFromDB.country}`;
+          // console.log({postFromDB});
+
+          res.redirect(cityUrl);
+        })
+        .catch(err => console.log(err));
     })
     .catch(err => console.log(err));
 
@@ -128,25 +105,33 @@ router.post('/edit/:blogPostId', fileUploader.single('image'), (req, res) => {
 
 // delete a post, route protected
 // -USBAT delete thier post when logged in
-router.post('/delete/:postId', ensureAuthentication, (req, res) => {
-  const postId = req.params.postId;
+router.get('/delete/:postId/:cityId', ensureAuthentication, (req, res) => {
+  const { postId, cityId } = req.params;
+
+  // console.log({postId});
+  // console.log({cityId});
 
   User
     .findByIdAndUpdate(req.user._id, {$pull: {posts: {$in: [postId]}}}, {new: true})
     .then(userFromDB => {
 
-      Post
-        .findByIdAndDelete(postId)
-        .then(() => {
+      City
+        .findByIdAndUpdate(cityId, {$pull: {posts: {$in: [postId]}}}, {new: true})
+        .then(cityFromDB => {
 
-          console.log(`post was deleted from ${userFromDB}`);
-          res.redirect('back');
-
+          Post
+            .findByIdAndDelete(postId)
+            .then(() => {
+    
+              console.log(`post was deleted from ${userFromDB.username} and ${cityFromDB.city}`);
+              res.redirect('back');
+    
+            })
+            .catch(err => console.log(err)); 
         })
-        .catch(err => console.log(err)); 
+        .catch(err => console.log(err));
     })
     .catch(err => console.log(err));
-
   
 });
 

@@ -41,7 +41,7 @@ const citySchema = new Schema(
       type: { type: String }
       , coordinates: []
     },
-    comments: { type: [{ type: Schema.Types.ObjectId, ref: "Post" }] }
+    posts: { type: [{ type: Schema.Types.ObjectId, ref: "Post" }] }
   },
   {
     timestamps: true

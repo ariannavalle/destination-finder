@@ -1,0 +1,10 @@
+<div class="main">
+  <form action="/post/edit/{{ post._id }}" method="post">
+
+    <h3>Content</h3>
+    <textarea maxlength="300" name="content" cols="50" rows="10">{{ post.content }}</textarea>
+    <br>
+
+    <button>Update</button>
+  </form>
+</div>
