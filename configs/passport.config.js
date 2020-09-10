@@ -15,7 +15,7 @@ passport.deserializeUser((id, cb) => {
 });
 
 passport.use(new LocalStrategy({
-        usernameField: 'username', // changed authentication to email
+        usernameField: 'username', // by default
         passwordField: 'password' // by default
     },
     (username, password, done) => {

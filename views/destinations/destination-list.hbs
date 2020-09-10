@@ -16,7 +16,7 @@
   <div>
   </div>
   {{#each places}}
-  <div class="destination">
+  <div class="destination ftco-animate">
     <img width="30" height="30" class="heart-icon" city-id="{{this._id}}" src="images/heart_inactive.png" alt="Add {{this.name}} to favorites" >    
     
     <h2>
@@ -26,6 +26,7 @@
     <a href="/city/{{ this.name }},_{{ this.country_name }}">
       <img width="550" height="350" src={{this.img}}>
     </a>
+
     <p>Population: {{this.population}}</p>
   </div>
   {{/each}}
