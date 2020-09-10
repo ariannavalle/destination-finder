@@ -43,8 +43,8 @@ router.post('/create/:cityId', ensureAuthentication, (req, res) => {
                     .save()
                     .then(() => {
 
-                      console.log({newPostDoc});
-                      console.log({user});
+                      // console.log({newPostDoc});
+                      // console.log({user});
         
                       res.redirect('back');
                     })
@@ -68,8 +68,8 @@ router.get('/edit/:blogPostId', ensureAuthentication, (req, res) => {
     .findById(blogPostId)
     .then(postFromDB => {
 
-      console.log(`post to edit: ${postFromDB}`);
-      res.render('blog/blog-edit-page.hbs', {post : postFromDB});
+      // console.log(`post to edit: ${postFromDB}`);
+      res.render('posts/post-edit', {post : postFromDB});
 
     })
     .catch(err => console.log(err));
@@ -77,31 +77,27 @@ router.get('/edit/:blogPostId', ensureAuthentication, (req, res) => {
 });
 
 router.post('/edit/:blogPostId', ensureAuthentication, (req, res) => {
-  const { title, content } = req.body;
-  const blogPostId = req.params.blogPostId;
-  let updatedPost = {};
+  const { content } = req.body;
+  const { blogPostId } = req.params;
 
-  if (req.file) {
-    updatedPost = {
-      title,
-      content,
-      image: req.file.path
-    };
-  } else {
-    updatedPost = {
-      title,
-      content,
-      image: req.user.image
-    };
-  }
+  const updatedPost = {
+          content
+        };
 
   Post
     .findByIdAndUpdate(blogPostId, updatedPost, {new: true})
     .then(postFromDB => {
 
-      console.log({postFromDB});
-      res.redirect('/blog');
+      City
+        .findById(postFromDB.city)
+        .then(cityFromDB => {
 
+          const cityUrl = `/city/${cityFromDB.city_ascii},_${cityFromDB.country}`;
+          // console.log({postFromDB});
+
+          res.redirect(cityUrl);
+        })
+        .catch(err => console.log(err));
     })
     .catch(err => console.log(err));
 
@@ -112,8 +108,8 @@ router.post('/edit/:blogPostId', ensureAuthentication, (req, res) => {
 router.get('/delete/:postId/:cityId', ensureAuthentication, (req, res) => {
   const { postId, cityId } = req.params;
 
-  console.log({postId});
-  console.log({cityId});
+  // console.log({postId});
+  // console.log({cityId});
 
   User
     .findByIdAndUpdate(req.user._id, {$pull: {posts: {$in: [postId]}}}, {new: true})
