@@ -39,6 +39,11 @@ router.get('/:username/settings', ensureAuthentication, (req, res) => {
   res.render('users/user-profile-settings');
 });
 
+//GET contact-form
+router.get('/:username/contact-form', (req, res) =>{
+  res.render('contact-form');
+});
+
 // POST updated user info
 router.post('/:username/update', fileUploader.single('image'), (req, res, next) => {
   const { username, email } = req.body;

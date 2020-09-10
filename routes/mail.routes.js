@@ -1,16 +1,9 @@
-const { Router } = require('express');
-const router = new Router();
 const express = require('express');
-const app = express();
-
-//GET contact-form
-app.get('/contact-form', (req, res) =>{
-  console.log('checking contact');
-  res.render('contact-form.hbs');
-})
+const router = express.Router();
+const nodemailer = require('nodemailer');
 
 // POST route from contact form
-app.post('/contact-form', (req, res) => {
+router.post('/contact-form', (req, res) => {
 
   // Instantiate the SMTP server
   const smtpTrans = nodemailer.createTransport({
@@ -18,15 +11,15 @@ app.post('/contact-form', (req, res) => {
     port: 465,
     secure: true,
     auth: {
-      user: GMAIL_USER,
-      pass: GMAIL_PASS
+      user: process.env.GMAIL_USER,
+      pass: process.env.GMAIL_PASS
     }
   })
 
   // Specify what the email will look like
   const mailOpts = {
     from: 'Your sender info here', // This is ignored by Gmail
-    to: GMAIL_USER,
+    to: process.env.GMAIL_USER,
     subject: 'New message from contact form at tylerkrys.ca',
     text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
   }

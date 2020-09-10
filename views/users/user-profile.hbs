@@ -4,7 +4,7 @@
     <br>
     <button><a href="/{{ user.username }}/settings">Profile settings</a></button>
     <button><a href="/post/create">Make a Post</a></button>
-    <button><a href="/contact-form">Contact Us</a></button>
+    <button><a href="/{{ user.username}}/contact-form">Contact Us</a></button>
     <br>
     <div class="profile-image">
         <img class="rounded-circle" src="{{ user.image }}" alt="Profile image">
