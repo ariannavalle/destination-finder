@@ -13,9 +13,9 @@
 
 <div>
     <h2>Welcome, {{ user.username }}!</h2>
-    <p>This is your profile page my friend! And your email is: {{ user.email }}</p>
+    <p>E-mail address: {{ user.email }}</p>
     <br>
-    <button><a href="/{{ user.username }}/settings">Profile settings</a></button>
+    <button><a href="/{{ user.username }}/settings">Edit Profile</a></button><br>
     <button><a href="/post/create">Make a Post</a></button>
     <br>
     <div class="profile-image">
@@ -23,6 +23,9 @@
     </div>
 </div>
 
+<div>
+    <button><a href="/logout">Logout</a></button>
+</div>
 <div>
     <button><a href="/{{ user._id }}/delete">Delete profile</a></button>
 </div>
