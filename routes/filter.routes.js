@@ -70,7 +70,7 @@ router.post('/find-destination', (req, res, next) => {
           if (data) {
             placeObj.push({
               coordinates: response.data.features[i].geometry.coordinates,
-              city: data.city,
+              city: data.city_ascii,
               country: data.country,
               img: data.img,
               population: data.population,

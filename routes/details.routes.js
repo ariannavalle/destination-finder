@@ -16,7 +16,7 @@ router.get('/:location', (req, res) => {
       const cityInfo = cityWiki[cityWikiKeys[0]].extract;      
 
       City
-        .findOne({ city: location.split(',_')[0] })
+        .findOne({ city_ascii: location.split(',_')[0] })
         .populate('posts')
         .populate({
           path: 'posts',
