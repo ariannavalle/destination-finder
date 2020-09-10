@@ -8,6 +8,7 @@ const cookieParser = require('cookie-parser');
 const passport = require("passport");
 const flash = require('connect-flash');
 const bodyParser = require('body-parser');
+const router = express.Router();
 
 // Set up the database
 require('./configs/db.config');
@@ -19,10 +20,10 @@ const bindUserToViewLocals = require('./configs/user-locals.config');
 const indexRouter = require('./routes/index.routes');
 const authRouter = require('./routes/auth.routes');
 const filterRouter = require('./routes/filter.routes');
-const userRouter = require('./routes/user.routes');
 const postRouter = require('./routes/post.routes');
 const detailsRouter = require('./routes/details.routes');
 const mailRouter = require('./routes/mail.routes');
+const userRouter = require('./routes/user.routes');
 
 const app = express();
 

@@ -2,6 +2,9 @@ const express = require('express');
 const router = express.Router();
 const nodemailer = require('nodemailer');
 
+router.get('/contact-form', (req, res) => res.render('contact-form')); 
+
+
 // POST route from contact form
 router.post('/contact-form', (req, res) => {
 
@@ -20,7 +23,7 @@ router.post('/contact-form', (req, res) => {
   const mailOpts = {
     from: 'Your sender info here', // This is ignored by Gmail
     to: process.env.GMAIL_USER,
-    subject: 'New message from contact form at tylerkrys.ca',
+    subject: `New message from Travel App, user: (${req.user})`,
     text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
   }
 
