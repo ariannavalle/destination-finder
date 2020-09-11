@@ -1,3 +1,4 @@
+
 // on page load set hearts to active if city is in user favorites
 window.addEventListener('load', () => {
   document.querySelectorAll('.heart-icon').forEach(item => {
@@ -42,23 +43,27 @@ document.querySelectorAll('.heart-icon').forEach(item => {
   });
 });
 
-// comments
+// post comments on city details page
 if (document.querySelector("#submitComment")) {
   document.querySelector("#submitComment").addEventListener('click', event => {
-    const content = document.querySelector('#addComment').value;
+    const commentSection = document.querySelector('#addComment');
     const cityId = document.querySelector('#commentForm').getAttribute('city-id');
-  
-    const data = {
-      content,
-      cityId
-    }
+    const content = commentSection.value;
+
+    // console.log(content, cityId);
   
     axios
-      .post(`${window.location.origin}/create/${cityId}`, {
+      .post(`${window.location.origin}/post/create/${cityId}`, {
         content
       })
       .then(response => {
-        console.log(response.data);
+
+        // console.log(response.data.newComment);
+        let userComment = document.querySelector('#userComments');
+        document.querySelector('#addComment').value = "";
+        userComment.innerHTML = response.data.newComment.concat(userComment.innerHTML);
+        console.log('>>>>>>>>post<<<<<<<')
+
       })
       .catch(err => console.log(err));
   });
