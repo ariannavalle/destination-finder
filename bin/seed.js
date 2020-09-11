@@ -3448,7 +3448,7 @@ const cities = [
     population: '1846000',
     id: '1422847713',
     loc: { type: 'Point', coordinates: [ 35.5097, 33.872 ] },
-    img: 'http://www.joaoleitao.com/wp-content/uploads/2018/01/BEIRUT-LEBANON.jpg'
+    img: 'https://www.corporatelivewire.com/image_thumb.php?w=800&img=images/travel/1029/639897742.jpg'
   },
   {
     city: 'San Jose',
@@ -4104,7 +4104,7 @@ const cities = [
     population: '1611000',
     id: '1120298240',
     loc: { type: 'Point', coordinates: [ 11.5167, 3.8667 ] },
-    img: 'https://live.staticflickr.com/65535/46996790094_dae822f81c.jpg'
+    img: 'https://images.immediate.co.uk/production/volatile/sites/7/2018/01/GettyImages-640244377_cmyk-6f038eb.jpg?quality=90&resize=620,413'
   },
   {
     city: 'Shantou',
