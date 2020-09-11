@@ -21,6 +21,7 @@ const filterRouter = require('./routes/filter.routes');
 const userRouter = require('./routes/user.routes');
 const postRouter = require('./routes/post.routes');
 const detailsRouter = require('./routes/details.routes');
+const aboutRouter = require('./routes/about.routes');
 
 const app = express();
 
@@ -54,6 +55,7 @@ app.use(bindUserToViewLocals);
 app.use('/', indexRouter);
 app.use('/', authRouter);
 app.use('/', filterRouter);
+app.use('/', aboutRouter);
 app.use('/', userRouter);
 app.use('/city', detailsRouter);
 app.use('/post', postRouter);
