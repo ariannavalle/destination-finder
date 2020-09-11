@@ -55,10 +55,10 @@ app.use(bindUserToViewLocals);
 app.use('/', indexRouter);
 app.use('/', authRouter);
 app.use('/', filterRouter);
-app.use('/', aboutRouter);
-app.use('/', userRouter);
 app.use('/city', detailsRouter);
 app.use('/post', postRouter);
+app.use('/', aboutRouter);
+app.use('/', userRouter);
 
 // Catch missing routes and forward to error handler
 app.use((req, res, next) => next(createError(404)));
