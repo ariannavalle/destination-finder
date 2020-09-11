@@ -51,6 +51,7 @@
 
 	<form action="/find-destination" method="post">
 
+<div> 
 		<h3>Region</h3>
 
 		{{!-- All --}}
@@ -58,7 +59,6 @@
 				value="lon_min=-180&lon_max=180&lat_min=-85&lat_max=85" checked>
 			All</label>
 
-		<br>
 
 		{{!-- Africa --}}
 		<p>Africa</p>
@@ -74,7 +74,6 @@
 				class="hide-cb" value="lon_min=-17.578125&lon_max=52.207031&lat_min=-35.029996&lat_max=12.382928">
 			South Africa</label>
 
-		<br>
 
 		{{!-- Asia --}}
 		<p>Asia</p>
@@ -86,7 +85,6 @@
 				value="lon_min=28.540421&lon_max=119.595108&lat_min=50.706025&lat_max=69.943962">
 			Russia</label>
 
-		<br>
 
 		{{!-- Europe & Australia --}}
 		<p>Europe & Australia</p>
@@ -107,7 +105,6 @@
 				class="hide-cb" value="lon_min=110.753860&lon_max=179.308548&lat_min=-46.868642&lat_max=-11.104294">
 			Australia</label>
 
-		<br>
 
 		{{!-- North America --}}
 		<p>North America</p>
@@ -147,9 +144,9 @@
 				name="coordinates" class="hide-cb"
 				value="lon_min=-74.513054&lon_max=-40.000000&lat_min=-56.098854&lat_max=-17.522273">
 			South America (Southern)</label>
+</div>
 
-		<br>
-
+<div class="categories"> 
 		<h3>Categories</h3>
 
 		<label for="art_galleries" class="btn btn-outline-primary">
@@ -180,8 +177,6 @@
 			<input type="checkbox" id="foods" name="categories" value="foods" class="hide-cb">
 			Food</label>
 
-		<br>
-
 		<label for="shops" class="btn btn-outline-primary">
 			<input type="checkbox" id="shops" name="categories" value="shops" class="hide-cb">
 			Shopping</label>
@@ -201,8 +196,6 @@
 		<label for="skiing" class="btn btn-outline-primary">
 			<input type="checkbox" id="skiing" name="categories" value="skiing" class="hide-cb">
 			Skiing</label>
-
-		<br>
 
 		<label for="surfing" class="btn btn-outline-primary">
 			<input type="checkbox" id="surfing" name="categories" value="surfing" class="hide-cb">
@@ -232,8 +225,6 @@
 			<input type="checkbox" id="zoos" name="categories" value="zoos" class="hide-cb">
 			Zoos</label>
 
-		<br>
-
 		<label for="bars" class="btn btn-outline-primary">
 			<input type="checkbox" id="bars" name="categories" value="bars" class="hide-cb">
 			Bars</label>
@@ -257,6 +248,7 @@
 		<label for="cathedrals" class="btn btn-outline-primary">
 			<input type="checkbox" id="cathedrals" name="categories" value="cathedrals" class="hide-cb">
 			Cathedrals</label>
+			</div>
 
 		<br><button type="submit" class="btn btn-primary py-2 px-5">Search</button>
 
