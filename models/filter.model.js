@@ -4,10 +4,12 @@ const { Schema, model } = mongoose;
 const filterSchema = new Schema(
   {
     continent: {
-      type: String
+      type: String,
+      required: [true, 'Please select a region to continue.']
     },
     categories: {
-      type: String
+      type: String,
+      required: [true, 'Please select one or more categories to continue']
     }
   },
   {

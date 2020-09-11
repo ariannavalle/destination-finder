@@ -34,6 +34,11 @@ router.post('/find-destination', (req, res, next) => {
     return Object.values(result);
   }
 
+  if (!req.body.coordinates || !req.body.categories ) {
+    res.render('index.hbs', { errorMessage: 'All fields are mandatory. Please select a region and one or more categories.' });
+    return; 
+  }
+
   //calling this api returns different locations based on the coordinates and categories provided
   axios
     .get(`https://api.opentripmap.com/0.1/en/places/bbox?${req.body.coordinates}&kinds=${req.body.categories}&apikey=${opentripAPIKey}`)
