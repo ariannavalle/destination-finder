@@ -80,23 +80,30 @@ router.post('/:username/update', fileUploader.single('image'), (req, res, next) 
 router.post('/fav', (req, res) => {
   const { cityId } = req.body;
   const user = req.user;
+  let isFav = true;
 
   console.log('>>>>> fav <<<<<');
 
   User
     .findById(user._id)
     .then(userFromDB => {
-      if (!userFromDB.favorites.includes(cityId)) userFromDB.favorites.push(cityId);
+      if (!userFromDB.favorites.includes(cityId)) {
+        userFromDB.favorites.push(cityId);
+      }
+      else {
+        const index = userFromDB.favorites.indexOf(cityId);
+        userFromDB.favorites.splice(index, 1);
+        console.log('>>>>', userFromDB.favorites);
+        isFav = false;
+      }
 
       userFromDB
         .save()
         .then(() => {
 
-          console.log("add city", cityId);
+          console.log("fav list", userFromDB.favorites.length);
 
-          const userFavs = userFromDB.favorites;
-
-          res.json({userFavs});
+          res.json({isFav});
 
         })
         .catch(err => console.log(err));
