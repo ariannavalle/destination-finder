@@ -116,14 +116,17 @@ router.get('/:username/delete', ensureAuthentication, (req, res) => {
     .catch(err => console.log(err));
 });
 
-router.get('/userfav', ensureAuthentication, (req, res, next) => {
+router.post('/userfav', (req, res, next) => {
   const user = req.user;
+  const { cityId } = req.body;
 
   User
     .findById(user._id)
     .then(userFromDB => {
-      const favs = userFromDB.favorites;
-      res.json({favs});
+
+      const isFav = userFromDB.favorites.includes(cityId);
+      res.json({isFav});
+
     })
     .catch(err => console.log(err));
 });
