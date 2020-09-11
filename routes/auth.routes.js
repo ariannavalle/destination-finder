@@ -35,7 +35,7 @@ router.post('/signup', (req, res, next) => {
     res
       .status(500)
       .render('auth/signup-form.hbs', {
-      errorMessage: 'Password needs to have at least 6 chars and must contain at least one number, one lowercase and one uppercase letter.'
+      errorMessage: 'Passwords must contain at least 6 characters, one number, one lowercase letter, and one uppercase letter.'
     });
     return;
   }
