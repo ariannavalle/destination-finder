@@ -42,6 +42,13 @@
 {{!-- Form --}}
 <div class="main">
 
+	<br>
+  <div class="error-container">
+    {{#if errorMessage}}
+    <p class="alert alert-danger alert-dismissible fade show">{{errorMessage}}</p>
+    {{/if}}
+  </div>
+
 	<form action="/find-destination" method="post">
 
 		<h3>Region</h3>

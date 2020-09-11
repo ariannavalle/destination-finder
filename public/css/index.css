@@ -9,7 +9,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
 }
 
 .separator {
@@ -72,4 +71,10 @@ body {
 .profile-image img {
   width: 100px;
   height: 100px;
+}
+
+/* errors */
+.error-container {
+  display: flex;
+  justify-content: center;
 }
