@@ -14710,6 +14710,21 @@ const cities = [
     "id": "1591599922",
     "loc": { type: 'Point', coordinates:  [ -79.875,9.365] },
     "img" : 'https://panamacrucerotours.com/wp-content/uploads/2018/12/boletin35-2_Page_02_Image_0001-e1458589975574.jpg'
+},
+{
+  "city": "Bali",
+  "city_ascii": "Bali",
+  "lat": "-8.65",
+  "lng": "115.22",
+  "country": "Indonesia",
+  "iso2": "ID",
+  "iso3": "IDN",
+  "admin_name": "Bali",
+  "capital": "admin",
+  "population": "732344",
+  "id": "1360848527",
+  "loc": { type: 'Point', coordinates:  [ 115.22,-8.65] },
+  "img" : 'https://www.traveldailymedia.com/assets/2018/08/Bali-Indonesia.jpg'
 }
 ];
 
