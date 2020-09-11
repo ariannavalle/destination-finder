@@ -15,6 +15,13 @@ router.post('/create/:cityId', (req, res) => {
   const { cityId } = req.params;
   const user = req.user;
 
+  console.log(user);
+  if (user === undefined) {
+    console.log('>>>>>>>>>>user is not loged in<<<<<<<<<<<<');
+    res.json({data: '/login'});
+    return;
+  }
+
   const newPost = {
           city: cityId,
           content,
@@ -57,7 +64,7 @@ router.post('/create/:cityId', (req, res) => {
                                           </div>`;
         
                       // res.redirect('back');
-                      res.json({newComment});
+                      res.json({data: newComment});
                     })
                     .catch(err => console.log(err));
                 })

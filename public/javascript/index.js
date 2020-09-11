@@ -58,11 +58,17 @@ if (document.querySelector("#submitComment")) {
       })
       .then(response => {
 
-        // console.log(response.data.newComment);
-        let userComment = document.querySelector('#userComments');
-        document.querySelector('#addComment').value = "";
-        userComment.innerHTML = response.data.newComment.concat(userComment.innerHTML);
-        console.log('>>>>>>>>post<<<<<<<')
+        // console.log(response.data);
+
+        if (response.data.data === '/login') {
+          window.location.href = `${window.location.origin}/login`
+        } else {
+          let userComment = document.querySelector('#userComments');
+          document.querySelector('#addComment').value = "";
+          console.log(response.data)
+          userComment.innerHTML = response.data.data.concat(userComment.innerHTML);
+          // console.log('>>>>>>>>post<<<<<<<');
+        }
 
       })
       .catch(err => console.log(err));
