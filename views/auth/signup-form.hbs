@@ -13,26 +13,32 @@
 <!-- END slider -->
 
 <div class="text-center">
+
+  <br>
+  <div class="error-container">
+    {{#if errorMessage}}
+    <p class="alert alert-danger alert-dismissible fade show">{{errorMessage}}</p>
+    {{/if}}
+  </div>
+
   <form class="form-signin" action="/signup" method="POST">
-      <h1 class="h3 mb-3 font-weight-normal">Create an account</h1>
+    <h1 class="h3 mb-3 font-weight-normal">Create an account</h1>
 
-      {{#if errorMessage}}
-          <p class="error text-danger">{{errorMessage}}</p>
-      {{/if}}
-      
-      <label for="inputEmail" class="sr-only">Email address</label>
-      <input type="text" id="inputEmail" name="email" class="form-control" placeholder="Email address" required autofocus><br>
+    <label for="inputEmail" class="sr-only">Email address</label>
+    <input type="text" id="inputEmail" name="email" class="form-control" placeholder="Email address" required
+      autofocus><br>
 
-      <label for="inputUsername" class="sr-only">Username</label>
-      <input type="text" id="inputUsername" name="username" class="form-control" placeholder="Username" required><br>
+    <label for="inputUsername" class="sr-only">Username</label>
+    <input type="text" id="inputUsername" name="username" class="form-control" placeholder="Username" required><br>
 
-      <label for="inputPassword" class="sr-only">Password</label>
-      <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required><br>
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
+    <small>Passwords must contain at least 6 characters, one number, one lowercase letter, and one uppercase letter.</small><br><br>
 
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
 
-      <br>Already have an account? <a href="/login">Log in</a> instead.
+    <br>Already have an account? <a href="/login">Log in</a> instead.
 
-      <p class="mt-5 mb-3 text-muted">&copy; 2020</p>
+    <p class="mt-5 mb-3 text-muted">&copy; 2020</p>
   </form>
 </div>
