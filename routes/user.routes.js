@@ -8,7 +8,6 @@ const fileUploader = require('../configs/cloudinary.config');
 const ensureAuthentication = require('../configs/route-guard.config');
 
 const User = require('../models/user.model');
-const Post = require('../models/post.model');
 
 ////////////////////////////////////////////////////////////////////////
 ////////////////////////// user routes /////////////////////////////////
@@ -16,18 +15,15 @@ const Post = require('../models/post.model');
 
 // GET user profile page
 router.get('/:username', ensureAuthentication, (req, res) => {
+  const user = req.user;
 
   User
-    .findById(req.user._id)
-    .populate('posts')
+    .findById(user._id)
+    .populate('favorites')
     .then(loggedInUser => {
-
-      if (loggedInUser.posts.length === 0) {
-        res.render('users/user-profile');
-      } else {
-        console.log('user.posts', loggedInUser.posts[0].title);
-        res.render('users/user-profile', {loggedInUser});
-      }
+      const fav = loggedInUser.favorites;
+      console.log({fav});
+      res.render('users/user-profile', {userInfo: loggedInUser});
       
     })
     .catch(err => console.log(err));
@@ -82,6 +78,12 @@ router.post('/:username/update', fileUploader.single('image'), (req, res, next) 
 router.post('/fav', (req, res) => {
   const { cityId } = req.body;
   const user = req.user;
+
+  if (!user) {
+    res.json({isFav: false});
+    return;
+  }
+
   let isFav = true;
 
   console.log('>>>>> fav <<<<<');
@@ -102,11 +104,8 @@ router.post('/fav', (req, res) => {
       userFromDB
         .save()
         .then(() => {
-
           console.log("fav list", userFromDB.favorites.length);
-
           res.json({isFav});
-
         })
         .catch(err => console.log(err));
     })
@@ -125,17 +124,20 @@ router.get('/:username/delete', ensureAuthentication, (req, res) => {
     .catch(err => console.log(err));
 });
 
-router.post('/userfav', (req, res, next) => {
+router.post('/userfav', (req, res) => {
   const user = req.user;
   const { cityId } = req.body;
+
+  if (!user) {
+    res.json({});
+    return;
+  }
 
   User
     .findById(user._id)
     .then(userFromDB => {
-
       const isFav = userFromDB.favorites.includes(cityId);
       res.json({isFav});
-
     })
     .catch(err => console.log(err));
 });

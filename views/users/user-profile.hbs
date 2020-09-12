@@ -28,3 +28,32 @@
 <div>
     <button><a href="/{{ user._id }}/delete">Delete profile</a></button>
 </div>
+
+
+<section class="ftco-section">
+  <div class="container-fluid">
+    <div class="row no-gutters justify-content-center mb-5 pb-5 ftco-animate">
+      <div class="col-md-7 text-center heading-section">
+        <h1>Your Destinations</h1>
+      </div>
+    </div>
+
+    <div class="row no-gutters">
+      {{#each userInfo.favorites}}
+        <div class="col-md-6 col-lg-3 ftco-animate">
+          <a href="/city/{{ this.city_ascii }},_{{ this.country }}" class="block-5" style="background-image: url({{this.img}});">
+            <div class="text">
+              <h3 class="heading">{{ this.city }}, {{ this.country }}</h3>
+              <div class="post-meta">
+                <img width="30" height="30" class="heart-icon" city-id="{{this._id}}" src="images/heart_inactive.png" alt="Add {{this.name}} to favorites" >
+              </div>
+              <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span>
+              <span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span>
+            </div>
+          </a>
+        </div>
+      {{/each}}
+    </div>
+
+  </div>
+</section>
