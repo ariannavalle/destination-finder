@@ -30,32 +30,25 @@ router.post('/create/:cityId', (req, res) => {
 
   Post
     .create(newPost)
-    .then(newPostDoc => {
-      
+    .then(newPostDoc => {      
       User
         .findById(user._id)
         .then(userFromDB => {
           userFromDB.posts.push(newPostDoc._id);
-
           userFromDB
             .save()
             .then(() => {
-
               City
                 .findById(cityId)
                 .then(cityFromDB => {
                   cityFromDB.posts.unshift(newPostDoc._id);
-
                   cityFromDB
                     .save()
                     .then(() => {
-
                       // console.log({newPostDoc});
                       // console.log({user});
                       console.log(newPostDoc.createdAt);
-
                       const postDate = newPostDoc.createdAt.toString().split(" ").splice(1, 3).join(" ");
-
                       const newComment = `<div class="media border p-3 ftco-animate fadeInUp ftco-animated">
                                             <img src=${userFromDB.image} alt=${userFromDB.username} class="mr-3 mt-3 rounded-circle" style="width:60px; height:60px;">
                                             <div class="media-body">
@@ -88,7 +81,6 @@ router.get('/edit/:blogPostId', ensureAuthentication, (req, res) => {
   Post
     .findById(blogPostId)
     .then(postFromDB => {
-
       // console.log(`post to edit: ${postFromDB}`);
       res.render('posts/post-edit', {post : postFromDB});
 
@@ -108,14 +100,11 @@ router.post('/edit/:blogPostId', ensureAuthentication, (req, res) => {
   Post
     .findByIdAndUpdate(blogPostId, updatedPost, {new: true})
     .then(postFromDB => {
-
       City
         .findById(postFromDB.city)
         .then(cityFromDB => {
-
           const cityUrl = `/city/${cityFromDB.city_ascii},_${cityFromDB.country}`;
           // console.log({postFromDB});
-
           res.redirect(cityUrl);
         })
         .catch(err => console.log(err));
@@ -135,18 +124,14 @@ router.get('/delete/:postId/:cityId', ensureAuthentication, (req, res) => {
   User
     .findByIdAndUpdate(req.user._id, {$pull: {posts: {$in: [postId]}}}, {new: true})
     .then(userFromDB => {
-
       City
         .findByIdAndUpdate(cityId, {$pull: {posts: {$in: [postId]}}}, {new: true})
         .then(cityFromDB => {
-
           Post
             .findByIdAndDelete(postId)
-            .then(() => {
-    
+            .then(() => {    
               console.log(`post was deleted from ${userFromDB.username} and ${cityFromDB.city}`);
-              res.redirect('back');
-    
+              res.redirect('back');    
             })
             .catch(err => console.log(err)); 
         })
