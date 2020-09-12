@@ -17,7 +17,11 @@
   <div class="destination ftco-animate">
 
     {{#if ../user}}
-      <img width="30" height="30" class="heart-icon" city-id="{{this._id}}" src="images/heart_inactive.png" alt="Add {{this.name}} to favorites" >    
+      <img width="30" height="30" class="heart-icon" city-id="{{this._id}}" src="images/heart_inactive.png" alt="Add {{this.name}} to favorites" >
+    {{else}}
+      <a href="/login">
+        <img width="30" height="30" class="heart-icon" city-id="{{this._id}}" src="images/heart_inactive.png" alt="Add {{this.name}} to favorites" >
+      </a>
     {{/if}}
 
     <h2>
