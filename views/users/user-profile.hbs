@@ -11,15 +11,16 @@
   </div>
 </section>
 
+
 <div>
-    <h2>Welcome, {{ user.username }}!</h2>
-    <p>E-mail address: {{ user.email }}</p>
+      <div class="profile-image">
+        <img class="rounded-circle" src="{{ user.image }}" alt="Profile image">
+    </div>
+    <h2>{{ user.username }}</h2>
+    <p>{{ user.email }}</p>
     <br>
     <button><a href="/{{ user.username }}/settings">Edit Profile</a></button><br>
     <br>
-    <div class="profile-image">
-        <img class="rounded-circle" src="{{ user.image }}" alt="Profile image">
-    </div>
 </div>
 
 <div>
@@ -42,8 +43,12 @@
     zoom: 10
 });
 
-    const marker = new mapboxgl.Marker()
+    let marker = new mapboxgl.Marker()
       .setLngLat([12.550343, 55.665957])
+      .addTo(map);
+
+          let marker2 = new mapboxgl.Marker()
+      .setLngLat([13.00073,55.60587 ])
       .addTo(map);
   </script>
   {{!-- end mapbox --}}
