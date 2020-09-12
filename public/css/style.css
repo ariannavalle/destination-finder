@@ -8033,7 +8033,14 @@ textarea.form-control {
   padding-top: 120px;
   padding-bottom: 120px; }
 
-#map {
+.map-vertical {
+  height: 800px;
+  width: 100%; }
+  @media (max-width: 991.98px) {
+    #map {
+      height: 600px; } }
+
+.map-horizontal {
   height: 400px;
   width: 100%; }
   @media (max-width: 991.98px) {
