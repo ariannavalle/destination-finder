@@ -28,7 +28,7 @@ const userSchema = new Schema(
       default: 'https://res.cloudinary.com/dllcgl1lt/image/upload/v1598633854/cgtwwd1kertfsr0xcvmy.jpg'
     },
     favorites: {
-      type: [ { type: String } ]
+      type: [ { type: Schema.Types.ObjectId, ref: "City" } ]
     },
     posts: {
       type: [{ type: Schema.Types.ObjectId, ref: "Post" }]

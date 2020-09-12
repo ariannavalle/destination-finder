@@ -990,15 +990,6 @@ textarea.form-control {
 	padding-bottom: 120px;
 }
 
-// Map
-
-#map {
-	height: 400px;
-	width: 100%;
-	@include media-breakpoint-down(md) {
-		height: 300px;
-	}
-}
 .container-fluid {
 	padding-left: 0 !important;
 	padding-right: 0 !important;
