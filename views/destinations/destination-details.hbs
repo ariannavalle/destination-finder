@@ -13,23 +13,26 @@
 
 <div class="container about-city">
   <h4>About</h4>
-  <p>{{ city.description }}</p>
 
-  <div id="map"></div>
+  <div class="row">
+    <div class="col-md-7">{{ city.description }}</div>
+    <div class="col-md-5"><div id="map" class="map-vertical"></div></div>
+  </div>
 
-{{!-- mapbox logic --}}
+
+  {{!-- mapbox logic --}}
   <script>
     mapboxgl.accessToken = "{{ city.mapboxAPIKey }}";
     const map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/mapbox/streets-v11',
       center: [{{ city.details.lng }}, {{ city.details.lat }}],
-    zoom: 8
+    zoom: 10
 });
 
     const marker = new mapboxgl.Marker()
       .setLngLat([{{ city.details.lng }}, {{ city.details.lat }}])
-.addTo(map);
+      .addTo(map);
   </script>
   {{!-- end mapbox --}}
 
