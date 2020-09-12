@@ -35,14 +35,16 @@ router.get('/:username/settings', ensureAuthentication, (req, res) => {
   res.render('users/user-profile-settings');
 });
 
+//GET contact-form
+router.get('/:username/contact-form', (req, res) =>{
+  res.render('users/contact-form.hbs');
+});
+
 // POST updated user info
 router.post('/:username/update', fileUploader.single('image'), (req, res, next) => {
   const { username, email } = req.body;
   const { _id } = req.user;
   let image = "";
-
-  // console.log(`req.file: ${req.file}`);
-  // console.log(req.body);
   
   // if the image field is blank, the current image url is used
   if (req.file) image = req.file.path;
