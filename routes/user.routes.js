@@ -21,9 +21,9 @@ router.get('/:username', ensureAuthentication, (req, res) => {
     .findById(user._id)
     .populate('favorites')
     .then(loggedInUser => {
-      
-      // console.log('user.favorites', loggedInUser.favorites);
-      res.render('users/user-profile');
+      const fav = loggedInUser.favorites;
+      console.log({fav});
+      res.render('users/user-profile', {userInfo: loggedInUser});
       
     })
     .catch(err => console.log(err));

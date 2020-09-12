@@ -38,12 +38,12 @@
       </div>
     </div>
 
-    {{#each user.favorites}}
-      <div class="row no-gutters">
+    <div class="row no-gutters">
+      {{#each userInfo.favorites}}
         <div class="col-md-6 col-lg-3 ftco-animate">
-          <a href="/city/{{ this.name }},_{{ this.country_name }}" class="block-5" style="background-image: url({{this.img}});">
+          <a href="/city/{{ this.city_ascii }},_{{ this.country }}" class="block-5" style="background-image: url({{this.img}});">
             <div class="text">
-              <h3 class="heading">{{ this.name }}, {{ this.country_name }}</h3>
+              <h3 class="heading">{{ this.city }}, {{ this.country }}</h3>
               <div class="post-meta">
               </div>
               <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span>
@@ -51,8 +51,8 @@
             </div>
           </a>
         </div>
-      </div>
-    {{/each}}
+      {{/each}}
+    </div>
 
   </div>
 </section>

@@ -14,13 +14,31 @@
 <div class="container about-city">
   <h4>About</h4>
   <p>{{ city.description }}</p>
+
+  <div id="map"></div>
+
+{{!-- mapbox logic --}}
+  <script>
+    mapboxgl.accessToken = "{{ city.mapboxAPIKey }}";
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center: [{{ city.details.lng }}, {{ city.details.lat }}],
+    zoom: 8
+});
+
+    const marker = new mapboxgl.Marker()
+      .setLngLat([{{ city.details.lng }}, {{ city.details.lat }}])
+.addTo(map);
+  </script>
+  {{!-- end mapbox --}}
+
 </div>
 
 <div class="container">
   <ul class="nav nav-tabs">
     <li class="nav-item active">
-      <a class="nav-link active show" data-toggle="tab" href="#comments"><b>Comments</b>
-    </a>    
+      <a class="nav-link active show" data-toggle="tab" href="#comments"><b>Comments</b></a>
   </ul>
 
   <div class="tab-content">
@@ -28,34 +46,42 @@
       <br>
       <div id="commentForm" city-id={{ city.details._id }}>
         <div class="form-group">
-            <label for="email" class="col-sm-3 control-label">Let us know about your trip</label>
-            <div class="col-sm-10">
-              <textarea maxlength="300" class="form-control" name="content" id="addComment" rows="5"></textarea>
-            </div>
+          <label for="email" class="col-sm-3 control-label">Let us know about your trip</label>
+          <div class="col-sm-10">
+            <textarea maxlength="300" class="form-control" name="content" id="addComment" rows="5"></textarea>
+          </div>
         </div>
         <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-10">                    
-                <button class="btn btn-success btn-circle text-uppercase" type="submit" id="submitComment"><span class="glyphicon glyphicon-send"></span>Submit</button>
+          <div class="col-sm-offset-2 col-sm-10">
+            <div class="col-sm-offset-2 col-sm-10">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button class="btn btn-success btn-circle text-uppercase" type="submit" id="submitComment"><span
+                    class="glyphicon glyphicon-send"></span>Submit</button>
+              </div>
             </div>
-        </div>
-      </div>
-      <br>
-      <div id="userComments">
-        {{#each city.details.posts}}
-          <div class="media border p-3 ftco-animate">
-            <img src={{ this.user.image }} alt={{ this.user.username }} class="mr-3 mt-3 rounded-circle" style="width:60px; height:60px;">
-            <div class="media-body">
-              <h4>{{ this.user.username }} <small><i>{{ this.createdAt }}</i></small></h4>
-              <p>{{ this.content }}</p>
-            </div>
-            {{#if this.owner}}
+          </div>
+
+          <br>
+
+          <div id="userComments">
+            {{#each city.details.posts}}
+            <div class="media border p-3 ftco-animate">
+              <img src={{ this.user.image }} alt={{ this.user.username }} class="mr-3 mt-3 rounded-circle"
+                style="width:60px; height:60px;">
+              <div class="media-body">
+                <h4>{{ this.user.username }} <small><i>{{ this.createdAt }}</i></small></h4>
+                <p>{{ this.content }}</p>
+              </div>
+              {{#if this.owner}}
               <a class="btn" href="/post/edit/{{ this._id }}">Edit</a>
               <a class="btn" href="/post/delete/{{ this._id }}/{{ ../city.details._id }}">Delete</a>
-            {{/if}}
+              {{/if}}
+            </div>
+            {{/each}}
+            <br>
           </div>
-        {{/each}}
-        <br>
+        </div>
       </div>
-    </div>    
+    </div>
   </div>
 </div>
