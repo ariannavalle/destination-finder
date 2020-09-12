@@ -83,6 +83,12 @@ router.post('/:username/update', fileUploader.single('image'), (req, res, next) 
 router.post('/fav', (req, res) => {
   const { cityId } = req.body;
   const user = req.user;
+
+  if (!user) {
+    res.json({isFav: false});
+    return;
+  }
+
   let isFav = true;
 
   console.log('>>>>> fav <<<<<');
@@ -126,6 +132,11 @@ router.get('/:username/delete', ensureAuthentication, (req, res) => {
 router.post('/userfav', (req, res) => {
   const user = req.user;
   const { cityId } = req.body;
+
+  if (!user) {
+    res.json({});
+    return;
+  }
 
   User
     .findById(user._id)
