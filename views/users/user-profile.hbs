@@ -1,59 +1,85 @@
-<section class="home-slider owl-carousel">
-  <div class="slider-item" style="background-image: url('https://images.pexels.com/photos/3014826/pexels-photo-3014826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');" data-stellar-background-ratio="0.5">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row slider-text align-items-center">
-        <div class="col-md-7 col-sm-12 ftco-animate">
-          <h1 class="mb-3">Welcome, {{ user.username }}</h1>
+<div class="small-nav"></div>
+<div class="container">
+  <div class="row slider-text align-items-center">
+    <div class="col-md-7 col-sm-12 ftco-animate">
+      <h1 class="mb-3">Welcome, {{ user.username }}.</h1>
+    </div>
+  </div>
+</div>
+
+
+<div class="profile-container">
+  <div class="profile-inner">
+    <div class="row">
+
+      <div class="col-md-5">
+        <img class="rounded-circle profile-image" src="{{ user.image }}" alt="Profile image">
+      </div>
+
+      <div class="col-md-5">
+        <h4>Username</h4>
+        {{ user.username }}
+        <h4>Email address</h4>
+        <p>{{ user.email }}</p>
+        <h4>Member since</h4>
+        <p>{{ user.createdAt }}</p>
+      </div>
+
+      <div class="col-md-2">
+        <div class="buttons">
+          <a href="/{{ user.username }}/settings" class="btn btn-primary">Edit Profile</a><br>
+          <a href="/logout" class="btn btn-primary">Logout</a><br>
+          <a href="/{{ user._id }}/delete" class="btn btn-primary">Delete Profile</a>
         </div>
       </div>
     </div>
-  </div>
-</section>
 
-<div>
-    <h2>Welcome, {{ user.username }}!</h2>
-    <p>E-mail address: {{ user.email }}</p>
-    <br>
-    <button><a href="/{{ user.username }}/settings">Edit Profile</a></button><br>
-    <br>
-    <div class="profile-image">
-        <img class="rounded-circle" src="{{ user.image }}" alt="Profile image">
+    <div class="text-center heading-section">
+      <h1>Favorites</h1>
     </div>
-</div>
+    <div id="map" class="map-horizontal"></div>
 
-<div>
-    <button><a href="/logout">Logout</a></button>
-</div>
-<div>
-    <button><a href="/{{ user._id }}/delete">Delete profile</a></button>
-</div>
+    {{!-- mapbox logic --}}
+    <script>
+      mapboxgl.accessToken = "{{ userInfo.mapboxAPIKey }}";
+      const map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [12.550343, 55.665957],
+        zoom: 10
+      });
 
+      let marker = new mapboxgl.Marker()
+        .setLngLat([12.550343, 55.665957])
+        .addTo(map);
 
-<section class="ftco-section">
-  <div class="container-fluid">
-    <div class="row no-gutters justify-content-center mb-5 pb-5 ftco-animate">
-      <div class="col-md-7 text-center heading-section">
-        <h1>Your Destinations</h1>
-      </div>
-    </div>
+      let marker2 = new mapboxgl.Marker()
+        .setLngLat([13.00073, 55.60587])
+        .addTo(map);
+    </script>
+    {{!-- end mapbox --}}
 
-    <div class="row no-gutters">
-      {{#each userInfo.favorites}}
-        <div class="col-md-6 col-lg-3 ftco-animate">
-          <a href="/city/{{ this.city_ascii }},_{{ this.country }}" class="block-5" style="background-image: url({{this.img}});">
-            <div class="text">
-              <h3 class="heading">{{ this.city }}, {{ this.country }}</h3>
-              <div class="post-meta">
-                <img width="30" height="30" class="heart-icon" city-id="{{this._id}}" src="images/heart_inactive.png" alt="Add {{this.name}} to favorites" >
+    <section class="ftco-section">
+      <div class="container-fluid">
+        <div class="row no-gutters">
+          {{#each userInfo.loggedInUser.favorites}}
+          <div class="col-md-6 col-lg-3 ftco-animate">
+            <a href="/city/{{ this.city_ascii }},_{{ this.country }}" class="block-5"
+              style="background-image: url({{this.img}});">
+              <div class="text">
+                <h3 class="heading">{{ this.city }}, {{ this.country }}</h3>
+                <div class="post-meta">
+                  <img width="30" height="30" class="heart-icon" city-id="{{this._id}}" src="images/heart_inactive.png"
+                    alt="Add {{this.name}} to favorites">
+                </div>
               </div>
-              <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span>
-              <span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span>
-            </div>
-          </a>
+            </a>
+          </div>
+          {{/each}}
         </div>
-      {{/each}}
-    </div>
+      </div>
+    </section>
+
 
   </div>
-</section>
+</div>
