@@ -24,6 +24,7 @@ const postRouter = require('./routes/post.routes');
 const detailsRouter = require('./routes/details.routes');
 const mailRouter = require('./routes/mail.routes');
 const userRouter = require('./routes/user.routes');
+const { UnavailableForLegalReasons } = require('http-errors');
 
 const app = express();
 
@@ -37,6 +38,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
+app.use(bodyParser.urlencoded({extended:true}));
 
 // sessions setup
 require('./configs/session.config')(app);
@@ -75,8 +77,5 @@ app.use((error, req, res) => {
   res.status(error.status || 500);
   res.render('error');
 });
-
-// middleware package to parse the data from the contact form
-app.use(bodyParser.urlencoded({extended:true}));
 
 module.exports = app;

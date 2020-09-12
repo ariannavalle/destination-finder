@@ -1,41 +1,62 @@
+require('dotenv').config();
 const express = require('express');
 const router = express.Router();
 const nodemailer = require('nodemailer');
+const path = require('path');
+const mailgun = require('nodemailer-mailgun-transport');
 
-router.get('/contact-form', (req, res) => res.render('contact-form')); 
+router.get('/contact-form', (req, res) => {
+  res.render('contact-form');
+});
 
-
-// POST route from contact form
 router.post('/contact-form', (req, res) => {
+  const transporter = nodemailer.createTransport(mailgun(auth));
 
-  // Instantiate the SMTP server
-  const smtpTrans = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 465,
-    secure: true,
-    auth: {
-      user: process.env.GMAIL_USER,
-      pass: process.env.GMAIL_PASS
+  const sendMail = (email, subject, text, name, cb) => {
+    const mailOptions = {
+      from: email,
+      to: 'tradest34@gmail.com',
+      subject: subject,
+      name,
+      text,
+    };
+
+    transporter.sendMail(mailOptions, function (err, data) {
+      if (err) {
+        cb(err, null);
+      } else {
+        cb(null, data);
+      }
+    });
+  };
+  const {
+    name,
+    email,
+    subject,
+    message
+  } = req.body;
+  console.log(req.body);
+
+  sendMail(email, subject, message, name, function (err, data) {
+    console.log(err, data)
+    if (err) {
+      res.status(500).json({ message: 'Internal Error' });
+    } else {
+      res.render('contact-form', { message: `We appreciate you contacting us, ${name}. 
+      One of our colleagues will get back in touch with you soon!
+      Have a great day!` });
+      // res.json({ message: 'Email sent' });
     }
-  })
+  });
 
-  // Specify what the email will look like
-  const mailOpts = {
-    from: 'Your sender info here', // This is ignored by Gmail
-    to: process.env.GMAIL_USER,
-    subject: `New message from Travel App, user: (${req.user})`,
-    text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
+  
+});
+
+const auth = {
+  auth: {
+    api_key: process.env.CONTACT_API,
+    domain: process.env.YOUR_DOMAIN_NAME
   }
-
-  // Attempt to send the email
-  smtpTrans.sendMail(mailOpts, (error, response) => {
-    if (error) {
-      res.render('contact-failure') // Show a page indicating failure
-    }
-    else {
-      res.render('contact-success') // Show a page indicating success
-    }
-  })
-})
+};
 
 module.exports = router;
