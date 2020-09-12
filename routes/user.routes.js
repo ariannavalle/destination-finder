@@ -79,14 +79,36 @@ router.post('/:username/update', fileUploader.single('image'), (req, res, next) 
 });
 
 // POST add place to fav list
-router.post('/:username/fav/:coordinates', (req, res) => {
-  const { username, coordinates } = req.params;
+router.post('/fav', (req, res) => {
+  const { cityId } = req.body;
+  const user = req.user;
+  let isFav = true;
+
+  console.log('>>>>> fav <<<<<');
 
   User
-    .find({username})
+    .findById(user._id)
     .then(userFromDB => {
-      console.log("addFav", userFromDB);
-      res.redirect(`/${req.user._id}`);
+      if (!userFromDB.favorites.includes(cityId)) {
+        userFromDB.favorites.push(cityId);
+      }
+      else {
+        const index = userFromDB.favorites.indexOf(cityId);
+        userFromDB.favorites.splice(index, 1);
+        console.log('>>>>', userFromDB.favorites);
+        isFav = false;
+      }
+
+      userFromDB
+        .save()
+        .then(() => {
+
+          console.log("fav list", userFromDB.favorites.length);
+
+          res.json({isFav});
+
+        })
+        .catch(err => console.log(err));
     })
     .catch(err => console.log(err));
 });
@@ -99,6 +121,21 @@ router.get('/:username/delete', ensureAuthentication, (req, res) => {
       console.log('user was deleted');
       req.logout();
       res.redirect('/');
+    })
+    .catch(err => console.log(err));
+});
+
+router.post('/userfav', (req, res, next) => {
+  const user = req.user;
+  const { cityId } = req.body;
+
+  User
+    .findById(user._id)
+    .then(userFromDB => {
+
+      const isFav = userFromDB.favorites.includes(cityId);
+      res.json({isFav});
+
     })
     .catch(err => console.log(err));
 });

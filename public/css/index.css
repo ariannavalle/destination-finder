@@ -9,7 +9,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
 }
 
 .separator {
@@ -17,7 +16,11 @@ body {
   color: #fff;
   font-size: 40px;
   width: 100%;
-  height: 150px;
+  min-height: 150px;
+}
+
+.categories {
+  max-width: 600px;
 }
 
 /* destination list */
@@ -72,4 +75,10 @@ body {
 .profile-image img {
   width: 100px;
   height: 100px;
+}
+
+/* errors */
+.error-container {
+  display: flex;
+  justify-content: center;
 }

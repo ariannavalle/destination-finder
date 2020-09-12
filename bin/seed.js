@@ -1028,7 +1028,7 @@ const cities = [
     population: '4378000',
     id: '1704413791',
     loc: { type: 'Point', coordinates: [ 105.85, 21.0333 ] },
-    img: 'https://i.ytimg.com/vi/954CH9DLIKE/maxresdefault.jpg'
+    img: 'https://blog.goway.com/globetrotting/wp-content/uploads/2017/03/Aerial-skyline-view-of-Hoan-Kiem-and-Ho-Guom-Sword-lake-area-at-twilight-Hanoi-Vietnam_517236190.jpg'
   },
   {
     city: 'Guadalajara',
@@ -3448,7 +3448,7 @@ const cities = [
     population: '1846000',
     id: '1422847713',
     loc: { type: 'Point', coordinates: [ 35.5097, 33.872 ] },
-    img: 'http://www.joaoleitao.com/wp-content/uploads/2018/01/BEIRUT-LEBANON.jpg'
+    img: 'https://www.corporatelivewire.com/image_thumb.php?w=800&img=images/travel/1029/639897742.jpg'
   },
   {
     city: 'San Jose',
@@ -4104,7 +4104,7 @@ const cities = [
     population: '1611000',
     id: '1120298240',
     loc: { type: 'Point', coordinates: [ 11.5167, 3.8667 ] },
-    img: 'https://live.staticflickr.com/65535/46996790094_dae822f81c.jpg'
+    img: 'https://images.immediate.co.uk/production/volatile/sites/7/2018/01/GettyImages-640244377_cmyk-6f038eb.jpg?quality=90&resize=620,413'
   },
   {
     city: 'Shantou',
@@ -5122,7 +5122,7 @@ const cities = [
     population: '1379000',
     id: '1784736618',
     loc: { type: 'Point', coordinates: [ 55.28, 25.23 ] },
-    img: 'http://1.bp.blogspot.com/-d2Ku17UUI68/UUl4zw8Fq5I/AAAAAAAAClA/SKSk-T9Q7zc/s1600/Dubai%252C+United+Arab+Emirates-2013-01.jpg'
+    img: 'https://static.barcelo.com/content/dam/bhg/master/es/hoteles/united-arab-emirates/dubai/dukes-the-palm-a-royal-hideaway-hotel/main-photos/hotel/DUKES_VIEW_01.jpg'
   },
   {
     city: 'Milwaukee',
@@ -10153,14 +10153,14 @@ const cities = [
     img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Yangjiang_Hailing_Dao_Dajiao_Wan_2013.09.15_10-06-29.jpg/1200px-Yangjiang_Hailing_Dao_Dajiao_Wan_2013.09.15_10-06-29.jpg'
   },
   {
-    city: 'Marrakech',
-    city_ascii: 'Marrakech',
+    city: 'Marrakesh',
+    city_ascii: 'Marrakesh',
     lat: '31.63',
     lng: '-8',
     country: 'Morocco',
     iso2: 'MA',
     iso3: 'MAR',
-    admin_name: 'Marrakech-Safi',
+    admin_name: 'Marrakesh-Safi',
     capital: 'admin',
     population: '872000',
     id: '1504172585',
@@ -14710,6 +14710,36 @@ const cities = [
     "id": "1591599922",
     "loc": { type: 'Point', coordinates:  [ -79.875,9.365] },
     "img" : 'https://panamacrucerotours.com/wp-content/uploads/2018/12/boletin35-2_Page_02_Image_0001-e1458589975574.jpg'
+},
+{
+  "city": "Bali",
+  "city_ascii": "Bali",
+  "lat": "-8.65",
+  "lng": "115.22",
+  "country": "Indonesia",
+  "iso2": "ID",
+  "iso3": "IDN",
+  "admin_name": "Bali",
+  "capital": "admin",
+  "population": "732344",
+  "id": "1360848527",
+  "loc": { type: 'Point', coordinates:  [ 115.22,-8.65] },
+  "img" : 'https://www.traveldailymedia.com/assets/2018/08/Bali-Indonesia.jpg'
+},
+{
+  "city": "Phuket",
+  "city_ascii": "Phuket",
+  "lat": "7.8765",
+  "lng": "98.3815",
+  "country": "Thailand",
+  "iso2": "TH",
+  "iso3": "THA",
+  "admin_name": "Phuket",
+  "capital": "admin",
+  "population": "141618",
+  "id": "1764327831",
+  "loc": "{ type: 'Point', coordinates:  [ 98.3815,7.8765] }",
+  "img" : 'https://specials-images.forbesimg.com/imageserve/1071599218/960x0.jpg'
 }
 ];
 

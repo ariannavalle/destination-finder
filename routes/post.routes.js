@@ -10,10 +10,17 @@ const Post = require('../models/post.model');
 const City = require('../models/city.model');
 
 // POST create new post
-router.post('/create/:cityId', ensureAuthentication, (req, res) => {
+router.post('/create/:cityId', (req, res) => {
   const { content } = req.body;
-  const cityId = req.params.cityId;
-  const user = req.user;  
+  const { cityId } = req.params;
+  const user = req.user;
+
+  console.log(user);
+  if (user === undefined) {
+    console.log('>>>>>>>>>>user is not loged in<<<<<<<<<<<<');
+    res.json({data: '/login'});
+    return;
+  }
 
   const newPost = {
           city: cityId,
@@ -45,8 +52,22 @@ router.post('/create/:cityId', ensureAuthentication, (req, res) => {
 
                       // console.log({newPostDoc});
                       // console.log({user});
+                      console.log(newPostDoc.createdAt);
+
+                      const postDate = newPostDoc.createdAt.toString().split(" ").splice(1, 3).join(" ");
+
+                      const newComment = `<div class="media border p-3 ftco-animate fadeInUp ftco-animated">
+                                            <img src=${userFromDB.image} alt=${userFromDB.username} class="mr-3 mt-3 rounded-circle" style="width:60px; height:60px;">
+                                            <div class="media-body">
+                                              <h4>${userFromDB.username} <small><i>${postDate}</i></small></h4>
+                                              <p>${newPostDoc.content}</p>
+                                            </div>
+                                            <a class="btn" href="/post/edit/${newPostDoc._id}">Edit</a>
+                                            <a class="btn" href="/post/delete/${newPostDoc._id}/${cityFromDB._id}">Delete</a>
+                                          </div>`;
         
-                      res.redirect('back');
+                      // res.redirect('back');
+                      res.json({data: newComment});
                     })
                     .catch(err => console.log(err));
                 })

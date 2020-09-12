@@ -1,3 +1,8 @@
+require('dotenv').config();
+
+const mapboxgl = require('mapbox-gl');
+const mapboxAPIKey = process.env.MAPBOXGL_API_KEY;
+
 const express = require('express');
 const router = express.Router();
 const axios = require('axios');
@@ -16,7 +21,7 @@ router.get('/:location', (req, res) => {
       const cityInfo = cityWiki[cityWikiKeys[0]].extract;      
 
       City
-        .findOne({ city: location.split(',_')[0] })
+        .findOne({ city_ascii: location.split(',_')[0] })
         .populate('posts')
         .populate({
           path: 'posts',
@@ -32,10 +37,9 @@ router.get('/:location', (req, res) => {
           
           const cityDetails = {
             description: cityInfo,
-            details: cityFromDB
+            details: cityFromDB,
+            mapboxAPIKey: process.env.MAPBOXGL_API_KEY
           };
-
-          console.log(cityDetails.details);
 
           res.render('destinations/destination-details', {city: cityDetails});
         })
