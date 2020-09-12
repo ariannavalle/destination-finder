@@ -55,9 +55,7 @@ if (document.querySelector("#submitComment")) {
     // console.log(content, cityId);
   
     axios
-      .post(`${window.location.origin}/post/create/${cityId}`, {
-        content
-      })
+      .post(`${window.location.origin}/post/create/${cityId}`, { content })
       .then(response => {
         // console.log(response.data);
         if (response.data.data === '/login') {
