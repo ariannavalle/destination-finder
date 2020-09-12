@@ -29,17 +29,35 @@
     <button><a href="/{{ user._id }}/delete">Delete profile</a></button>
 </div>
 
+ <div id="map" class="map-horizontal"></div>
+
+
+  {{!-- mapbox logic --}}
+  <script>
+    mapboxgl.accessToken = "{{ userInfo.mapboxAPIKey }}";
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center: [12.550343, 55.665957],
+    zoom: 10
+});
+
+    const marker = new mapboxgl.Marker()
+      .setLngLat([12.550343, 55.665957])
+      .addTo(map);
+  </script>
+  {{!-- end mapbox --}}
 
 <section class="ftco-section">
   <div class="container-fluid">
     <div class="row no-gutters justify-content-center mb-5 pb-5 ftco-animate">
       <div class="col-md-7 text-center heading-section">
-        <h1>Your Destinations</h1>
+        <h1>Favorites</h1>
       </div>
     </div>
 
     <div class="row no-gutters">
-      {{#each userInfo.favorites}}
+      {{#each userInfo.loggedInUser.favorites}}
         <div class="col-md-6 col-lg-3 ftco-animate">
           <a href="/city/{{ this.city_ascii }},_{{ this.country }}" class="block-5" style="background-image: url({{this.img}});">
             <div class="text">

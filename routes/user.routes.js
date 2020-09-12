@@ -1,4 +1,7 @@
-// routes/user.routes.js
+require('dotenv').config();
+
+const mapboxgl = require('mapbox-gl');
+const mapboxAPIKey = process.env.MAPBOXGL_API_KEY;
 
 const { Router } = require('express');
 const router = new Router();
@@ -21,9 +24,13 @@ router.get('/:username', ensureAuthentication, (req, res) => {
     .findById(user._id)
     .populate('favorites')
     .then(loggedInUser => {
-      const fav = loggedInUser.favorites;
-      console.log({fav});
-      res.render('users/user-profile', {userInfo: loggedInUser});
+      const mapboxAPIKey =  process.env.MAPBOXGL_API_KEY
+      const userInfo = {
+        loggedInUser,
+        mapboxAPIKey
+      }
+
+      res.render('users/user-profile', {userInfo});
       
     })
     .catch(err => console.log(err));

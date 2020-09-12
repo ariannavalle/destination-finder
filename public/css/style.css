@@ -8034,7 +8034,7 @@ textarea.form-control {
   padding-bottom: 120px; }
 
 .map-vertical {
-  height: 800px;
+  height: 600px;
   width: 100%; }
   @media (max-width: 991.98px) {
     #map {
