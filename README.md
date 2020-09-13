@@ -19,10 +19,10 @@ From there you can "favorite" the ones that sound interesting and find out more 
 
 ## Technical Specs
 * CRUD routes
-* user authentication and sessions
-* consumption of external APIs
-* geospatial query operations
-* responsive design
+* User authentication and sessions
+* Consumption of external APIs
+* Geospatial query operations
+* Responsive design
 
 ##### Home 
 ![main page](https://github.com/ariannavalle/destination-finder/blob/master/public/images/demo%20-%20main%20page%20header.png)
