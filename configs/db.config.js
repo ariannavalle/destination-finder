@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 mongoose
-  .connect('mongodb://localhost/destination-finder', {
+  .connect('mongodb://heroku_swtq6sgl:hfvl60ar90mi547s2ll1a1s97@ds253398.mlab.com:53398/heroku_swtq6sgl', {
     useCreateIndex: true,
     useNewUrlParser: true,
     useUnifiedTopology: true,
