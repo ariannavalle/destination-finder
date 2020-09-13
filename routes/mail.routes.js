@@ -39,8 +39,10 @@ router.post('/contact-form', (req, res) => {
 
   sendMail(email, subject, message, name, function (err, data) {
     console.log(err, data)
-    if (err) {
-      res.status(500).json({ message: 'Internal Error' });
+    if (!email || !message || !subject || !name){
+      res.render('contact-form', { message: `Please, fill all fields.` });
+    } else if (err) {
+      res.status(500).render('contact-form', { message: 'Internal Error' });
     } else {
       res.render('contact-form', { message: `We appreciate you contacting us, ${name}. 
       One of our colleagues will get back in touch with you soon!
