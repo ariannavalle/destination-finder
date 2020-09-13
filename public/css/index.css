@@ -72,9 +72,33 @@ body {
 }
 
 /* user profile */
-.profile-image img {
-  width: 100px;
+.profile-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.profile-inner {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-image{
+  width: 350px;
+  height: 350px;
+}
+
+.small-nav {
   height: 100px;
+  background-color:#ff5f5f;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  width: 140px;
 }
 
 /* errors */

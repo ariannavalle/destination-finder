@@ -8035,7 +8035,7 @@ textarea.form-control {
   padding-bottom: 120px; }
 
 .map-vertical {
-  height: 800px;
+  height: 600px;
   width: 100%; }
   @media (max-width: 991.98px) {
     #map {
@@ -8048,6 +8048,15 @@ textarea.form-control {
     #map {
       height: 300px; } }
 
+  .list-img {
+    height: 350px;
+    width: 550px; }
+    @media (max-width: 800px) {
+     .list-img {
+        width: 400px;
+      } 
+    } 
+        
 .container-fluid {
   padding-left: 0 !important;
   padding-right: 0 !important; }

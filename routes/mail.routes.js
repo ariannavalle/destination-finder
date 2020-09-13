@@ -45,7 +45,7 @@ router.post('/contact-form', (req, res) => {
       res.status(500).render('contact-form', { message: 'Internal Error' });
     } else {
       res.render('contact-form', { message: `We appreciate you contacting us, ${name}. 
-      One of our colleagues will get back in touch with you soon!
+      One of our colleagues will get back in touch with you soon.
       Have a great day!` });
       // res.json({ message: 'Email sent' });
     }
