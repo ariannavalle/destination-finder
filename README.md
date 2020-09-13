@@ -10,6 +10,7 @@ From there you can "favorite" the ones that sound interesting and find out more 
 
 ## Features 
 * Destination search
+* Explore section for the top destinations in the world
 * User authentication and profile
 * A favorites list to save all your favorite destinations
 * Detailed information on destinations
@@ -21,3 +22,22 @@ From there you can "favorite" the ones that sound interesting and find out more 
 * user authentication and sessions
 * consumption of external APIs
 * geospatial query operations
+* responsive design
+
+##### Home 
+![main page](https://github.com/ariannavalle/Infinity-Jump/blob/master/images/gameplay-00.png)
+
+##### Destination Filter 
+![filter](https://github.com/ariannavalle/Infinity-Jump/blob/master/images/gameplay-00.png)
+
+##### Top 10 Destination List
+![top 10](https://github.com/ariannavalle/Infinity-Jump/blob/master/images/gameplay-00.png)
+
+##### City Details Page
+![details](https://github.com/ariannavalle/Infinity-Jump/blob/master/images/gameplay-00.png)
+
+##### Favorites List
+![favorites](https://github.com/ariannavalle/Infinity-Jump/blob/master/images/gameplay-00.png)
+
+##### Explore 
+![explore](https://github.com/ariannavalle/Infinity-Jump/blob/master/images/gameplay-00.png)
