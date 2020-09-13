@@ -28,7 +28,6 @@
       <div class="col-md-2">
         <div class="buttons">
           <a href="/{{ user.username }}/settings" class="btn btn-primary">Edit Profile</a><br>
-          <a href="/logout" class="btn btn-primary">Logout</a><br>
           <a href="/{{ user._id }}/delete" class="btn btn-primary">Delete Profile</a>
         </div>
       </div>
@@ -45,17 +44,15 @@
       const map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v11',
-        center: [12.550343, 55.665957],
-        zoom: 10
+        center: [{{userInfo.loggedInUser.favorites.[0].lng}} , {{userInfo.loggedInUser.favorites.[1].lat}}],
+        zoom: 2
       });
 
-      let marker = new mapboxgl.Marker()
-        .setLngLat([12.550343, 55.665957])
-        .addTo(map);
-
-      let marker2 = new mapboxgl.Marker()
-        .setLngLat([13.00073, 55.60587])
-        .addTo(map);
+        {{#each userInfo.loggedInUser.favorites}}
+          new mapboxgl.Marker()
+          .setLngLat([{{this.lng}}, {{this.lat}}])
+          .addTo(map);
+        {{/each}}
     </script>
     {{!-- end mapbox --}}
 
