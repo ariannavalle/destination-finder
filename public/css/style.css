@@ -8047,6 +8047,15 @@ textarea.form-control {
     #map {
       height: 300px; } }
 
+  .list-img {
+    height: 350px;
+    width: 550px; }
+    @media (max-width: 800px) {
+     .list-img {
+        width: 400px;
+      } 
+    } 
+        
 .container-fluid {
   padding-left: 0 !important;
   padding-right: 0 !important; }
