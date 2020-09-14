@@ -25,7 +25,7 @@ const userSchema = new Schema(
     },
     image: {
       type: String,
-      default: 'images/default-user.jpg'
+      default: 'https://res.cloudinary.com/dllcgl1lt/image/upload/v1600047373/opxsyyxwi2s9veo8qrxa.jpg'
     },
     favorites: {
       type: [ { type: Schema.Types.ObjectId, ref: "City" } ]
