@@ -12,7 +12,16 @@
 </section>
 
 <div class="container about-city">
-  <h4>About</h4>
+  <div>
+      {{#if user}}
+        <img width="30" height="30" class="heart-icon" city-id="{{city.details._id}}" src="/images/heart_inactive.png" alt="Add {{city.details.city}} to favorites" >
+      {{else}}
+        <a href="/login">
+          <img width="30" height="30" class="heart-icon" city-id="{{city.details._id}}" src="/images/heart_inactive.png" alt="Add {{city.details.city}} to favorites" >
+        </a>
+      {{/if}}
+    <h4>About</h4>
+  </div>
 
   <div class="row">
     <div class="col-md-7">{{ city.description }}</div>

@@ -106,3 +106,19 @@ body {
   display: flex;
   justify-content: center;
 }
+
+/* edit comment */ 
+
+#edit-comment {
+  margin: 0 25%;
+}
+
+#edit-comment textarea {
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  #edit-comment {
+    margin: 0 10%;
+  }
+}
