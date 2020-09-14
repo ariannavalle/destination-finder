@@ -106,3 +106,24 @@ body {
   display: flex;
   justify-content: center;
 }
+
+/* edit comment */ 
+
+#edit-comment {
+  margin: 0 25%;
+}
+
+#edit-comment textarea {
+  width: 100%;
+}
+
+.owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item{
+  -ms-touch-action: auto;
+      touch-action: auto;
+}
+
+@media only screen and (max-width: 767px) {
+  #edit-comment {
+    margin: 0 10%;
+  }
+}

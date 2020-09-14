@@ -1,10 +1,11 @@
-<div class="main">
+<div class="small-nav"></div>
+<br>
+<div id="edit-comment" class="main">
   <form action="/post/edit/{{ post._id }}" method="post">
-
-    <h3>Content</h3>
-    <textarea maxlength="300" name="content" cols="50" rows="10">{{ post.content }}</textarea>
+    <h3>Your Comment</h3>
+    <textarea maxlength="300" name="content" cols="50" rows="5">{{ post.content }}</textarea>
     <br>
-
     <button>Update</button>
   </form>
 </div>
+<br>
