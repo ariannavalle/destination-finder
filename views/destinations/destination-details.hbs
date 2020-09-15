@@ -11,7 +11,7 @@
   </div>
 </section>
 
-<label class="btn btn-outline-primary">
+<label class="btn btn-outline-primary back-btn">
   <input class="hide-cb"onclick="history.back()">Go Back
 </label>
 
@@ -71,7 +71,7 @@
           <div class="col-sm-offset-2 col-sm-10">
             <div class="col-sm-offset-2 col-sm-10">
               <div class="col-sm-offset-2 col-sm-10">
-                <button class="btn btn-outline-primary btn-circle text-uppercase" type="submit" id="submitComment"><span
+                <button class="btn btn-primary btn-circle text-uppercase" type="submit" id="submitComment"><span
                     class="glyphicon glyphicon-send"></span>Submit</button>
               </div>
             </div>
@@ -81,18 +81,18 @@
 
           <div id="userComments">
             {{#each city.details.posts}}
-            <div class="media border p-3 ftco-animate">
-              <img src={{ this.user.image }} alt={{ this.user.username }} class="mr-3 mt-3 rounded-circle"
-                style="width:60px; height:60px;">
-              <div class="media-body">
-                <h4>{{ this.user.username }} <small><i>{{ this.createdAt }}</i></small></h4>
-                <p>{{ this.content }}</p>
+              <div class="media border p-3 ftco-animate">
+                <img src={{ this.user.image }} alt={{ this.user.username }} class="mr-3 mt-3 rounded-circle"
+                  style="width:60px; height:60px;">
+                <div class="media-body">
+                  <h4>{{ this.user.username }} <small><i>{{ this.createdAt }}</i></small></h4>
+                  <p>{{ this.content }}</p>
+                </div>
+                {{#if this.owner}}
+                  <a class="btn" href="/post/edit/{{ this._id }}">Edit</a>
+                  <a class="btn" href="/post/delete/{{ this._id }}/{{ ../city.details._id }}">Delete</a>
+                {{/if}}
               </div>
-              {{#if this.owner}}
-              <a class="btn" href="/post/edit/{{ this._id }}">Edit</a>
-              <a class="btn" href="/post/delete/{{ this._id }}/{{ ../city.details._id }}">Delete</a>
-              {{/if}}
-            </div>
             {{/each}}
             <br>
           </div>

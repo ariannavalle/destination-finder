@@ -49,6 +49,10 @@ body {
   transform: scale(1.1);
 }
 
+.back-btn {
+  margin: 1rem;
+}
+
 /* posts */
 .nav-tabs li {
   margin: 0.5rem;
