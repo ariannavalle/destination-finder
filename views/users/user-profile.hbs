@@ -44,8 +44,8 @@
       const map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v11',
-        center: [{{userInfo.loggedInUser.favorites.[0].lng}} , {{userInfo.loggedInUser.favorites.[1].lat}}],
-        zoom: 2
+        center: [0,30],
+        zoom: 1
       });
 
         {{#each userInfo.loggedInUser.favorites}}
