@@ -8052,7 +8052,8 @@ textarea.form-control {
     width: 550px; }
     @media (max-width: 800px) {
      .list-img {
-        width: 400px;
+        width: 350px;
+        height: 280px;
       } 
     } 
         
