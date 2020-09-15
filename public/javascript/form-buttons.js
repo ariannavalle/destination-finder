@@ -36,3 +36,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
   });
 });
+
+$('.heart-icon').ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+
