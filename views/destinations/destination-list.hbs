@@ -1,42 +1,55 @@
-<section class="home-slider owl-carousel">
-  <div class="slider-item" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row slider-text align-items-center">
-        <div class="col-md-7 col-sm-12 ftco-animate">
-          <h1 class="mb-3">Your Top 10 Destinations</h1>
+{{#if places}}
+  <section class="home-slider owl-carousel">
+    <div class="slider-item" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row slider-text align-items-center">
+          <div class="col-md-7 col-sm-12 ftco-animate">
+            <h1 class="mb-3">Your Top 10 Destinations</h1>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- END slider -->
+  </section>
+  <!-- END slider -->
 
+  <label class="btn btn-outline-primary">
+    <input class="hide-cb" onclick="history.back()">Back to Search
+  </label>
+
+  <div class="container destination-list">
+    {{#each places}}
+    <div class="destination ftco-animate">
+
+      {{#if ../user}}
+        <img width="30" height="30" class="heart-icon" city-id="{{this._id}}" src="images/heart_inactive.png" alt="Add {{this.name}} to favorites" >
+      {{else}}
+        <a href="/login">
+          <img width="30" height="30" class="heart-icon" city-id="{{this._id}}" src="images/heart_inactive.png" alt="Add {{this.name}} to favorites" >
+        </a>
+      {{/if}}
+
+      <h2>
+        <a href="/city/{{ this.name }},_{{ this.country_name }}">{{this.name}}, {{this.country_name}}</a>
+      </h2>
+      
+      <a href="/city/{{ this.name }},_{{ this.country_name }}">
+        <img class="list-img" src={{this.img}}>
+      </a>
+
+      <p>Population: {{this.population}}</p>
+    </div>
+    {{/each}}
+  </div>
+
+
+{{else}}
+  <div class="small-nav"></div>
+  <div class="error-page">There were no matching results in your desired region. <br> Try switching regions or adding more categories to your search.
+  <br><br>
 <label class="btn btn-outline-primary">
   <input class="hide-cb" onclick="history.back()">Back to Search
 </label>
 
-<div class="container destination-list">
-  {{#each places}}
-  <div class="destination ftco-animate">
-
-    {{#if ../user}}
-      <img width="30" height="30" class="heart-icon" city-id="{{this._id}}" src="images/heart_inactive.png" alt="Add {{this.name}} to favorites" >
-    {{else}}
-      <a href="/login">
-        <img width="30" height="30" class="heart-icon" city-id="{{this._id}}" src="images/heart_inactive.png" alt="Add {{this.name}} to favorites" >
-      </a>
-    {{/if}}
-
-    <h2>
-      <a href="/city/{{ this.name }},_{{ this.country_name }}">{{this.name}}, {{this.country_name}}</a>
-    </h2>
-    
-    <a href="/city/{{ this.name }},_{{ this.country_name }}">
-      <img class="list-img" src={{this.img}}>
-    </a>
-
-    <p>Population: {{this.population}}</p>
-  </div>
-  {{/each}}
 </div>
+{{/if}}
