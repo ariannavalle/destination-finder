@@ -20,6 +20,7 @@ window.addEventListener('load', () => {
 
   });
 
+  // selection of the date in the comment media-body
   document.querySelectorAll('.media-body small i').forEach(item => {
     item.innerHTML = commentDate(item.innerHTML);
   });

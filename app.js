@@ -8,7 +8,6 @@ const cookieParser = require('cookie-parser');
 const passport = require("passport");
 const flash = require('connect-flash');
 const bodyParser = require('body-parser');
-const router = express.Router();
 
 // Set up the database
 require('./configs/db.config');
@@ -24,7 +23,6 @@ const postRouter = require('./routes/post.routes');
 const detailsRouter = require('./routes/details.routes');
 const mailRouter = require('./routes/mail.routes');
 const userRouter = require('./routes/user.routes');
-const { UnavailableForLegalReasons } = require('http-errors');
 
 const app = express();
 
@@ -42,9 +40,6 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 // sessions setup
 require('./configs/session.config')(app);
-
-const app_name = require('./package.json').name;
-const debug = require('debug')(`${app_name}:${path.basename(__filename).split('.')[0]}`);
 
 // passport setup
 app.use(passport.initialize());

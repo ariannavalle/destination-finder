@@ -11,6 +11,10 @@
   </div>
 </section>
 
+<label class="btn btn-outline-primary">
+  <input class="hide-cb"onclick="history.back()">Go Back
+</label>
+
 <div class="container about-city">
   <div>
       {{#if user}}
@@ -67,7 +71,7 @@
           <div class="col-sm-offset-2 col-sm-10">
             <div class="col-sm-offset-2 col-sm-10">
               <div class="col-sm-offset-2 col-sm-10">
-                <button class="btn btn-success btn-circle text-uppercase" type="submit" id="submitComment"><span
+                <button class="btn btn-outline-primary btn-circle text-uppercase" type="submit" id="submitComment"><span
                     class="glyphicon glyphicon-send"></span>Submit</button>
               </div>
             </div>
