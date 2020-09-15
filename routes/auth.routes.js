@@ -59,7 +59,7 @@ router.post('/signup', (req, res, next) => {
         res.status(500).render('auth/signup-form.hbs', { errorMessage: error.message });
       } else if (error.code === 11000) {
         res.status(500).render('auth/signup-form.hbs', {
-          errorMessage: 'Username and email need to be unique. Either username or email is already used.'
+          errorMessage: 'Either username or email is already used.'
         });
       } else {
         next(error);
