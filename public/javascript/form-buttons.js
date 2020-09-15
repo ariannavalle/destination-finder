@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   let checkboxes = document.querySelectorAll("input[type=checkbox]");
   let radioBtns = document.querySelectorAll("input[type=radio]");
   [...checkboxes].forEach(checkbox => {
-    checkbox.addEventListener('change', function (event) {
+    checkbox.addEventListener('click', function (event) {
       if (checkbox.checked) {
         checkbox.parentElement.className = "btn btn-primary";
       }
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
 
     [...radioBtns].forEach(radioBtn => {
-      radioBtn.addEventListener('change', function (event) {
+      radioBtn.addEventListener('click', function (event) {
         if (radioBtn.checked) {
           [...radioBtns].forEach(otherBtn => { otherBtn.parentElement.className = "btn btn-outline-primary" })
           radioBtn.parentElement.className = "btn btn-primary";
