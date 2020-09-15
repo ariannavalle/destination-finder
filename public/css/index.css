@@ -107,6 +107,15 @@ body {
   justify-content: center;
 }
 
+.error-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  font-size: 2rem;
+}
+
 /* edit comment */ 
 
 #edit-comment {
