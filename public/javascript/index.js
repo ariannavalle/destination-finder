@@ -73,3 +73,39 @@ if (document.querySelector("#submitComment")) {
 
   });
 }
+
+if (document.querySelector('#signup-btn')) {
+  document.querySelector('#signup-btn').addEventListener('click', event => {
+    const email = document.querySelector('#inputEmail').value;
+    const username = document.querySelector('#inputUsername').value;
+    const password = document.querySelector('#inputPassword').value;
+    const textCenter = document.querySelector('.text-center');
+    const errorContainer = document.querySelector('.error-container');
+
+    const data = {
+      email,
+      username,
+      password
+    }
+
+    axios
+      .post(`${window.location.origin}/signup`, data)
+      .then(response => {
+        const { status, errorMessage } = response.data;
+        console.log('>>>>>>>', errorMessage);
+
+        if (status) {
+          textCenter.innerHTML = `<br>
+                                  <div id="successful-signup" class="form-signin">
+                                    <h1 class="h3 mb-3 font-weight-normal">Thank you for</h1>
+                                    <h1 class="h3 mb-3 font-weight-normal">Signing up!</h1>
+                                    <a href="/login"><button class="btn btn-lg btn-primary btn-block">Go to login</button></a>
+                                  </div>`;
+        } else {
+          errorContainer.innerHTML = `<p class="alert alert-danger alert-dismissible fade show">${errorMessage}</p>`;
+        }
+        
+      })
+      .catch(err => console.log(err));
+  })
+}
