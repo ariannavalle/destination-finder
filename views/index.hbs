@@ -34,10 +34,31 @@
 </section>
 <!-- END slider -->
 
+{{!-- Separator --}}
 <div class="separator destination-list">
 	<span>Find your top destinations based on your interests</span>
 </div>
 
+{{!-- About --}}
+<section class="ftco-section-2">
+	<div class="container-fluid d-flex">
+		<div class="section-2-blocks-wrapper row no-gutters">
+			<div class="img col-sm-12 col-lg-6" style="background-image: url('images/tour-1.jpg');">
+			</div>
+			<div class="text col-lg-6 ftco-animate">
+				<div class="text-inner align-self-start">
+
+					<h3>Welcome to Destination Finder</h3>
+					<p>Ever wanted to take a vacation, but weren't sure where to go? You've come to the right place.</p>
+
+					<p>Destination Finder will help you find the perfect spot to visit based on your interests. You can specify a general area you had in mind (or choose "All" if you're open to anything) and then pick one or a combination of interests that will help us generate a list of the top destinations for you! </p>
+					
+					<p>From there you can "favorite" the ones that sound interesting and find out more about each individual place by visiting the details page! </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 {{!-- Form --}}
 <div class="main">
@@ -52,6 +73,7 @@
 	<form action="/find-destination" method="post">
 
 <div> 
+	
 		<h3>Region</h3>
 
 		{{!-- All --}}
@@ -257,28 +279,8 @@
 	</form>
 </div><br>
 
-<section class="ftco-section-2">
-	<div class="container-fluid d-flex">
-		<div class="section-2-blocks-wrapper row no-gutters">
-			<div class="img col-sm-12 col-lg-6" style="background-image: url('images/tour-1.jpg');">
-			</div>
-			<div class="text col-lg-6 ftco-animate">
-				<div class="text-inner align-self-start">
-
-					<h3>Welcome to Destination Finder</h3>
-					<p>Ever wanted to take a vacation, but weren't sure where to go? You've come to the right place.</p>
-
-					<p>Destination Finder will help you find the perfect spot to visit based on your interests. You can specify a general area you had in mind (or choose "All" if you're open to anything) and then pick one or a combination of interests that will help us generate a list of the top destinations for you! </p>
-					
-					<p>From there you can "favorite" the ones that sound interesting and find out more about each individual place by visiting the details page! </p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section class="ftco-section">
-	<div class="container">
+{{!-- Top Destinations --}}
+	<div class="container destination">
 		<h1 class="text-center">Top Destinations Around the World</h1><br>
 		<div class="row">
 				
@@ -317,15 +319,11 @@
 			</div>
 		</div>
 	</div>
-</section>
 
- <section class="ftco-section">
-	<div class="container-fluid">
-		<div class="row no-gutters justify-content-center mb-5 pb-5 ftco-animate">
-			<div class="col-md-7 text-center heading-section">
-				<h1>Explore Destinations</h1>
-			</div>
-		</div>
+{{!-- Explore --}}
+    <div class="text-center heading-section destination">
+      <h1>Explore Destinations</h1>
+    </div>
 		<div class="row no-gutters">
 			<div class="col-md-6 col-lg-3 ftco-animate">
 				<a href="/city/Phuket,_Thailand" class="block-5" style="background-image: url('images/phuket.jpg');">
@@ -417,4 +415,3 @@
 			</div>
 		</div>
 	</div>
-</section>
