@@ -49,8 +49,6 @@ router.post('/contact-form', (req, res) => {
       Have a great day!` });
     }
   });
-
-
 });
 
 const auth = {
