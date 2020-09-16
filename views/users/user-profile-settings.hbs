@@ -13,28 +13,32 @@
   </div>
 </section>
 
-<div class="text-center">
-  <form action="/{{ user.username }}/update" method="post" enctype="multipart/form-data">
-    <br>
-    <h1 class="h3 mb-3 font-weight-normal">Edit Profile</h1>
+<div class="contact-form">
+  <div class="text-center inner-contact">
+    <form action="/{{ user.username }}/update" method="post" enctype="multipart/form-data">
+      <br>
+      <h1 class="h3 mb-3 font-weight-normal">Edit Profile</h1>
 
-    {{#if errorMessage}}
-    <p class="alert alert-danger alert-dismissible fade show">{{errorMessage}}</p>
-    {{/if}}
+      {{#if errorMessage}}
+      <p class="alert alert-danger alert-dismissible fade show">{{errorMessage}}</p>
+      {{/if}}
 
-    <label>Username<br>
-      <input type="text" name="username" value="{{ user.username }}" />
-    </label><br>
+      <label>Username<br>
+        <input type="text" name="username" value="{{ user.username }}" />
+      </label><br>
 
-    <label>Email address<br>
-      <input type="email" name="email" value="{{ user.email }}" />
-    </label><br><br>
+      <label>Email address<br>
+        <input type="email" name="email" value="{{ user.email }}" />
+      </label><br><br>
 
-    <label>Upload profile image<br>
-      <input type="file" name="image" value="{{ user.image }}" />
-    </label><br><br>
+      <img class="profile-image" src="{{ user.image }}" alt="Profile image"><br>
 
-    <button class="btn btn-lg btn-primary" type="submit">Update Profile</button><br><br>
+      <label>Upload profile image<br>
+        <input type="file" name="image" value="{{ user.image }}" />
+      </label><br><br>
 
-  </form>
+      <button class="btn btn-lg btn-primary" type="submit">Update Profile</button><br><br>
+
+    </form>
+  </div>
 </div>
