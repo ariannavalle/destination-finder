@@ -39,17 +39,16 @@ router.post('/contact-form', (req, res) => {
 
   sendMail(email, subject, message, name, function (err, data) {
     console.log(err, data)
-    if (err) {
-      res.status(500).json({ message: 'Internal Error' });
-    } else {
-      res.render('contact-form', { message: `We appreciate you contacting us, ${name}. 
+    if (!email || !message || !subject || !name) {
+      res.render('contact-form', { message: `Please fill out all fields.` });
+    }
+    else {
+      res.render('contact-form', {
+        message: `We appreciate you contacting us, ${name}. 
       One of our colleagues will get back in touch with you soon.
       Have a great day!` });
-      // res.json({ message: 'Email sent' });
     }
   });
-
-  
 });
 
 const auth = {
@@ -60,3 +59,4 @@ const auth = {
 };
 
 module.exports = router;
+
