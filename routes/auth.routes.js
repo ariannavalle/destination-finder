@@ -23,7 +23,8 @@ router.post('/signup', (req, res, next) => {
 
   // Check if username, password, and email are not empty
   if (!username || !email || !password) {
-    res.render('auth/signup-form.hbs', {
+    res.json({
+      status: false,
       errorMessage: 'All fields are mandatory. Please provide your username, email and password.'
     });
     return;
@@ -32,9 +33,8 @@ router.post('/signup', (req, res, next) => {
   // make sure passwords are strong:
   const regex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
   if (!regex.test(password)) {
-    res
-      .status(500)
-      .render('auth/signup-form.hbs', {
+    res.json({
+      status: false,
       errorMessage: 'Passwords must contain at least 6 characters, one number, one lowercase letter, and one uppercase letter.'
     });
     return;
@@ -52,13 +52,21 @@ router.post('/signup', (req, res, next) => {
     })
     .then(userFromDB => {
       console.log('Newly created user is: ', userFromDB);
-      res.redirect('/login');
+      // res.redirect('/login');
+      res.json({
+        status: true
+      });
+      return;
     })
     .catch(error => {
       if (error instanceof mongoose.Error.ValidationError) {
-        res.status(500).render('auth/signup-form.hbs', { errorMessage: error.message });
+        res.json({
+          status: false,
+          errorMessage: error.message
+        });
       } else if (error.code === 11000) {
-        res.status(500).render('auth/signup-form.hbs', {
+        res.json({
+          status: false,
           errorMessage: 'Either username or email is already used.'
         });
       } else {

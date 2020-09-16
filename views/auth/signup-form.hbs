@@ -13,15 +13,13 @@
 <!-- END slider -->
 
 <div class="text-center">
-
   <br>
   <div class="error-container">
     {{#if errorMessage}}
-    <p class="alert alert-danger alert-dismissible fade show">{{errorMessage}}</p>
+      <p class="alert alert-danger alert-dismissible fade show">{{errorMessage}}</p>
     {{/if}}
   </div>
-
-  <form class="form-signin" action="/signup" method="POST">
+  <div class="form-signin">
     <h1 class="h3 mb-3 font-weight-normal">Create an account</h1>
 
     <label for="inputEmail" class="sr-only">Email address</label>
@@ -35,10 +33,10 @@
     <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
     <small>Passwords must contain at least 6 characters, one number, one lowercase letter, and one uppercase letter.</small><br><br>
 
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+    <button id="signup-btn" class="btn btn-lg btn-primary btn-block">Submit</button>
 
     <br>Already have an account? <a href="/login">Log in</a> instead.
 
     <p class="mt-5 mb-3 text-muted">&copy; 2020</p>
-  </form>
+  </div>
 </div>
