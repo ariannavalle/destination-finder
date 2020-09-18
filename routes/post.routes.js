@@ -56,7 +56,7 @@ router.post('/create/:cityId', (req, res) => {
                                               <p>${newPostDoc.content}</p>
                                             </div>
                                             <a class="btn" href="/post/edit/${newPostDoc._id}">Edit</a>
-                                            <a class="btn" href="/post/delete/${newPostDoc._id}/${cityFromDB._id}">Delete</a>
+                                            <p class="btn delete-btn" city-id=${cityFromDB._id} comment-id=${newPostDoc._id}>Delete</p>
                                           </div>`;
         
                       // res.redirect('back');
@@ -115,11 +115,11 @@ router.post('/edit/:blogPostId', ensureAuthentication, (req, res) => {
 
 // delete a post, route protected
 // -USBAT delete thier post when logged in
-router.get('/delete/:postId/:cityId', ensureAuthentication, (req, res) => {
-  const { postId, cityId } = req.params;
+router.post('/delete', ensureAuthentication, (req, res) => {
+  const { postId, cityId } = req.body;
 
-  // console.log({postId});
-  // console.log({cityId});
+  console.log({postId});
+  console.log({cityId});
 
   User
     .findByIdAndUpdate(req.user._id, {$pull: {posts: {$in: [postId]}}}, {new: true})
@@ -131,7 +131,8 @@ router.get('/delete/:postId/:cityId', ensureAuthentication, (req, res) => {
             .findByIdAndDelete(postId)
             .then(() => {    
               console.log(`post was deleted from ${userFromDB.username} and ${cityFromDB.city}`);
-              res.redirect('back');    
+              // res.redirect('back');
+              res.json({wasDeleted: true});
             })
             .catch(err => console.log(err)); 
         })

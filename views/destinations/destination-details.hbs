@@ -102,7 +102,7 @@
                 </div>
                 {{#if this.owner}}
                   <a class="btn" href="/post/edit/{{ this._id }}">Edit</a>
-                  <a class="btn" href="/post/delete/{{ this._id }}/{{ ../city.details._id }}">Delete</a>
+                  <p class="btn delete-btn" city-id={{ ../city/details._id }} comment-id={{ this._id }}>Delete</p>
                 {{/if}}
               </div>
             {{/each}}
