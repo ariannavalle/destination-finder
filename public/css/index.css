@@ -130,6 +130,10 @@ body {
   width: 100%;
 }
 
+.delete-btn {
+  color: #ff5f5f;
+}
+
 .owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item{
   -ms-touch-action: auto;
       touch-action: auto;

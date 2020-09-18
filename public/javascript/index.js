@@ -1,8 +1,33 @@
+// delete comments from details page
+const deleteCommentBtn = () => {
+  document.querySelectorAll(".delete-btn").forEach(deleteBtn => {
+    deleteBtn.addEventListener('click', event => {
+      const postId = deleteBtn.getAttribute('comment-id');
+      const cityId = deleteBtn.getAttribute('city-id');
+
+      const data = {
+        postId,
+        cityId
+      };
+
+      axios
+        .post(`${window.location.origin}/post/delete`, data)
+        .then(response => {
+          // console.log(response.data)
+          const { wasDeleted } = response.data;
+          if (wasDeleted) deleteBtn.parentElement.remove();
+        })
+        .catch(err => console.log(err));
+
+    });
+  });
+}
 //parse created date and return month day year
 const commentDate = date => {
-  console.log(date)
+  // console.log(date)
   return date.split(" ").splice(1, 3).join(" ");
 };
+
 
 // on page load set hearts to active if city is in user favorites
 window.addEventListener('load', () => {
@@ -25,6 +50,8 @@ window.addEventListener('load', () => {
     item.innerHTML = commentDate(item.innerHTML);
   });
 
+  // add event listeners to all comment delete buttons
+  deleteCommentBtn();
 
 }, false);
 
@@ -52,8 +79,6 @@ if (document.querySelector("#submitComment")) {
     const commentSection = document.querySelector('#addComment');
     const cityId = document.querySelector('#commentForm').getAttribute('city-id');
     const content = commentSection.value;
-
-    // console.log(content, cityId);
   
     axios
       .post(`${window.location.origin}/post/create/${cityId}`, { content })
@@ -64,9 +89,10 @@ if (document.querySelector("#submitComment")) {
         } else {
           let userComment = document.querySelector('#userComments');
           document.querySelector('#addComment').value = "";
-          console.log(response.data)
+          // console.log(response.data)
           userComment.innerHTML = response.data.data.concat(userComment.innerHTML);
-          // console.log('>>>>>>>>post<<<<<<<');
+          // reapply event listeners to comment delete buttons
+          deleteCommentBtn();
         }
       })
       .catch(err => console.log(err));
@@ -74,6 +100,7 @@ if (document.querySelector("#submitComment")) {
   });
 }
 
+// signup form and user messages
 if (document.querySelector('#signup-btn')) {
   document.querySelector('#signup-btn').addEventListener('click', event => {
     const email = document.querySelector('#inputEmail').value;
@@ -92,7 +119,6 @@ if (document.querySelector('#signup-btn')) {
       .post(`${window.location.origin}/signup`, data)
       .then(response => {
         const { status, errorMessage } = response.data;
-        console.log('>>>>>>>', errorMessage);
 
         if (status) {
           textCenter.innerHTML = `<br>
