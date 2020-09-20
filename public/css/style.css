@@ -2223,10 +2223,12 @@ fieldset:disabled a.btn {
   background-color: transparent;
   background-image: none;
   border-color: #ff5f5f; }
-  .btn-outline-primary:hover {
-    color: #fff;
-    background-color: #ff5f5f;
-    border-color: #ff5f5f; }
+  @media only screen and (min-width: 768px) {
+    .btn-outline-primary:hover {
+      color: #fff;
+      background-color: #ff5f5f;
+      border-color: #ff5f5f; }
+  }
   .btn-outline-primary:focus, .btn-outline-primary.focus {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 95, 95, 0.5);
     box-shadow: 0 0 0 0.2rem rgba(255, 95, 95, 0.5); }
@@ -7569,10 +7571,12 @@ h1, h2, h3, h4, h5,
     background: #ff5f5f;
     border: 2px solid #ff5f5f;
     color: #fff; }
-    .btn.btn-primary:hover {
-      border: 2px solid #ff5f5f;
-      background: transparent;
-      color: #ff5f5f; }
+    @media only screen and (min-width: 768px) {
+      .btn.btn-primary:hover {
+        border: 2px solid #ff5f5f;
+        background: transparent;
+        color: #ff5f5f; }
+    }
     .btn.btn-primary.btn-outline-primary {
       border: 2px solid #ff5f5f;
       background: transparent;
